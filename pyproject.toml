@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hqrl"
+version = "0.1.0"
+description = "Same Policy, Different Learning: quantum RL update study in UAV search-and-rescue reporting"
+requires-python = ">=3.12,<3.13"
+authors = [{ name = "Konstantinos Zervakis" }]
+dependencies = ["numpy", "scipy", "gymnasium", "torch", "pennylane", "pillow"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
