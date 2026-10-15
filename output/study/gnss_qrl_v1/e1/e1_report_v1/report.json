@@ -1,0 +1,7800 @@
+{
+ "report": "gnss-e1-report/1",
+ "protocol_freeze_sha256": "c80eb591ed5952de638c2bef4553608b8f25aefe1170f200936f882275467965",
+ "campaign_sha256": "76bc358d824567c0f413e946bccb5c6ab0fb1d84ef26d79f09459dd557f4dd56",
+ "code_tree_sha256": "4a1f2e8e6a76cbc3ba286397139da9bb888c28f2e8a4bf84adb9f2494e46ddc5",
+ "claim_scope": "E1 estimates learning-curve differences among these actor heads on the frozen task and budget, after the P3 task-relevance gate failed. It cannot establish quantum advantage, hardware speedup, usefulness beyond the tuned P3 rule, or general superiority of either architecture.",
+ "reading_note": "Exploratory interval readings under the E1 block-generating design; not equivalence, superiority or general QRL claims; h = 0.5/18 is an interpretive reference, not a success threshold.",
+ "h": 0.027777777777777776,
+ "selection": {
+  "quantum": {
+   "role": "HQ",
+   "status": "selected",
+   "candidate": "lr3e-3_ent0",
+   "tied": [
+    "lr3e-3_ent0"
+   ],
+   "flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": true
+   },
+   "outcomes": {
+    "return_rate": 1.0,
+    "fp_spatial": 0.49166666666666664,
+    "episodes": 120,
+    "tp_timely": 0.5857633740718774
+   },
+   "candidates": {
+    "lr3e-4_ent0": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.0101231947909528,
+      0.004552702111972504,
+      0.012065632721230549
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.008913843208051952,
+     "score_sd": 0.0038997346093266666,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.3333333333333333,
+      "episodes": 120,
+      "tp_timely": 0.48437864318976265
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-4_ent0.01": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.015629873092459737,
+      0.01014114090952035,
+      0.010746007584226731
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.012172340528735606,
+     "score_sd": 0.0030095455629466986,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.35833333333333334,
+      "episodes": 120,
+      "tp_timely": 0.4352204436952493
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": true
+     }
+    },
+    "lr1e-3_ent0": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.010679029065271146,
+      0.004689603809341109,
+      0.017010335941408324
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.010792989605340194,
+     "score_sd": 0.0061611565733276094,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.375,
+      "episodes": 120,
+      "tp_timely": 0.5212098276140661
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": true
+     }
+    },
+    "lr1e-3_ent0.01": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.0116231440852898,
+      0.00438443298124432,
+      0.015688696277310857
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.010565424447948325,
+     "score_sd": 0.005725877250702516,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.38333333333333336,
+      "episodes": 120,
+      "tp_timely": 0.4191254744586913
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": true
+     }
+    },
+    "lr3e-3_ent0": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.019525472576566977,
+      0.009626032199945744,
+      0.021543013930658387
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.01689817290239037,
+     "score_sd": 0.006378137743572265,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.49166666666666664,
+      "episodes": 120,
+      "tp_timely": 0.5857633740718774
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": true
+     }
+    },
+    "lr3e-3_ent0.01": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.018883724673208556,
+      0.013669950312232044,
+      0.013409977491273968
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.01532121749223819,
+     "score_sd": 0.003087958796318095,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.3416666666666667,
+      "episodes": 120,
+      "tp_timely": 0.5845498895344985
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    }
+   }
+  },
+  "bottleneck": {
+   "role": "C-matched",
+   "status": "selected",
+   "candidate": "lr3e-3_ent0",
+   "tied": [
+    "lr3e-3_ent0"
+   ],
+   "flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": false
+   },
+   "outcomes": {
+    "return_rate": 1.0,
+    "fp_spatial": 0.325,
+    "episodes": 120,
+    "tp_timely": 0.6357277312863298
+   },
+   "candidates": {
+    "lr3e-4_ent0": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.0034726804229102564,
+      0.007383175966708209,
+      0.00190899987033628
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.004254952086651582,
+     "score_sd": 0.002819683085107601,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.3333333333333333,
+      "episodes": 120,
+      "tp_timely": 0.3628013478500836
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-4_ent0.01": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.003832589228457565,
+      0.007773086784661377,
+      0.0008280736478271047
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.004144583220315349,
+     "score_sd": 0.0034830025920054484,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.31666666666666665,
+      "episodes": 120,
+      "tp_timely": 0.36657895177743266
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr1e-3_ent0": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.011140961035531922,
+      0.019321843650483155,
+      0.00941292178011689
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.01329190882204399,
+     "score_sd": 0.005293072401118427,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.3416666666666667,
+      "episodes": 120,
+      "tp_timely": 0.5678594867568093
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr1e-3_ent0.01": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.009942350953619434,
+      0.018948706475987252,
+      0.012359264092528709
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.013750107174045132,
+     "score_sd": 0.004661485096712516,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.425,
+      "episodes": 120,
+      "tp_timely": 0.5724028851719523
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": true
+     }
+    },
+    "lr3e-3_ent0": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.01701222426843453,
+      0.022268789286523382,
+      0.009875936440406697
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.01638564999845487,
+     "score_sd": 0.006220140424719205,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.325,
+      "episodes": 120,
+      "tp_timely": 0.6357277312863298
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-3_ent0.01": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.002061374931490715,
+      0.01464681574654365,
+      0.014962155401537273
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.01055678202652388,
+     "score_sd": 0.0073589276431595485,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.3416666666666667,
+      "episodes": 120,
+      "tp_timely": 0.5499268898337026
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    }
+   }
+  },
+  "mlp": {
+   "role": "C-strong",
+   "status": "selected",
+   "candidate": "lr3e-3_ent0",
+   "tied": [
+    "lr3e-3_ent0"
+   ],
+   "flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": false
+   },
+   "outcomes": {
+    "return_rate": 1.0,
+    "fp_spatial": 0.11666666666666667,
+    "episodes": 120,
+    "tp_timely": 0.7738017170170245
+   },
+   "candidates": {
+    "lr3e-4_ent0": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.016151791706893306,
+      0.019148165994636274,
+      0.02968910419593446
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.021663020632488015,
+     "score_sd": 0.007110420363356213,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.2833333333333333,
+      "episodes": 120,
+      "tp_timely": 0.6872772511453648
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-4_ent0.01": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.01869828124046609,
+      0.008657299884894613,
+      0.03288163059770919
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.02007907057435663,
+     "score_sd": 0.012171051064283327,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.16666666666666666,
+      "episodes": 120,
+      "tp_timely": 0.5619855738433732
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr1e-3_ent0": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.03606549203434703,
+      0.035122002518555344,
+      0.04068106246011083
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.03728951900433773,
+     "score_sd": 0.002974805603043699,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.125,
+      "episodes": 120,
+      "tp_timely": 0.8528323563575742
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr1e-3_ent0.01": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.03091666888676019,
+      0.02095303407843369,
+      0.0314842297088288
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.027784644224674224,
+     "score_sd": 0.005923149855807236,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.35,
+      "episodes": 120,
+      "tp_timely": 0.7300193742676173
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-3_ent0": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.040533802121916394,
+      0.045683232489910935,
+      0.027739250079857204
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.03798542823056151,
+     "score_sd": 0.009239441720184389,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.11666666666666667,
+      "episodes": 120,
+      "tp_timely": 0.7738017170170245
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-3_ent0.01": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.0319233209085882,
+      0.02461460284909357,
+      0.027830394311155655
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.028122772689612476,
+     "score_sd": 0.003663120767247175,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.058333333333333334,
+      "episodes": 120,
+      "tp_timely": 0.6943412923259904
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    }
+   }
+  },
+  "surrogate625": {
+   "role": "Surrogate625",
+   "status": "selected",
+   "candidate": "lr1e-3_ent0",
+   "tied": [
+    "lr1e-3_ent0"
+   ],
+   "flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": false
+   },
+   "outcomes": {
+    "return_rate": 1.0,
+    "fp_spatial": 0.21666666666666667,
+    "episodes": 120,
+    "tp_timely": 0.7172193881240403
+   },
+   "candidates": {
+    "lr3e-4_ent0": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.010824237702211307,
+      0.02452369692674552,
+      0.023813104206323526
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.019720346278426785,
+     "score_sd": 0.0077124442528578524,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.30833333333333335,
+      "episodes": 120,
+      "tp_timely": 0.6890376297071653
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-4_ent0.01": {
+     "learning_rate": 0.0003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.02101657548129793,
+      0.01749923545911898,
+      0.020923755935701747
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.01981318895870622,
+     "score_sd": 0.002004479849162918,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.24166666666666667,
+      "episodes": 120,
+      "tp_timely": 0.5923278412133781
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr1e-3_ent0": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.013736363588566532,
+      0.04031434223835623,
+      0.031910486500488576
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.028653730775803778,
+     "score_sd": 0.013584994687701192,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.21666666666666667,
+      "episodes": 120,
+      "tp_timely": 0.7172193881240403
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr1e-3_ent0.01": {
+     "learning_rate": 0.001,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.021341621303717043,
+      0.03954841261286782,
+      0.024132235949912074
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.028340756622165644,
+     "score_sd": 0.009805893489648523,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.3,
+      "episodes": 120,
+      "tp_timely": 0.7583025047095293
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    },
+    "lr3e-3_ent0": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.0,
+     "block_aucs": [
+      0.022932843113796984,
+      0.016889255206042304,
+      0.03173665210925215
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.023852916809697148,
+     "score_sd": 0.007466337817483006,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.4583333333333333,
+      "episodes": 120,
+      "tp_timely": 0.6350868555142944
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": true
+     }
+    },
+    "lr3e-3_ent0.01": {
+     "learning_rate": 0.003,
+     "entropy_coef": 0.01,
+     "block_aucs": [
+      0.02350721590950358,
+      0.023082809435588606,
+      0.027863766917828953
+     ],
+     "failures": [],
+     "eligible": true,
+     "score": 0.024817930754307046,
+     "score_sd": 0.002646293382268606,
+     "outcomes": {
+      "return_rate": 1.0,
+      "fp_spatial": 0.30833333333333335,
+      "episodes": 120,
+      "tp_timely": 0.7693593238735749
+     },
+     "flags": {
+      "return_below_0.95": false,
+      "fp_above_p3_rule": true,
+      "fp_above_random": false
+     }
+    }
+   }
+  }
+ },
+ "primary_estimable": true,
+ "contrasts": {
+  "quantum_minus_bottleneck": {
+   "a": "quantum",
+   "b": "bottleneck",
+   "complete_blocks": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "incomplete_blocks": [],
+   "per_block": [
+    {
+     "block": 10,
+     "d": -0.009465187949828018
+    },
+    {
+     "block": 11,
+     "d": -0.00598785477317661
+    },
+    {
+     "block": 12,
+     "d": 0.001942032526425351
+    },
+    {
+     "block": 13,
+     "d": -0.031527824948233814
+    },
+    {
+     "block": 14,
+     "d": -0.012080704124724586
+    },
+    {
+     "block": 15,
+     "d": 0.010984790169698638
+    },
+    {
+     "block": 16,
+     "d": -0.0030587698850518125
+    },
+    {
+     "block": 17,
+     "d": 0.005200888706982907
+    },
+    {
+     "block": 18,
+     "d": -0.0034385876114712615
+    },
+    {
+     "block": 19,
+     "d": 0.007536300525675787
+    },
+    {
+     "block": 20,
+     "d": -0.020005616420692908
+    },
+    {
+     "block": 21,
+     "d": -0.028456340565944864
+    }
+   ],
+   "t_interval": {
+    "n": 12,
+    "mean": -0.007363072862528432,
+    "sd": 0.01366569487701738,
+    "low": -0.016045841143694888,
+    "high": 0.0013196954186380245,
+    "half_width": 0.008682768281166457
+   },
+   "bootstrap_sensitivity": {
+    "n": 12,
+    "mean": -0.007363072862528432,
+    "low": -0.014871021908079166,
+    "high": -0.0003207913581236307,
+    "resamples": 10000,
+    "seed": 20260927,
+    "method": "paired percentile bootstrap over blocks"
+   },
+   "reading": "E1 is precise enough to exclude mean differences of magnitude h or larger under its assumptions",
+   "excludes_zero": false,
+   "bootstrap_reading": "E1 is precise enough to exclude mean differences of magnitude h or larger under its assumptions",
+   "beside": {
+    "fp_spatial": {
+     "quantity": "fp_spatial",
+     "per_block": [
+      {
+       "block": 10,
+       "d": -0.025000000000000022
+      },
+      {
+       "block": 11,
+       "d": 0.16249999999999998
+      },
+      {
+       "block": 12,
+       "d": 0.012500000000000011
+      },
+      {
+       "block": 13,
+       "d": -0.012500000000000011
+      },
+      {
+       "block": 14,
+       "d": -0.11249999999999999
+      },
+      {
+       "block": 15,
+       "d": 0.1375
+      },
+      {
+       "block": 16,
+       "d": -0.08749999999999997
+      },
+      {
+       "block": 17,
+       "d": -0.10000000000000003
+      },
+      {
+       "block": 18,
+       "d": -0.11249999999999999
+      },
+      {
+       "block": 19,
+       "d": 0.45
+      },
+      {
+       "block": 20,
+       "d": -0.012500000000000011
+      },
+      {
+       "block": 21,
+       "d": -0.27499999999999997
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.002083333333333335,
+      "sd": 0.18276858608799834,
+      "low": -0.11404228606326126,
+      "high": 0.11820895272992794,
+      "half_width": 0.1161256193965946
+     }
+    },
+    "return_ok": {
+     "quantity": "return_ok",
+     "per_block": [
+      {
+       "block": 10,
+       "d": 0.0
+      },
+      {
+       "block": 11,
+       "d": 0.0
+      },
+      {
+       "block": 12,
+       "d": 0.0
+      },
+      {
+       "block": 13,
+       "d": 0.0
+      },
+      {
+       "block": 14,
+       "d": 0.0
+      },
+      {
+       "block": 15,
+       "d": 0.0
+      },
+      {
+       "block": 16,
+       "d": 0.0
+      },
+      {
+       "block": 17,
+       "d": 0.0
+      },
+      {
+       "block": 18,
+       "d": 0.0
+      },
+      {
+       "block": 19,
+       "d": 0.0
+      },
+      {
+       "block": 20,
+       "d": 0.0
+      },
+      {
+       "block": 21,
+       "d": 0.0
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.0,
+      "sd": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "half_width": 0.0
+     }
+    }
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": {
+     "n": 12,
+     "mean": -0.00791862841808399,
+     "sd": 0.01617819751726086,
+     "low": -0.018197764716199355,
+     "high": 0.0023605078800313754,
+     "half_width": 0.010279136298115365
+    },
+    "fp_weight_2": {
+     "n": 12,
+     "mean": -0.00625196175141732,
+     "sd": 0.010535625730485405,
+     "low": -0.012945978977628473,
+     "high": 0.00044205547479383295,
+     "half_width": 0.006694017226211153
+    },
+    "undiscounted": {
+     "n": 12,
+     "mean": -0.008444444444444447,
+     "sd": 0.02040802744449067,
+     "low": -0.021411086460885596,
+     "high": 0.004522197571996702,
+     "half_width": 0.01296664201644115
+    }
+   },
+   "label": "primary"
+  },
+  "quantum_minus_surrogate625": {
+   "a": "quantum",
+   "b": "surrogate625",
+   "complete_blocks": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "incomplete_blocks": [],
+   "per_block": [
+    {
+     "block": 10,
+     "d": 0.025068597725802357
+    },
+    {
+     "block": 11,
+     "d": -0.010758874015787515
+    },
+    {
+     "block": 12,
+     "d": -0.022615006428792845
+    },
+    {
+     "block": 13,
+     "d": -0.01536593556980042
+    },
+    {
+     "block": 14,
+     "d": -0.0402554229738238
+    },
+    {
+     "block": 15,
+     "d": -0.026762266899887192
+    },
+    {
+     "block": 16,
+     "d": -0.020378108285392917
+    },
+    {
+     "block": 17,
+     "d": 0.02611318620621133
+    },
+    {
+     "block": 18,
+     "d": -0.023209879224507016
+    },
+    {
+     "block": 19,
+     "d": -0.019050951404815136
+    },
+    {
+     "block": 20,
+     "d": -0.019310794307363925
+    },
+    {
+     "block": 21,
+     "d": -0.04012958826886322
+    }
+   ],
+   "t_interval": {
+    "n": 12,
+    "mean": -0.015554586953918358,
+    "sd": 0.021121311994500982,
+    "low": -0.028974428351877336,
+    "high": -0.0021347455559593814,
+    "half_width": 0.013419841397958977
+   },
+   "bootstrap_sensitivity": {
+    "n": 12,
+    "mean": -0.015554586953918356,
+    "low": -0.025909751193848515,
+    "high": -0.0033165120828241735,
+    "resamples": 10000,
+    "seed": 20260927,
+    "method": "paired percentile bootstrap over blocks"
+   },
+   "reading": "the direction is resolved in E1, but its magnitude relative to h is not",
+   "excludes_zero": true,
+   "bootstrap_reading": "E1 is precise enough to exclude mean differences of magnitude h or larger under its assumptions",
+   "beside": {
+    "fp_spatial": {
+     "quantity": "fp_spatial",
+     "per_block": [
+      {
+       "block": 10,
+       "d": 0.03749999999999998
+      },
+      {
+       "block": 11,
+       "d": 0.22499999999999998
+      },
+      {
+       "block": 12,
+       "d": 0.2
+      },
+      {
+       "block": 13,
+       "d": -0.025000000000000022
+      },
+      {
+       "block": 14,
+       "d": 0.23750000000000002
+      },
+      {
+       "block": 15,
+       "d": 0.2125
+      },
+      {
+       "block": 16,
+       "d": -0.0625
+      },
+      {
+       "block": 17,
+       "d": 0.25
+      },
+      {
+       "block": 18,
+       "d": -0.10000000000000003
+      },
+      {
+       "block": 19,
+       "d": -0.04999999999999993
+      },
+      {
+       "block": 20,
+       "d": 0.225
+      },
+      {
+       "block": 21,
+       "d": -0.6875
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.03854166666666667,
+      "sd": 0.26604523353722914,
+      "low": -0.13049541018168961,
+      "high": 0.20757874351502295,
+      "half_width": 0.16903707684835628
+     }
+    },
+    "return_ok": {
+     "quantity": "return_ok",
+     "per_block": [
+      {
+       "block": 10,
+       "d": 0.0
+      },
+      {
+       "block": 11,
+       "d": 0.0
+      },
+      {
+       "block": 12,
+       "d": 0.0
+      },
+      {
+       "block": 13,
+       "d": 0.0
+      },
+      {
+       "block": 14,
+       "d": 0.0
+      },
+      {
+       "block": 15,
+       "d": 0.0
+      },
+      {
+       "block": 16,
+       "d": 0.0
+      },
+      {
+       "block": 17,
+       "d": 0.0
+      },
+      {
+       "block": 18,
+       "d": 0.0
+      },
+      {
+       "block": 19,
+       "d": 0.0
+      },
+      {
+       "block": 20,
+       "d": 0.0
+      },
+      {
+       "block": 21,
+       "d": 0.0
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.0,
+      "sd": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "half_width": 0.0
+     }
+    }
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": {
+     "n": 12,
+     "mean": -0.013240350842807246,
+     "sd": 0.024349055506312483,
+     "low": -0.0287110026266494,
+     "high": 0.0022303009410349073,
+     "half_width": 0.015470651783842153
+    },
+    "fp_weight_2": {
+     "n": 12,
+     "mean": -0.020183059176140578,
+     "sd": 0.017199919898564016,
+     "low": -0.03111136690420324,
+     "high": -0.009254751448077912,
+     "half_width": 0.010928307728062666
+    },
+    "undiscounted": {
+     "n": 12,
+     "mean": -0.009822916666666664,
+     "sd": 0.03299103877335234,
+     "low": -0.030784422656804547,
+     "high": 0.01113858932347122,
+     "half_width": 0.020961505990137883
+    }
+   },
+   "label": "secondary, unadjusted"
+  },
+  "quantum_minus_mlp": {
+   "a": "quantum",
+   "b": "mlp",
+   "complete_blocks": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "incomplete_blocks": [],
+   "per_block": [
+    {
+     "block": 10,
+     "d": -0.024822985103799364
+    },
+    {
+     "block": 11,
+     "d": -0.009755630305763704
+    },
+    {
+     "block": 12,
+     "d": -0.024482142412079102
+    },
+    {
+     "block": 13,
+     "d": -0.05087036019394177
+    },
+    {
+     "block": 14,
+     "d": -0.03379618739003837
+    },
+    {
+     "block": 15,
+     "d": -0.026526351048271744
+    },
+    {
+     "block": 16,
+     "d": 0.014697636638151589
+    },
+    {
+     "block": 17,
+     "d": -0.01675821840524254
+    },
+    {
+     "block": 18,
+     "d": -0.017763816665771343
+    },
+    {
+     "block": 19,
+     "d": -0.01799097951986059
+    },
+    {
+     "block": 20,
+     "d": -0.016263365997377148
+    },
+    {
+     "block": 21,
+     "d": -0.053936899692031665
+    }
+   ],
+   "t_interval": {
+    "n": 12,
+    "mean": -0.023189108341335477,
+    "sd": 0.018093965706716928,
+    "low": -0.034685465674983526,
+    "high": -0.011692751007687427,
+    "half_width": 0.01149635733364805
+   },
+   "bootstrap_sensitivity": {
+    "n": 12,
+    "mean": -0.023189108341335484,
+    "low": -0.03278390636323493,
+    "high": -0.013350472426239829,
+    "resamples": 10000,
+    "seed": 20260927,
+    "method": "paired percentile bootstrap over blocks"
+   },
+   "reading": "the direction is resolved in E1, but its magnitude relative to h is not",
+   "excludes_zero": true,
+   "bootstrap_reading": "the direction is resolved in E1, but its magnitude relative to h is not",
+   "beside": {
+    "fp_spatial": {
+     "quantity": "fp_spatial",
+     "per_block": [
+      {
+       "block": 10,
+       "d": 0.2125
+      },
+      {
+       "block": 11,
+       "d": -0.04999999999999999
+      },
+      {
+       "block": 12,
+       "d": -0.5875
+      },
+      {
+       "block": 13,
+       "d": 0.04999999999999999
+      },
+      {
+       "block": 14,
+       "d": 0.2625
+      },
+      {
+       "block": 15,
+       "d": 0.375
+      },
+      {
+       "block": 16,
+       "d": 0.2625
+      },
+      {
+       "block": 17,
+       "d": -0.04999999999999999
+      },
+      {
+       "block": 18,
+       "d": -0.012500000000000011
+      },
+      {
+       "block": 19,
+       "d": 0.4375
+      },
+      {
+       "block": 20,
+       "d": 0.08750000000000002
+      },
+      {
+       "block": 21,
+       "d": -0.037500000000000006
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.07916666666666666,
+      "sd": 0.2699607154361313,
+      "low": -0.09235818869154389,
+      "high": 0.2506915220248772,
+      "half_width": 0.17152485535821055
+     }
+    },
+    "return_ok": {
+     "quantity": "return_ok",
+     "per_block": [
+      {
+       "block": 10,
+       "d": 0.0
+      },
+      {
+       "block": 11,
+       "d": 0.0
+      },
+      {
+       "block": 12,
+       "d": 0.0
+      },
+      {
+       "block": 13,
+       "d": 0.0
+      },
+      {
+       "block": 14,
+       "d": 0.0
+      },
+      {
+       "block": 15,
+       "d": 0.0
+      },
+      {
+       "block": 16,
+       "d": 0.0
+      },
+      {
+       "block": 17,
+       "d": 0.0
+      },
+      {
+       "block": 18,
+       "d": 0.0
+      },
+      {
+       "block": 19,
+       "d": 0.0
+      },
+      {
+       "block": 20,
+       "d": 0.0
+      },
+      {
+       "block": 21,
+       "d": 0.0
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.0,
+      "sd": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "half_width": 0.0
+     }
+    }
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": {
+     "n": 12,
+     "mean": -0.02096572871170585,
+     "sd": 0.020286377864785845,
+     "low": -0.03385507827272604,
+     "high": -0.008076379150685658,
+     "half_width": 0.012889349561020192
+    },
+    "fp_weight_2": {
+     "n": 12,
+     "mean": -0.027635867600594742,
+     "sd": 0.01661979319487954,
+     "low": -0.038195580406325244,
+     "high": -0.017076154794864237,
+     "half_width": 0.010559712805730505
+    },
+    "undiscounted": {
+     "n": 12,
+     "mean": -0.01794675925925926,
+     "sd": 0.028855631007545506,
+     "low": -0.03628075251025176,
+     "high": 0.0003872339917332379,
+     "half_width": 0.018333993250992497
+    }
+   },
+   "label": "secondary, unadjusted"
+  },
+  "bottleneck_minus_mlp": {
+   "a": "bottleneck",
+   "b": "mlp",
+   "complete_blocks": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "incomplete_blocks": [],
+   "per_block": [
+    {
+     "block": 10,
+     "d": -0.015357797153971346
+    },
+    {
+     "block": 11,
+     "d": -0.0037677755325870935
+    },
+    {
+     "block": 12,
+     "d": -0.026424174938504453
+    },
+    {
+     "block": 13,
+     "d": -0.01934253524570796
+    },
+    {
+     "block": 14,
+     "d": -0.02171548326531378
+    },
+    {
+     "block": 15,
+     "d": -0.03751114121797038
+    },
+    {
+     "block": 16,
+     "d": 0.0177564065232034
+    },
+    {
+     "block": 17,
+     "d": -0.021959107112225446
+    },
+    {
+     "block": 18,
+     "d": -0.01432522905430008
+    },
+    {
+     "block": 19,
+     "d": -0.025527280045536376
+    },
+    {
+     "block": 20,
+     "d": 0.0037422504233157565
+    },
+    {
+     "block": 21,
+     "d": -0.0254805591260868
+    }
+   ],
+   "t_interval": {
+    "n": 12,
+    "mean": -0.015826035478807045,
+    "sd": 0.015115091198640535,
+    "low": -0.025429706247661384,
+    "high": -0.006222364709952705,
+    "half_width": 0.00960367076885434
+   },
+   "bootstrap_sensitivity": {
+    "n": 12,
+    "mean": -0.01582603547880705,
+    "low": -0.023273826667177807,
+    "high": -0.00705188326242752,
+    "resamples": 10000,
+    "seed": 20260927,
+    "method": "paired percentile bootstrap over blocks"
+   },
+   "reading": "E1 is precise enough to exclude mean differences of magnitude h or larger under its assumptions",
+   "excludes_zero": true,
+   "bootstrap_reading": "E1 is precise enough to exclude mean differences of magnitude h or larger under its assumptions",
+   "beside": {
+    "fp_spatial": {
+     "quantity": "fp_spatial",
+     "per_block": [
+      {
+       "block": 10,
+       "d": 0.23750000000000002
+      },
+      {
+       "block": 11,
+       "d": -0.21249999999999997
+      },
+      {
+       "block": 12,
+       "d": -0.6000000000000001
+      },
+      {
+       "block": 13,
+       "d": 0.0625
+      },
+      {
+       "block": 14,
+       "d": 0.375
+      },
+      {
+       "block": 15,
+       "d": 0.2375
+      },
+      {
+       "block": 16,
+       "d": 0.35
+      },
+      {
+       "block": 17,
+       "d": 0.050000000000000044
+      },
+      {
+       "block": 18,
+       "d": 0.09999999999999998
+      },
+      {
+       "block": 19,
+       "d": -0.012499999999999983
+      },
+      {
+       "block": 20,
+       "d": 0.10000000000000003
+      },
+      {
+       "block": 21,
+       "d": 0.2375
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.07708333333333334,
+      "sd": 0.26845694028629397,
+      "low": -0.09348606887810948,
+      "high": 0.24765273554477615,
+      "half_width": 0.17056940221144282
+     }
+    },
+    "return_ok": {
+     "quantity": "return_ok",
+     "per_block": [
+      {
+       "block": 10,
+       "d": 0.0
+      },
+      {
+       "block": 11,
+       "d": 0.0
+      },
+      {
+       "block": 12,
+       "d": 0.0
+      },
+      {
+       "block": 13,
+       "d": 0.0
+      },
+      {
+       "block": 14,
+       "d": 0.0
+      },
+      {
+       "block": 15,
+       "d": 0.0
+      },
+      {
+       "block": 16,
+       "d": 0.0
+      },
+      {
+       "block": 17,
+       "d": 0.0
+      },
+      {
+       "block": 18,
+       "d": 0.0
+      },
+      {
+       "block": 19,
+       "d": 0.0
+      },
+      {
+       "block": 20,
+       "d": 0.0
+      },
+      {
+       "block": 21,
+       "d": 0.0
+      }
+     ],
+     "t_interval": {
+      "n": 12,
+      "mean": 0.0,
+      "sd": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "half_width": 0.0
+     }
+    }
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": {
+     "n": 12,
+     "mean": -0.013047100293621862,
+     "sd": 0.017201933421211957,
+     "low": -0.023976687352939785,
+     "high": -0.0021175132343039405,
+     "half_width": 0.010929587059317921
+    },
+    "fp_weight_2": {
+     "n": 12,
+     "mean": -0.02138390584917742,
+     "sd": 0.014281401791905193,
+     "low": -0.03045787564034346,
+     "high": -0.012309936058011381,
+     "half_width": 0.00907396979116604
+    },
+    "undiscounted": {
+     "n": 12,
+     "mean": -0.00950231481481481,
+     "sd": 0.023132198756166695,
+     "low": -0.024199812705790656,
+     "high": 0.005195183076161035,
+     "half_width": 0.014697497890975846
+    }
+   },
+   "label": "secondary, unadjusted"
+  }
+ },
+ "families": {
+  "quantum": {
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "selection_flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": true
+   },
+   "completed": 12,
+   "algorithmic_failures": [],
+   "auc": {
+    "n": 12,
+    "mean": 0.01267947340605256,
+    "sd": 0.01224825463744408,
+    "low": 0.004897303686713658,
+    "high": 0.020461643125391463,
+    "half_width": 0.007782169719338902
+   },
+   "final_panel": {
+    "J": 0.008841814005013585,
+    "credited_timely": 0.4872776520902445,
+    "tp_timely": 0.4872776520902445,
+    "tp_spatial": 0.7875,
+    "fp_spatial": 0.328125,
+    "return_ok": 1.0,
+    "fixes_attempted": 16.364583333333332,
+    "decisions": 52.338541666666664
+   },
+   "untrained_panel": {
+    "J": -0.009282310432050318,
+    "credited_timely": 0.13916841222309428,
+    "tp_timely": 0.13916841222309428,
+    "tp_spatial": 0.48020833333333335,
+    "fp_spatial": 0.30625,
+    "return_ok": 0.9989583333333334,
+    "fixes_attempted": 18.197916666666668,
+    "decisions": 45.104166666666664
+   },
+   "blocks_final_J_below_untrained": 0,
+   "cpu_s_total": 39042.162241709,
+   "wall_s_total": 39140.855534249975
+  },
+  "bottleneck": {
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "selection_flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": false
+   },
+   "completed": 12,
+   "algorithmic_failures": [],
+   "auc": {
+    "n": 12,
+    "mean": 0.020042546268580992,
+    "sd": 0.008528636729267175,
+    "low": 0.014623709016549897,
+    "high": 0.025461383520612085,
+    "half_width": 0.005418837252031095
+   },
+   "final_panel": {
+    "J": 0.017928578068104897,
+    "credited_timely": 0.6487560718925548,
+    "tp_timely": 0.6487560718925548,
+    "tp_spatial": 0.9416666666666667,
+    "fp_spatial": 0.3260416666666667,
+    "return_ok": 1.0,
+    "fixes_attempted": 14.857291666666667,
+    "decisions": 60.11458333333333
+   },
+   "untrained_panel": {
+    "J": -0.007843405419234131,
+    "credited_timely": 0.12965203578711895,
+    "tp_timely": 0.12965203578711895,
+    "tp_spatial": 0.440625,
+    "fp_spatial": 0.2708333333333333,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.504166666666666,
+    "decisions": 44.90833333333333
+   },
+   "blocks_final_J_below_untrained": 0,
+   "cpu_s_total": 37269.018256653006,
+   "wall_s_total": 37344.27669539701
+  },
+  "mlp": {
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "selection_flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": false
+   },
+   "completed": 12,
+   "algorithmic_failures": [],
+   "auc": {
+    "n": 12,
+    "mean": 0.03586858174738804,
+    "sd": 0.01397323050249104,
+    "low": 0.02699041465202135,
+    "high": 0.04474674884275472,
+    "half_width": 0.008878167095366688
+   },
+   "final_panel": {
+    "J": 0.030253226706627574,
+    "credited_timely": 0.7935164140526296,
+    "tp_timely": 0.7935164140526296,
+    "tp_spatial": 0.9979166666666667,
+    "fp_spatial": 0.24895833333333334,
+    "return_ok": 1.0,
+    "fixes_attempted": 23.3,
+    "decisions": 75.25
+   },
+   "untrained_panel": {
+    "J": -0.009704669447666976,
+    "credited_timely": 0.09614928327532776,
+    "tp_timely": 0.09614928327532776,
+    "tp_spatial": 0.384375,
+    "fp_spatial": 0.2708333333333333,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.04895833333333,
+    "decisions": 43.621875
+   },
+   "blocks_final_J_below_untrained": 0,
+   "cpu_s_total": 38550.96176143899,
+   "wall_s_total": 38643.628864559985
+  },
+  "surrogate625": {
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "selection_flags": {
+    "return_below_0.95": false,
+    "fp_above_p3_rule": true,
+    "fp_above_random": false
+   },
+   "completed": 12,
+   "algorithmic_failures": [],
+   "auc": {
+    "n": 12,
+    "mean": 0.028234060359970916,
+    "sd": 0.01873750037665755,
+    "low": 0.016328820604296267,
+    "high": 0.040139300115645565,
+    "half_width": 0.01190523975567465
+   },
+   "final_panel": {
+    "J": 0.02442401943184502,
+    "credited_timely": 0.7292156831065436,
+    "tp_timely": 0.7292156831065436,
+    "tp_spatial": 1.071875,
+    "fp_spatial": 0.28958333333333336,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.861458333333335,
+    "decisions": 63.63229166666667
+   },
+   "untrained_panel": {
+    "J": -0.008287507407740228,
+    "credited_timely": 0.10603319999400923,
+    "tp_timely": 0.10603319999400923,
+    "tp_spatial": 0.375,
+    "fp_spatial": 0.2552083333333333,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.198958333333334,
+    "decisions": 43.39479166666667
+   },
+   "blocks_final_J_below_untrained": 0,
+   "cpu_s_total": 33934.899965316,
+   "wall_s_total": 34043.31969962697
+  }
+ },
+ "reference_policies": {
+  "p3_rule": {
+   "e1_development": {
+    "weighted_J": 0.21041063188031284,
+    "return_rate": 1.0,
+    "fp_spatial": 0.025,
+    "tp_timely": 2.3921196086535192,
+    "tp_spatial": 4.0,
+    "fixes_attempted": 2.1,
+    "episodes": 40
+   },
+   "e1_evaluation": {
+    "weighted_J": 0.20564463190957744,
+    "return_rate": 1.0,
+    "fp_spatial": 0.075,
+    "tp_timely": 2.388502108982746,
+    "tp_spatial": 3.9125,
+    "fixes_attempted": 2.0625,
+    "episodes": 80
+   }
+  },
+  "random": {
+   "e1_development": {
+    "weighted_J": -0.005247317169591369,
+    "return_rate": 1.0,
+    "fp_spatial": 0.35,
+    "tp_timely": 0.1784676818420971,
+    "tp_spatial": 0.6,
+    "fixes_attempted": 18.8,
+    "episodes": 40
+   },
+   "e1_evaluation": {
+    "weighted_J": -0.0023444631432790906,
+    "return_rate": 1.0,
+    "fp_spatial": 0.2875,
+    "tp_timely": 0.16737478963811023,
+    "tp_spatial": 0.5125,
+    "fixes_attempted": 18.7625,
+    "episodes": 80
+   }
+  }
+ },
+ "jobs": {
+  "quantum__b10": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 10,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.020878979654525544,
+   "curve": [
+    [
+     0,
+     0,
+     -0.002372623436383624
+    ],
+    [
+     3000,
+     3249,
+     -0.006947012390308507
+    ],
+    [
+     6000,
+     6460,
+     0.004657723131922028
+    ],
+    [
+     9000,
+     9093,
+     0.019130108786349086
+    ],
+    [
+     12000,
+     12345,
+     0.025659500562638327
+    ],
+    [
+     15000,
+     15006,
+     0.023530556321127386
+    ],
+    [
+     18000,
+     18239,
+     0.023765965995209692
+    ],
+    [
+     21000,
+     21506,
+     0.026587917185805783
+    ],
+    [
+     24000,
+     24222,
+     0.04135856438995793
+    ],
+    [
+     27000,
+     27481,
+     0.03936809341084283
+    ],
+    [
+     30000,
+     30181,
+     0.02572938173980534
+    ]
+   ],
+   "untrained": {
+    "J": -0.006170389647739765,
+    "credited_timely": 0.13893298634068424,
+    "tp_timely": 0.13893298634068424,
+    "tp_spatial": 0.4875,
+    "fp_spatial": 0.25,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.5375,
+    "decisions": 43.5875
+   },
+   "final": {
+    "J": 0.01191419692071167,
+    "credited_timely": 0.5144555445728101,
+    "tp_timely": 0.5144555445728101,
+    "tp_spatial": 0.85,
+    "fp_spatial": 0.3,
+    "return_ok": 1.0,
+    "fixes_attempted": 12.5125,
+    "decisions": 56.3375
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03094147965452554,
+    "fp_weight_2": 0.0007539796545255408,
+    "undiscounted": 0.05059722222222223
+   },
+   "cost": {
+    "wall_s": 3600.7520156780083,
+    "cpu": {
+     "rollout_s": 1605.7958133589989,
+     "update_s": 17.51691396000109,
+     "checkpoint_s": 0.046003018000004836,
+     "evaluation_s": 1968.8862111649998
+    },
+    "walls": {
+     "rollout_s": 1607.4715186110698,
+     "update_s": 17.52789550507441,
+     "checkpoint_s": 4.377879678097088,
+     "evaluation_s": 1971.030226287985
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      8.19482421875,
+      9.4609375,
+      10.8408203125
+     ]
+    },
+    "policy_decisions": 30181,
+    "process_rusage": {
+     "user_s": 3590.112953,
+     "system_s": 8.514934,
+     "max_rss_kib": 624572
+    }
+   }
+  },
+  "quantum__b11": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 11,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.028610527319944904,
+   "curve": [
+    [
+     0,
+     0,
+     0.002451942500249844
+    ],
+    [
+     3000,
+     3185,
+     0.02365947811000208
+    ],
+    [
+     6000,
+     6373,
+     0.022566860472218505
+    ],
+    [
+     9000,
+     9064,
+     0.026887254477981595
+    ],
+    [
+     12000,
+     12328,
+     0.021833002731374562
+    ],
+    [
+     15000,
+     15523,
+     0.028871072736835566
+    ],
+    [
+     18000,
+     18236,
+     0.03624160296269895
+    ],
+    [
+     21000,
+     21526,
+     0.0320464572882568
+    ],
+    [
+     24000,
+     24273,
+     0.028611858004986182
+    ],
+    [
+     27000,
+     27010,
+     0.04453668327812826
+    ],
+    [
+     30000,
+     30296,
+     0.03925006377368328
+    ]
+   ],
+   "untrained": {
+    "J": -0.0036758692706771803,
+    "credited_timely": 0.19633435312781075,
+    "tp_timely": 0.19633435312781075,
+    "tp_spatial": 0.6125,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 21.4,
+    "decisions": 42.8125
+   },
+   "final": {
+    "J": 0.01671878985855205,
+    "credited_timely": 0.6634382174539368,
+    "tp_timely": 0.6634382174539368,
+    "tp_spatial": 0.9875,
+    "fp_spatial": 0.3625,
+    "return_ok": 1.0,
+    "fixes_attempted": 17.5375,
+    "decisions": 54.775
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.040048027319944904,
+    "fp_weight_2": 0.0057355273199449055,
+    "undiscounted": 0.05779166666666667
+   },
+   "cost": {
+    "wall_s": 3689.282399646996,
+    "cpu": {
+     "rollout_s": 1673.7340500750001,
+     "update_s": 16.642226685998565,
+     "checkpoint_s": 0.046799029000617054,
+     "evaluation_s": 1994.7908220559993
+    },
+    "walls": {
+     "rollout_s": 1675.3308595919516,
+     "update_s": 16.646976953052217,
+     "checkpoint_s": 0.060319598065689206,
+     "evaluation_s": 1996.8993168069865
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      6.91650390625,
+      8.74658203125,
+      10.45947265625
+     ]
+    },
+    "policy_decisions": 30296,
+    "process_rusage": {
+     "user_s": 3683.445194,
+     "system_s": 7.836002,
+     "max_rss_kib": 623888
+    }
+   }
+  },
+  "quantum__b12": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 12,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.018451031535288234,
+   "curve": [
+    [
+     0,
+     0,
+     -0.009121500916579775
+    ],
+    [
+     3000,
+     3235,
+     0.012477240542156435
+    ],
+    [
+     6000,
+     6364,
+     0.012172709815705167
+    ],
+    [
+     9000,
+     9037,
+     0.010039734069353915
+    ],
+    [
+     12000,
+     12295,
+     0.0214119169858749
+    ],
+    [
+     15000,
+     15014,
+     0.015562663253888085
+    ],
+    [
+     18000,
+     18247,
+     0.024169304603564947
+    ],
+    [
+     21000,
+     21503,
+     0.019138346793974196
+    ],
+    [
+     24000,
+     24197,
+     0.030662499948493207
+    ],
+    [
+     27000,
+     27446,
+     0.028445903081378433
+    ],
+    [
+     30000,
+     30178,
+     0.02998149343356593
+    ]
+   ],
+   "untrained": {
+    "J": -0.010388438072862358,
+    "credited_timely": 0.12550811468847753,
+    "tp_timely": 0.12550811468847753,
+    "tp_spatial": 0.475,
+    "fp_spatial": 0.3125,
+    "return_ok": 0.9875,
+    "fixes_attempted": 14.35,
+    "decisions": 45.9125
+   },
+   "final": {
+    "J": 0.008321766729312039,
+    "credited_timely": 0.6122918011276167,
+    "tp_timely": 0.6122918011276167,
+    "tp_spatial": 0.8875,
+    "fp_spatial": 0.4625,
+    "return_ok": 1.0,
+    "fixes_attempted": 13.25,
+    "decisions": 56.9875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.0305551982019549,
+    "fp_weight_2": -0.0057573017980451,
+    "undiscounted": 0.050736111111111114
+   },
+   "cost": {
+    "wall_s": 3903.381897439016,
+    "cpu": {
+     "rollout_s": 1788.0063400579993,
+     "update_s": 17.360720795999043,
+     "checkpoint_s": 0.04585337700008996,
+     "evaluation_s": 2092.2633724490006
+    },
+    "walls": {
+     "rollout_s": 1789.842427350086,
+     "update_s": 17.366158781165723,
+     "checkpoint_s": 0.0576299769745674,
+     "evaluation_s": 2095.7555954269483
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      5.87548828125,
+      7.1240234375,
+      9.44580078125
+     ]
+    },
+    "policy_decisions": 30178,
+    "process_rusage": {
+     "user_s": 3897.069946,
+     "system_s": 6.632029,
+     "max_rss_kib": 626288
+    }
+   }
+  },
+  "quantum__b13": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 13,
+   "status": "completed",
+   "failure": null,
+   "auc": -0.01253918505080252,
+   "curve": [
+    [
+     0,
+     0,
+     -0.02175210984746856
+    ],
+    [
+     3000,
+     3164,
+     -0.015468816804618608
+    ],
+    [
+     6000,
+     6355,
+     -0.01984970808203811
+    ],
+    [
+     9000,
+     9025,
+     -0.011948573061167795
+    ],
+    [
+     12000,
+     12188,
+     -0.014472663330331046
+    ],
+    [
+     15000,
+     15464,
+     -0.010290027852754298
+    ],
+    [
+     18000,
+     18196,
+     -0.011956291297014268
+    ],
+    [
+     21000,
+     21417,
+     -0.009641403957725015
+    ],
+    [
+     24000,
+     24112,
+     -0.00921182754429506
+    ],
+    [
+     27000,
+     27360,
+     -0.007569041003007116
+    ],
+    [
+     30000,
+     30029,
+     -0.00821488530267924
+    ]
+   ],
+   "untrained": {
+    "J": -0.01880340198800118,
+    "credited_timely": 0.12403876421597873,
+    "tp_timely": 0.12403876421597873,
+    "tp_spatial": 0.475,
+    "fp_spatial": 0.4625,
+    "return_ok": 1.0,
+    "fixes_attempted": 17.9,
+    "decisions": 44.0
+   },
+   "final": {
+    "J": -0.009821803314174524,
+    "credited_timely": 0.07320754034485857,
+    "tp_timely": 0.07320754034485857,
+    "tp_spatial": 0.2,
+    "fp_spatial": 0.25,
+    "return_ok": 1.0,
+    "fixes_attempted": 23.55,
+    "decisions": 41.3125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": -0.0026572406063580765,
+    "fp_weight_2": -0.03230307393969142,
+    "undiscounted": 0.009680555555555557
+   },
+   "cost": {
+    "wall_s": 2071.3555173289787,
+    "cpu": {
+     "rollout_s": 1027.0169170759996,
+     "update_s": 20.83264810599951,
+     "checkpoint_s": 0.05052103899995597,
+     "evaluation_s": 1015.996902487
+    },
+    "walls": {
+     "rollout_s": 1030.875209016027,
+     "update_s": 20.858327760040993,
+     "checkpoint_s": 0.06816533496021293,
+     "evaluation_s": 1019.1529324160074
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      12.7109375,
+      12.87548828125,
+      12.732421875
+     ]
+    },
+    "policy_decisions": 30029,
+    "process_rusage": {
+     "user_s": 2063.488352,
+     "system_s": 5.405861,
+     "max_rss_kib": 621680
+    }
+   }
+  },
+  "quantum__b14": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 14,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.011304003269038621,
+   "curve": [
+    [
+     0,
+     0,
+     0.004669277158311681
+    ],
+    [
+     3000,
+     3204,
+     -0.00042444267661945147
+    ],
+    [
+     6000,
+     6472,
+     0.0006475991685629536
+    ],
+    [
+     9000,
+     9089,
+     0.0029830285914664665
+    ],
+    [
+     12000,
+     12353,
+     -0.0002006062714429896
+    ],
+    [
+     15000,
+     15061,
+     0.015124518295368553
+    ],
+    [
+     18000,
+     18292,
+     0.017575329067404808
+    ],
+    [
+     21000,
+     21527,
+     0.017011170484054997
+    ],
+    [
+     24000,
+     24238,
+     0.025284511390715983
+    ],
+    [
+     27000,
+     27513,
+     0.01985201944953291
+    ],
+    [
+     30000,
+     30190,
+     0.0257045332243723
+    ]
+   ],
+   "untrained": {
+    "J": -0.0022900351093885322,
+    "credited_timely": 0.2837793680310064,
+    "tp_timely": 0.2837793680310064,
+    "tp_spatial": 0.8625,
+    "fp_spatial": 0.325,
+    "return_ok": 1.0,
+    "fixes_attempted": 14.5,
+    "decisions": 49.8125
+   },
+   "final": {
+    "J": 0.009294499931899354,
+    "credited_timely": 0.5048009987741884,
+    "tp_timely": 0.5048009987741884,
+    "tp_spatial": 0.9375,
+    "fp_spatial": 0.3375,
+    "return_ok": 1.0,
+    "fixes_attempted": 13.7875,
+    "decisions": 51.325
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.021435947713483068,
+    "fp_weight_2": -0.008959885619850269,
+    "undiscounted": 0.051625000000000004
+   },
+   "cost": {
+    "wall_s": 3118.7114558440226,
+    "cpu": {
+     "rollout_s": 1500.8537259149998,
+     "update_s": 19.48141179200013,
+     "checkpoint_s": 0.05026956900045043,
+     "evaluation_s": 1592.5796839610002
+    },
+    "walls": {
+     "rollout_s": 1503.6369540660235,
+     "update_s": 19.62897305804654,
+     "checkpoint_s": 0.07201653497759253,
+     "evaluation_s": 1594.9957317320223
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      7.8779296875,
+      9.5244140625,
+      11.03759765625
+     ]
+    },
+    "policy_decisions": 30190,
+    "process_rusage": {
+     "user_s": 3108.920026,
+     "system_s": 9.592673,
+     "max_rss_kib": 604852
+    }
+   }
+  },
+  "quantum__b15": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 15,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.019155461063649522,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0014804840738569273
+    ],
+    [
+     3000,
+     3234,
+     0.009526628359485256
+    ],
+    [
+     6000,
+     6461,
+     0.009478857685549302
+    ],
+    [
+     9000,
+     9181,
+     0.01711553427623836
+    ],
+    [
+     12000,
+     12401,
+     0.01719292369276425
+    ],
+    [
+     15000,
+     15169,
+     0.0271016257303325
+    ],
+    [
+     18000,
+     18464,
+     0.01705126386163294
+    ],
+    [
+     21000,
+     21214,
+     0.01618708182959807
+    ],
+    [
+     24000,
+     24509,
+     0.028253736557471286
+    ],
+    [
+     27000,
+     27226,
+     0.03395661338035389
+    ],
+    [
+     30000,
+     30418,
+     0.03286117459999569
+    ]
+   ],
+   "untrained": {
+    "J": -0.006133635879493913,
+    "credited_timely": 0.32709455416910954,
+    "tp_timely": 0.32709455416910954,
+    "tp_spatial": 0.975,
+    "fp_spatial": 0.4375,
+    "return_ok": 1.0,
+    "fixes_attempted": 10.0,
+    "decisions": 52.55
+   },
+   "final": {
+    "J": 0.010121567458330639,
+    "credited_timely": 0.6196882142499515,
+    "tp_timely": 0.6196882142499515,
+    "tp_spatial": 0.9125,
+    "fp_spatial": 0.4375,
+    "return_ok": 1.0,
+    "fixes_attempted": 12.225,
+    "decisions": 55.6
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03078046106364952,
+    "fp_weight_2": -0.004094538936350479,
+    "undiscounted": 0.05258333333333334
+   },
+   "cost": {
+    "wall_s": 3829.1248521519883,
+    "cpu": {
+     "rollout_s": 1813.813750884999,
+     "update_s": 17.607332228000928,
+     "checkpoint_s": 0.05114340700023057,
+     "evaluation_s": 1984.9097667329995
+    },
+    "walls": {
+     "rollout_s": 1818.9015196190448,
+     "update_s": 17.7080106929061,
+     "checkpoint_s": 0.08354574191616848,
+     "evaluation_s": 1992.0507107060112
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      2.85595703125,
+      3.42822265625,
+      6.771484375
+     ]
+    },
+    "policy_decisions": 30418,
+    "process_rusage": {
+     "user_s": 3814.528677,
+     "system_s": 7.471088,
+     "max_rss_kib": 558392
+    }
+   }
+  },
+  "quantum__b16": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 16,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.013538858712953399,
+   "curve": [
+    [
+     0,
+     0,
+     -0.010996931819286473
+    ],
+    [
+     3000,
+     3166,
+     -0.005432454891857385
+    ],
+    [
+     6000,
+     6420,
+     0.006557007387813916
+    ],
+    [
+     9000,
+     9112,
+     0.0054286602561049915
+    ],
+    [
+     12000,
+     12262,
+     0.0025461825559708433
+    ],
+    [
+     15000,
+     15530,
+     0.01465580934393594
+    ],
+    [
+     18000,
+     18266,
+     0.01696072916610249
+    ],
+    [
+     21000,
+     21000,
+     0.021367926896876614
+    ],
+    [
+     24000,
+     24226,
+     0.02936645856609059
+    ],
+    [
+     27000,
+     27420,
+     0.030638079647140538
+    ],
+    [
+     30000,
+     30135,
+     0.03759730822199736
+    ]
+   ],
+   "untrained": {
+    "J": -0.011560582387054045,
+    "credited_timely": 0.06690951703302718,
+    "tp_timely": 0.06690951703302718,
+    "tp_spatial": 0.2875,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 17.2625,
+    "decisions": 44.3625
+   },
+   "final": {
+    "J": 0.018289984305415015,
+    "credited_timely": 0.5917197174974702,
+    "tp_timely": 0.5917197174974702,
+    "tp_spatial": 1.0,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 15.4875,
+    "decisions": 49.725
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.023379136490731176,
+    "fp_weight_2": -0.006141696842602158,
+    "undiscounted": 0.05059722222222223
+   },
+   "cost": {
+    "wall_s": 2869.881054623984,
+    "cpu": {
+     "rollout_s": 1355.9725887040008,
+     "update_s": 17.76245095299936,
+     "checkpoint_s": 0.049194773999852615,
+     "evaluation_s": 1490.1669383380004
+    },
+    "walls": {
+     "rollout_s": 1358.7603873968765,
+     "update_s": 17.777904415881494,
+     "checkpoint_s": 0.06470776896458119,
+     "evaluation_s": 1492.9282057760865
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      8.72216796875,
+      9.7373046875,
+      10.61083984375
+     ]
+    },
+    "policy_decisions": 30135,
+    "process_rusage": {
+     "user_s": 2861.680312,
+     "system_s": 8.451138,
+     "max_rss_kib": 539648
+    }
+   }
+  },
+  "quantum__b17": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 17,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.025027307534428035,
+   "curve": [
+    [
+     0,
+     0,
+     -0.009274701116423003
+    ],
+    [
+     3000,
+     3248,
+     0.0035766671991496607
+    ],
+    [
+     6000,
+     6468,
+     0.01690646569989398
+    ],
+    [
+     9000,
+     9197,
+     0.021406709938332057
+    ],
+    [
+     12000,
+     12429,
+     0.024464565939370925
+    ],
+    [
+     15000,
+     15081,
+     0.025304580153918833
+    ],
+    [
+     18000,
+     18339,
+     0.02657665333476173
+    ],
+    [
+     21000,
+     21035,
+     0.04187858854420219
+    ],
+    [
+     24000,
+     24216,
+     0.03026779955327104
+    ],
+    [
+     27000,
+     27457,
+     0.04066133250764312
+    ],
+    [
+     30000,
+     30235,
+     0.04773412606389659
+    ]
+   ],
+   "untrained": {
+    "J": -0.01100502153109771,
+    "credited_timely": 0.13940961244024122,
+    "tp_timely": 0.13940961244024122,
+    "tp_spatial": 0.5375,
+    "fp_spatial": 0.3375,
+    "return_ok": 1.0,
+    "fixes_attempted": 15.4625,
+    "decisions": 45.75
+   },
+   "final": {
+    "J": 0.02462549545660203,
+    "credited_timely": 0.7432589182188365,
+    "tp_timely": 0.7432589182188365,
+    "tp_spatial": 0.975,
+    "fp_spatial": 0.3,
+    "return_ok": 1.0,
+    "fixes_attempted": 17.9,
+    "decisions": 54.55
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03647175197887247,
+    "fp_weight_2": 0.002138418645539144,
+    "undiscounted": 0.05638888888888889
+   },
+   "cost": {
+    "wall_s": 3553.8488155349914,
+    "cpu": {
+     "rollout_s": 1626.9806973780007,
+     "update_s": 15.064915112000506,
+     "checkpoint_s": 0.0447116989993388,
+     "evaluation_s": 1905.0600749910004
+    },
+    "walls": {
+     "rollout_s": 1629.2542196109134,
+     "update_s": 15.082983692816924,
+     "checkpoint_s": 0.05718228901969269,
+     "evaluation_s": 1909.1158482799947
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      3.34521484375,
+      4.84619140625,
+      7.619140625
+     ]
+    },
+    "policy_decisions": 30235,
+    "process_rusage": {
+     "user_s": 3543.34148,
+     "system_s": 9.528269,
+     "max_rss_kib": 537128
+    }
+   }
+  },
+  "quantum__b18": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 18,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.0052217887002287905,
+   "curve": [
+    [
+     0,
+     0,
+     -0.012684092102547109
+    ],
+    [
+     3000,
+     3200,
+     -0.010595960274169161
+    ],
+    [
+     6000,
+     6392,
+     -0.003751285477478202
+    ],
+    [
+     9000,
+     9095,
+     -0.0009315491349982995
+    ],
+    [
+     12000,
+     12309,
+     -0.008943460414809068
+    ],
+    [
+     15000,
+     15532,
+     0.013708866015716126
+    ],
+    [
+     18000,
+     18301,
+     0.017983029730364336
+    ],
+    [
+     21000,
+     21005,
+     0.00723523430213558
+    ],
+    [
+     24000,
+     24262,
+     0.012398521835510382
+    ],
+    [
+     27000,
+     27017,
+     0.019865845499301336
+    ],
+    [
+     30000,
+     30257,
+     0.02318138194397687
+    ]
+   ],
+   "untrained": {
+    "J": -0.012615057564091942,
+    "credited_timely": 0.03542896384634502,
+    "tp_timely": 0.03542896384634502,
+    "tp_spatial": 0.1875,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 21.0375,
+    "decisions": 42.65
+   },
+   "final": {
+    "J": 0.009800863714985543,
+    "credited_timely": 0.47641554686973975,
+    "tp_timely": 0.47641554686973975,
+    "tp_spatial": 0.95,
+    "fp_spatial": 0.3,
+    "return_ok": 1.0,
+    "fixes_attempted": 12.0375,
+    "decisions": 53.6
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.015263455366895459,
+    "fp_weight_2": -0.014861544633104542,
+    "undiscounted": 0.043750000000000004
+   },
+   "cost": {
+    "wall_s": 3033.458511130011,
+    "cpu": {
+     "rollout_s": 1428.5312188930002,
+     "update_s": 18.37966184900135,
+     "checkpoint_s": 0.04849438300057329,
+     "evaluation_s": 1580.7674755489998
+    },
+    "walls": {
+     "rollout_s": 1430.9638549168303,
+     "update_s": 18.40196386000025,
+     "checkpoint_s": 0.06236997901578434,
+     "evaluation_s": 1583.646841992013
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      7.7373046875,
+      8.9306640625,
+      10.15771484375
+     ]
+    },
+    "policy_decisions": 30257,
+    "process_rusage": {
+     "user_s": 3026.607066,
+     "system_s": 7.257338,
+     "max_rss_kib": 606140
+    }
+   }
+  },
+  "quantum__b19": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 19,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.01895533953368137,
+   "curve": [
+    [
+     0,
+     0,
+     0.00012914596134599727
+    ],
+    [
+     3000,
+     3212,
+     0.007656579497193446
+    ],
+    [
+     6000,
+     6495,
+     0.015970424351872316
+    ],
+    [
+     9000,
+     9303,
+     0.016710067938485236
+    ],
+    [
+     12000,
+     12017,
+     0.019750835233875212
+    ],
+    [
+     15000,
+     15243,
+     0.0224172620049991
+    ],
+    [
+     18000,
+     18529,
+     0.021659636632769666
+    ],
+    [
+     21000,
+     21243,
+     0.025542254504992257
+    ],
+    [
+     24000,
+     24438,
+     0.027264620212038255
+    ],
+    [
+     27000,
+     27171,
+     0.024572544289254657
+    ],
+    [
+     30000,
+     30366,
+     0.015889195381321143
+    ]
+   ],
+   "untrained": {
+    "J": -0.005127617107492085,
+    "credited_timely": 0.17020289206514247,
+    "tp_timely": 0.17020289206514247,
+    "tp_spatial": 0.575,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.1,
+    "decisions": 44.6
+   },
+   "final": {
+    "J": -0.0010067528866742855,
+    "credited_timely": 0.5693784480398628,
+    "tp_timely": 0.5693784480398628,
+    "tp_spatial": 0.9,
+    "fp_spatial": 0.5875,
+    "return_ok": 1.0,
+    "fixes_attempted": 8.7625,
+    "decisions": 60.4875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.031017839533681372,
+    "fp_weight_2": -0.005169660466318631,
+    "undiscounted": 0.05420833333333334
+   },
+   "cost": {
+    "wall_s": 4273.122045219992,
+    "cpu": {
+     "rollout_s": 1958.2546001800004,
+     "update_s": 17.984307506998164,
+     "checkpoint_s": 0.04751539400116567,
+     "evaluation_s": 2278.0974440830005
+    },
+    "walls": {
+     "rollout_s": 1969.7404266149388,
+     "update_s": 18.029968315036967,
+     "checkpoint_s": 0.059530055994400755,
+     "evaluation_s": 2284.9236282479833
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      3.203125,
+      4.4931640625,
+      7.60009765625
+     ]
+    },
+    "policy_decisions": 30366,
+    "process_rusage": {
+     "user_s": 4251.580648,
+     "system_s": 7.836046,
+     "max_rss_kib": 618032
+    }
+   }
+  },
+  "quantum__b20": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 20,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.009837948329417206,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0138533298460652
+    ],
+    [
+     3000,
+     3207,
+     -0.012318770962513964
+    ],
+    [
+     6000,
+     6400,
+     -0.011572780482465444
+    ],
+    [
+     9000,
+     9179,
+     -0.005483019830005326
+    ],
+    [
+     12000,
+     12398,
+     0.006793120268639557
+    ],
+    [
+     15000,
+     15089,
+     0.010926795187662455
+    ],
+    [
+     18000,
+     18327,
+     0.025810095052832178
+    ],
+    [
+     21000,
+     21065,
+     0.0243300720229976
+    ],
+    [
+     24000,
+     24379,
+     0.02835730903929626
+    ],
+    [
+     27000,
+     27066,
+     0.027466577790376326
+    ],
+    [
+     30000,
+     30361,
+     0.021993500260770023
+    ]
+   ],
+   "untrained": {
+    "J": -0.013345831153790748,
+    "credited_timely": 0.03477503923176652,
+    "tp_timely": 0.03477503923176652,
+    "tp_spatial": 0.1625,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 22.6875,
+    "decisions": 41.9125
+   },
+   "final": {
+    "J": 0.008537604329647931,
+    "credited_timely": 0.47867687793366276,
+    "tp_timely": 0.47867687793366276,
+    "tp_spatial": 0.85,
+    "fp_spatial": 0.325,
+    "return_ok": 1.0,
+    "fixes_attempted": 14.9125,
+    "decisions": 51.45
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.018678226107194985,
+    "fp_weight_2": -0.00784260722613835,
+    "undiscounted": 0.03470833333333334
+   },
+   "cost": {
+    "wall_s": 3496.123500769987,
+    "cpu": {
+     "rollout_s": 1643.4163068969995,
+     "update_s": 18.214090739000014,
+     "checkpoint_s": 0.0495468459999131,
+     "evaluation_s": 1822.2346728569996
+    },
+    "walls": {
+     "rollout_s": 1652.5606169770472,
+     "update_s": 18.243558581074467,
+     "checkpoint_s": 0.06570667997584678,
+     "evaluation_s": 1824.868529134983
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      9.37060546875,
+      10.30859375,
+      11.54638671875
+     ]
+    },
+    "policy_decisions": 30361,
+    "process_rusage": {
+     "user_s": 3481.760627,
+     "system_s": 7.062814,
+     "max_rss_kib": 621036
+    }
+   }
+  },
+  "quantum__b21": {
+   "family": "quantum",
+   "role": "HQ",
+   "candidate": "lr3e-3_ent0",
+   "block": 21,
+   "status": "completed",
+   "failure": null,
+   "auc": -0.006288379729722389,
+   "curve": [
+    [
+     0,
+     0,
+     -0.010601619423329618
+    ],
+    [
+     3000,
+     3138,
+     -0.008122108034417192
+    ],
+    [
+     6000,
+     6355,
+     -0.010234451188474863
+    ],
+    [
+     9000,
+     9475,
+     -0.0037936446046452346
+    ],
+    [
+     12000,
+     12160,
+     -0.013274380148693124
+    ],
+    [
+     15000,
+     15398,
+     -0.007575070275995331
+    ],
+    [
+     18000,
+     18023,
+     -0.008333333333333333
+    ],
+    [
+     21000,
+     21225,
+     -0.004722222222222222
+    ],
+    [
+     24000,
+     24385,
+     -0.0011111111111111111
+    ],
+    [
+     27000,
+     27039,
+     -0.0002777777777777778
+    ],
+    [
+     30000,
+     30198,
+     -0.0002777777777777778
+    ]
+   ],
+   "untrained": {
+    "J": -0.010271845472914343,
+    "credited_timely": 0.02760678148754181,
+    "tp_timely": 0.02760678148754181,
+    "tp_spatial": 0.125,
+    "fp_spatial": 0.2125,
+    "return_ok": 1.0,
+    "fixes_attempted": 24.1375,
+    "decisions": 43.3
+   },
+   "final": {
+    "J": -0.0006944444444444444,
+    "credited_timely": 0.0,
+    "tp_timely": 0.0,
+    "tp_spatial": 0.0,
+    "fp_spatial": 0.0125,
+    "return_ok": 1.0,
+    "fixes_attempted": 34.4125,
+    "decisions": 41.9125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": -0.0018439352852779444,
+    "fp_weight_2": -0.015177268618611277,
+    "undiscounted": 0.0024444444444444444
+   },
+   "cost": {
+    "wall_s": 1701.8134688819991,
+    "cpu": {
+     "rollout_s": 799.5009057829998,
+     "update_s": 21.19591817199928,
+     "checkpoint_s": 0.05313367900028876,
+     "evaluation_s": 875.9061777230002
+    },
+    "walls": {
+     "rollout_s": 801.8978145960427,
+     "update_s": 21.21472586292657,
+     "checkpoint_s": 0.0692293600004632,
+     "evaluation_s": 878.2323428259988
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      13.84228515625,
+      13.74560546875,
+      12.69140625
+     ]
+    },
+    "policy_decisions": 30198,
+    "process_rusage": {
+     "user_s": 1698.004543,
+     "system_s": 4.531688,
+     "max_rss_kib": 623612
+    }
+   }
+  },
+  "bottleneck__b10": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 10,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.030344167604353562,
+   "curve": [
+    [
+     0,
+     0,
+     -0.00829563585860006
+    ],
+    [
+     3000,
+     3286,
+     0.006312363970448699
+    ],
+    [
+     6000,
+     6066,
+     0.006905691016169076
+    ],
+    [
+     9000,
+     9241,
+     0.023802688373730892
+    ],
+    [
+     12000,
+     12543,
+     0.022508450977965833
+    ],
+    [
+     15000,
+     15326,
+     0.031371863409349145
+    ],
+    [
+     18000,
+     18101,
+     0.043187627142492725
+    ],
+    [
+     21000,
+     21363,
+     0.05103525402865931
+    ],
+    [
+     24000,
+     24124,
+     0.04333306799119712
+    ],
+    [
+     27000,
+     27466,
+     0.05505655096024071
+    ],
+    [
+     30000,
+     30353,
+     0.04815187220516428
+    ]
+   ],
+   "untrained": {
+    "J": -0.009351439078291704,
+    "credited_timely": 0.06917409659074933,
+    "tp_timely": 0.06917409659074933,
+    "tp_spatial": 0.3375,
+    "fp_spatial": 0.2375,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.75,
+    "decisions": 43.6375
+   },
+   "final": {
+    "J": 0.025407420128227675,
+    "credited_timely": 0.7823335623080981,
+    "tp_timely": 0.7823335623080981,
+    "tp_spatial": 0.9125,
+    "fp_spatial": 0.325,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.4,
+    "decisions": 73.85
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.04115666760435356,
+    "fp_weight_2": 0.008719167604353557,
+    "undiscounted": 0.05359722222222223
+   },
+   "cost": {
+    "wall_s": 3504.0916205520043,
+    "cpu": {
+     "rollout_s": 1500.9347103410018,
+     "update_s": 7.084881937002507,
+     "checkpoint_s": 0.05059691399960542,
+     "evaluation_s": 1988.5630169669998
+    },
+    "walls": {
+     "rollout_s": 1501.999904155091,
+     "update_s": 7.098650580126559,
+     "checkpoint_s": 3.635231609106995,
+     "evaluation_s": 1990.9986461759254
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      9.42333984375,
+      10.0556640625,
+      11.1689453125
+     ]
+    },
+    "policy_decisions": 30353,
+    "process_rusage": {
+     "user_s": 3493.512283,
+     "system_s": 6.994043,
+     "max_rss_kib": 527436
+    }
+   }
+  },
+  "bottleneck__b11": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 11,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.034598382093121514,
+   "curve": [
+    [
+     0,
+     0,
+     -0.013500787086094599
+    ],
+    [
+     3000,
+     3167,
+     0.002557010172229702
+    ],
+    [
+     6000,
+     6372,
+     0.02170716275285444
+    ],
+    [
+     9000,
+     9040,
+     0.03449291325808491
+    ],
+    [
+     12000,
+     12243,
+     0.03694067202888204
+    ],
+    [
+     15000,
+     15509,
+     0.039449937554547836
+    ],
+    [
+     18000,
+     18237,
+     0.05481283397263954
+    ],
+    [
+     21000,
+     21013,
+     0.04712248070860745
+    ],
+    [
+     24000,
+     24304,
+     0.040587328616441445
+    ],
+    [
+     27000,
+     27080,
+     0.045380136587125676
+    ],
+    [
+     30000,
+     30339,
+     0.05936747764569881
+    ]
+   ],
+   "untrained": {
+    "J": -0.013646325262142458,
+    "credited_timely": 0.02936614528143576,
+    "tp_timely": 0.02936614528143576,
+    "tp_spatial": 0.125,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 23.5,
+    "decisions": 41.0375
+   },
+   "final": {
+    "J": 0.03345884019522842,
+    "credited_timely": 0.8022591235141115,
+    "tp_timely": 0.8022591235141115,
+    "tp_spatial": 0.9875,
+    "fp_spatial": 0.2,
+    "return_ok": 1.0,
+    "fixes_attempted": 13.7875,
+    "decisions": 62.6625
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.043883104315343736,
+    "fp_weight_2": 0.016028937648677067,
+    "undiscounted": 0.0572638888888889
+   },
+   "cost": {
+    "wall_s": 2717.5909157459973,
+    "cpu": {
+     "rollout_s": 1177.6230092259989,
+     "update_s": 8.014599706999505,
+     "checkpoint_s": 0.05367581900041474,
+     "evaluation_s": 1527.8478765470002
+    },
+    "walls": {
+     "rollout_s": 1179.0730720389693,
+     "update_s": 8.030184244998964,
+     "checkpoint_s": 0.06000940507510677,
+     "evaluation_s": 1530.0571918279747
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      12.61474609375,
+      12.6201171875,
+      12.7158203125
+     ]
+    },
+    "policy_decisions": 30339,
+    "process_rusage": {
+     "user_s": 2712.429753,
+     "system_s": 5.016193,
+     "max_rss_kib": 527964
+    }
+   }
+  },
+  "bottleneck__b12": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 12,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.016508999008862883,
+   "curve": [
+    [
+     0,
+     0,
+     0.004359015200688586
+    ],
+    [
+     3000,
+     3224,
+     0.011784879168521492
+    ],
+    [
+     6000,
+     6465,
+     0.01067078874933372
+    ],
+    [
+     9000,
+     9176,
+     0.014634543498438134
+    ],
+    [
+     12000,
+     12468,
+     0.013123610683764376
+    ],
+    [
+     15000,
+     15223,
+     0.02919008104477324
+    ],
+    [
+     18000,
+     18501,
+     0.014797638657738548
+    ],
+    [
+     21000,
+     21180,
+     0.014697191001867848
+    ],
+    [
+     24000,
+     24422,
+     0.01773299712660732
+    ],
+    [
+     27000,
+     27126,
+     0.022003375772595334
+    ],
+    [
+     30000,
+     30319,
+     0.028550753569289048
+    ]
+   ],
+   "untrained": {
+    "J": -0.0024839488329029655,
+    "credited_timely": 0.2677889210077466,
+    "tp_timely": 0.2677889210077466,
+    "tp_spatial": 0.825,
+    "fp_spatial": 0.3125,
+    "return_ok": 1.0,
+    "fixes_attempted": 13.3625,
+    "decisions": 48.3
+   },
+   "final": {
+    "J": 0.009510887647472321,
+    "credited_timely": 0.6211959776545017,
+    "tp_timely": 0.6211959776545017,
+    "tp_spatial": 0.95,
+    "fp_spatial": 0.45,
+    "return_ok": 1.0,
+    "fixes_attempted": 14.775,
+    "decisions": 52.8125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.030439554564418443,
+    "fp_weight_2": -0.011352112102248228,
+    "undiscounted": 0.05669444444444445
+   },
+   "cost": {
+    "wall_s": 3471.2079026339925,
+    "cpu": {
+     "rollout_s": 1617.1052679579984,
+     "update_s": 8.41773250700001,
+     "checkpoint_s": 0.05398857600156637,
+     "evaluation_s": 1839.6787282150008
+    },
+    "walls": {
+     "rollout_s": 1619.2523639938736,
+     "update_s": 8.42361328197876,
+     "checkpoint_s": 0.05842411395860836,
+     "evaluation_s": 1843.0811047709722
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      9.71826171875,
+      10.169921875,
+      11.2421875
+     ]
+    },
+    "policy_decisions": 30319,
+    "process_rusage": {
+     "user_s": 3461.6877,
+     "system_s": 7.350024,
+     "max_rss_kib": 526112
+    }
+   }
+  },
+  "bottleneck__b13": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 13,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.018988639897431294,
+   "curve": [
+    [
+     0,
+     0,
+     0.0017867477799769008
+    ],
+    [
+     3000,
+     3220,
+     0.007429762546589277
+    ],
+    [
+     6000,
+     6540,
+     0.01473908943788109
+    ],
+    [
+     9000,
+     9264,
+     0.008365173251951153
+    ],
+    [
+     12000,
+     12526,
+     0.018811182628855908
+    ],
+    [
+     15000,
+     15284,
+     0.023317835955432863
+    ],
+    [
+     18000,
+     18529,
+     0.03360232031296212
+    ],
+    [
+     21000,
+     21159,
+     0.024611736009003148
+    ],
+    [
+     24000,
+     24434,
+     0.021532026540030037
+    ],
+    [
+     27000,
+     27168,
+     0.018353202711223492
+    ],
+    [
+     30000,
+     30419,
+     0.036461391380790825
+    ]
+   ],
+   "untrained": {
+    "J": -0.003570782637514436,
+    "credited_timely": 0.21072591252474016,
+    "tp_timely": 0.21072591252474016,
+    "tp_spatial": 0.6,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.425,
+    "decisions": 46.575
+   },
+   "final": {
+    "J": 0.019142536279660928,
+    "credited_timely": 0.6070656530338967,
+    "tp_timely": 0.6070656530338967,
+    "tp_spatial": 0.9375,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 15.725,
+    "decisions": 59.4125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.029516417675209072,
+    "fp_weight_2": -0.0020669156581242625,
+    "undiscounted": 0.053333333333333344
+   },
+   "cost": {
+    "wall_s": 2833.2405753560015,
+    "cpu": {
+     "rollout_s": 1350.7171976510012,
+     "update_s": 7.9171234360002245,
+     "checkpoint_s": 0.0516905560001053,
+     "evaluation_s": 1470.0330421160002
+    },
+    "walls": {
+     "rollout_s": 1352.5771601851447,
+     "update_s": 7.939594130963087,
+     "checkpoint_s": 0.06069807099993341,
+     "evaluation_s": 1472.2921712529787
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      10.8134765625,
+      11.21484375,
+      11.91015625
+     ]
+    },
+    "policy_decisions": 30419,
+    "process_rusage": {
+     "user_s": 2826.22925,
+     "system_s": 6.762883,
+     "max_rss_kib": 524404
+    }
+   }
+  },
+  "bottleneck__b14": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 14,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.023384707393763207,
+   "curve": [
+    [
+     0,
+     0,
+     0.005867284740112404
+    ],
+    [
+     3000,
+     3154,
+     0.020302722013164867
+    ],
+    [
+     6000,
+     6369,
+     0.019606585409384533
+    ],
+    [
+     9000,
+     9117,
+     0.014280678288392325
+    ],
+    [
+     12000,
+     12264,
+     0.013559077312914048
+    ],
+    [
+     15000,
+     15546,
+     0.011299979908647458
+    ],
+    [
+     18000,
+     18229,
+     0.027731811328939867
+    ],
+    [
+     21000,
+     21464,
+     0.03721653318999486
+    ],
+    [
+     24000,
+     24113,
+     0.037674053675398535
+    ],
+    [
+     27000,
+     27411,
+     0.03141813084202734
+    ],
+    [
+     30000,
+     30110,
+     0.03564771919742403
+    ]
+   ],
+   "untrained": {
+    "J": -0.0010204470374297473,
+    "credited_timely": 0.24413195332626453,
+    "tp_timely": 0.24413195332626453,
+    "tp_spatial": 0.6375,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 15.25,
+    "decisions": 47.8125
+   },
+   "final": {
+    "J": 0.013946491165056684,
+    "credited_timely": 0.7010368409710203,
+    "tp_timely": 0.7010368409710203,
+    "tp_spatial": 0.9625,
+    "fp_spatial": 0.45,
+    "return_ok": 1.0,
+    "fixes_attempted": 11.1125,
+    "decisions": 63.9875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03548887406042988,
+    "fp_weight_2": -0.0008236259395701308,
+    "undiscounted": 0.054791666666666676
+   },
+   "cost": {
+    "wall_s": 3291.4260394999874,
+    "cpu": {
+     "rollout_s": 1542.9178593329993,
+     "update_s": 7.78688107299817,
+     "checkpoint_s": 0.05065271999970955,
+     "evaluation_s": 1734.2175952889997
+    },
+    "walls": {
+     "rollout_s": 1545.6946009940584,
+     "update_s": 7.813201462995494,
+     "checkpoint_s": 0.06517464693752117,
+     "evaluation_s": 1737.4658586119185
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      4.91845703125,
+      7.54296875,
+      10.02197265625
+     ]
+    },
+    "policy_decisions": 30110,
+    "process_rusage": {
+     "user_s": 3281.130101,
+     "system_s": 7.9409980000000004,
+     "max_rss_kib": 514332
+    }
+   }
+  },
+  "bottleneck__b15": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 15,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.008170670893950883,
+   "curve": [
+    [
+     0,
+     0,
+     -0.007119484825920993
+    ],
+    [
+     3000,
+     3138,
+     -0.010165003132060244
+    ],
+    [
+     6000,
+     6328,
+     -0.010492656010535636
+    ],
+    [
+     9000,
+     9509,
+     -0.0036674771264467746
+    ],
+    [
+     12000,
+     12136,
+     7.007084275076163e-05
+    ],
+    [
+     15000,
+     15332,
+     0.010817674038974557
+    ],
+    [
+     18000,
+     18506,
+     0.01448069254540616
+    ],
+    [
+     21000,
+     21161,
+     0.014554696582581256
+    ],
+    [
+     24000,
+     24332,
+     0.02502064510932109
+    ],
+    [
+     27000,
+     27031,
+     0.02991690279608612
+    ],
+    [
+     30000,
+     30316,
+     0.029461811412784093
+    ]
+   ],
+   "untrained": {
+    "J": -0.00913717801620062,
+    "credited_timely": 0.07303079570838883,
+    "tp_timely": 0.07303079570838883,
+    "tp_spatial": 0.35,
+    "fp_spatial": 0.2375,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.7,
+    "decisions": 43.6125
+   },
+   "final": {
+    "J": 0.014246965466323388,
+    "credited_timely": 0.556445378393821,
+    "tp_timely": 0.556445378393821,
+    "tp_spatial": 0.925,
+    "fp_spatial": 0.3,
+    "return_ok": 1.0,
+    "fixes_attempted": 11.1375,
+    "decisions": 58.7375
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.015774837560617552,
+    "fp_weight_2": -0.007037662439382451,
+    "undiscounted": 0.03923611111111112
+   },
+   "cost": {
+    "wall_s": 2890.2947960789897,
+    "cpu": {
+     "rollout_s": 1479.0953124820012,
+     "update_s": 8.26803874699931,
+     "checkpoint_s": 0.05203182599964373,
+     "evaluation_s": 1398.8447236510003
+    },
+    "walls": {
+     "rollout_s": 1481.4004398300603,
+     "update_s": 8.284705920930719,
+     "checkpoint_s": 0.06300096295308322,
+     "evaluation_s": 1400.1678125749168
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      10.59375,
+      11.146484375,
+      11.849609375
+     ]
+    },
+    "policy_decisions": 30316,
+    "process_rusage": {
+     "user_s": 2885.15519,
+     "system_s": 5.134231,
+     "max_rss_kib": 525388
+    }
+   }
+  },
+  "bottleneck__b16": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 16,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.01659762859800521,
+   "curve": [
+    [
+     0,
+     0,
+     -0.008254008181871875
+    ],
+    [
+     3000,
+     3240,
+     -0.0019295537511709155
+    ],
+    [
+     6000,
+     6500,
+     0.011530596622088374
+    ],
+    [
+     9000,
+     9110,
+     0.02089687522820565
+    ],
+    [
+     12000,
+     12344,
+     0.019060254182643937
+    ],
+    [
+     15000,
+     15013,
+     0.019947295452351008
+    ],
+    [
+     18000,
+     18186,
+     0.02043259693299876
+    ],
+    [
+     21000,
+     21419,
+     0.026502804693000242
+    ],
+    [
+     24000,
+     24114,
+     0.016486260824137785
+    ],
+    [
+     27000,
+     27303,
+     0.025017515508423276
+    ],
+    [
+     30000,
+     30019,
+     0.02431728875661985
+    ]
+   ],
+   "untrained": {
+    "J": -0.010367088447003254,
+    "credited_timely": 0.1133924079539414,
+    "tp_timely": 0.1133924079539414,
+    "tp_spatial": 0.4,
+    "fp_spatial": 0.3,
+    "return_ok": 1.0,
+    "fixes_attempted": 21.6125,
+    "decisions": 42.45
+   },
+   "final": {
+    "J": 0.008427472139554072,
+    "credited_timely": 0.5016944985119732,
+    "tp_timely": 0.5016944985119732,
+    "tp_spatial": 0.9125,
+    "fp_spatial": 0.35,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.0875,
+    "decisions": 50.5625
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.02711846193133854,
+    "fp_weight_2": -0.004444038068661458,
+    "undiscounted": 0.05179166666666667
+   },
+   "cost": {
+    "wall_s": 2786.233923582011,
+    "cpu": {
+     "rollout_s": 1307.003779560001,
+     "update_s": 7.515464787001008,
+     "checkpoint_s": 0.05107480000020592,
+     "evaluation_s": 1468.376838216
+    },
+    "walls": {
+     "rollout_s": 1308.3213073439256,
+     "update_s": 7.528335702081677,
+     "checkpoint_s": 0.06063388803158887,
+     "evaluation_s": 1469.9597471239686
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      9.55224609375,
+      10.17431640625,
+      10.82470703125
+     ]
+    },
+    "policy_decisions": 30019,
+    "process_rusage": {
+     "user_s": 2780.905673,
+     "system_s": 6.201455,
+     "max_rss_kib": 487552
+    }
+   }
+  },
+  "bottleneck__b17": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 17,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.019826418827445128,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0029765466613418784
+    ],
+    [
+     3000,
+     3173,
+     0.018216006676604703
+    ],
+    [
+     6000,
+     6378,
+     0.02199193207588167
+    ],
+    [
+     9000,
+     9071,
+     0.01454191065351455
+    ],
+    [
+     12000,
+     12268,
+     0.01989119825197591
+    ],
+    [
+     15000,
+     15481,
+     0.02372620769861322
+    ],
+    [
+     18000,
+     18199,
+     0.01881366124386973
+    ],
+    [
+     21000,
+     21415,
+     0.020279752698226294
+    ],
+    [
+     24000,
+     24108,
+     0.02259839613942727
+    ],
+    [
+     27000,
+     27382,
+     0.02520571511637548
+    ],
+    [
+     30000,
+     30033,
+     0.028975362101266725
+    ]
+   ],
+   "untrained": {
+    "J": -0.007068674996672007,
+    "credited_timely": 0.17276385005990386,
+    "tp_timely": 0.17276385005990386,
+    "tp_spatial": 0.6375,
+    "fp_spatial": 0.3,
+    "return_ok": 1.0,
+    "fixes_attempted": 16.3625,
+    "decisions": 47.55
+   },
+   "final": {
+    "J": 0.00977626797995837,
+    "credited_timely": 0.5759728236392506,
+    "tp_timely": 0.5759728236392506,
+    "tp_spatial": 0.9625,
+    "fp_spatial": 0.4,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.9875,
+    "decisions": 52.15
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03279864104966735,
+    "fp_weight_2": -0.006118025616999323,
+    "undiscounted": 0.052388888888888895
+   },
+   "cost": {
+    "wall_s": 3099.310841413011,
+    "cpu": {
+     "rollout_s": 1470.7536668720018,
+     "update_s": 6.950489629000145,
+     "checkpoint_s": 0.045218925998675275,
+     "evaluation_s": 1617.4705187700004
+    },
+    "walls": {
+     "rollout_s": 1472.4263253038807,
+     "update_s": 6.965528664062731,
+     "checkpoint_s": 0.05287057795794681,
+     "evaluation_s": 1619.5247642769828
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      6.72900390625,
+      8.3994140625,
+      9.888671875
+     ]
+    },
+    "policy_decisions": 30033,
+    "process_rusage": {
+     "user_s": 3092.89811,
+     "system_s": 6.319364,
+     "max_rss_kib": 460844
+    }
+   }
+  },
+  "bottleneck__b18": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 18,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.008660376311700052,
+   "curve": [
+    [
+     0,
+     0,
+     -0.011587800983493367
+    ],
+    [
+     3000,
+     3183,
+     -0.011260681512025725
+    ],
+    [
+     6000,
+     6437,
+     -0.009287603061889594
+    ],
+    [
+     9000,
+     9167,
+     -0.006498853565002618
+    ],
+    [
+     12000,
+     12426,
+     -0.000643408780103375
+    ],
+    [
+     15000,
+     15122,
+     0.00853675481705191
+    ],
+    [
+     18000,
+     18392,
+     0.009201667161699087
+    ],
+    [
+     21000,
+     21027,
+     0.024069246737573734
+    ],
+    [
+     24000,
+     24267,
+     0.032225990175369916
+    ],
+    [
+     27000,
+     27475,
+     0.02955949883830296
+    ],
+    [
+     30000,
+     30145,
+     0.032990105595541844
+    ]
+   ],
+   "untrained": {
+    "J": -0.011929875614683354,
+    "credited_timely": 0.07276223893569962,
+    "tp_timely": 0.07276223893569962,
+    "tp_spatial": 0.2625,
+    "fp_spatial": 0.2875,
+    "return_ok": 1.0,
+    "fixes_attempted": 17.925,
+    "decisions": 44.425
+   },
+   "final": {
+    "J": 0.013847982663880317,
+    "credited_timely": 0.6617636879498457,
+    "tp_timely": 0.6617636879498457,
+    "tp_spatial": 0.8875,
+    "fp_spatial": 0.4125,
+    "return_ok": 1.0,
+    "fixes_attempted": 10.9625,
+    "decisions": 63.65
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.01967426520058894,
+    "fp_weight_2": -0.013367401466077728,
+    "undiscounted": 0.0446388888888889
+   },
+   "cost": {
+    "wall_s": 2645.856037413003,
+    "cpu": {
+     "rollout_s": 1258.2955384060006,
+     "update_s": 7.868635768999766,
+     "checkpoint_s": 0.05123869599970998,
+     "evaluation_s": 1372.9400896109996
+    },
+    "walls": {
+     "rollout_s": 1261.5222074400226,
+     "update_s": 7.872887676028768,
+     "checkpoint_s": 0.06359881997923367,
+     "evaluation_s": 1376.0391669759993
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      10.3291015625,
+      10.63916015625,
+      11.0634765625
+     ]
+    },
+    "policy_decisions": 30145,
+    "process_rusage": {
+     "user_s": 2635.873971,
+     "system_s": 7.353249,
+     "max_rss_kib": 464636
+    }
+   }
+  },
+  "bottleneck__b19": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 19,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.011419039008005585,
+   "curve": [
+    [
+     0,
+     0,
+     -0.007835729749174817
+    ],
+    [
+     3000,
+     3183,
+     -0.002262163277616924
+    ],
+    [
+     6000,
+     6367,
+     -0.005275082259893512
+    ],
+    [
+     9000,
+     9019,
+     -0.0005900128960269995
+    ],
+    [
+     12000,
+     12249,
+     -0.0015519074428966783
+    ],
+    [
+     15000,
+     15502,
+     0.009951445354889801
+    ],
+    [
+     18000,
+     18151,
+     0.011063266722813762
+    ],
+    [
+     21000,
+     21415,
+     0.02416822419527473
+    ],
+    [
+     24000,
+     24051,
+     0.023085904957329567
+    ],
+    [
+     27000,
+     27235,
+     0.038387005020720094
+    ],
+    [
+     30000,
+     30481,
+     0.04226314916009882
+    ]
+   ],
+   "untrained": {
+    "J": -0.009584831093234259,
+    "credited_timely": 0.052473040321783314,
+    "tp_timely": 0.052473040321783314,
+    "tp_spatial": 0.1875,
+    "fp_spatial": 0.225,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.3625,
+    "decisions": 44.6
+   },
+   "final": {
+    "J": 0.0253728015583951,
+    "credited_timely": 0.5942104280511118,
+    "tp_timely": 0.5942104280511118,
+    "tp_spatial": 0.9375,
+    "fp_spatial": 0.1375,
+    "return_ok": 1.0,
+    "fixes_attempted": 16.05,
+    "decisions": 51.5625
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.017828761230227808,
+    "fp_weight_2": -0.0014004054364388618,
+    "undiscounted": 0.041291666666666664
+   },
+   "cost": {
+    "wall_s": 3107.0654854020104,
+    "cpu": {
+     "rollout_s": 1500.0443973850001,
+     "update_s": 8.314101795999065,
+     "checkpoint_s": 0.056643535000072465,
+     "evaluation_s": 1589.099808395
+    },
+    "walls": {
+     "rollout_s": 1507.1680165860744,
+     "update_s": 8.327257841767278,
+     "checkpoint_s": 0.07336912796017714,
+     "evaluation_s": 1591.114034240949
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      11.3876953125,
+      11.88037109375,
+      12.45263671875
+     ]
+    },
+    "policy_decisions": 30481,
+    "process_rusage": {
+     "user_s": 3096.70804,
+     "system_s": 5.000026,
+     "max_rss_kib": 525760
+    }
+   }
+  },
+  "bottleneck__b20": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 20,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.029843564750110112,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0011929310802113939
+    ],
+    [
+     3000,
+     3236,
+     0.01877556483488444
+    ],
+    [
+     6000,
+     6437,
+     0.021239252696434095
+    ],
+    [
+     9000,
+     9168,
+     0.02777564396973747
+    ],
+    [
+     12000,
+     12472,
+     0.03402726880938686
+    ],
+    [
+     15000,
+     15171,
+     0.023042631552879923
+    ],
+    [
+     18000,
+     18396,
+     0.036219156288427055
+    ],
+    [
+     21000,
+     21085,
+     0.0370868124646152
+    ],
+    [
+     24000,
+     24268,
+     0.03908296140378274
+    ],
+    [
+     27000,
+     27060,
+     0.03838552739851924
+    ],
+    [
+     30000,
+     30305,
+     0.04679458724507957
+    ]
+   ],
+   "untrained": {
+    "J": -0.005433081925132121,
+    "credited_timely": 0.15220452534762183,
+    "tp_timely": 0.15220452534762183,
+    "tp_spatial": 0.525,
+    "fp_spatial": 0.25,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.0625,
+    "decisions": 44.1125
+   },
+   "final": {
+    "J": 0.02455911702817473,
+    "credited_timely": 0.7795641065071451,
+    "tp_timely": 0.7795641065071451,
+    "tp_spatial": 0.9875,
+    "fp_spatial": 0.3375,
+    "return_ok": 1.0,
+    "fixes_attempted": 10.675,
+    "decisions": 69.7875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.04028800919455455,
+    "fp_weight_2": 0.008954675861221222,
+    "undiscounted": 0.05850000000000001
+   },
+   "cost": {
+    "wall_s": 3513.4443331480143,
+    "cpu": {
+     "rollout_s": 1605.7127921330002,
+     "update_s": 8.090489526001562,
+     "checkpoint_s": 0.05084889900054401,
+     "evaluation_s": 1893.4062517399993
+    },
+    "walls": {
+     "rollout_s": 1607.8949268010037,
+     "update_s": 8.09456153807696,
+     "checkpoint_s": 0.06952665298013017,
+     "evaluation_s": 1896.9990406360012
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      9.369140625,
+      10.2607421875,
+      11.51025390625
+     ]
+    },
+    "policy_decisions": 30305,
+    "process_rusage": {
+     "user_s": 3500.660778,
+     "system_s": 10.633274,
+     "max_rss_kib": 527952
+    }
+   }
+  },
+  "bottleneck__b21": {
+   "family": "bottleneck",
+   "role": "C-matched",
+   "candidate": "lr3e-3_ent0",
+   "block": 21,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.022167960836222474,
+   "curve": [
+    [
+     0,
+     0,
+     -0.00851017401003091
+    ],
+    [
+     3000,
+     3145,
+     -1.1821624831102732e-05
+    ],
+    [
+     6000,
+     6359,
+     0.024931479733735537
+    ],
+    [
+     9000,
+     9556,
+     0.029601366449837786
+    ],
+    [
+     12000,
+     12223,
+     0.024838360374253785
+    ],
+    [
+     15000,
+     15475,
+     0.020095631130164146
+    ],
+    [
+     18000,
+     18164,
+     0.021598378307746788
+    ],
+    [
+     21000,
+     21479,
+     0.022165288159324573
+    ],
+    [
+     24000,
+     24211,
+     0.037597849018941594
+    ],
+    [
+     27000,
+     27413,
+     0.026994573499139012
+    ],
+    [
+     30000,
+     30161,
+     0.036247180637856175
+    ]
+   ],
+   "untrained": {
+    "J": -0.010527192089602653,
+    "credited_timely": 0.09801054238715226,
+    "tp_timely": 0.09801054238715226,
+    "tp_spatial": 0.4,
+    "fp_spatial": 0.2875,
+    "return_ok": 1.0,
+    "fixes_attempted": 16.7375,
+    "decisions": 44.7875
+   },
+   "final": {
+    "J": 0.017446154565326773,
+    "credited_timely": 0.601530782175882,
+    "tp_timely": 0.601530782175882,
+    "tp_spatial": 0.9375,
+    "fp_spatial": 0.2875,
+    "return_ok": 1.0,
+    "fixes_attempted": 16.5875,
+    "decisions": 62.2
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03512629416955581,
+    "fp_weight_2": -0.003748705830444195,
+    "undiscounted": 0.052916666666666674
+   },
+   "cost": {
+    "wall_s": 3484.514224571991,
+    "cpu": {
+     "rollout_s": 1561.7030042890012,
+     "update_s": 7.6279788039989995,
+     "checkpoint_s": 0.05006294300033032,
+     "evaluation_s": 1902.1590895719996
+    },
+    "walls": {
+     "rollout_s": 1571.4777830940147,
+     "update_s": 7.629466762038646,
+     "checkpoint_s": 0.0597647349932231,
+     "evaluation_s": 1904.9723774469749
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      9.365234375,
+      10.35888671875,
+      11.58349609375
+     ]
+    },
+    "policy_decisions": 30161,
+    "process_rusage": {
+     "user_s": 3466.420685,
+     "system_s": 9.398098,
+     "max_rss_kib": 527544
+    }
+   }
+  },
+  "mlp__b10": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 10,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.04570196475832491,
+   "curve": [
+    [
+     0,
+     0,
+     -0.00916936517812933
+    ],
+    [
+     3000,
+     3244,
+     0.00548450988019563
+    ],
+    [
+     6000,
+     6511,
+     0.025566168366255866
+    ],
+    [
+     9000,
+     9239,
+     0.03608890627292524
+    ],
+    [
+     12000,
+     12452,
+     0.05942426810809137
+    ],
+    [
+     15000,
+     15135,
+     0.04963984352535156
+    ],
+    [
+     18000,
+     18413,
+     0.06197743463419539
+    ],
+    [
+     21000,
+     21161,
+     0.06390734255776508
+    ],
+    [
+     24000,
+     24343,
+     0.05578438200194047
+    ],
+    [
+     27000,
+     27040,
+     0.06799494143634183
+    ],
+    [
+     30000,
+     30246,
+     0.0714730667785027
+    ]
+   ],
+   "untrained": {
+    "J": -0.010939186569664163,
+    "credited_timely": 0.07809464174604505,
+    "tp_timely": 0.07809464174604505,
+    "tp_spatial": 0.35,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.9375,
+    "decisions": 43.0875
+   },
+   "final": {
+    "J": 0.04310816673656419,
+    "credited_timely": 0.8634470012581553,
+    "tp_timely": 0.8634470012581553,
+    "tp_spatial": 0.975,
+    "fp_spatial": 0.0875,
+    "return_ok": 1.0,
+    "fixes_attempted": 21.8625,
+    "decisions": 76.3375
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.052570020313880465,
+    "fp_weight_2": 0.031965853647213806,
+    "undiscounted": 0.06526388888888889
+   },
+   "cost": {
+    "wall_s": 2762.8257003430044,
+    "cpu": {
+     "rollout_s": 1212.002038190998,
+     "update_s": 8.131747438999668,
+     "checkpoint_s": 0.05866234799940395,
+     "evaluation_s": 1539.0431263029996
+    },
+    "walls": {
+     "rollout_s": 1213.4343540989212,
+     "update_s": 8.140450408129254,
+     "checkpoint_s": 0.07103560300311074,
+     "evaluation_s": 1540.8119775230298
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      11.9677734375,
+      12.45166015625,
+      12.654296875
+     ]
+    },
+    "policy_decisions": 30246,
+    "process_rusage": {
+     "user_s": 2758.81824,
+     "system_s": 4.566189,
+     "max_rss_kib": 529656
+    }
+   }
+  },
+  "mlp__b11": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 11,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.03836615762570861,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0077504298943295805
+    ],
+    [
+     3000,
+     3253,
+     0.02426016128916875
+    ],
+    [
+     6000,
+     6560,
+     0.02615758022302797
+    ],
+    [
+     9000,
+     9259,
+     0.030455737306834447
+    ],
+    [
+     12000,
+     12447,
+     0.0405337153000173
+    ],
+    [
+     15000,
+     15221,
+     0.04158520410007402
+    ],
+    [
+     18000,
+     18414,
+     0.05360903465939144
+    ],
+    [
+     21000,
+     21117,
+     0.04189689323645537
+    ],
+    [
+     24000,
+     24347,
+     0.06047008247473884
+    ],
+    [
+     27000,
+     27118,
+     0.051538547257621456
+    ],
+    [
+     30000,
+     30442,
+     0.03405967071384256
+    ]
+   ],
+   "untrained": {
+    "J": -0.01005235201728932,
+    "credited_timely": 0.10655766368879221,
+    "tp_timely": 0.10655766368879221,
+    "tp_spatial": 0.4,
+    "fp_spatial": 0.2875,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.5125,
+    "decisions": 43.9375
+   },
+   "final": {
+    "J": 0.016599794196151596,
+    "credited_timely": 0.7112962955307287,
+    "tp_timely": 0.7112962955307287,
+    "tp_spatial": 0.9125,
+    "fp_spatial": 0.4125,
+    "return_ok": 1.0,
+    "fixes_attempted": 10.8,
+    "decisions": 78.8375
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.04701199095904193,
+    "fp_weight_2": 0.021074490959041937,
+    "undiscounted": 0.07065277777777779
+   },
+   "cost": {
+    "wall_s": 3958.6378128610086,
+    "cpu": {
+     "rollout_s": 1802.260199008999,
+     "update_s": 7.93848391300061,
+     "checkpoint_s": 0.04661733799935197,
+     "evaluation_s": 2139.745776478
+    },
+    "walls": {
+     "rollout_s": 1805.5830897118722,
+     "update_s": 7.9435336139576975,
+     "checkpoint_s": 0.05562040602671914,
+     "evaluation_s": 2144.685699280002
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      4.8984375,
+      6.64111328125,
+      9.1455078125
+     ]
+    },
+    "policy_decisions": 30442,
+    "process_rusage": {
+     "user_s": 3946.244717,
+     "system_s": 7.572851,
+     "max_rss_kib": 529564
+    }
+   }
+  },
+  "mlp__b12": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 12,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.042933173947367335,
+   "curve": [
+    [
+     0,
+     0,
+     -0.006408154585870879
+    ],
+    [
+     3000,
+     3273,
+     0.03269306301079861
+    ],
+    [
+     6000,
+     6504,
+     0.02522880968274226
+    ],
+    [
+     9000,
+     9212,
+     0.028625458825794994
+    ],
+    [
+     12000,
+     12471,
+     0.04517431166061803
+    ],
+    [
+     15000,
+     15171,
+     0.026518688958938115
+    ],
+    [
+     18000,
+     18507,
+     0.04005564938936207
+    ],
+    [
+     21000,
+     21184,
+     0.05617468372812903
+    ],
+    [
+     24000,
+     24494,
+     0.05761956811807541
+    ],
+    [
+     27000,
+     27211,
+     0.08961309160786791
+    ],
+    [
+     30000,
+     30002,
+     0.06166498356856475
+    ]
+   ],
+   "untrained": {
+    "J": -0.009213429949502631,
+    "credited_timely": 0.09665826090895262,
+    "tp_timely": 0.09665826090895262,
+    "tp_spatial": 0.3875,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.525,
+    "decisions": 43.0625
+   },
+   "final": {
+    "J": 0.030728114730352963,
+    "credited_timely": 1.6031060651463533,
+    "tp_timely": 1.6031060651463533,
+    "tp_spatial": 2.2125,
+    "fp_spatial": 1.05,
+    "return_ok": 1.0,
+    "fixes_attempted": 23.0,
+    "decisions": 77.85
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.06345400728070068,
+    "fp_weight_2": 0.001891507280700667,
+    "undiscounted": 0.09362500000000001
+   },
+   "cost": {
+    "wall_s": 3645.9489384359913,
+    "cpu": {
+     "rollout_s": 1637.083929884001,
+     "update_s": 8.484886438999666,
+     "checkpoint_s": 0.05147579899967303,
+     "evaluation_s": 1983.4173501049997
+    },
+    "walls": {
+     "rollout_s": 1642.9238938290218,
+     "update_s": 8.485540871159174,
+     "checkpoint_s": 0.055875081015983596,
+     "evaluation_s": 1994.1063734240306
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      7.7861328125,
+      9.17626953125,
+      10.677734375
+     ]
+    },
+    "policy_decisions": 30002,
+    "process_rusage": {
+     "user_s": 3622.693966,
+     "system_s": 10.565993,
+     "max_rss_kib": 529028
+    }
+   }
+  },
+  "mlp__b13": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 13,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.03833117514313925,
+   "curve": [
+    [
+     0,
+     0,
+     -0.006473994656936304
+    ],
+    [
+     3000,
+     3285,
+     -0.001715675510727432
+    ],
+    [
+     6000,
+     6531,
+     0.025250320914489283
+    ],
+    [
+     9000,
+     9242,
+     0.03352978144642714
+    ],
+    [
+     12000,
+     12497,
+     0.03251371886579969
+    ],
+    [
+     15000,
+     15154,
+     0.04658378071498573
+    ],
+    [
+     18000,
+     18448,
+     0.050647281296787694
+    ],
+    [
+     21000,
+     21137,
+     0.0537897428890189
+    ],
+    [
+     24000,
+     24325,
+     0.0577802370714173
+    ],
+    [
+     27000,
+     27090,
+     0.056848758954901296
+    ],
+    [
+     30000,
+     30404,
+     0.06264160423352215
+    ]
+   ],
+   "untrained": {
+    "J": -0.009254579993918523,
+    "credited_timely": 0.09591756010946657,
+    "tp_timely": 0.09591756010946657,
+    "tp_spatial": 0.375,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.825,
+    "decisions": 43.5375
+   },
+   "final": {
+    "J": 0.03498433597928468,
+    "credited_timely": 0.8297180476271242,
+    "tp_timely": 0.8297180476271242,
+    "tp_spatial": 0.9875,
+    "fp_spatial": 0.2,
+    "return_ok": 1.0,
+    "fixes_attempted": 14.2125,
+    "decisions": 70.5875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.04497006403202815,
+    "fp_weight_2": 0.025053397365361475,
+    "undiscounted": 0.06355555555555556
+   },
+   "cost": {
+    "wall_s": 3072.6045467819786,
+    "cpu": {
+     "rollout_s": 1343.209581849,
+     "update_s": 7.770733508001257,
+     "checkpoint_s": 0.05217362400007142,
+     "evaluation_s": 1715.2788778239997
+    },
+    "walls": {
+     "rollout_s": 1345.8332937128725,
+     "update_s": 7.787105755094672,
+     "checkpoint_s": 0.06656982394633815,
+     "evaluation_s": 1718.5519041529915
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      8.46044921875,
+      9.88232421875,
+      11.2236328125
+     ]
+    },
+    "policy_decisions": 30404,
+    "process_rusage": {
+     "user_s": 3064.544798,
+     "system_s": 6.082025,
+     "max_rss_kib": 527700
+    }
+   }
+  },
+  "mlp__b14": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 14,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.045100190659076986,
+   "curve": [
+    [
+     0,
+     0,
+     -0.006829826791572271
+    ],
+    [
+     3000,
+     3166,
+     0.013582967131467947
+    ],
+    [
+     6000,
+     6393,
+     0.026842045082278224
+    ],
+    [
+     9000,
+     9102,
+     0.034219983862423996
+    ],
+    [
+     12000,
+     12361,
+     0.054805119190812795
+    ],
+    [
+     15000,
+     15084,
+     0.05803651237399308
+    ],
+    [
+     18000,
+     18281,
+     0.05888543624726511
+    ],
+    [
+     21000,
+     21014,
+     0.06213524423942316
+    ],
+    [
+     24000,
+     24240,
+     0.06115283125971788
+    ],
+    [
+     27000,
+     27544,
+     0.05089332020832926
+    ],
+    [
+     30000,
+     30312,
+     0.06772672078168905
+    ]
+   ],
+   "untrained": {
+    "J": -0.009476975078066002,
+    "credited_timely": 0.10441444859481197,
+    "tp_timely": 0.10441444859481197,
+    "tp_spatial": 0.4125,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.1,
+    "decisions": 43.7625
+   },
+   "final": {
+    "J": 0.04232920048855566,
+    "credited_timely": 0.8369256087940018,
+    "tp_timely": 0.8369256087940018,
+    "tp_spatial": 0.975,
+    "fp_spatial": 0.075,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.6625,
+    "decisions": 73.0875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.052100190659076985,
+    "fp_weight_2": 0.031100190659076984,
+    "undiscounted": 0.0675
+   },
+   "cost": {
+    "wall_s": 2666.730036640016,
+    "cpu": {
+     "rollout_s": 1084.4646333330008,
+     "update_s": 8.413511496998098,
+     "checkpoint_s": 0.05597337799972513,
+     "evaluation_s": 1569.2413435470007
+    },
+    "walls": {
+     "rollout_s": 1086.3224366028735,
+     "update_s": 8.432247649150668,
+     "checkpoint_s": 0.07551931394846179,
+     "evaluation_s": 1571.5153606739768
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      11.19677734375,
+      11.65673828125,
+      12.17529296875
+     ]
+    },
+    "policy_decisions": 30312,
+    "process_rusage": {
+     "user_s": 2660.571678,
+     "system_s": 5.520125,
+     "max_rss_kib": 527272
+    }
+   }
+  },
+  "mlp__b15": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 15,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.045681812111921266,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0015119258598776163
+    ],
+    [
+     3000,
+     3158,
+     0.023284922700164565
+    ],
+    [
+     6000,
+     6464,
+     0.027353837133378318
+    ],
+    [
+     9000,
+     9156,
+     0.045148687040293456
+    ],
+    [
+     12000,
+     12422,
+     0.06186690164089398
+    ],
+    [
+     15000,
+     15074,
+     0.06365962704773769
+    ],
+    [
+     18000,
+     18250,
+     0.06287312593121622
+    ],
+    [
+     21000,
+     21496,
+     0.061632253837373065
+    ],
+    [
+     24000,
+     24218,
+     0.06513347453674141
+    ],
+    [
+     27000,
+     27027,
+     0.02276485835489893
+    ],
+    [
+     30000,
+     30298,
+     0.04771279165290763
+    ]
+   ],
+   "untrained": {
+    "J": -0.00563245366242351,
+    "credited_timely": 0.1361158340763768,
+    "tp_timely": 0.1361158340763768,
+    "tp_spatial": 0.5125,
+    "fp_spatial": 0.2375,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.1375,
+    "decisions": 44.9125
+   },
+   "final": {
+    "J": 0.02982049478306726,
+    "credited_timely": 0.5992689060952107,
+    "tp_timely": 0.5992689060952107,
+    "tp_spatial": 0.8875,
+    "fp_spatial": 0.0625,
+    "return_ok": 1.0,
+    "fixes_attempted": 30.5125,
+    "decisions": 86.05
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.05317486766747682,
+    "fp_weight_2": 0.030695701000810153,
+    "undiscounted": 0.0750138888888889
+   },
+   "cost": {
+    "wall_s": 3496.4877920500003,
+    "cpu": {
+     "rollout_s": 1383.4792933599992,
+     "update_s": 8.100934214999057,
+     "checkpoint_s": 0.05227968999951127,
+     "evaluation_s": 2097.6236885670005
+    },
+    "walls": {
+     "rollout_s": 1386.4090548329987,
+     "update_s": 8.112457797047682,
+     "checkpoint_s": 0.068864253902575,
+     "evaluation_s": 2101.5116590010584
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      3.53076171875,
+      5.43310546875,
+      8.67822265625
+     ]
+    },
+    "policy_decisions": 30298,
+    "process_rusage": {
+     "user_s": 3483.862597,
+     "system_s": 9.382719,
+     "max_rss_kib": 526292
+    }
+   }
+  },
+  "mlp__b16": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 16,
+   "status": "completed",
+   "failure": null,
+   "auc": -0.0011587779251981897,
+   "curve": [
+    [
+     0,
+     0,
+     -0.006223157715999684
+    ],
+    [
+     3000,
+     3156,
+     -0.0059762003939820545
+    ],
+    [
+     6000,
+     6362,
+     -0.001388888888888889
+    ],
+    [
+     9000,
+     9005,
+     -0.0011111111111111111
+    ],
+    [
+     12000,
+     12207,
+     0.0
+    ],
+    [
+     15000,
+     15323,
+     0.0
+    ],
+    [
+     18000,
+     18483,
+     0.0
+    ],
+    [
+     21000,
+     21174,
+     0.0
+    ],
+    [
+     24000,
+     24432,
+     0.0
+    ],
+    [
+     27000,
+     27098,
+     0.0
+    ],
+    [
+     30000,
+     30310,
+     0.0
+    ]
+   ],
+   "untrained": {
+    "J": -0.009097806905833134,
+    "credited_timely": 0.09873947569500356,
+    "tp_timely": 0.09873947569500356,
+    "tp_spatial": 0.4125,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.1375,
+    "decisions": 43.2625
+   },
+   "final": {
+    "J": 0.0,
+    "credited_timely": 0.0,
+    "tp_timely": 0.0,
+    "tp_spatial": 0.0,
+    "fp_spatial": 0.0,
+    "return_ok": 1.0,
+    "fixes_attempted": 42.65,
+    "decisions": 46.8875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": -0.0003393334807537451,
+    "fp_weight_2": -0.0027976668140870784,
+    "undiscounted": 0.0004166666666666668
+   },
+   "cost": {
+    "wall_s": 818.0905176219821,
+    "cpu": {
+     "rollout_s": 389.6155495379999,
+     "update_s": 8.892362212000464,
+     "checkpoint_s": 0.057607665000031893,
+     "evaluation_s": 417.83881128300004
+    },
+    "walls": {
+     "rollout_s": 390.35808891800116,
+     "update_s": 8.906172640039586,
+     "checkpoint_s": 0.08191495598293841,
+     "evaluation_s": 418.3670456520049
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      14.1728515625,
+      13.4453125,
+      11.07373046875
+     ]
+    },
+    "policy_decisions": 30310,
+    "process_rusage": {
+     "user_s": 817.959868,
+     "system_s": 2.7863379999999998,
+     "max_rss_kib": 515028
+    }
+   }
+  },
+  "mlp__b17": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 17,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.041785525939670574,
+   "curve": [
+    [
+     0,
+     0,
+     -0.009735449333175269
+    ],
+    [
+     3000,
+     3215,
+     0.011585949959738988
+    ],
+    [
+     6000,
+     6399,
+     0.0315936031763793
+    ],
+    [
+     9000,
+     9137,
+     0.04369381804317105
+    ],
+    [
+     12000,
+     12376,
+     0.042390953102500996
+    ],
+    [
+     15000,
+     15172,
+     0.04974289345111287
+    ],
+    [
+     18000,
+     18450,
+     0.06241155083731888
+    ],
+    [
+     21000,
+     21191,
+     0.06678501983222661
+    ],
+    [
+     24000,
+     24481,
+     0.0446010540968157
+    ],
+    [
+     27000,
+     27283,
+     0.04771697695107195
+    ],
+    [
+     30000,
+     30119,
+     0.04440232922591415
+    ]
+   ],
+   "untrained": {
+    "J": -0.011292989166567876,
+    "credited_timely": 0.08422619500177823,
+    "tp_timely": 0.08422619500177823,
+    "tp_spatial": 0.3375,
+    "fp_spatial": 0.2875,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.95,
+    "decisions": 43.2
+   },
+   "final": {
+    "J": 0.024105622432863013,
+    "credited_timely": 0.7839012037915343,
+    "tp_timely": 0.7839012037915343,
+    "tp_spatial": 0.9125,
+    "fp_spatial": 0.35,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.5,
+    "decisions": 79.4875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.05037580371744835,
+    "fp_weight_2": 0.02460497038411502,
+    "undiscounted": 0.06870833333333333
+   },
+   "cost": {
+    "wall_s": 3673.736815240991,
+    "cpu": {
+     "rollout_s": 1475.9943787339994,
+     "update_s": 7.092328982998865,
+     "checkpoint_s": 0.04632192299912807,
+     "evaluation_s": 2178.3561950339995
+    },
+    "walls": {
+     "rollout_s": 1479.440385630005,
+     "update_s": 7.096344539051643,
+     "checkpoint_s": 0.061169994063675404,
+     "evaluation_s": 2186.786212659121
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      2.3525390625,
+      3.9677734375,
+      6.9580078125
+     ]
+    },
+    "policy_decisions": 30119,
+    "process_rusage": {
+     "user_s": 3658.16672,
+     "system_s": 7.621459,
+     "max_rss_kib": 488132
+    }
+   }
+  },
+  "mlp__b18": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 18,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.022985605366000132,
+   "curve": [
+    [
+     0,
+     0,
+     -0.009982387991232114
+    ],
+    [
+     3000,
+     3221,
+     -0.0076989482056920334
+    ],
+    [
+     6000,
+     6396,
+     -0.008447650311786256
+    ],
+    [
+     9000,
+     9121,
+     -0.004844474282369687
+    ],
+    [
+     12000,
+     12283,
+     0.01258332513866502
+    ],
+    [
+     15000,
+     15524,
+     0.040197322112349956
+    ],
+    [
+     18000,
+     18173,
+     0.03734083732191988
+    ],
+    [
+     21000,
+     21433,
+     0.03499761036543256
+    ],
+    [
+     24000,
+     24212,
+     0.03685236812513147
+    ],
+    [
+     27000,
+     27450,
+     0.06510642538070695
+    ],
+    [
+     30000,
+     30143,
+     0.057520864022519075
+    ]
+   ],
+   "untrained": {
+    "J": -0.011447325827853403,
+    "credited_timely": 0.056448135098638726,
+    "tp_timely": 0.056448135098638726,
+    "tp_spatial": 0.275,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.4625,
+    "decisions": 42.6375
+   },
+   "final": {
+    "J": 0.033346373347407754,
+    "credited_timely": 0.9127347202533396,
+    "tp_timely": 0.9127347202533396,
+    "tp_spatial": 1.275,
+    "fp_spatial": 0.3125,
+    "return_ok": 1.0,
+    "fixes_attempted": 9.7125,
+    "decisions": 60.725
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.028284216477111247,
+    "fp_weight_2": 0.012388383143777913,
+    "undiscounted": 0.049625
+   },
+   "cost": {
+    "wall_s": 2133.0041425350064,
+    "cpu": {
+     "rollout_s": 1021.0434341399997,
+     "update_s": 8.420656009999789,
+     "checkpoint_s": 0.058815902000420195,
+     "evaluation_s": 1100.3556713970006
+    },
+    "walls": {
+     "rollout_s": 1022.3840190499905,
+     "update_s": 8.43397697180626,
+     "checkpoint_s": 0.074383950966876,
+     "evaluation_s": 1101.7351549339946
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      11.41162109375,
+      11.52880859375,
+      11.509765625
+     ]
+    },
+    "policy_decisions": 30143,
+    "process_rusage": {
+     "user_s": 2128.320302,
+     "system_s": 5.753379,
+     "max_rss_kib": 523448
+    }
+   }
+  },
+  "mlp__b19": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 19,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.03694631905354196,
+   "curve": [
+    [
+     0,
+     0,
+     -0.006975471445988379
+    ],
+    [
+     3000,
+     3206,
+     0.0013750524542489747
+    ],
+    [
+     6000,
+     6504,
+     0.01501804897501921
+    ],
+    [
+     9000,
+     9162,
+     0.022476988206102656
+    ],
+    [
+     12000,
+     12367,
+     0.03306755270698813
+    ],
+    [
+     15000,
+     15136,
+     0.04981713994826058
+    ],
+    [
+     18000,
+     18377,
+     0.05720277745663844
+    ],
+    [
+     21000,
+     21175,
+     0.0564811442103457
+    ],
+    [
+     24000,
+     24061,
+     0.05762315311826831
+    ],
+    [
+     27000,
+     27404,
+     0.05246014415366172
+    ],
+    [
+     30000,
+     30174,
+     0.05485785005776017
+    ]
+   ],
+   "untrained": {
+    "J": -0.00956800298707607,
+    "credited_timely": 0.10277594623263075,
+    "tp_timely": 0.10277594623263075,
+    "tp_spatial": 0.3875,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.525,
+    "decisions": 44.0
+   },
+   "final": {
+    "J": 0.03324448961943344,
+    "credited_timely": 0.7484008131498019,
+    "tp_timely": 0.7484008131498019,
+    "tp_spatial": 0.95,
+    "fp_spatial": 0.15,
+    "return_ok": 1.0,
+    "fixes_attempted": 31.625,
+    "decisions": 89.3
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.04355743016465307,
+    "fp_weight_2": 0.023724096831319742,
+    "undiscounted": 0.06238888888888889
+   },
+   "cost": {
+    "wall_s": 4113.118121123,
+    "cpu": {
+     "rollout_s": 1707.439176143999,
+     "update_s": 7.241958802000298,
+     "checkpoint_s": 0.04908424799945177,
+     "evaluation_s": 2392.941441126
+    },
+    "walls": {
+     "rollout_s": 1709.8894963019702,
+     "update_s": 7.246506609022617,
+     "checkpoint_s": 0.06832456908887252,
+     "evaluation_s": 2395.553006488044
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      3.5400390625,
+      5.4228515625,
+      8.43798828125
+     ]
+    },
+    "policy_decisions": 30174,
+    "process_rusage": {
+     "user_s": 4105.267589,
+     "system_s": 6.361091,
+     "max_rss_kib": 527940
+    }
+   }
+  },
+  "mlp__b20": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 20,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.026101314326794356,
+   "curve": [
+    [
+     0,
+     0,
+     -0.010710189945514042
+    ],
+    [
+     3000,
+     3197,
+     -0.0036606328940283093
+    ],
+    [
+     6000,
+     6401,
+     -0.007690635524328193
+    ],
+    [
+     9000,
+     9175,
+     0.004434617899852139
+    ],
+    [
+     12000,
+     12370,
+     0.01470137831021074
+    ],
+    [
+     15000,
+     15210,
+     0.032465326735762905
+    ],
+    [
+     18000,
+     18477,
+     0.0450068294863015
+    ],
+    [
+     21000,
+     21251,
+     0.04994831560165903
+    ],
+    [
+     24000,
+     24448,
+     0.052566823355722596
+    ],
+    [
+     27000,
+     27269,
+     0.05152895512211423
+    ],
+    [
+     30000,
+     30081,
+     0.05413452029486793
+    ]
+   ],
+   "untrained": {
+    "J": -0.011902202049279609,
+    "credited_timely": 0.08576036311296703,
+    "tp_timely": 0.08576036311296703,
+    "tp_spatial": 0.325,
+    "fp_spatial": 0.3,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.0,
+    "decisions": 43.975
+   },
+   "final": {
+    "J": 0.03227157518429245,
+    "credited_timely": 0.8183883533172641,
+    "tp_timely": 0.8183883533172641,
+    "tp_spatial": 0.9375,
+    "fp_spatial": 0.2375,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.725,
+    "decisions": 77.3625
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03684436988234992,
+    "fp_weight_2": 0.004615203215683246,
+    "undiscounted": 0.046125
+   },
+   "cost": {
+    "wall_s": 3892.3068078669894,
+    "cpu": {
+     "rollout_s": 1583.9731875530015,
+     "update_s": 7.857791001999033,
+     "checkpoint_s": 0.04851932899996614,
+     "evaluation_s": 2293.812005945
+    },
+    "walls": {
+     "rollout_s": 1586.0506471160916,
+     "update_s": 7.8759276459459215,
+     "checkpoint_s": 0.06737764304853044,
+     "evaluation_s": 2297.927439794992
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      6.03955078125,
+      7.216796875,
+      9.67724609375
+     ]
+    },
+    "policy_decisions": 30081,
+    "process_rusage": {
+     "user_s": 3882.785915,
+     "system_s": 7.053033,
+     "max_rss_kib": 527580
+    }
+   }
+  },
+  "mlp__b21": {
+   "family": "mlp",
+   "role": "C-strong",
+   "candidate": "lr3e-3_ent0",
+   "block": 21,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.047648519962309274,
+   "curve": [
+    [
+     0,
+     0,
+     -0.006225966663247144
+    ],
+    [
+     3000,
+     3191,
+     0.032520319000645566
+    ],
+    [
+     6000,
+     6431,
+     0.04692142537121759
+    ],
+    [
+     9000,
+     9141,
+     0.04205041812277553
+    ],
+    [
+     12000,
+     12076,
+     0.04028418595999273
+    ],
+    [
+     15000,
+     15464,
+     0.02840564827056125
+    ],
+    [
+     18000,
+     18317,
+     0.04984070822449516
+    ],
+    [
+     21000,
+     21108,
+     0.07408600465691614
+    ],
+    [
+     24000,
+     24569,
+     0.06905056792435348
+    ],
+    [
+     27000,
+     27316,
+     0.062438463038512554
+    ],
+    [
+     30000,
+     30125,
+     0.06800088477049264
+    ]
+   ],
+   "untrained": {
+    "J": -0.008578729164529465,
+    "credited_timely": 0.10808287503846964,
+    "tp_timely": 0.10808287503846964,
+    "tp_spatial": 0.4375,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.475,
+    "decisions": 44.0875
+   },
+   "final": {
+    "J": 0.042500552981557894,
+    "credited_timely": 0.8150099536680421,
+    "tp_timely": 0.8150099536680421,
+    "tp_spatial": 0.95,
+    "fp_spatial": 0.05,
+    "return_ok": 1.0,
+    "fixes_attempted": 36.3375,
+    "decisions": 86.4875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.05365546440675372,
+    "fp_weight_2": 0.03563463107342039,
+    "undiscounted": 0.06759722222222223
+   },
+   "cost": {
+    "wall_s": 4410.137633060018,
+    "cpu": {
+     "rollout_s": 1734.8939983820014,
+     "update_s": 7.118043875999973,
+     "checkpoint_s": 0.049922191000507876,
+     "evaluation_s": 2651.7571823820003
+    },
+    "walls": {
+     "rollout_s": 1738.4202356233145,
+     "update_s": 7.11975079216063,
+     "checkpoint_s": 0.0722628760850057,
+     "evaluation_s": 2664.171468342014
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      2.40625,
+      3.69140625,
+      6.87646484375
+     ]
+    },
+    "policy_decisions": 30125,
+    "process_rusage": {
+     "user_s": 4389.66433,
+     "system_s": 8.354879,
+     "max_rss_kib": 526900
+    }
+   }
+  },
+  "surrogate625__b10": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 10,
+   "status": "completed",
+   "failure": null,
+   "auc": -0.004189618071276813,
+   "curve": [
+    [
+     0,
+     0,
+     -0.01354045598135231
+    ],
+    [
+     3000,
+     3182,
+     -0.009635599909644993
+    ],
+    [
+     6000,
+     6380,
+     -0.00945343845074792
+    ],
+    [
+     9000,
+     9057,
+     -0.00793960599411413
+    ],
+    [
+     12000,
+     12269,
+     -0.004941806226396105
+    ],
+    [
+     15000,
+     15478,
+     -0.0011003256527256661
+    ],
+    [
+     18000,
+     18169,
+     -0.0019538532369671397
+    ],
+    [
+     21000,
+     21449,
+     0.003208523891368061
+    ],
+    [
+     24000,
+     24143,
+     -0.0015932499934595977
+    ],
+    [
+     27000,
+     27338,
+     0.0007705692138243262
+    ],
+    [
+     30000,
+     30012,
+     -0.00497433272645763
+    ]
+   ],
+   "untrained": {
+    "J": -0.013150284988345192,
+    "credited_timely": 0.025794870209786526,
+    "tp_timely": 0.025794870209786526,
+    "tp_spatial": 0.125,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.475,
+    "decisions": 41.8
+   },
+   "final": {
+    "J": -0.005192291287369351,
+    "credited_timely": 0.16903875682735167,
+    "tp_timely": 0.16903875682735167,
+    "tp_spatial": 0.5,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 25.3,
+    "decisions": 56.6625
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.0025117708176120757,
+    "fp_weight_2": -0.017592395849054594,
+    "undiscounted": 0.011263888888888891
+   },
+   "cost": {
+    "wall_s": 2051.2952182430017,
+    "cpu": {
+     "rollout_s": 883.3374458670002,
+     "update_s": 10.201192521000237,
+     "checkpoint_s": 0.05533292899979303,
+     "evaluation_s": 1147.0423941550002
+    },
+    "walls": {
+     "rollout_s": 887.5176613070071,
+     "update_s": 10.209750615147641,
+     "checkpoint_s": 0.06156543706310913,
+     "evaluation_s": 1153.1180614909972
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      13.48974609375,
+      13.52880859375,
+      12.943359375
+     ]
+    },
+    "policy_decisions": 30012,
+    "process_rusage": {
+     "user_s": 2038.234079,
+     "system_s": 6.51053,
+     "max_rss_kib": 533940
+    }
+   }
+  },
+  "surrogate625__b11": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 11,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.03936940133573242,
+   "curve": [
+    [
+     0,
+     0,
+     -0.004892951926409438
+    ],
+    [
+     3000,
+     3202,
+     0.00408063449505682
+    ],
+    [
+     6000,
+     6423,
+     0.016842306331711743
+    ],
+    [
+     9000,
+     9116,
+     0.03351338391527351
+    ],
+    [
+     12000,
+     12420,
+     0.044830777792327074
+    ],
+    [
+     15000,
+     15100,
+     0.04929070726923711
+    ],
+    [
+     18000,
+     18306,
+     0.04563789449573446
+    ],
+    [
+     21000,
+     21540,
+     0.052578725855290956
+    ],
+    [
+     24000,
+     24264,
+     0.05572220010787213
+    ],
+    [
+     27000,
+     27024,
+     0.06430180550128525
+    ],
+    [
+     30000,
+     30182,
+     0.05868410711347984
+    ]
+   ],
+   "untrained": {
+    "J": -0.007745594954005898,
+    "credited_timely": 0.11057929082789382,
+    "tp_timely": 0.11057929082789382,
+    "tp_spatial": 0.4,
+    "fp_spatial": 0.25,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.7875,
+    "decisions": 43.5125
+   },
+   "final": {
+    "J": 0.03563590027925823,
+    "credited_timely": 0.7789462050266481,
+    "tp_timely": 0.7789462050266481,
+    "tp_spatial": 0.9375,
+    "fp_spatial": 0.1375,
+    "return_ok": 1.0,
+    "fixes_attempted": 25.5,
+    "decisions": 51.3125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.04587634578017687,
+    "fp_weight_2": 0.026355512446843535,
+    "undiscounted": 0.06515277777777778
+   },
+   "cost": {
+    "wall_s": 3143.388948154985,
+    "cpu": {
+     "rollout_s": 1477.2670720919994,
+     "update_s": 9.58754073900073,
+     "checkpoint_s": 0.05085519900010427,
+     "evaluation_s": 1653.5146929099994
+    },
+    "walls": {
+     "rollout_s": 1478.5016706838796,
+     "update_s": 9.597403575928183,
+     "checkpoint_s": 0.059257571963826194,
+     "evaluation_s": 1654.8429447579838
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      10.298828125,
+      10.939453125,
+      11.86865234375
+     ]
+    },
+    "policy_decisions": 30182,
+    "process_rusage": {
+     "user_s": 3138.972438,
+     "system_s": 5.435205,
+     "max_rss_kib": 534064
+    }
+   }
+  },
+  "surrogate625__b12": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 12,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.04106603796408108,
+   "curve": [
+    [
+     0,
+     0,
+     0.0033642982801779086
+    ],
+    [
+     3000,
+     3266,
+     0.02278021260776916
+    ],
+    [
+     6000,
+     6520,
+     0.03314398541045981
+    ],
+    [
+     9000,
+     9288,
+     0.03309983769739172
+    ],
+    [
+     12000,
+     12014,
+     0.033620358634261834
+    ],
+    [
+     15000,
+     15441,
+     0.04845578985926326
+    ],
+    [
+     18000,
+     18196,
+     0.05466346949629313
+    ],
+    [
+     21000,
+     21560,
+     0.04454502157048545
+    ],
+    [
+     24000,
+     24283,
+     0.05468716147653457
+    ],
+    [
+     27000,
+     27118,
+     0.055749347926191795
+    ],
+    [
+     30000,
+     30362,
+     0.056466091644142145
+    ]
+   ],
+   "untrained": {
+    "J": -0.0031056469082221395,
+    "credited_timely": 0.21909835565200148,
+    "tp_timely": 0.21909835565200148,
+    "tp_spatial": 0.5875,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.5125,
+    "decisions": 45.2
+   },
+   "final": {
+    "J": 0.0332079739442555,
+    "credited_timely": 0.8602435309965991,
+    "tp_timely": 0.8602435309965991,
+    "tp_spatial": 1.3125,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 9.65,
+    "decisions": 78.525
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.05213548240852552,
+    "fp_weight_2": 0.018927149075192183,
+    "undiscounted": 0.0766388888888889
+   },
+   "cost": {
+    "wall_s": 4132.823099578003,
+    "cpu": {
+     "rollout_s": 1695.3344562379987,
+     "update_s": 8.648934240999836,
+     "checkpoint_s": 0.05112652300048515,
+     "evaluation_s": 2407.3513492719994
+    },
+    "walls": {
+     "rollout_s": 1703.729131877888,
+     "update_s": 8.663653854862787,
+     "checkpoint_s": 0.08084249802050181,
+     "evaluation_s": 2419.9703611189907
+    },
+    "load_average": {
+     "start": [
+      2.7939453125,
+      4.51123046875,
+      8.8505859375
+     ],
+     "end": [
+      2.94580078125,
+      4.98583984375,
+      8.0703125
+     ]
+    },
+    "policy_decisions": 30362,
+    "process_rusage": {
+     "user_s": 4104.584938,
+     "system_s": 10.877069,
+     "max_rss_kib": 538036
+    }
+   }
+  },
+  "surrogate625__b13": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 13,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.0028267505189978987,
+   "curve": [
+    [
+     0,
+     0,
+     -0.01198147241486888
+    ],
+    [
+     3000,
+     3210,
+     -0.011216365984564115
+    ],
+    [
+     6000,
+     6399,
+     -0.005
+    ],
+    [
+     9000,
+     9053,
+     -0.0022222222222222222
+    ],
+    [
+     12000,
+     12297,
+     -0.005277777777777778
+    ],
+    [
+     15000,
+     15513,
+     0.00024473034754230496
+    ],
+    [
+     18000,
+     18189,
+     0.0012882767102946995
+    ],
+    [
+     21000,
+     21428,
+     -0.0016025825210001846
+    ],
+    [
+     24000,
+     24114,
+     0.0047812267473563985
+    ],
+    [
+     27000,
+     27329,
+     0.027344268686726094
+    ],
+    [
+     30000,
+     30037,
+     0.05183737482211645
+    ]
+   ],
+   "untrained": {
+    "J": -0.012696753592626382,
+    "credited_timely": 0.0589584353327251,
+    "tp_timely": 0.0589584353327251,
+    "tp_spatial": 0.275,
+    "fp_spatial": 0.2875,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.5,
+    "decisions": 43.5125
+   },
+   "final": {
+    "J": 0.032398359263822785,
+    "credited_timely": 0.8581704667488101,
+    "tp_timely": 0.8581704667488101,
+    "tp_spatial": 1.325,
+    "fp_spatial": 0.275,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.05,
+    "decisions": 65.725
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.00743786163010901,
+    "fp_weight_2": -0.006395471703224324,
+    "undiscounted": 0.017333333333333333
+   },
+   "cost": {
+    "wall_s": 1378.155275800993,
+    "cpu": {
+     "rollout_s": 543.8955922869995,
+     "update_s": 10.42971169499964,
+     "checkpoint_s": 0.05479459899964967,
+     "evaluation_s": 816.3239482619999
+    },
+    "walls": {
+     "rollout_s": 546.387616171065,
+     "update_s": 10.468687628948828,
+     "checkpoint_s": 0.07144720395444892,
+     "evaluation_s": 820.850261465006
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      13.3564453125,
+      13.68603515625,
+      12.7119140625
+     ]
+    },
+    "policy_decisions": 30037,
+    "process_rusage": {
+     "user_s": 1370.555129,
+     "system_s": 4.379568,
+     "max_rss_kib": 534596
+    }
+   }
+  },
+  "surrogate625__b14": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 14,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.051559426242862416,
+   "curve": [
+    [
+     0,
+     0,
+     -0.009353056894881879
+    ],
+    [
+     3000,
+     3219,
+     0.010487140812982685
+    ],
+    [
+     6000,
+     6414,
+     0.037643250721902076
+    ],
+    [
+     9000,
+     9167,
+     0.05334043285038612
+    ],
+    [
+     12000,
+     12381,
+     0.06484104381846993
+    ],
+    [
+     15000,
+     15086,
+     0.06600527493460355
+    ],
+    [
+     18000,
+     18374,
+     0.06681563143283442
+    ],
+    [
+     21000,
+     21111,
+     0.054548637276218566
+    ],
+    [
+     24000,
+     24292,
+     0.07210442324007858
+    ],
+    [
+     27000,
+     27063,
+     0.06363769520672007
+    ],
+    [
+     30000,
+     30344,
+     0.0616945211637382
+    ]
+   ],
+   "untrained": {
+    "J": -0.010533160559301175,
+    "credited_timely": 0.07290310993257884,
+    "tp_timely": 0.07290310993257884,
+    "tp_spatial": 0.3125,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.9375,
+    "decisions": 43.7125
+   },
+   "final": {
+    "J": 0.03855907572733638,
+    "credited_timely": 0.7940633630920547,
+    "tp_timely": 0.7940633630920547,
+    "tp_spatial": 0.95,
+    "fp_spatial": 0.1,
+    "return_ok": 1.0,
+    "fixes_attempted": 22.15,
+    "decisions": 75.7125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.057496926242862414,
+    "fp_weight_2": 0.03968442624286241,
+    "undiscounted": 0.06806944444444445
+   },
+   "cost": {
+    "wall_s": 3256.06665656899,
+    "cpu": {
+     "rollout_s": 1369.5058993859993,
+     "update_s": 9.24570975600102,
+     "checkpoint_s": 0.049213128000152206,
+     "evaluation_s": 1870.7455416500009
+    },
+    "walls": {
+     "rollout_s": 1371.9499971150071,
+     "update_s": 9.251879974937765,
+     "checkpoint_s": 0.06380670997896232,
+     "evaluation_s": 1874.4204251799965
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      5.51611328125,
+      7.96728515625,
+      10.24951171875
+     ]
+    },
+    "policy_decisions": 30344,
+    "process_rusage": {
+     "user_s": 3245.637466,
+     "system_s": 7.792911,
+     "max_rss_kib": 536564
+    }
+   }
+  },
+  "surrogate625__b15": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 15,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.045917727963536714,
+   "curve": [
+    [
+     0,
+     0,
+     -0.004025116322210189
+    ],
+    [
+     3000,
+     3230,
+     0.029948092164712423
+    ],
+    [
+     6000,
+     6484,
+     0.033903952465153694
+    ],
+    [
+     9000,
+     9160,
+     0.05166043979495074
+    ],
+    [
+     12000,
+     12390,
+     0.04722089467965771
+    ],
+    [
+     15000,
+     15041,
+     0.05486030564643564
+    ],
+    [
+     18000,
+     18317,
+     0.05242161490158331
+    ],
+    [
+     21000,
+     21034,
+     0.05654722764763771
+    ],
+    [
+     24000,
+     24250,
+     0.05994638672892938
+    ],
+    [
+     27000,
+     27031,
+     0.04947512924141075
+    ],
+    [
+     30000,
+     30267,
+     0.05041158905200174
+    ]
+   ],
+   "untrained": {
+    "J": -0.007203197701381368,
+    "credited_timely": 0.15784244137513537,
+    "tp_timely": 0.15784244137513537,
+    "tp_spatial": 0.5125,
+    "fp_spatial": 0.2875,
+    "return_ok": 1.0,
+    "fixes_attempted": 19.1,
+    "decisions": 45.85
+   },
+   "final": {
+    "J": 0.02890307649083441,
+    "credited_timely": 0.7452553768350194,
+    "tp_timely": 0.7452553768350194,
+    "tp_spatial": 0.9125,
+    "fp_spatial": 0.225,
+    "return_ok": 1.0,
+    "fixes_attempted": 10.0,
+    "decisions": 61.1125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.0538066168524256,
+    "fp_weight_2": 0.030139950185758935,
+    "undiscounted": 0.06677777777777778
+   },
+   "cost": {
+    "wall_s": 3121.4329178670014,
+    "cpu": {
+     "rollout_s": 1455.0396899430023,
+     "update_s": 9.107072846000904,
+     "checkpoint_s": 0.05103512199976379,
+     "evaluation_s": 1651.1746694459998
+    },
+    "walls": {
+     "rollout_s": 1457.5356764759636,
+     "update_s": 9.143362534901826,
+     "checkpoint_s": 0.07308403399656527,
+     "evaluation_s": 1654.321076275024
+    },
+    "load_average": {
+     "start": [
+      3.9111328125,
+      5.15234375,
+      8.10791015625
+     ],
+     "end": [
+      7.8779296875,
+      9.5244140625,
+      11.03759765625
+     ]
+    },
+    "policy_decisions": 30267,
+    "process_rusage": {
+     "user_s": 3111.35462,
+     "system_s": 7.73771,
+     "max_rss_kib": 531860
+    }
+   }
+  },
+  "surrogate625__b16": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 16,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.033916966998346315,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0009596582432104564
+    ],
+    [
+     3000,
+     3183,
+     0.029211003968972072
+    ],
+    [
+     6000,
+     6488,
+     0.016128924837671952
+    ],
+    [
+     9000,
+     9172,
+     0.031727431894080935
+    ],
+    [
+     12000,
+     12379,
+     0.034395609317482534
+    ],
+    [
+     15000,
+     15091,
+     0.04066983712608001
+    ],
+    [
+     18000,
+     18307,
+     0.04449394280313385
+    ],
+    [
+     21000,
+     21000,
+     0.03817446812100893
+    ],
+    [
+     24000,
+     24226,
+     0.03188926331358511
+    ],
+    [
+     27000,
+     27469,
+     0.041933515729339954
+    ],
+    [
+     30000,
+     30147,
+     0.0620510039874261
+    ]
+   ],
+   "untrained": {
+    "J": -0.0058081197353398685,
+    "credited_timely": 0.14545384476388237,
+    "tp_timely": 0.14545384476388237,
+    "tp_spatial": 0.4875,
+    "fp_spatial": 0.25,
+    "return_ok": 1.0,
+    "fixes_attempted": 21.475,
+    "decisions": 43.225
+   },
+   "final": {
+    "J": 0.03409437749214131,
+    "credited_timely": 0.9386987948585435,
+    "tp_timely": 0.9386987948585435,
+    "tp_spatial": 1.675,
+    "fp_spatial": 0.325,
+    "return_ok": 1.0,
+    "fixes_attempted": 12.1125,
+    "decisions": 58.2125
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.0462433558872352,
+    "fp_weight_2": 0.009264189220568536,
+    "undiscounted": 0.06984722222222223
+   },
+   "cost": {
+    "wall_s": 3234.952038504998,
+    "cpu": {
+     "rollout_s": 1533.5200041049998,
+     "update_s": 8.478259611000396,
+     "checkpoint_s": 0.05527830599936934,
+     "evaluation_s": 1683.3748964660003
+    },
+    "walls": {
+     "rollout_s": 1537.4109342599695,
+     "update_s": 8.49479505000636,
+     "checkpoint_s": 0.06099509896012023,
+     "evaluation_s": 1688.6202190450567
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      5.283203125,
+      7.197265625,
+      9.23583984375
+     ]
+    },
+    "policy_decisions": 30147,
+    "process_rusage": {
+     "user_s": 3222.230258,
+     "system_s": 7.074649,
+     "max_rss_kib": 469952
+    }
+   }
+  },
+  "surrogate625__b17": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 17,
+   "status": "completed",
+   "failure": null,
+   "auc": -0.0010858786717832932,
+   "curve": [
+    [
+     0,
+     0,
+     -0.01018998890428978
+    ],
+    [
+     3000,
+     3162,
+     -0.0030555555555555557
+    ],
+    [
+     6000,
+     6405,
+     -0.0011111111111111111
+    ],
+    [
+     9000,
+     9101,
+     -0.0011111111111111111
+    ],
+    [
+     12000,
+     12294,
+     0.0
+    ],
+    [
+     15000,
+     15458,
+     0.0
+    ],
+    [
+     18000,
+     18115,
+     0.0
+    ],
+    [
+     21000,
+     21361,
+     0.0
+    ],
+    [
+     24000,
+     24022,
+     0.0
+    ],
+    [
+     27000,
+     27249,
+     0.00027792665485917595
+    ],
+    [
+     30000,
+     30459,
+     -0.001527882285538879
+    ]
+   ],
+   "untrained": {
+    "J": -0.01053540973184778,
+    "credited_timely": 0.022862624826739963,
+    "tp_timely": 0.022862624826739963,
+    "tp_spatial": 0.1,
+    "fp_spatial": 0.2125,
+    "return_ok": 1.0,
+    "fixes_attempted": 22.55,
+    "decisions": 40.35
+   },
+   "final": {
+    "J": -0.0009549264284617992,
+    "credited_timely": 0.03281132428768761,
+    "tp_timely": 0.03281132428768761,
+    "tp_spatial": 0.1875,
+    "fp_spatial": 0.05,
+    "return_ok": 1.0,
+    "fixes_attempted": 30.8,
+    "decisions": 53.3625
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": -0.00040532311622773763,
+    "fp_weight_2": -0.002446989782894405,
+    "undiscounted": 0.0001388888888888889
+   },
+   "cost": {
+    "wall_s": 868.2597424270061,
+    "cpu": {
+     "rollout_s": 336.35443096399973,
+     "update_s": 9.970860244000448,
+     "checkpoint_s": 0.056526114999940535,
+     "evaluation_s": 519.714597205
+    },
+    "walls": {
+     "rollout_s": 336.91622962706606,
+     "update_s": 10.018085730000166,
+     "checkpoint_s": 0.07348547098808922,
+     "evaluation_s": 520.864072307013
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      13.53271484375,
+      13.3779296875,
+      11.17724609375
+     ]
+    },
+    "policy_decisions": 30459,
+    "process_rusage": {
+     "user_s": 868.131973,
+     "system_s": 2.220493,
+     "max_rss_kib": 529872
+    }
+   }
+  },
+  "surrogate625__b18": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 18,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.028431667924735806,
+   "curve": [
+    [
+     0,
+     0,
+     -0.0013911024440819188
+    ],
+    [
+     3000,
+     3324,
+     0.015604573343052961
+    ],
+    [
+     6000,
+     6111,
+     -0.0057509653411511544
+    ],
+    [
+     9000,
+     9336,
+     0.017481004610145488
+    ],
+    [
+     12000,
+     12014,
+     0.021495727189597125
+    ],
+    [
+     15000,
+     15288,
+     0.03419031675561033
+    ],
+    [
+     18000,
+     18468,
+     0.03421513564914606
+    ],
+    [
+     21000,
+     21250,
+     0.04612887555029442
+    ],
+    [
+     24000,
+     24517,
+     0.047379301320782184
+    ],
+    [
+     27000,
+     27239,
+     0.05003386247167422
+    ],
+    [
+     30000,
+     30448,
+     0.04846879784049477
+    ]
+   ],
+   "untrained": {
+    "J": -0.0055569390275511995,
+    "credited_timely": 0.1374750975040784,
+    "tp_timely": 0.1374750975040784,
+    "tp_spatial": 0.5375,
+    "fp_spatial": 0.2375,
+    "return_ok": 1.0,
+    "fixes_attempted": 18.9125,
+    "decisions": 45.175
+   },
+   "final": {
+    "J": 0.020917998650309234,
+    "credited_timely": 0.7765239757055662,
+    "tp_timely": 0.7765239757055662,
+    "tp_spatial": 1.0,
+    "fp_spatial": 0.4,
+    "return_ok": 1.0,
+    "fixes_attempted": 15.15,
+    "decisions": 59.725
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.038202501258069135,
+    "fp_weight_2": 0.008890001258069135,
+    "undiscounted": 0.060625000000000005
+   },
+   "cost": {
+    "wall_s": 3351.7434899260115,
+    "cpu": {
+     "rollout_s": 1577.7708926980017,
+     "update_s": 8.025979748000935,
+     "checkpoint_s": 0.04593160100018512,
+     "evaluation_s": 1757.5917901470007
+    },
+    "walls": {
+     "rollout_s": 1580.9483094680472,
+     "update_s": 8.066907242959132,
+     "checkpoint_s": 0.06266490207053721,
+     "evaluation_s": 1762.3301590569608
+    },
+    "load_average": {
+     "start": [
+      3.82861328125,
+      3.62060546875,
+      6.81591796875
+     ],
+     "end": [
+      4.76220703125,
+      6.40771484375,
+      8.70556640625
+     ]
+    },
+    "policy_decisions": 30448,
+    "process_rusage": {
+     "user_s": 3338.159433,
+     "system_s": 9.073327,
+     "max_rss_kib": 468740
+    }
+   }
+  },
+  "surrogate625__b19": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 19,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.03800629093849651,
+   "curve": [
+    [
+     0,
+     0,
+     0.0013434303785019885
+    ],
+    [
+     3000,
+     3199,
+     0.008993991692226332
+    ],
+    [
+     6000,
+     6347,
+     0.022933299773424717
+    ],
+    [
+     9000,
+     9495,
+     0.027547137742845413
+    ],
+    [
+     12000,
+     12132,
+     0.04317397346234224
+    ],
+    [
+     15000,
+     15371,
+     0.055110336593533676
+    ],
+    [
+     18000,
+     18137,
+     0.0490625639355407
+    ],
+    [
+     21000,
+     21441,
+     0.04651386908693106
+    ],
+    [
+     24000,
+     24319,
+     0.05224716285384647
+    ],
+    [
+     27000,
+     27036,
+     0.054919364936393725
+    ],
+    [
+     30000,
+     30407,
+     0.037778988237259475
+    ]
+   ],
+   "untrained": {
+    "J": -0.004368689346769591,
+    "credited_timely": 0.18386359175814737,
+    "tp_timely": 0.18386359175814737,
+    "tp_spatial": 0.5875,
+    "fp_spatial": 0.2625,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.275,
+    "decisions": 44.5
+   },
+   "final": {
+    "J": 0.009028534314953842,
+    "credited_timely": 0.8000136176691691,
+    "tp_timely": 0.8000136176691691,
+    "tp_spatial": 0.95,
+    "fp_spatial": 0.6375,
+    "return_ok": 1.0,
+    "fixes_attempted": 27.3125,
+    "decisions": 83.3875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.04603406871627428,
+    "fp_weight_2": 0.02195073538294095,
+    "undiscounted": 0.06444444444444444
+   },
+   "cost": {
+    "wall_s": 3327.034798126988,
+    "cpu": {
+     "rollout_s": 1414.5500040749985,
+     "update_s": 8.813167493999842,
+     "checkpoint_s": 0.04898294899928857,
+     "evaluation_s": 1899.0578558449997
+    },
+    "walls": {
+     "rollout_s": 1416.6288931699528,
+     "update_s": 8.826022531051422,
+     "checkpoint_s": 0.05797461196198128,
+     "evaluation_s": 1901.1312059430056
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      10.43603515625,
+      11.11328125,
+      12.01318359375
+     ]
+    },
+    "policy_decisions": 30407,
+    "process_rusage": {
+     "user_s": 3317.833489,
+     "system_s": 8.609195,
+     "max_rss_kib": 534160
+    }
+   }
+  },
+  "surrogate625__b20": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 20,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.029148742636781133,
+   "curve": [
+    [
+     0,
+     0,
+     -0.007577916999397037
+    ],
+    [
+     3000,
+     3229,
+     -0.009274276866909906
+    ],
+    [
+     6000,
+     6440,
+     -0.00510187333298539
+    ],
+    [
+     9000,
+     9078,
+     -0.000595030174230189
+    ],
+    [
+     12000,
+     12318,
+     0.028952721029590546
+    ],
+    [
+     15000,
+     15024,
+     0.03660207581979781
+    ],
+    [
+     18000,
+     18298,
+     0.05646170087255524
+    ],
+    [
+     21000,
+     21528,
+     0.05534524411655427
+    ],
+    [
+     24000,
+     24268,
+     0.051090049574545306
+    ],
+    [
+     27000,
+     27484,
+     0.05111823064604702
+    ],
+    [
+     30000,
+     30232,
+     0.06135508636509028
+    ]
+   ],
+   "untrained": {
+    "J": -0.009423698124623148,
+    "credited_timely": 0.05537343375678334,
+    "tp_timely": 0.05537343375678334,
+    "tp_spatial": 0.2375,
+    "fp_spatial": 0.225,
+    "return_ok": 1.0,
+    "fixes_attempted": 21.1,
+    "decisions": 41.525
+   },
+   "final": {
+    "J": 0.03730526231151475,
+    "credited_timely": 0.7714947216072655,
+    "tp_timely": 0.7714947216072655,
+    "tp_spatial": 0.975,
+    "fp_spatial": 0.1,
+    "return_ok": 1.0,
+    "fixes_attempted": 30.5375,
+    "decisions": 51.0875
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.03593346485900336,
+    "fp_weight_2": 0.01557929819233669,
+    "undiscounted": 0.052152777777777784
+   },
+   "cost": {
+    "wall_s": 2472.6284279690008,
+    "cpu": {
+     "rollout_s": 1201.1875090179994,
+     "update_s": 10.212816070000272,
+     "checkpoint_s": 0.05526193300009208,
+     "evaluation_s": 1257.0086474130005
+    },
+    "walls": {
+     "rollout_s": 1202.4069297389651,
+     "update_s": 10.27906967990566,
+     "checkpoint_s": 0.0711931400001049,
+     "evaluation_s": 1259.4712375670497
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      13.3486328125,
+      13.49072265625,
+      13.16015625
+     ]
+    },
+    "policy_decisions": 30232,
+    "process_rusage": {
+     "user_s": 2468.537935,
+     "system_s": 3.918028,
+     "max_rss_kib": 537140
+    }
+   }
+  },
+  "surrogate625__b21": {
+   "family": "surrogate625",
+   "role": "Surrogate625",
+   "candidate": "lr1e-3_ent0",
+   "block": 21,
+   "status": "completed",
+   "failure": null,
+   "auc": 0.03384120853914083,
+   "curve": [
+    [
+     0,
+     0,
+     -0.00741615075659039
+    ],
+    [
+     3000,
+     3214,
+     0.0133090077629027
+    ],
+    [
+     6000,
+     6422,
+     0.033060088676675044
+    ],
+    [
+     9000,
+     9052,
+     0.031010551017252704
+    ],
+    [
+     12000,
+     12232,
+     0.025500376024121904
+    ],
+    [
+     15000,
+     15506,
+     0.035919407259588525
+    ],
+    [
+     18000,
+     18196,
+     0.034751799579519356
+    ],
+    [
+     21000,
+     21387,
+     0.042832257494674605
+    ],
+    [
+     24000,
+     24070,
+     0.02773867033150662
+    ],
+    [
+     27000,
+     27359,
+     0.06965008868462604
+    ],
+    [
+     30000,
+     30067,
+     0.056695827877671905
+    ]
+   ],
+   "untrained": {
+    "J": -0.009322594222868992,
+    "credited_timely": 0.08219330398835813,
+    "tp_timely": 0.08219330398835813,
+    "tp_spatial": 0.3375,
+    "fp_spatial": 0.25,
+    "return_ok": 1.0,
+    "fixes_attempted": 20.7625,
+    "decisions": 42.375
+   },
+   "final": {
+    "J": 0.02918489242354494,
+    "credited_timely": 1.2253280636238089,
+    "tp_timely": 1.2253280636238089,
+    "tp_spatial": 2.1375,
+    "fp_spatial": 0.7,
+    "return_ok": 1.0,
+    "fixes_attempted": 10.775,
+    "decisions": 68.7625
+   },
+   "auc_sensitivities": {
+    "fp_weight_0.5": 0.0476814863169186,
+    "fp_weight_2": 0.006160652983585268,
+    "undiscounted": 0.08054166666666666
+   },
+   "cost": {
+    "wall_s": 3705.5390864599904,
+    "cpu": {
+     "rollout_s": 1707.8800606519999,
+     "update_s": 9.703123442999882,
+     "checkpoint_s": 0.053189823999524766,
+     "evaluation_s": 1963.304628584
+    },
+    "walls": {
+     "rollout_s": 1721.4977582261781,
+     "update_s": 9.711926792020677,
+     "checkpoint_s": 0.07590844997321256,
+     "evaluation_s": 1973.8575946919445
+    },
+    "load_average": {
+     "start": [
+      3.20556640625,
+      4.1181640625,
+      6.99072265625
+     ],
+     "end": [
+      6.66162109375,
+      8.498046875,
+      10.57958984375
+     ]
+    },
+    "policy_decisions": 30067,
+    "process_rusage": {
+     "user_s": 3671.802219,
+     "system_s": 12.900289,
+     "max_rss_kib": 535332
+    }
+   }
+  }
+ }
+}

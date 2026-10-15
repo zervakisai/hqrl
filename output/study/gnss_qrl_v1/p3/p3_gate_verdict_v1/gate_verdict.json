@@ -1,0 +1,138 @@
+{
+ "gate_verdict": {
+  "branch_a": {
+   "branch": "timely_gain",
+   "excludes_zero_benefit": false,
+   "gain": 0.01659226057104907,
+   "gain_met": false,
+   "interval": {
+    "confidence": 0.95,
+    "direction": "gain (positive is better)",
+    "high": 0.047100741019501915,
+    "low": -0.0140518264002685,
+    "method": "paired percentile bootstrap: resample realisation indices with replacement WITHIN each cell, recombine with the frozen cell weights, in the branch's own gain direction; descriptive for a 20-realisation development gate, not a population rate",
+    "resamples": 10000,
+    "seed": 20260921
+   },
+   "other": "fp_spatial",
+   "other_difference": 0.05,
+   "other_met": false,
+   "passed": false,
+   "permits_no_benefit": true,
+   "quantity": "timely",
+   "required": 1.0,
+   "threshold_supported": false
+  },
+  "branch_b": {
+   "branch": "fp_reduction",
+   "excludes_zero_benefit": false,
+   "gain": -0.05,
+   "gain_met": false,
+   "interval": {
+    "confidence": 0.95,
+    "direction": "gain (positive is better)",
+    "high": 0.04000000000000001,
+    "low": -0.15,
+    "method": "paired percentile bootstrap: resample realisation indices with replacement WITHIN each cell, recombine with the frozen cell weights, in the branch's own gain direction; descriptive for a 20-realisation development gate, not a population rate",
+    "resamples": 10000,
+    "seed": 20260921
+   },
+   "other": "timely",
+   "other_difference": 0.01659226057104907,
+   "other_met": true,
+   "passed": false,
+   "permits_no_benefit": true,
+   "quantity": "fp_spatial",
+   "required": 0.5,
+   "threshold_supported": false
+  },
+  "cells": 8,
+  "criterion": "STATISTICAL_PROTOCOL_EN.md section 5.3, task relevance gate",
+  "decided_by": null,
+  "equality_tolerance": 1e-09,
+  "failure_rule": "a FAIL is a result: section 5.3 permits a scoped descriptive benchmarking paper and forbids adding seeds or changing the gate after inspection",
+  "frozen_cell_weights": {
+   "d2__nominal_2700s__no_human": 0.05,
+   "d2__nominal_2700s__positive": 0.2,
+   "d2__tight_derived__no_human": 0.05,
+   "d2__tight_derived__positive": 0.2,
+   "d4__nominal_2700s__no_human": 0.05,
+   "d4__nominal_2700s__positive": 0.2,
+   "d4__tight_derived__no_human": 0.05,
+   "d4__tight_derived__positive": 0.2
+  },
+  "guardrail_note": "TP_credit is I(RETURN_OK) x TP_spatial: a strategy that stops coming home has not delivered the detections it made",
+  "guardrails": [
+   {
+    "difference": 6.938893903907228e-18,
+    "direction": "must_not_decrease",
+    "met": true,
+    "quantity": "tp_credit"
+   },
+   {
+    "difference": 0.0,
+    "direction": "must_not_decrease",
+    "met": true,
+    "quantity": "return_rate"
+   }
+  ],
+  "guardrails_met": true,
+  "pairs_compared": 160,
+  "passed": false,
+  "provenance": {
+   "bootstrap_resamples": 10000,
+   "bootstrap_seed": 20260921,
+   "challenger_name": "short_horizon_planner",
+   "challenger_sha256": "19dc833e78a024a5facb52f17c7d97d9f4418e33bcad95646280819db87ce754",
+   "code_tree_sha256": "7bc87360556220883debd7cf537f3ff99b2a0f0a83c6fe3ba93786ad752c895a",
+   "completeness": {
+    "code_tree_drift": [],
+    "complete": true,
+    "corrupt_raw_artifacts": [],
+    "expected_jobs": 320,
+    "expected_units": 160,
+    "foreign": [],
+    "found_jobs": 320,
+    "found_units": 160,
+    "mislabeled": [],
+    "missing": [],
+    "orphan_raw_artifacts": [],
+    "raw_artifacts": 160,
+    "tampered": [],
+    "units_awaiting_reconciliation": [],
+    "unreadable": [],
+    "validated_units": 160
+   },
+   "gate_campaign_manifest_sha256": "f9dc02af266c44102df6036354bd6595eedc71a8347a413b132052e484127f34",
+   "paired_identity_fields": [
+    "crn_sha256",
+    "disturbance_path_sha256",
+    "measurement_noise_sha256",
+    "georeference_sha256",
+    "reobservation_seed",
+    "n_ref",
+    "mission_budget_s_applied",
+    "pair_id"
+   ],
+   "reference_name": "uncertainty_fix",
+   "reference_sha256": "09e437b9c3db35ebb7bd07b065484d4258f3f102fb7e2eeae88b361604835b4d",
+   "selection_sha256": "23a421a7724df46101bb94695acf595bc6ec5229138b1f37242c7242c3c4c5f3",
+   "source": "a complete, raw-validated gate campaign and a verified selection",
+   "tuning_campaign_manifest_sha256": "be50518403bf9269d5342900ece3d3719b9b5b1b9a125eb6c51894421fa99154"
+  },
+  "realizations_per_cell": 20,
+  "record_status": "verdict_of_record",
+  "uncertainty_note": "\"permits no benefit\" is about ZERO; whether the engineering threshold is supported is a separate question and is reported separately. A PASS whose interval still permits no benefit is reported as such: this is a development gate on paired realisations, not a population rate",
+  "verdict_sha256": "466d212a56904282838cf1174bfdfae5bb48e37f8ae0f0198ed862b33cecfd51",
+  "verdict_version": "gnss-p3-gate-verdict/4",
+  "weight_sum": 1.0,
+  "weighted_mean_differences": {
+   "fp_spatial": 0.05,
+   "return_rate": 0.0,
+   "timely": 0.01659226057104907,
+   "tp_credit": 6.938893903907228e-18
+  }
+ },
+ "utc": "2026-09-22T12:33:01+00:00",
+ "verdict": "gnss-p3-gate-verdict/4"
+}

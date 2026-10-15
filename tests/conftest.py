@@ -10,7 +10,6 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / 'output' / 'study' / 'gnss_qrl_v1' / 'frozen'
 REQUIRES_ARTIFACTS = {
-    'gnss_qrl_dq/test_dq_b2.py::test_precision_is_computed_from_the_e1_report_of_record',
     'gnss_qrl_dq/test_dq_runtime.py::test_watched_trees_are_their_approved_trees',
     'gnss_qrl_dq/test_dq_b1.py::test_files_sealed_by_d6_are_unchanged',
     'gnss_qrl_dq/test_dq_b1.py::test_launch_and_units_refuse_while_b1_is_not_approved',
