@@ -1,0 +1,48 @@
+{
+ "plan_sha256": "a9e67510a8a63f815640d7e25b0fd90ce3be712f0530538d461e6dcf4b1ae913",
+ "provisional": false,
+ "Q1": {
+  "n": 36,
+  "mean": -0.005474976760908893,
+  "lo": -0.010476901194393028,
+  "hi": -0.0004730523274247573,
+  "p": 0.03283621334420494,
+  "dz": -0.3703505812983469,
+  "share_negative": 0.6944444444444444
+ },
+ "HQ1e-2_minus_HQ3e-3": {
+  "n": 36,
+  "mean": 0.0031859737742449454,
+  "lo": -0.0013790062973897872,
+  "hi": 0.0077509538458796785,
+  "p": 0.16536825369934696,
+  "dz": 0.236140885494825,
+  "share_negative": 0.3333333333333333
+ },
+ "displacement_median": {
+  "HQ 3e-3": {
+   "angles_rel": 0.7734233751353268,
+   "angles_init_mean_abs_rad": 0.07565426548353571,
+   "angles_mean_abs_rad": 0.05187039759974264,
+   "projection_rel": 0.7759293408602035,
+   "readout_rel": 0.5320946469404857
+  },
+  "HQ 1e-2": {
+   "angles_rel": 1.184217614444731,
+   "angles_init_mean_abs_rad": 0.07565426548353571,
+   "angles_mean_abs_rad": 0.07815384625387663,
+   "projection_rel": 1.1012479866468725,
+   "readout_rel": 1.1493317631232465
+  }
+ },
+ "final_J_mean": {
+  "HQ 1e-2": 0.028494757664265742,
+  "HQ 3e-3": 0.0229079446961799,
+  "C-matched 3e-3": 0.03857422135835769
+ },
+ "cell_Q1": "−0.0055 [−0.0105, −0.0005]",
+ "paragraph": "Learning rate beyond the grid edge (post hoc). HQ and C-matched both use 3 × 10⁻³, the upper edge of the grid from which they were selected. Under an analysis plan fixed by hash before the runs, HQ was therefore re-trained at 10⁻² on the same 36 blocks. HQ (10⁻²) − C-matched (3 × 10⁻³) AUC was −0.0055 [−0.0105, −0.0005] (two-sided p = 0.033; HQ lower in 69% of blocks; Table 11), and HQ (10⁻²) − HQ (3 × 10⁻³) was +0.0032 [−0.0014, +0.0078]. HQ therefore still learned less than C-matched at the next learning rate, although the gap was smaller than at its selected rate (B-H1, −0.0087) and HQ's own area rose further, without resolution. Moving HQ one half-decade beyond its grid did not remove the deficit; higher rates were not tested. Mean final-checkpoint weighted J was 0.028 for HQ at 10⁻², 0.023 at 3 × 10⁻³ and 0.039 for C-matched. The circuit angles moved little in absolute terms (median mean |Δθ| 0.052 rad at 3 × 10⁻³ and 0.078 rad at 10⁻²), but by a fraction of their small initial values (median mean |θ| 0.076 rad) similar to that of the classical head weights: the median relative change ‖Δθ‖/‖θ₀‖ was 0.77 at 3 × 10⁻³ and 1.18 at 10⁻², against 0.78 and 0.53 for the head's classical projection and readout at 3 × 10⁻³ (descriptive, not in the plan). Small absolute angle changes therefore do not by themselves show that the circuit was untrained.",
+ "clause": "also at a higher hybrid learning rate",
+ "verdict": "persists",
+ "conclusion": "HQ's lower area than C-matched persisted when HQ was re-trained at the next learning rate, 10⁻²."
+}

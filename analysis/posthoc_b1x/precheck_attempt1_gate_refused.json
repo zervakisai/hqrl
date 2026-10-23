@@ -1,0 +1,9 @@
+{
+ "status": "failure",
+ "rows": null,
+ "reproduction": null,
+ "instrument_wall_s": null,
+ "wall_s": 4.493987701000037,
+ "error": "DQError: dq_fit is closed: the live code tree ffe9dfef2b24 is not the frozen a66f89793664",
+ "plan_sha256": "efd8b1d7b0af55aa142c978c8bccac24d5f6f2a6af21e3e8e93435f3a068bb7e"
+}

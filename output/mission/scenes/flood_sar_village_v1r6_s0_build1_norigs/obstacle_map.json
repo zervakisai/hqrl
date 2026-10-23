@@ -1,0 +1,1575 @@
+{
+  "frame": "world ENU metres = Gazebo world, z up, origin at the south-west corner; poses are model origins with yaw about +z",
+  "layout_version": "flood-sar-segment-layout/1",
+  "map_version": "flood-sar-segment-obstacles/1",
+  "no_landing_zones": [
+    {
+      "polygon_enu": [
+        [
+          40,
+          0
+        ],
+        [
+          200,
+          0
+        ],
+        [
+          200,
+          80
+        ],
+        [
+          40,
+          80
+        ]
+      ],
+      "zone_id": "flooded_floodplain"
+    },
+    {
+      "polygon_enu": [
+        [
+          0,
+          40
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          40,
+          80
+        ],
+        [
+          0,
+          80
+        ]
+      ],
+      "zone_id": "flooded_west"
+    },
+    {
+      "polygon_enu": [
+        [
+          110,
+          80
+        ],
+        [
+          162,
+          80
+        ],
+        [
+          162,
+          200
+        ],
+        [
+          110,
+          200
+        ]
+      ],
+      "zone_id": "flooded_meadow_river"
+    },
+    {
+      "polygon_enu": [
+        [
+          162,
+          80
+        ],
+        [
+          200,
+          80
+        ],
+        [
+          200,
+          140
+        ],
+        [
+          162,
+          140
+        ]
+      ],
+      "zone_id": "flooded_east_bank"
+    }
+  ],
+  "obstacles": [
+    {
+      "kind": "flat_roof_building",
+      "max_enu": [
+        44.0,
+        146.0,
+        3.2
+      ],
+      "min_enu": [
+        36.0,
+        138.0,
+        0.0
+      ],
+      "obstacle_id": "flat_roof_building"
+    },
+    {
+      "kind": "road",
+      "max_enu": [
+        109.0,
+        92.0,
+        0.05
+      ],
+      "min_enu": [
+        0.0,
+        86.0,
+        0.0
+      ],
+      "obstacle_id": "village_road"
+    },
+    {
+      "kind": "bridge_abutment",
+      "max_enu": [
+        150.0,
+        137.0,
+        1.8
+      ],
+      "min_enu": [
+        142.0,
+        127.0,
+        -1.5
+      ],
+      "obstacle_id": "bridge_abutment_west"
+    },
+    {
+      "kind": "bridge_abutment",
+      "max_enu": [
+        170.0,
+        137.0,
+        1.8
+      ],
+      "min_enu": [
+        162.0,
+        127.0,
+        -1.5
+      ],
+      "obstacle_id": "bridge_abutment_east"
+    },
+    {
+      "kind": "sandbar",
+      "max_enu": [
+        155.5,
+        108.0,
+        -2.0
+      ],
+      "min_enu": [
+        153.5,
+        104.0,
+        -3.0
+      ],
+      "obstacle_id": "sandbar"
+    },
+    {
+      "kind": "building",
+      "max_enu": [
+        21.5626,
+        185.6623,
+        7.1905
+      ],
+      "min_enu": [
+        8.8515,
+        175.8895,
+        -0.0364
+      ],
+      "obstacle_id": "house_n1"
+    },
+    {
+      "kind": "building",
+      "max_enu": [
+        42.3746,
+        184.4088,
+        10.6112
+      ],
+      "min_enu": [
+        29.7354,
+        179.6096,
+        0.0
+      ],
+      "obstacle_id": "house_n2"
+    },
+    {
+      "kind": "building_damaged",
+      "max_enu": [
+        79.796,
+        189.0746,
+        8.5831
+      ],
+      "min_enu": [
+        60.2042,
+        166.9254,
+        -0.3053
+      ],
+      "obstacle_id": "police_station"
+    },
+    {
+      "kind": "building",
+      "max_enu": [
+        105.5626,
+        191.6623,
+        7.1905
+      ],
+      "min_enu": [
+        92.8515,
+        181.8895,
+        -0.0364
+      ],
+      "obstacle_id": "house_n3"
+    },
+    {
+      "kind": "building",
+      "max_enu": [
+        21.8482,
+        146.0905,
+        7.6867
+      ],
+      "min_enu": [
+        5.3581,
+        133.1598,
+        -0.0002
+      ],
+      "obstacle_id": "house_m1"
+    },
+    {
+      "kind": "building_damaged",
+      "max_enu": [
+        87.9857,
+        147.142,
+        11.4702
+      ],
+      "min_enu": [
+        60.0146,
+        128.858,
+        -1.0227
+      ],
+      "obstacle_id": "fire_station"
+    },
+    {
+      "kind": "building_damaged",
+      "max_enu": [
+        109.6347,
+        172.5659,
+        5.8007
+      ],
+      "min_enu": [
+        90.3655,
+        155.4342,
+        -0.0002
+      ],
+      "obstacle_id": "collapsed_house"
+    },
+    {
+      "kind": "building",
+      "max_enu": [
+        18.3746,
+        106.4088,
+        10.6112
+      ],
+      "min_enu": [
+        5.7354,
+        101.6096,
+        0.0
+      ],
+      "obstacle_id": "house_s1"
+    },
+    {
+      "kind": "building",
+      "max_enu": [
+        47.5626,
+        111.6623,
+        7.1905
+      ],
+      "min_enu": [
+        34.8515,
+        101.8895,
+        -0.0364
+      ],
+      "obstacle_id": "house_s2"
+    },
+    {
+      "kind": "building",
+      "max_enu": [
+        138.2285,
+        177.0519,
+        5.6905
+      ],
+      "min_enu": [
+        123.8292,
+        164.9486,
+        -1.5364
+      ],
+      "obstacle_id": "flooded_house_meadow"
+    },
+    {
+      "kind": "building_damaged",
+      "max_enu": [
+        158.9556,
+        67.8785,
+        4.3007
+      ],
+      "min_enu": [
+        141.0444,
+        48.1217,
+        -1.5002
+      ],
+      "obstacle_id": "flooded_ruin_south"
+    },
+    {
+      "kind": "vehicle",
+      "max_enu": [
+        26.3442,
+        90.0702,
+        1.5565
+      ],
+      "min_enu": [
+        22.3431,
+        87.9298,
+        -0.0114
+      ],
+      "obstacle_id": "car_road_1"
+    },
+    {
+      "kind": "vehicle",
+      "max_enu": [
+        64.9523,
+        90.2365,
+        1.8582
+      ],
+      "min_enu": [
+        59.2877,
+        87.7635,
+        -0.0074
+      ],
+      "obstacle_id": "car_road_2"
+    },
+    {
+      "kind": "vehicle",
+      "max_enu": [
+        128.7878,
+        120.6818,
+        0.6482
+      ],
+      "min_enu": [
+        123.2708,
+        115.4562,
+        -1.5084
+      ],
+      "obstacle_id": "car_meadow"
+    },
+    {
+      "kind": "vehicle",
+      "max_enu": [
+        86.3442,
+        61.0702,
+        0.0565
+      ],
+      "min_enu": [
+        82.3431,
+        58.9298,
+        -1.5114
+      ],
+      "obstacle_id": "car_floodplain"
+    },
+    {
+      "kind": "vehicle",
+      "max_enu": [
+        133.8403,
+        24.5251,
+        0.0565
+      ],
+      "min_enu": [
+        129.7552,
+        20.0306,
+        -1.5114
+      ],
+      "obstacle_id": "car_floodplain_2"
+    },
+    {
+      "kind": "emergency_vehicle",
+      "max_enu": [
+        34.4843,
+        11.6857,
+        2.8738
+      ],
+      "min_enu": [
+        31.516,
+        4.1505,
+        -0.0203
+      ],
+      "obstacle_id": "ambulance"
+    },
+    {
+      "kind": "pole",
+      "max_enu": [
+        9.0582,
+        95.078,
+        9.2235
+      ],
+      "min_enu": [
+        6.9421,
+        94.8431,
+        0.0
+      ],
+      "obstacle_id": "pole_0"
+    },
+    {
+      "kind": "pole",
+      "max_enu": [
+        31.0582,
+        95.078,
+        9.2235
+      ],
+      "min_enu": [
+        28.9421,
+        94.8431,
+        0.0
+      ],
+      "obstacle_id": "pole_1"
+    },
+    {
+      "kind": "pole",
+      "max_enu": [
+        53.0582,
+        95.078,
+        9.2235
+      ],
+      "min_enu": [
+        50.9421,
+        94.8431,
+        0.0
+      ],
+      "obstacle_id": "pole_2"
+    },
+    {
+      "kind": "pole",
+      "max_enu": [
+        75.0582,
+        95.078,
+        9.2235
+      ],
+      "min_enu": [
+        72.9421,
+        94.8431,
+        0.0
+      ],
+      "obstacle_id": "pole_3"
+    },
+    {
+      "kind": "pole",
+      "max_enu": [
+        97.0582,
+        95.078,
+        9.2235
+      ],
+      "min_enu": [
+        94.9421,
+        94.8431,
+        0.0
+      ],
+      "obstacle_id": "pole_4"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        101.7997,
+        133.0606,
+        0.2588
+      ],
+      "min_enu": [
+        100.8252,
+        131.9354,
+        -0.027
+      ],
+      "obstacle_id": "debris_pile_0"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        103.1746,
+        132.5846,
+        0.2394
+      ],
+      "min_enu": [
+        102.0501,
+        131.6445,
+        -0.0447
+      ],
+      "obstacle_id": "debris_pile_1"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        40.5101,
+        94.3099,
+        1.55
+      ],
+      "min_enu": [
+        39.4902,
+        93.2901,
+        0.0
+      ],
+      "obstacle_id": "barrel_0"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        42.7101,
+        94.7099,
+        1.55
+      ],
+      "min_enu": [
+        41.6902,
+        93.6901,
+        0.0
+      ],
+      "obstacle_id": "barrel_1"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        64.5101,
+        94.4099,
+        1.55
+      ],
+      "min_enu": [
+        63.4902,
+        93.3901,
+        0.0
+      ],
+      "obstacle_id": "barrel_2"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        181.2261,
+        143.2408,
+        1.3923
+      ],
+      "min_enu": [
+        179.7361,
+        141.7592,
+        0.0
+      ],
+      "obstacle_id": "rock_0"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        182.3649,
+        142.9966,
+        0.8386
+      ],
+      "min_enu": [
+        181.4754,
+        142.0034,
+        0.0
+      ],
+      "obstacle_id": "rock_1"
+    },
+    {
+      "kind": "clutter",
+      "max_enu": [
+        183.2646,
+        142.8132,
+        0.5902
+      ],
+      "min_enu": [
+        182.6156,
+        142.1868,
+        0.0
+      ],
+      "obstacle_id": "rock_2"
+    },
+    {
+      "kind": "bridge",
+      "max_enu": [
+        163.8068,
+        136.236,
+        6.6816
+      ],
+      "min_enu": [
+        148.1932,
+        127.7642,
+        1.8
+      ],
+      "obstacle_id": "truss_bridge"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        78.9745,
+        118.1454,
+        11.0025
+      ],
+      "min_enu": [
+        63.6871,
+        102.4307,
+        -3.357
+      ],
+      "obstacle_id": "oak_village_0"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        102.3365,
+        121.8452,
+        11.0025
+      ],
+      "min_enu": [
+        88.1711,
+        107.2097,
+        -3.357
+      ],
+      "obstacle_id": "oak_village_1"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        117.2654,
+        98.7746,
+        3.595
+      ],
+      "min_enu": [
+        111.6814,
+        93.1657,
+        -1.5186
+      ],
+      "obstacle_id": "pine_meadow_0"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        120.098,
+        151.7038,
+        3.595
+      ],
+      "min_enu": [
+        114.4262,
+        146.0559,
+        -1.5186
+      ],
+      "obstacle_id": "pine_meadow_1"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        148.983,
+        104.0916,
+        3.595
+      ],
+      "min_enu": [
+        142.7964,
+        97.8954,
+        -1.5186
+      ],
+      "obstacle_id": "pine_meadow_2"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        146.1821,
+        189.1192,
+        3.595
+      ],
+      "min_enu": [
+        141.7054,
+        184.6811,
+        -1.5186
+      ],
+      "obstacle_id": "pine_meadow_3"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        117.4067,
+        193.7763,
+        3.595
+      ],
+      "min_enu": [
+        111.9827,
+        188.3247,
+        -1.5186
+      ],
+      "obstacle_id": "pine_meadow_4"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        143.1562,
+        148.5137,
+        3.595
+      ],
+      "min_enu": [
+        137.9681,
+        143.2948,
+        -1.5186
+      ],
+      "obstacle_id": "pine_meadow_5"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        122.2268,
+        136.0915,
+        3.595
+      ],
+      "min_enu": [
+        115.9381,
+        129.8023,
+        -1.5186
+      ],
+      "obstacle_id": "pine_meadow_6"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        173.7,
+        91.9009,
+        3.595
+      ],
+      "min_enu": [
+        167.6388,
+        85.8254,
+        -1.5186
+      ],
+      "obstacle_id": "pine_east_0"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        192.3121,
+        102.636,
+        3.595
+      ],
+      "min_enu": [
+        186.8992,
+        97.1954,
+        -1.5186
+      ],
+      "obstacle_id": "pine_east_1"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        178.8108,
+        122.733,
+        3.595
+      ],
+      "min_enu": [
+        172.5797,
+        116.5095,
+        -1.5186
+      ],
+      "obstacle_id": "pine_east_2"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        198.9847,
+        122.6101,
+        3.595
+      ],
+      "min_enu": [
+        192.8421,
+        116.4794,
+        -1.5186
+      ],
+      "obstacle_id": "pine_east_3"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        60.8642,
+        22.1593,
+        3.595
+      ],
+      "min_enu": [
+        56.3143,
+        17.6474,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_0"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        98.2795,
+        14.2296,
+        3.595
+      ],
+      "min_enu": [
+        92.3975,
+        8.3672,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_1"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        123.4777,
+        36.478,
+        3.595
+      ],
+      "min_enu": [
+        117.8201,
+        30.8446,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_2"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        163.8948,
+        18.5564,
+        3.595
+      ],
+      "min_enu": [
+        157.6506,
+        12.319,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_3"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        188.8951,
+        31.2742,
+        3.595
+      ],
+      "min_enu": [
+        183.7518,
+        26.0997,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_4"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        114.1769,
+        68.1552,
+        3.595
+      ],
+      "min_enu": [
+        107.9373,
+        61.9227,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_5"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        183.485,
+        63.1531,
+        3.595
+      ],
+      "min_enu": [
+        178.2269,
+        57.9252,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_6"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        22.2696,
+        62.1328,
+        3.595
+      ],
+      "min_enu": [
+        16.5664,
+        56.4529,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_7"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        73.5972,
+        49.0451,
+        3.595
+      ],
+      "min_enu": [
+        68.6988,
+        44.1124,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_8"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        101.3984,
+        48.9417,
+        3.595
+      ],
+      "min_enu": [
+        95.2709,
+        42.8021,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_9"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        177.8821,
+        47.7631,
+        3.595
+      ],
+      "min_enu": [
+        171.8401,
+        41.7061,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_10"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        59.4502,
+        71.8596,
+        3.595
+      ],
+      "min_enu": [
+        53.3095,
+        65.7309,
+        -1.5186
+      ],
+      "obstacle_id": "pine_south_11"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        7.7986,
+        37.7007,
+        5.095
+      ],
+      "min_enu": [
+        2.405,
+        32.3355,
+        -0.0186
+      ],
+      "obstacle_id": "pine_ops_0"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        38.355,
+        37.4983,
+        5.095
+      ],
+      "min_enu": [
+        32.4728,
+        31.6357,
+        -0.0186
+      ],
+      "obstacle_id": "pine_ops_1"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        178.8501,
+        159.5952,
+        11.0025
+      ],
+      "min_enu": [
+        164.5718,
+        144.8508,
+        -3.357
+      ],
+      "obstacle_id": "forest_oak_0"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        198.0664,
+        198.1986,
+        11.0025
+      ],
+      "min_enu": [
+        183.8927,
+        183.555,
+        -3.357
+      ],
+      "obstacle_id": "forest_oak_1"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        168.7589,
+        166.7518,
+        5.095
+      ],
+      "min_enu": [
+        164.0225,
+        161.9796,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_0"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        168.5625,
+        172.9588,
+        5.095
+      ],
+      "min_enu": [
+        163.954,
+        168.3133,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_1"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        168.778,
+        179.7477,
+        5.095
+      ],
+      "min_enu": [
+        163.5999,
+        174.5387,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_2"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        168.7988,
+        186.5049,
+        5.095
+      ],
+      "min_enu": [
+        163.6349,
+        181.31,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_3"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        169.0351,
+        193.5166,
+        5.095
+      ],
+      "min_enu": [
+        164.005,
+        188.4538,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_4"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        175.5337,
+        167.1755,
+        5.095
+      ],
+      "min_enu": [
+        170.4587,
+        162.0683,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_5"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        175.6618,
+        173.6801,
+        5.095
+      ],
+      "min_enu": [
+        170.9146,
+        168.8972,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_6"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        175.1072,
+        179.4982,
+        5.095
+      ],
+      "min_enu": [
+        170.5631,
+        174.9164,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_7"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        175.7031,
+        186.1757,
+        5.095
+      ],
+      "min_enu": [
+        170.711,
+        181.1505,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_8"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        175.0974,
+        192.9845,
+        5.095
+      ],
+      "min_enu": [
+        170.3293,
+        188.1809,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_9"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        182.0311,
+        167.1459,
+        5.095
+      ],
+      "min_enu": [
+        177.0628,
+        162.1442,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_10"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        181.7075,
+        173.5778,
+        5.095
+      ],
+      "min_enu": [
+        177.079,
+        168.9124,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_11"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        182.1475,
+        179.5839,
+        5.095
+      ],
+      "min_enu": [
+        177.0108,
+        174.4158,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_12"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        181.8453,
+        186.4503,
+        5.095
+      ],
+      "min_enu": [
+        176.4482,
+        181.0252,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_13"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        181.7857,
+        193.2033,
+        5.095
+      ],
+      "min_enu": [
+        176.3786,
+        187.7685,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_14"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        188.7272,
+        154.49,
+        5.095
+      ],
+      "min_enu": [
+        183.4301,
+        149.1635,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_15"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        188.548,
+        160.1275,
+        5.095
+      ],
+      "min_enu": [
+        183.6057,
+        155.1515,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_16"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        188.197,
+        167.0631,
+        5.095
+      ],
+      "min_enu": [
+        182.9333,
+        161.7697,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_17"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        188.0697,
+        180.259,
+        5.095
+      ],
+      "min_enu": [
+        183.1278,
+        175.2834,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_18"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        195.3333,
+        147.8318,
+        5.095
+      ],
+      "min_enu": [
+        190.3248,
+        142.7904,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_19"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        194.8725,
+        154.1812,
+        5.095
+      ],
+      "min_enu": [
+        189.7864,
+        149.063,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_20"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        194.9031,
+        161.0448,
+        5.095
+      ],
+      "min_enu": [
+        189.3988,
+        155.5142,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_21"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        194.6063,
+        166.3774,
+        5.095
+      ],
+      "min_enu": [
+        190.1212,
+        161.8541,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_22"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        195.0049,
+        173.8913,
+        5.095
+      ],
+      "min_enu": [
+        189.5631,
+        168.4223,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_23"
+    },
+    {
+      "kind": "tree",
+      "max_enu": [
+        195.2586,
+        180.0185,
+        5.095
+      ],
+      "min_enu": [
+        190.1943,
+        174.922,
+        -0.0186
+      ],
+      "obstacle_id": "forest_pine_24"
+    }
+  ],
+  "source": "pass-1 measured visual AABBs rotated by the placement yaw (Oak tree: larger 3D box kept as conservative extent) and declared procedural boxes; not physics colliders; no inflation applied",
+  "terrain": [
+    {
+      "collision": true,
+      "kind": "land",
+      "max_enu": [
+        40.0,
+        40.0,
+        0.0
+      ],
+      "min_enu": [
+        0.0,
+        0.0,
+        -3.0
+      ],
+      "surface_id": "ops_terrace"
+    },
+    {
+      "collision": true,
+      "kind": "floodplain",
+      "max_enu": [
+        200.0,
+        40.0,
+        -1.5
+      ],
+      "min_enu": [
+        40.0,
+        0.0,
+        -3.0
+      ],
+      "surface_id": "floodplain_south"
+    },
+    {
+      "collision": true,
+      "kind": "floodplain",
+      "max_enu": [
+        200.0,
+        80.0,
+        -1.5
+      ],
+      "min_enu": [
+        0.0,
+        40.0,
+        -3.0
+      ],
+      "surface_id": "floodplain_mid"
+    },
+    {
+      "collision": true,
+      "kind": "land",
+      "max_enu": [
+        110.0,
+        200.0,
+        0.0
+      ],
+      "min_enu": [
+        0.0,
+        80.0,
+        -3.0
+      ],
+      "surface_id": "village_platform"
+    },
+    {
+      "collision": true,
+      "kind": "floodplain",
+      "max_enu": [
+        150.0,
+        200.0,
+        -1.5
+      ],
+      "min_enu": [
+        110.0,
+        80.0,
+        -3.0
+      ],
+      "surface_id": "meadow"
+    },
+    {
+      "collision": true,
+      "kind": "channel_bed",
+      "max_enu": [
+        162.0,
+        200.0,
+        -3.0
+      ],
+      "min_enu": [
+        150.0,
+        80.0,
+        -4.0
+      ],
+      "surface_id": "channel_bed"
+    },
+    {
+      "collision": true,
+      "kind": "floodplain",
+      "max_enu": [
+        200.0,
+        140.0,
+        -1.5
+      ],
+      "min_enu": [
+        162.0,
+        80.0,
+        -3.0
+      ],
+      "surface_id": "east_bank"
+    },
+    {
+      "collision": true,
+      "kind": "land",
+      "max_enu": [
+        200.0,
+        200.0,
+        0.0
+      ],
+      "min_enu": [
+        162.0,
+        140.0,
+        -3.0
+      ],
+      "surface_id": "forest_hill"
+    },
+    {
+      "collision": true,
+      "kind": "bank_shelf",
+      "max_enu": [
+        152.7,
+        142.0,
+        -0.5
+      ],
+      "min_enu": [
+        150.2,
+        122.0,
+        -3.0
+      ],
+      "surface_id": "bank_shelf"
+    }
+  ],
+  "units": "m",
+  "water_surfaces": [
+    {
+      "collision": false,
+      "max_enu": [
+        200.0,
+        80.0,
+        -0.8
+      ],
+      "min_enu": [
+        40.0,
+        0.0,
+        -0.82
+      ],
+      "no_landing": true,
+      "surface_id": "water_floodplain"
+    },
+    {
+      "collision": false,
+      "max_enu": [
+        40.0,
+        80.0,
+        -0.8
+      ],
+      "min_enu": [
+        0.0,
+        40.0,
+        -0.82
+      ],
+      "no_landing": true,
+      "surface_id": "water_west_mid"
+    },
+    {
+      "collision": false,
+      "max_enu": [
+        150.0,
+        200.0,
+        -0.8
+      ],
+      "min_enu": [
+        110.0,
+        80.0,
+        -0.82
+      ],
+      "no_landing": true,
+      "surface_id": "water_meadow"
+    },
+    {
+      "collision": false,
+      "max_enu": [
+        162.0,
+        200.0,
+        -0.8
+      ],
+      "min_enu": [
+        150.0,
+        80.0,
+        -0.82
+      ],
+      "no_landing": true,
+      "surface_id": "water_channel"
+    },
+    {
+      "collision": false,
+      "max_enu": [
+        200.0,
+        140.0,
+        -0.8
+      ],
+      "min_enu": [
+        162.0,
+        80.0,
+        -0.82
+      ],
+      "no_landing": true,
+      "surface_id": "water_east_bank"
+    }
+  ],
+  "world_bounds": {
+    "x_max": 200,
+    "x_min": 0,
+    "y_max": 200,
+    "y_min": 0
+  }
+}

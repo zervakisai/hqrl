@@ -1,0 +1,26 @@
+{
+ "plan_sha256": "b8ec9f9fcf6b6efdd196c6fda292328449ede77aea2774741e0c3aa768e43458",
+ "twin_parity_P4": {
+  "cell_id": "d4__nominal_2700s__positive",
+  "seed": 20262621000,
+  "decisions": 41,
+  "max_abs_dlogprob": 8.881784197001252e-16
+ },
+ "checks": {
+  "evaluation": {
+   "compared": 2,
+   "identical": true
+  },
+  "update": {
+   "compared": 6,
+   "identical": false
+  },
+  "episode": {
+   "compared": 80,
+   "identical": true
+  }
+ },
+ "passed": false,
+ "note": "Episodes (80) and both evaluations are identical to the stored B2 records. PPO update metrics differ only in the last floating-point digits (max relative difference 3.5e-14), i.e. summation-order rounding, not a different computation. Pairing with stored B2 runs is therefore exact in seeds, schedules and evaluation episodes; late-training trajectories may differ by rounding-induced divergence, as between any two runs.",
+ "update_max_relative_difference": 3.5101201618848596e-14
+}

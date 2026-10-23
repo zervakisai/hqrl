@@ -1,0 +1,15 @@
+{
+  "built_utc": "2026-09-16T17:17:24.907788+00:00",
+  "argv": [
+    "scripts/build_flood_sar_world.py",
+    "--layout",
+    "configs/mission/village_layouts/village_v1r6_s0.json",
+    "--out",
+    "output/mission/scenes/flood_sar_village_v1r6_s0_build1_norigs"
+  ],
+  "out": "/home/konstantinos/Documents/ChatGPT/idea/output/mission/scenes/flood_sar_village_v1r6_s0_build1_norigs",
+  "layout": "/home/konstantinos/Documents/ChatGPT/idea/configs/mission/village_layouts/village_v1r6_s0.json",
+  "render_rigs": false,
+  "code_tree_sha256": "b0f54445e9d6d8cab18cc419ffed362efbad2a2d26e5dbe576c6e05f6062498a",
+  "python": "3.12.13"
+}

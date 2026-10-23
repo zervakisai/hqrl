@@ -1,0 +1,989 @@
+{
+  "validator": "flood-sar-segment-validator/1",
+  "scene": "/home/konstantinos/Documents/ChatGPT/idea/output/mission/scenes/flood_sar_village_v1r6_s0_build1_norigs",
+  "manifest_sha256": "b6647dad1c5f0c0a0db1d182d261abef85f01af319c2bdc763e77610097ca8de",
+  "passed": true,
+  "failed_checks": [],
+  "skipped_checks": [],
+  "checks": {
+    "files": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "file_count": 34
+    },
+    "finite": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": null
+    },
+    "geometry_records": {
+      "passed": true,
+      "error_count": 0,
+      "errors": []
+    },
+    "sdf": {
+      "passed": true,
+      "error_count": 0,
+      "errors": []
+    },
+    "assets": {
+      "passed": true,
+      "error_count": 0,
+      "errors": []
+    },
+    "bounds": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": null
+    },
+    "static_interpenetration": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": {
+        "static_overlap_m": 0.05,
+        "static_support_m": 0.1,
+        "human_overlap_m": 0.05,
+        "human_support_m": 0.05,
+        "building_clearance_m": 6.0,
+        "tree_gap_m": 0.5,
+        "rig_obstacle_inflation_m": 1.0,
+        "public_position_match_m": 0.5,
+        "provenance": "engineering_default_unfrozen"
+      }
+    },
+    "building_clearance": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": null
+    },
+    "river_clearance": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": null
+    },
+    "static_support": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": {
+        "static_overlap_m": 0.05,
+        "static_support_m": 0.1,
+        "human_overlap_m": 0.05,
+        "human_support_m": 0.05,
+        "building_clearance_m": 6.0,
+        "tree_gap_m": 0.5,
+        "rig_obstacle_inflation_m": 1.0,
+        "public_position_match_m": 0.5,
+        "provenance": "engineering_default_unfrozen"
+      }
+    },
+    "bridge_support": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": null
+    },
+    "launch_clearance": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": null
+    },
+    "human_support": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": {
+        "static_overlap_m": 0.05,
+        "static_support_m": 0.1,
+        "human_overlap_m": 0.05,
+        "human_support_m": 0.05,
+        "building_clearance_m": 6.0,
+        "tree_gap_m": 0.5,
+        "rig_obstacle_inflation_m": 1.0,
+        "public_position_match_m": 0.5,
+        "provenance": "engineering_default_unfrozen"
+      }
+    },
+    "human_interpenetration": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": {
+        "static_overlap_m": 0.05,
+        "static_support_m": 0.1,
+        "human_overlap_m": 0.05,
+        "human_support_m": 0.05,
+        "building_clearance_m": 6.0,
+        "tree_gap_m": 0.5,
+        "rig_obstacle_inflation_m": 1.0,
+        "public_position_match_m": 0.5,
+        "provenance": "engineering_default_unfrozen"
+      }
+    },
+    "rig_clearance": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "tolerances": {
+        "static_overlap_m": 0.05,
+        "static_support_m": 0.1,
+        "human_overlap_m": 0.05,
+        "human_support_m": 0.05,
+        "building_clearance_m": 6.0,
+        "tree_gap_m": 0.5,
+        "rig_obstacle_inflation_m": 1.0,
+        "public_position_match_m": 0.5,
+        "provenance": "engineering_default_unfrozen"
+      }
+    },
+    "public_leakage": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "scanned": [
+        "obstacle_map.json",
+        "public/absent_scenario.json",
+        "public/all_victims_scenario.json"
+      ],
+      "target_strings": 33,
+      "note": "ATTRIBUTION.md is public licensing text naming every asset; it carries no per-variant presence"
+    },
+    "background_identity": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "background_sha256": [
+        "b28441b1995f86a0504b74271dd6791065a7567cf52593d8333b948f0a62ae62"
+      ]
+    },
+    "rebuild": {
+      "passed": true,
+      "error_count": 0,
+      "errors": [],
+      "rebuild_manifest_sha256": [
+        "b6647dad1c5f0c0a0db1d182d261abef85f01af319c2bdc763e77610097ca8de",
+        "b6647dad1c5f0c0a0db1d182d261abef85f01af319c2bdc763e77610097ca8de"
+      ],
+      "scene_manifest_sha256": "b6647dad1c5f0c0a0db1d182d261abef85f01af319c2bdc763e77610097ca8de"
+    }
+  },
+  "diagnostics": {
+    "render_rig_views": {
+      "overview": null,
+      "rooftop_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 35.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.005,
+        "range_m": 20.6032,
+        "rgb": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0269,
+        "view_axis_depth_m": 20.5954
+      },
+      "rooftop_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 23.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.002,
+        "range_m": 33.0942,
+        "rgb": {
+          "approx_extent_px": 75.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 75.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3427,
+        "view_axis_depth_m": 31.1698
+      },
+      "canopy_15m": {
+        "aabb_segment_blockers": [
+          "oak_village_1:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 46.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0028,
+        "range_m": 21.0857,
+        "rgb": {
+          "approx_extent_px": 150.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 150.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0062,
+        "view_axis_depth_m": 21.0852
+      },
+      "canopy_30m": {
+        "aabb_segment_blockers": [
+          "oak_village_1:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 31.0,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0017,
+        "range_m": 33.4327,
+        "rgb": {
+          "approx_extent_px": 100.2,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 100.2,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3261,
+        "view_axis_depth_m": 31.6712
+      },
+      "rubble_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 38.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 20.5794,
+        "rgb": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0309,
+        "view_axis_depth_m": 20.5696
+      },
+      "rubble_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 25.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 33.144,
+        "rgb": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3459,
+        "view_axis_depth_m": 31.1805
+      },
+      "bridge_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 40.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0053,
+        "range_m": 20.5465,
+        "rgb": {
+          "approx_extent_px": 131.3,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.3,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0333,
+        "view_axis_depth_m": 20.5349
+      },
+      "bridge_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 26.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.003,
+        "range_m": 33.0706,
+        "rgb": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3468,
+        "view_axis_depth_m": 31.1013
+      },
+      "floodwater_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 35.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.005,
+        "range_m": 20.6035,
+        "rgb": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0269,
+        "view_axis_depth_m": 20.5958
+      },
+      "floodwater_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 23.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0034,
+        "range_m": 33.2005,
+        "rgb": {
+          "approx_extent_px": 75.4,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 75.4,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3442,
+        "view_axis_depth_m": 31.2528
+      },
+      "vehicle_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 38.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 20.5792,
+        "rgb": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0309,
+        "view_axis_depth_m": 20.5694
+      },
+      "vehicle_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 25.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 33.1437,
+        "rgb": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3459,
+        "view_axis_depth_m": 31.1804
+      },
+      "shadow_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 40.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0033,
+        "range_m": 20.4774,
+        "rgb": {
+          "approx_extent_px": 131.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0301,
+        "view_axis_depth_m": 20.468
+      },
+      "shadow_30m": {
+        "aabb_segment_blockers": [
+          "house_s2"
+        ],
+        "depth": {
+          "approx_extent_px": 26.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0033,
+        "range_m": 33.0896,
+        "rgb": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3471,
+        "view_axis_depth_m": 31.1161
+      },
+      "road_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 46.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0023,
+        "range_m": 21.0544,
+        "rgb": {
+          "approx_extent_px": 150.0,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 150.0,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0048,
+        "view_axis_depth_m": 21.0541
+      },
+      "road_30m": {
+        "aabb_segment_blockers": [
+          "pole_2"
+        ],
+        "depth": {
+          "approx_extent_px": 30.9,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0006,
+        "range_m": 33.406,
+        "rgb": {
+          "approx_extent_px": 99.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 99.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3257,
+        "view_axis_depth_m": 31.6502
+      },
+      "inside_collapsed_15m": {
+        "aabb_segment_blockers": [
+          "police_station"
+        ],
+        "depth": {
+          "approx_extent_px": 46.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0018,
+        "range_m": 21.1134,
+        "rgb": {
+          "approx_extent_px": 151.1,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 151.1,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0075,
+        "view_axis_depth_m": 21.1128
+      },
+      "inside_collapsed_30m": {
+        "aabb_segment_blockers": [
+          "police_station"
+        ],
+        "depth": {
+          "approx_extent_px": 31.1,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0018,
+        "range_m": 33.4729,
+        "rgb": {
+          "approx_extent_px": 100.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 100.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3266,
+        "view_axis_depth_m": 31.7029
+      },
+      "inside_house_15m": {
+        "aabb_segment_blockers": [
+          "house_n3"
+        ],
+        "depth": {
+          "approx_extent_px": 35.5,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0007,
+        "range_m": 20.5516,
+        "rgb": {
+          "approx_extent_px": 114.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 114.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0246,
+        "view_axis_depth_m": 20.5454
+      },
+      "inside_house_30m": {
+        "aabb_segment_blockers": [
+          "house_n3"
+        ],
+        "depth": {
+          "approx_extent_px": 23.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0016,
+        "range_m": 33.0867,
+        "rgb": {
+          "approx_extent_px": 75.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 75.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3426,
+        "view_axis_depth_m": 31.1639
+      },
+      "under_rocks_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 41.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0027,
+        "range_m": 21.0939,
+        "rgb": {
+          "approx_extent_px": 134.4,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 134.4,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0066,
+        "view_axis_depth_m": 21.0933
+      },
+      "under_rocks_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 27.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0018,
+        "range_m": 33.4427,
+        "rgb": {
+          "approx_extent_px": 89.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 89.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3262,
+        "view_axis_depth_m": 31.6791
+      },
+      "in_car_15m": {
+        "aabb_segment_blockers": [
+          "car_meadow"
+        ],
+        "depth": {
+          "approx_extent_px": 26.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0104,
+        "range_m": 20.4895,
+        "rgb": {
+          "approx_extent_px": 86.0,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.0,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0299,
+        "view_axis_depth_m": 20.4792
+      },
+      "in_car_30m": {
+        "aabb_segment_blockers": [
+          "car_meadow"
+        ],
+        "depth": {
+          "approx_extent_px": 17.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0042,
+        "range_m": 32.955,
+        "rgb": {
+          "approx_extent_px": 56.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 56.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3448,
+        "view_axis_depth_m": 31.0146
+      },
+      "under_car_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 41.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0015,
+        "range_m": 21.0436,
+        "rgb": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0042,
+        "view_axis_depth_m": 21.0434
+      },
+      "under_car_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 27.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0001,
+        "range_m": 33.4032,
+        "rgb": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3256,
+        "view_axis_depth_m": 31.648
+      },
+      "forest_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 45.9,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0015,
+        "range_m": 21.1162,
+        "rgb": {
+          "approx_extent_px": 148.4,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 148.4,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0076,
+        "view_axis_depth_m": 21.1155
+      },
+      "forest_30m": {
+        "aabb_segment_blockers": [
+          "forest_pine_17:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 30.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0017,
+        "range_m": 33.4786,
+        "rgb": {
+          "approx_extent_px": 98.9,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 98.9,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3267,
+        "view_axis_depth_m": 31.7074
+      },
+      "roof_seated_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 25.0,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0094,
+        "range_m": 21.0444,
+        "rgb": {
+          "approx_extent_px": 80.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 80.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0155,
+        "view_axis_depth_m": 21.0409
+      },
+      "roof_seated_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 16.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0072,
+        "range_m": 33.3683,
+        "rgb": {
+          "approx_extent_px": 53.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 53.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3307,
+        "view_axis_depth_m": 31.559
+      },
+      "family_adult_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 40.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0049,
+        "range_m": 20.51,
+        "rgb": {
+          "approx_extent_px": 131.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0316,
+        "view_axis_depth_m": 20.4995
+      },
+      "family_adult_30m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 26.9,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0019,
+        "range_m": 33.0371,
+        "rgb": {
+          "approx_extent_px": 86.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3464,
+        "view_axis_depth_m": 31.0752
+      },
+      "debris_elder_15m": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 41.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0022,
+        "range_m": 21.0523,
+        "rgb": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0046,
+        "view_axis_depth_m": 21.052
+      },
+      "debris_elder_30m": {
+        "aabb_segment_blockers": [
+          "debris_pile_1"
+        ],
+        "depth": {
+          "approx_extent_px": 27.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0005,
+        "range_m": 33.4049,
+        "rgb": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3256,
+        "view_axis_depth_m": 31.6493
+      },
+      "half_submerged_15m": {
+        "aabb_segment_blockers": [
+          "water_channel"
+        ],
+        "depth": {
+          "approx_extent_px": 40.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.005,
+        "range_m": 20.5666,
+        "rgb": {
+          "approx_extent_px": 131.2,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.2,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0342,
+        "view_axis_depth_m": 20.5543
+      },
+      "half_submerged_30m": {
+        "aabb_segment_blockers": [
+          "water_channel",
+          "pine_meadow_2:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 26.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0034,
+        "range_m": 33.0943,
+        "rgb": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3472,
+        "view_axis_depth_m": 31.1198
+      }
+    },
+    "occluders": {
+      "human_canopy": {
+        "occluder": "oak_village_1",
+        "center_inside_canopy_xy": true,
+        "canopy_base_minus_human_top_m": 0.852,
+        "trunk_xy_gap_m": 0.2937
+      },
+      "human_rubble": {
+        "occluder": "fire_station",
+        "center_inside_occluder_aabb_xy": false,
+        "occluder_aabb_bottom_minus_human_top_m": -2.8438
+      },
+      "human_bridge": {
+        "occluder": "truss_bridge",
+        "center_inside_occluder_aabb_xy": false,
+        "occluder_aabb_bottom_minus_human_top_m": 0.3663
+      },
+      "human_vehicle": {
+        "occluder": "car_floodplain",
+        "center_inside_occluder_aabb_xy": false,
+        "occluder_aabb_bottom_minus_human_top_m": -1.8325
+      },
+      "human_shadow": {
+        "occluder": "house_s1",
+        "center_inside_occluder_aabb_xy": false,
+        "occluder_aabb_bottom_minus_human_top_m": -1.9337
+      },
+      "human_inside_collapsed": {
+        "occluder": "police_station",
+        "center_inside_occluder_aabb_xy": true,
+        "occluder_aabb_bottom_minus_human_top_m": -0.6882
+      },
+      "human_inside_house": {
+        "occluder": "house_n3",
+        "center_inside_occluder_aabb_xy": true,
+        "occluder_aabb_bottom_minus_human_top_m": -1.7151
+      },
+      "human_under_rocks": {
+        "occluder": "rock_1",
+        "center_inside_occluder_aabb_xy": false,
+        "occluder_aabb_bottom_minus_human_top_m": -0.3829
+      },
+      "human_in_car": {
+        "occluder": "car_meadow",
+        "center_inside_occluder_aabb_xy": true,
+        "occluder_aabb_bottom_minus_human_top_m": -1.3319
+      },
+      "human_under_car": {
+        "occluder": "car_road_2",
+        "center_inside_occluder_aabb_xy": false,
+        "occluder_aabb_bottom_minus_human_top_m": -0.4403
+      },
+      "human_forest": {
+        "occluder": "forest_pine_0",
+        "center_inside_canopy_xy": false,
+        "canopy_base_minus_human_top_m": 0.2187,
+        "trunk_xy_gap_m": 19.1739
+      },
+      "human_debris_elder": {
+        "occluder": "debris_pile_0",
+        "center_inside_occluder_aabb_xy": false,
+        "occluder_aabb_bottom_minus_human_top_m": -0.4099
+      }
+    },
+    "overview_rgb_ground_footprint_enu": [
+      [
+        173.1171,
+        229.986
+      ],
+      [
+        173.1171,
+        -29.986
+      ],
+      [
+        26.8829,
+        -29.986
+      ],
+      [
+        26.8829,
+        229.986
+      ]
+    ],
+    "note": "design geometry only: frustum membership of the human AABB centre, conservative AABB segment blockers"
+  },
+  "not_checked": [
+    "gz sdf -k and loading in Gazebo Sim 10.5 (simulator environment; lead)",
+    "Truss bridge / Survivor Male texture resolution through resource_paths (render; lead)",
+    "derived House 1 PBR material appearance, file:// texture URIs and normal-map tangents (render; lead)",
+    "segmentation labels in rendered masks and /seg200 topic names of the segmentation sensor (lead)",
+    "Rescue Randy model.sdf ignition-gazebo-thermal-system plugin warning under Gazebo Sim 10 (lead)",
+    "physics colliders: A2 probes not assessable; obstacle map uses visual AABBs by design",
+    "geometric line of sight is not detectability; AABB blockers are conservative"
+  ],
+  "validated_utc": "2026-09-16T17:17:26.208106+00:00",
+  "code_tree_sha256": "b0f54445e9d6d8cab18cc419ffed362efbad2a2d26e5dbe576c6e05f6062498a"
+}

@@ -1,0 +1,18 @@
+{
+ "status": "complete",
+ "rows": {
+  "fit": 11635,
+  "calibration": 11540,
+  "heldout": 11582
+ },
+ "reproduction": {
+  "same_rows": true,
+  "same_episode_J": true,
+  "max_rel_diff_G_H_B1_arms": 4.478777696667411e-09,
+  "passed": true
+ },
+ "instrument_wall_s": 267.1086971089999,
+ "wall_s": 1799.2549386259998,
+ "error": null,
+ "plan_sha256": "efd8b1d7b0af55aa142c978c8bccac24d5f6f2a6af21e3e8e93435f3a068bb7e"
+}

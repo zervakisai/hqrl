@@ -1,0 +1,7428 @@
+{
+  "background_sha256": "b28441b1995f86a0504b74271dd6791065a7567cf52593d8333b948f0a62ae62",
+  "evaluator_spec": {
+    "match_tolerance_m": 3.0,
+    "scenario_id": "flood_sar_village_v1r6_s0-absent-seed0",
+    "schema_version": "flood-sar-mission/1",
+    "semantic_label_ids": [],
+    "targets": []
+  },
+  "layout_version": "flood-sar-segment-layout/1",
+  "ownership": "private evaluator data; never a policy, planner or critic input",
+  "public_scenario_sha256": "b49465c4300903a3cedcb4c0d8d062bec3ead494b6688813c496465cfbda8035",
+  "render_rigs": [
+    {
+      "position": [
+        100,
+        100,
+        190
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          173.1171,
+          229.986
+        ],
+        [
+          173.1171,
+          -29.986
+        ],
+        [
+          26.8829,
+          -29.986
+        ],
+        [
+          26.8829,
+          229.986
+        ]
+      ],
+      "rig_id": "overview",
+      "rpy": [
+        0,
+        1.5707963,
+        0
+      ],
+      "sensors": {
+        "rgb": {
+          "far": 400,
+          "height": 1080,
+          "hfov": 1.2,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.624,
+      "case": "rooftop",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 35.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.005,
+        "range_m": 20.6032,
+        "rgb": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0269,
+        "view_axis_depth_m": 20.5954
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        49.6732,
+        136.2357,
+        18.2
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          8.2404,
+          136.766
+        ],
+        [
+          36.0264,
+          175.3601
+        ],
+        [
+          50.4239,
+          148.6508
+        ],
+        [
+          38.1375,
+          131.5853
+        ]
+      ],
+      "rig_id": "rooftop_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.5176
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.024,
+      "case": "rooftop",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 23.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.002,
+        "range_m": 33.0942,
+        "rgb": {
+          "approx_extent_px": 75.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 75.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3427,
+        "view_axis_depth_m": 31.1698
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        67.4914,
+        144.2801,
+        18.2
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          32.996,
+          121.3231
+        ],
+        [
+          34.1369,
+          168.8653
+        ],
+        [
+          61.1009,
+          154.9506
+        ],
+        [
+          60.5964,
+          133.9284
+        ]
+      ],
+      "rig_id": "rooftop_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        3.1176
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.2723,
+      "case": "canopy",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "oak_village_1:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 46.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0028,
+        "range_m": 21.0857,
+        "rgb": {
+          "approx_extent_px": 150.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 150.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0062,
+        "view_axis_depth_m": 21.0852
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        99.6734,
+        103.2661,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          66.9671,
+          128.7073
+        ],
+        [
+          112.42,
+          142.693
+        ],
+        [
+          107.7685,
+          112.709
+        ],
+        [
+          87.6701,
+          106.5248
+        ]
+      ],
+      "rig_id": "canopy_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.8693
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.6723,
+      "case": "canopy",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "oak_village_1:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 31.0,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0017,
+        "range_m": 33.4327,
+        "rgb": {
+          "approx_extent_px": 100.2,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 100.2,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3261,
+        "view_axis_depth_m": 31.6712
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        118.7338,
+        98.9192,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          77.3749,
+          101.4493
+        ],
+        [
+          106.9919,
+          138.6569
+        ],
+        [
+          120.0831,
+          111.2836
+        ],
+        [
+          106.987,
+          94.8311
+        ]
+      ],
+      "rig_id": "canopy_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.4693
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.3012,
+      "case": "rubble",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 38.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 20.5794,
+        "rgb": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0309,
+        "view_axis_depth_m": 20.5696
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        93.4951,
+        123.5418,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          61.5376,
+          149.9174
+        ],
+        [
+          107.3756,
+          162.5839
+        ],
+        [
+          101.8596,
+          132.7469
+        ],
+        [
+          81.591,
+          127.146
+        ]
+      ],
+      "rig_id": "rubble_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.8404
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.7012,
+      "case": "rubble",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 25.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 33.144,
+        "rgb": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3459,
+        "view_axis_depth_m": 31.1805
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        112.4221,
+        118.6459,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          71.1536,
+          122.3701
+        ],
+        [
+          101.8333,
+          158.7063
+        ],
+        [
+          114.1281,
+          130.9661
+        ],
+        [
+          100.5621,
+          114.899
+        ]
+      ],
+      "rig_id": "rubble_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.4404
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -2.6717,
+      "case": "bridge",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 40.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0053,
+        "range_m": 20.5465,
+        "rgb": {
+          "approx_extent_px": 131.3,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.3,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0333,
+        "view_axis_depth_m": 20.5349
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        137.8257,
+        119.2081,
+        14.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          157.3158,
+          155.7744
+        ],
+        [
+          178.849,
+          113.3729
+        ],
+        [
+          148.5109,
+          112.8422
+        ],
+        [
+          138.9894,
+          131.5913
+        ]
+      ],
+      "rig_id": "bridge_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        0.4699
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -2.0717,
+      "case": "bridge",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 26.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.003,
+        "range_m": 33.0706,
+        "rgb": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3468,
+        "view_axis_depth_m": 31.1013
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        136.7934,
+        99.6855,
+        14.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          132.2324,
+          140.8699
+        ],
+        [
+          173.9462,
+          118.033
+        ],
+        [
+          149.2068,
+          100.4649
+        ],
+        [
+          130.7617,
+          110.5629
+        ]
+      ],
+      "rig_id": "bridge_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.0699
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 0.9025,
+      "case": "floodwater",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 35.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.005,
+        "range_m": 20.6035,
+        "rgb": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 114.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0269,
+        "view_axis_depth_m": 20.5958
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        79.2947,
+        73.7732,
+        13.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          76.9296,
+          32.4046
+        ],
+        [
+          39.6042,
+          61.8729
+        ],
+        [
+          66.925,
+          75.0731
+        ],
+        [
+          83.4296,
+          62.0428
+        ]
+      ],
+      "rig_id": "floodwater_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        -2.2391
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 1.5025,
+      "case": "floodwater",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 23.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0034,
+        "range_m": 33.2005,
+        "rgb": {
+          "approx_extent_px": 75.4,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 75.4,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3442,
+        "view_axis_depth_m": 31.2528
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        72.0473,
+        91.9301,
+        13.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          93.4537,
+          56.4516
+        ],
+        [
+          46.0087,
+          59.6974
+        ],
+        [
+          61.1042,
+          86.0185
+        ],
+        [
+          82.0834,
+          84.5833
+        ]
+      ],
+      "rig_id": "floodwater_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        -1.6391
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 1.1567,
+      "case": "vehicle",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 38.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 20.5792,
+        "rgb": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 123.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0309,
+        "view_axis_depth_m": 20.5694
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        90.0354,
+        77.3322,
+        13.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          98.1493,
+          36.6982
+        ],
+        [
+          54.6129,
+          55.8332
+        ],
+        [
+          77.7363,
+          75.4797
+        ],
+        [
+          96.9873,
+          67.0186
+        ]
+      ],
+      "rig_id": "vehicle_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        -1.9849
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 1.7567,
+      "case": "vehicle",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 25.3,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0,
+        "range_m": 33.1437,
+        "rgb": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 81.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3459,
+        "view_axis_depth_m": 31.1804
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        78.455,
+        93.0831,
+        13.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          108.0954,
+          64.1279
+        ],
+        [
+          61.3588,
+          55.3382
+        ],
+        [
+          69.3501,
+          84.6096
+        ],
+        [
+          90.0161,
+          88.4962
+        ]
+      ],
+      "rig_id": "vehicle_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        -1.3849
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.0547,
+      "case": "shadow",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 40.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0033,
+        "range_m": 20.4774,
+        "rgb": {
+          "approx_extent_px": 131.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0301,
+        "view_axis_depth_m": 20.468
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        41.9776,
+        103.1799,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          6.7938,
+          81.2926
+        ],
+        [
+          9.3934,
+          128.7774
+        ],
+        [
+          35.9176,
+          114.0416
+        ],
+        [
+          34.7681,
+          93.0447
+        ]
+      ],
+      "rig_id": "shadow_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        3.0869
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 0.5453,
+      "case": "shadow",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "house_s2"
+        ],
+        "depth": {
+          "approx_extent_px": 26.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0033,
+        "range_m": 33.0896,
+        "rgb": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3471,
+        "view_axis_depth_m": 31.1161
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        52.6492,
+        119.5602,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          35.9687,
+          81.6298
+        ],
+        [
+          11.303,
+          122.2889
+        ],
+        [
+          41.5148,
+          125.1032
+        ],
+        [
+          52.4215,
+          107.1245
+        ]
+      ],
+      "rig_id": "shadow_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        -2.5963
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 0.201,
+      "case": "road",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 46.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0023,
+        "range_m": 21.0544,
+        "rgb": {
+          "approx_extent_px": 150.0,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 150.0,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0048,
+        "view_axis_depth_m": 21.0541
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        60.698,
+        91.9947,
+        15.05
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          32.1935,
+          61.9206
+        ],
+        [
+          22.6993,
+          108.5192
+        ],
+        [
+          52.088,
+          100.9706
+        ],
+        [
+          56.2862,
+          80.3657
+        ]
+      ],
+      "rig_id": "road_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        -2.9406
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 0.801,
+      "case": "road",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "pole_2"
+        ],
+        "depth": {
+          "approx_extent_px": 30.9,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0006,
+        "range_m": 33.406,
+        "rgb": {
+          "approx_extent_px": 99.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 99.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3257,
+        "view_axis_depth_m": 31.6502
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        66.8797,
+        110.5416,
+        15.05
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          60.335,
+          69.6255
+        ],
+        [
+          26.1876,
+          102.7242
+        ],
+        [
+          54.7054,
+          113.0882
+        ],
+        [
+          69.8047,
+          98.4526
+        ]
+      ],
+      "rig_id": "road_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        -2.3406
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.1401,
+      "case": "inside_collapsed",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "police_station"
+        ],
+        "depth": {
+          "approx_extent_px": 46.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0018,
+        "range_m": 21.1134,
+        "rgb": {
+          "approx_extent_px": 151.1,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 151.1,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0075,
+        "view_axis_depth_m": 21.1128
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        72.2626,
+        160.3699,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          36.4881,
+          181.2779
+        ],
+        [
+          79.7009,
+          201.133
+        ],
+        [
+          79.0423,
+          170.7975
+        ],
+        [
+          59.9345,
+          162.0179
+        ]
+      ],
+      "rig_id": "inside_collapsed_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.0015
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.5401,
+      "case": "inside_collapsed",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "police_station"
+        ],
+        "depth": {
+          "approx_extent_px": 31.1,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0018,
+        "range_m": 33.4729,
+        "rgb": {
+          "approx_extent_px": 100.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 100.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3266,
+        "view_axis_depth_m": 31.7029
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        91.7297,
+        158.5733,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          50.3982,
+          155.6296
+        ],
+        [
+          74.8522,
+          196.4165
+        ],
+        [
+          91.4374,
+          171.0077
+        ],
+        [
+          80.6243,
+          152.9725
+        ]
+      ],
+      "rig_id": "inside_collapsed_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.6015
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.5475,
+      "case": "inside_house",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "house_n3"
+        ],
+        "depth": {
+          "approx_extent_px": 35.5,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0007,
+        "range_m": 20.5516,
+        "rgb": {
+          "approx_extent_px": 114.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 114.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0246,
+        "view_axis_depth_m": 20.5454
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        98.3494,
+        171.0041,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          73.7872,
+          204.3756
+        ],
+        [
+          121.3302,
+          205.4837
+        ],
+        [
+          108.7059,
+          177.892
+        ],
+        [
+          87.6833,
+          177.402
+        ]
+      ],
+      "rig_id": "inside_house_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.5941
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.9475,
+      "case": "inside_house",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "house_n3"
+        ],
+        "depth": {
+          "approx_extent_px": 23.4,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0016,
+        "range_m": 33.0867,
+        "rgb": {
+          "approx_extent_px": 75.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 75.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3426,
+        "view_axis_depth_m": 31.1639
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        115.5114,
+        161.6412,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          76.3964,
+          175.315
+        ],
+        [
+          115.0096,
+          203.0743
+        ],
+        [
+          120.1698,
+          173.1737
+        ],
+        [
+          103.0958,
+          160.899
+        ]
+      ],
+      "rig_id": "inside_house_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.1941
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -2.6708,
+      "case": "under_rocks",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 41.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0027,
+        "range_m": 21.0939,
+        "rgb": {
+          "approx_extent_px": 134.4,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 134.4,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0066,
+        "view_axis_depth_m": 21.0933
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        167.9819,
+        134.5961,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          187.4391,
+          171.1799
+        ],
+        [
+          209.0104,
+          128.7978
+        ],
+        [
+          178.6729,
+          128.2398
+        ],
+        [
+          169.1344,
+          146.9804
+        ]
+      ],
+      "rig_id": "under_rocks_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        0.4708
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -2.0708,
+      "case": "under_rocks",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 27.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0018,
+        "range_m": 33.4427,
+        "rgb": {
+          "approx_extent_px": 89.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 89.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3262,
+        "view_axis_depth_m": 31.6791
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        166.9671,
+        115.0726,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          162.369,
+          156.2529
+        ],
+        [
+          204.1033,
+          133.4535
+        ],
+        [
+          179.3798,
+          115.8631
+        ],
+        [
+          160.9256,
+          125.9446
+        ]
+      ],
+      "rig_id": "under_rocks_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.0708
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -2.5337,
+      "case": "in_car",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "car_meadow"
+        ],
+        "depth": {
+          "approx_extent_px": 26.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0104,
+        "range_m": 20.4895,
+        "rgb": {
+          "approx_extent_px": 86.0,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.0,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0299,
+        "view_axis_depth_m": 20.4792
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        113.9872,
+        109.7329,
+        13.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          128.2618,
+          148.6327
+        ],
+        [
+          155.4232,
+          109.5964
+        ],
+        [
+          125.4466,
+          104.8974
+        ],
+        [
+          113.4364,
+          122.1585
+        ]
+      ],
+      "rig_id": "in_car_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        0.6079
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.9337,
+      "case": "in_car",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "car_meadow"
+        ],
+        "depth": {
+          "approx_extent_px": 17.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0042,
+        "range_m": 32.955,
+        "rgb": {
+          "approx_extent_px": 56.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 56.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3448,
+        "view_axis_depth_m": 31.0146
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        115.6503,
+        90.2539,
+        13.5
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          105.4672,
+          130.4193
+        ],
+        [
+          149.9259,
+          113.5378
+        ],
+        [
+          127.8384,
+          92.7335
+        ],
+        [
+          108.1796,
+          100.1982
+        ]
+      ],
+      "rig_id": "in_car_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.2079
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 0.2515,
+      "case": "under_car",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 41.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0015,
+        "range_m": 21.0436,
+        "rgb": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0042,
+        "view_axis_depth_m": 21.0434
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        76.5281,
+        93.9689,
+        15.05
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          49.578,
+          62.4943
+        ],
+        [
+          37.7437,
+          108.5542
+        ],
+        [
+          67.476,
+          102.4988
+        ],
+        [
+          72.7089,
+          82.132
+        ]
+      ],
+      "rig_id": "under_car_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        -2.8901
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": 0.8515,
+      "case": "under_car",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 27.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": 0.0001,
+        "range_m": 33.4032,
+        "rgb": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3256,
+        "view_axis_depth_m": 31.648
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        81.7657,
+        112.8041,
+        15.05
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          77.2947,
+          71.6098
+        ],
+        [
+          41.5201,
+          102.9426
+        ],
+        [
+          69.4784,
+          114.7329
+        ],
+        [
+          85.2972,
+          100.8782
+        ]
+      ],
+      "rig_id": "under_car_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        -2.2901
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -2.4514,
+      "case": "forest",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 45.9,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0015,
+        "range_m": 21.1162,
+        "rgb": {
+          "approx_extent_px": 148.4,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 148.4,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0076,
+        "view_axis_depth_m": 21.1155
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        174.4331,
+        161.4497,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          185.4616,
+          201.3913
+        ],
+        [
+          215.74,
+          164.72
+        ],
+        [
+          186.2512,
+          157.5726
+        ],
+        [
+          172.8626,
+          173.788
+        ]
+      ],
+      "rig_id": "forest_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        0.6902
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.8514,
+      "case": "forest",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "forest_pine_17:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 30.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0017,
+        "range_m": 33.4786,
+        "rgb": {
+          "approx_extent_px": 98.9,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 98.9,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3267,
+        "view_axis_depth_m": 31.7074
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        177.6919,
+        142.1733,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          164.2414,
+          181.3657
+        ],
+        [
+          209.9374,
+          168.1961
+        ],
+        [
+          189.6349,
+          145.6464
+        ],
+        [
+          169.429,
+          151.4698
+        ]
+      ],
+      "rig_id": "forest_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.2902
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.6194,
+      "case": "roof_seated",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 25.0,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0094,
+        "range_m": 21.0444,
+        "rgb": {
+          "approx_extent_px": 80.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 80.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0155,
+        "view_axis_depth_m": 21.0409
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        54.7134,
+        132.2918,
+        18.2
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          13.2786,
+          132.6315
+        ],
+        [
+          40.8868,
+          171.353
+        ],
+        [
+          55.407,
+          144.7102
+        ],
+        [
+          43.1992,
+          127.5883
+        ]
+      ],
+      "rig_id": "roof_seated_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.5222
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.0194,
+      "case": "roof_seated",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 16.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0072,
+        "range_m": 33.3683,
+        "rgb": {
+          "approx_extent_px": 53.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 53.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3307,
+        "view_axis_depth_m": 31.559
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        72.4944,
+        140.418,
+        18.2
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          38.105,
+          117.3026
+        ],
+        [
+          39.0271,
+          164.8495
+        ],
+        [
+          66.0549,
+          151.059
+        ],
+        [
+          65.6471,
+          130.0347
+        ]
+      ],
+      "rig_id": "roof_seated_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        3.1222
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.6014,
+      "case": "family_adult",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 40.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0049,
+        "range_m": 20.51,
+        "rgb": {
+          "approx_extent_px": 131.5,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.5,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0316,
+        "view_axis_depth_m": 20.4995
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        54.3682,
+        131.313,
+        18.2
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          12.934,
+          130.9069
+        ],
+        [
+          39.8407,
+          170.119
+        ],
+        [
+          54.8382,
+          143.7419
+        ],
+        [
+          42.9405,
+          126.4031
+        ]
+      ],
+      "rig_id": "family_adult_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.5402
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -0.0014,
+      "case": "family_adult",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 26.9,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0019,
+        "range_m": 33.0371,
+        "rgb": {
+          "approx_extent_px": 86.8,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.8,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3464,
+        "view_axis_depth_m": 31.0752
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        72.0,
+        139.758,
+        18.2
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          38.0322,
+          116.0273
+        ],
+        [
+          38.0984,
+          163.5832
+        ],
+        [
+          65.37,
+          150.2814
+        ],
+        [
+          65.3407,
+          129.2531
+        ]
+      ],
+      "rig_id": "family_adult_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        3.1402
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.6326,
+      "case": "debris_elder",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [],
+        "depth": {
+          "approx_extent_px": 41.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0022,
+        "range_m": 21.0523,
+        "rgb": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 134.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0046,
+        "view_axis_depth_m": 21.052
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        101.0735,
+        117.3286,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          79.4366,
+          152.667
+        ],
+        [
+          126.9018,
+          149.7301
+        ],
+        [
+          111.9779,
+          123.3113
+        ],
+        [
+          90.9898,
+          124.6099
+        ]
+      ],
+      "rig_id": "debris_elder_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        1.509
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -1.0326,
+      "case": "debris_elder",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "debris_pile_1"
+        ],
+        "depth": {
+          "approx_extent_px": 27.7,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0005,
+        "range_m": 33.4049,
+        "rgb": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 89.6,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3256,
+        "view_axis_depth_m": 31.6493
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        117.3776,
+        106.541,
+        15.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          79.5664,
+          123.49
+        ],
+        [
+          120.3993,
+          147.8669
+        ],
+        [
+          122.9994,
+          117.6358
+        ],
+        [
+          104.9438,
+          106.8568
+        ]
+      ],
+      "rig_id": "debris_elder_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        2.109
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -3.0319,
+      "case": "half_submerged",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "water_channel"
+        ],
+        "depth": {
+          "approx_extent_px": 40.6,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.005,
+        "range_m": 20.5666,
+        "rgb": {
+          "approx_extent_px": 131.2,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 131.2,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.0342,
+        "view_axis_depth_m": 20.5543
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 15,
+      "position": [
+        139.5902,
+        104.3579,
+        13.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          170.7177,
+          131.7081
+        ],
+        [
+          175.9242,
+          84.4381
+        ],
+        [
+          147.346,
+          94.6344
+        ],
+        [
+          145.0438,
+          115.5363
+        ]
+      ],
+      "rig_id": "half_submerged_15m",
+      "rpy": [
+        0.0,
+        0.785,
+        0.1097
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    },
+    {
+      "azimuth_rad": -2.4319,
+      "case": "half_submerged",
+      "design_diagnostics": {
+        "aabb_segment_blockers": [
+          "water_channel",
+          "pine_meadow_2:canopy"
+        ],
+        "depth": {
+          "approx_extent_px": 26.8,
+          "center_in_frustum": false
+        },
+        "horizontal_offset_rad": -0.0034,
+        "range_m": 33.0943,
+        "rgb": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "seg": {
+          "approx_extent_px": 86.7,
+          "center_in_frustum": true
+        },
+        "vertical_offset_rad": 0.3472,
+        "view_axis_depth_m": 31.1198
+      },
+      "height_above_support_m": 15,
+      "horizontal_distance_m": 30,
+      "position": [
+        131.7431,
+        86.452,
+        13.0
+      ],
+      "rgb_ground_footprint_enu": [
+        [
+          141.9907,
+          126.601
+        ],
+        [
+          172.9784,
+          90.5271
+        ],
+        [
+          143.6345,
+          82.8061
+        ],
+        [
+          129.9324,
+          98.7573
+        ]
+      ],
+      "rig_id": "half_submerged_30m",
+      "rpy": [
+        0.0,
+        0.785,
+        0.7097
+      ],
+      "sensors": {
+        "depth": {
+          "far": 19.1,
+          "height": 480,
+          "hfov": 1.274,
+          "near": 0.2,
+          "type": "depth_camera",
+          "width": 640
+        },
+        "rgb": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "type": "camera",
+          "width": 1920
+        },
+        "seg": {
+          "far": 300,
+          "height": 1080,
+          "hfov": 1.204,
+          "near": 0.1,
+          "segmentation_type": "semantic",
+          "type": "segmentation",
+          "width": 1920
+        }
+      }
+    }
+  ],
+  "render_rigs_included": false,
+  "scene_geometry": {
+    "assets": [
+      {
+        "asset": "house_2",
+        "base_z": -0.0364,
+        "id": "house_n1",
+        "kind": "building",
+        "max": [
+          21.5626,
+          185.6623,
+          7.1905
+        ],
+        "measured_max": [
+          21.5626,
+          185.6623,
+          7.1905
+        ],
+        "measured_min": [
+          8.8515,
+          175.8895,
+          -0.0364
+        ],
+        "min": [
+          8.8515,
+          175.8895,
+          -0.0364
+        ],
+        "position": [
+          14.0,
+          180.0,
+          0.0
+        ],
+        "uri": "model://house_2_pbr",
+        "yaw": 0.0
+      },
+      {
+        "asset": "house_3",
+        "base_z": 0.0,
+        "id": "house_n2",
+        "kind": "building",
+        "max": [
+          42.3746,
+          184.4088,
+          10.6112
+        ],
+        "measured_max": [
+          42.3746,
+          184.4088,
+          10.6112
+        ],
+        "measured_min": [
+          29.7354,
+          179.6096,
+          0.0
+        ],
+        "min": [
+          29.7354,
+          179.6096,
+          0.0
+        ],
+        "position": [
+          38.0,
+          182.0,
+          0.0
+        ],
+        "uri": "model://house_3_pbr",
+        "yaw": 0.0
+      },
+      {
+        "asset": "collapsed_police_station",
+        "base_z": -0.3053,
+        "embedded_depth_m": 0.3053,
+        "id": "police_station",
+        "kind": "building_damaged",
+        "max": [
+          79.796,
+          189.0746,
+          8.5831
+        ],
+        "measured_max": [
+          79.796,
+          189.0746,
+          8.5831
+        ],
+        "measured_min": [
+          60.2042,
+          166.9254,
+          -0.3053
+        ],
+        "min": [
+          60.2042,
+          166.9254,
+          -0.3053
+        ],
+        "position": [
+          70.0,
+          178.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20police%20station/3",
+        "yaw": 0.0
+      },
+      {
+        "asset": "house_2",
+        "base_z": -0.0364,
+        "id": "house_n3",
+        "kind": "building",
+        "max": [
+          105.5626,
+          191.6623,
+          7.1905
+        ],
+        "measured_max": [
+          105.5626,
+          191.6623,
+          7.1905
+        ],
+        "measured_min": [
+          92.8515,
+          181.8895,
+          -0.0364
+        ],
+        "min": [
+          92.8515,
+          181.8895,
+          -0.0364
+        ],
+        "position": [
+          98.0,
+          186.0,
+          0.0
+        ],
+        "uri": "model://house_2_pbr",
+        "yaw": 0.0
+      },
+      {
+        "asset": "house_1",
+        "base_z": -0.0002,
+        "id": "house_m1",
+        "kind": "building",
+        "max": [
+          21.8482,
+          146.0905,
+          7.6867
+        ],
+        "measured_max": [
+          21.8482,
+          146.0905,
+          7.6867
+        ],
+        "measured_min": [
+          5.3581,
+          133.1598,
+          -0.0002
+        ],
+        "min": [
+          5.3581,
+          133.1598,
+          -0.0002
+        ],
+        "position": [
+          14.0,
+          140.0,
+          0.0
+        ],
+        "uri": "model://house_1_pbr",
+        "yaw": 0.0
+      },
+      {
+        "asset": "collapsed_fire_station",
+        "base_z": -1.0227,
+        "embedded_depth_m": 1.0227,
+        "id": "fire_station",
+        "kind": "building_damaged",
+        "max": [
+          87.9857,
+          147.142,
+          11.4702
+        ],
+        "measured_max": [
+          87.9857,
+          147.142,
+          11.4702
+        ],
+        "measured_min": [
+          60.0146,
+          128.858,
+          -1.0227
+        ],
+        "min": [
+          60.0146,
+          128.858,
+          -1.0227
+        ],
+        "position": [
+          74.0,
+          138.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20fire%20station/3",
+        "yaw": 0.0
+      },
+      {
+        "asset": "collapsed_house",
+        "base_z": -0.0002,
+        "id": "collapsed_house",
+        "kind": "building_damaged",
+        "max": [
+          109.6347,
+          172.5659,
+          5.8007
+        ],
+        "measured_max": [
+          109.6347,
+          172.5659,
+          5.8007
+        ],
+        "measured_min": [
+          90.3655,
+          155.4342,
+          -0.0002
+        ],
+        "min": [
+          90.3655,
+          155.4342,
+          -0.0002
+        ],
+        "position": [
+          100.0,
+          164.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20house/4",
+        "yaw": 0.3
+      },
+      {
+        "asset": "house_3",
+        "base_z": 0.0,
+        "id": "house_s1",
+        "kind": "building",
+        "max": [
+          18.3746,
+          106.4088,
+          10.6112
+        ],
+        "measured_max": [
+          18.3746,
+          106.4088,
+          10.6112
+        ],
+        "measured_min": [
+          5.7354,
+          101.6096,
+          0.0
+        ],
+        "min": [
+          5.7354,
+          101.6096,
+          0.0
+        ],
+        "position": [
+          14.0,
+          104.0,
+          0.0
+        ],
+        "uri": "model://house_3_pbr",
+        "yaw": 0.0
+      },
+      {
+        "asset": "house_2",
+        "base_z": -0.0364,
+        "id": "house_s2",
+        "kind": "building",
+        "max": [
+          47.5626,
+          111.6623,
+          7.1905
+        ],
+        "measured_max": [
+          47.5626,
+          111.6623,
+          7.1905
+        ],
+        "measured_min": [
+          34.8515,
+          101.8895,
+          -0.0364
+        ],
+        "min": [
+          34.8515,
+          101.8895,
+          -0.0364
+        ],
+        "position": [
+          40.0,
+          106.0,
+          0.0
+        ],
+        "uri": "model://house_2_pbr",
+        "yaw": 0.0
+      },
+      {
+        "asset": "house_2",
+        "base_z": -1.5364,
+        "id": "flooded_house_meadow",
+        "in_water": true,
+        "kind": "building",
+        "max": [
+          138.2285,
+          177.0519,
+          5.6905
+        ],
+        "measured_max": [
+          138.2285,
+          177.0519,
+          5.6905
+        ],
+        "measured_min": [
+          123.8292,
+          164.9486,
+          -1.5364
+        ],
+        "min": [
+          123.8292,
+          164.9486,
+          -1.5364
+        ],
+        "position": [
+          130.0,
+          170.0,
+          -1.5
+        ],
+        "uri": "model://house_2_pbr",
+        "yaw": 0.2
+      },
+      {
+        "asset": "collapsed_house",
+        "base_z": -1.5002,
+        "id": "flooded_ruin_south",
+        "in_water": true,
+        "kind": "building_damaged",
+        "max": [
+          158.9556,
+          67.8785,
+          4.3007
+        ],
+        "measured_max": [
+          158.9556,
+          67.8785,
+          4.3007
+        ],
+        "measured_min": [
+          141.0444,
+          48.1217,
+          -1.5002
+        ],
+        "min": [
+          141.0444,
+          48.1217,
+          -1.5002
+        ],
+        "position": [
+          150.0,
+          58.0,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20house/4",
+        "yaw": 1.2
+      },
+      {
+        "asset": "hatchback_red",
+        "base_z": -0.0114,
+        "id": "car_road_1",
+        "kind": "vehicle",
+        "max": [
+          26.3442,
+          90.0702,
+          1.5565
+        ],
+        "measured_max": [
+          26.3442,
+          90.0702,
+          1.5565
+        ],
+        "measured_min": [
+          22.3431,
+          87.9298,
+          -0.0114
+        ],
+        "min": [
+          22.3431,
+          87.9298,
+          -0.0114
+        ],
+        "position": [
+          24.0,
+          89.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20red/4",
+        "yaw": 0.0
+      },
+      {
+        "asset": "pickup",
+        "base_z": -0.0074,
+        "id": "car_road_2",
+        "kind": "vehicle",
+        "max": [
+          64.9523,
+          90.2365,
+          1.8582
+        ],
+        "measured_max": [
+          64.9523,
+          90.2365,
+          1.8582
+        ],
+        "measured_min": [
+          59.2877,
+          87.7635,
+          -0.0074
+        ],
+        "min": [
+          59.2877,
+          87.7635,
+          -0.0074
+        ],
+        "position": [
+          62.0,
+          89.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pickup/4",
+        "yaw": 3.1416
+      },
+      {
+        "asset": "suv",
+        "base_z": -1.5084,
+        "id": "car_meadow",
+        "in_water": true,
+        "kind": "vehicle",
+        "max": [
+          128.7878,
+          120.6818,
+          0.6482
+        ],
+        "measured_max": [
+          128.7878,
+          120.6818,
+          0.6482
+        ],
+        "measured_min": [
+          123.2708,
+          115.4562,
+          -1.5084
+        ],
+        "min": [
+          123.2708,
+          115.4562,
+          -1.5084
+        ],
+        "position": [
+          126.0,
+          118.0,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/suv/4",
+        "yaw": 0.7
+      },
+      {
+        "asset": "hatchback_blue",
+        "base_z": -1.5114,
+        "id": "car_floodplain",
+        "in_water": true,
+        "kind": "vehicle",
+        "max": [
+          86.3442,
+          61.0702,
+          0.0565
+        ],
+        "measured_max": [
+          86.3442,
+          61.0702,
+          0.0565
+        ],
+        "measured_min": [
+          82.3431,
+          58.9298,
+          -1.5114
+        ],
+        "min": [
+          82.3431,
+          58.9298,
+          -1.5114
+        ],
+        "position": [
+          84.0,
+          60.0,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20blue/5",
+        "yaw": 0.0
+      },
+      {
+        "asset": "hatchback_red",
+        "base_z": -1.5114,
+        "id": "car_floodplain_2",
+        "in_water": true,
+        "kind": "vehicle",
+        "max": [
+          133.8403,
+          24.5251,
+          0.0565
+        ],
+        "measured_max": [
+          133.8403,
+          24.5251,
+          0.0565
+        ],
+        "measured_min": [
+          129.7552,
+          20.0306,
+          -1.5114
+        ],
+        "min": [
+          129.7552,
+          20.0306,
+          -1.5114
+        ],
+        "position": [
+          132.0,
+          22.0,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20red/4",
+        "yaw": 2.2
+      },
+      {
+        "asset": "ambulance",
+        "base_z": -0.0203,
+        "id": "ambulance",
+        "kind": "emergency_vehicle",
+        "max": [
+          34.4843,
+          11.6857,
+          2.8738
+        ],
+        "measured_max": [
+          34.4843,
+          11.6857,
+          2.8738
+        ],
+        "measured_min": [
+          31.516,
+          4.1505,
+          -0.0203
+        ],
+        "min": [
+          31.516,
+          4.1505,
+          -0.0203
+        ],
+        "position": [
+          33.0,
+          8.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/ambulance/4",
+        "yaw": 0.0
+      },
+      {
+        "asset": "telephone_pole",
+        "base_z": 0.0,
+        "id": "pole_0",
+        "kind": "pole",
+        "max": [
+          9.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_max": [
+          9.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_min": [
+          6.9421,
+          94.8431,
+          0.0
+        ],
+        "min": [
+          6.9421,
+          94.8431,
+          0.0
+        ],
+        "position": [
+          8.0,
+          95.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3",
+        "yaw": 0.0
+      },
+      {
+        "asset": "telephone_pole",
+        "base_z": 0.0,
+        "id": "pole_1",
+        "kind": "pole",
+        "max": [
+          31.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_max": [
+          31.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_min": [
+          28.9421,
+          94.8431,
+          0.0
+        ],
+        "min": [
+          28.9421,
+          94.8431,
+          0.0
+        ],
+        "position": [
+          30.0,
+          95.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3",
+        "yaw": 0.0
+      },
+      {
+        "asset": "telephone_pole",
+        "base_z": 0.0,
+        "id": "pole_2",
+        "kind": "pole",
+        "max": [
+          53.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_max": [
+          53.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_min": [
+          50.9421,
+          94.8431,
+          0.0
+        ],
+        "min": [
+          50.9421,
+          94.8431,
+          0.0
+        ],
+        "position": [
+          52.0,
+          95.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3",
+        "yaw": 0.0
+      },
+      {
+        "asset": "telephone_pole",
+        "base_z": 0.0,
+        "id": "pole_3",
+        "kind": "pole",
+        "max": [
+          75.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_max": [
+          75.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_min": [
+          72.9421,
+          94.8431,
+          0.0
+        ],
+        "min": [
+          72.9421,
+          94.8431,
+          0.0
+        ],
+        "position": [
+          74.0,
+          95.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3",
+        "yaw": 0.0
+      },
+      {
+        "asset": "telephone_pole",
+        "base_z": 0.0,
+        "id": "pole_4",
+        "kind": "pole",
+        "max": [
+          97.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_max": [
+          97.0582,
+          95.078,
+          9.2235
+        ],
+        "measured_min": [
+          94.9421,
+          94.8431,
+          0.0
+        ],
+        "min": [
+          94.9421,
+          94.8431,
+          0.0
+        ],
+        "position": [
+          96.0,
+          95.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3",
+        "yaw": 0.0
+      },
+      {
+        "asset": "garbagepilev1",
+        "base_z": -0.027,
+        "id": "debris_pile_0",
+        "kind": "clutter",
+        "max": [
+          101.7997,
+          133.0606,
+          0.2588
+        ],
+        "measured_max": [
+          101.7997,
+          133.0606,
+          0.2588
+        ],
+        "measured_min": [
+          100.8252,
+          131.9354,
+          -0.027
+        ],
+        "min": [
+          100.8252,
+          131.9354,
+          -0.027
+        ],
+        "position": [
+          101.197,
+          132.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/garbagepilev1/2",
+        "yaw": 0.0
+      },
+      {
+        "asset": "garbagepilev2",
+        "base_z": -0.0447,
+        "id": "debris_pile_1",
+        "kind": "clutter",
+        "max": [
+          103.1746,
+          132.5846,
+          0.2394
+        ],
+        "measured_max": [
+          103.1746,
+          132.5846,
+          0.2394
+        ],
+        "measured_min": [
+          102.0501,
+          131.6445,
+          -0.0447
+        ],
+        "min": [
+          102.0501,
+          131.6445,
+          -0.0447
+        ],
+        "position": [
+          102.481,
+          132.0,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/garbagepilev2/2",
+        "yaw": 0.0
+      },
+      {
+        "asset": "construction_barrel",
+        "base_z": 0.0,
+        "id": "barrel_0",
+        "kind": "clutter",
+        "max": [
+          40.5101,
+          94.3099,
+          1.55
+        ],
+        "measured_max": [
+          40.5101,
+          94.3099,
+          1.55
+        ],
+        "measured_min": [
+          39.4902,
+          93.2901,
+          0.0
+        ],
+        "min": [
+          39.4902,
+          93.2901,
+          0.0
+        ],
+        "position": [
+          40.0,
+          93.8,
+          0.0
+        ],
+        "static_override": true,
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/construction%20barrel/4",
+        "yaw": 0.0
+      },
+      {
+        "asset": "construction_barrel",
+        "base_z": 0.0,
+        "id": "barrel_1",
+        "kind": "clutter",
+        "max": [
+          42.7101,
+          94.7099,
+          1.55
+        ],
+        "measured_max": [
+          42.7101,
+          94.7099,
+          1.55
+        ],
+        "measured_min": [
+          41.6902,
+          93.6901,
+          0.0
+        ],
+        "min": [
+          41.6902,
+          93.6901,
+          0.0
+        ],
+        "position": [
+          42.2,
+          94.2,
+          0.0
+        ],
+        "static_override": true,
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/construction%20barrel/4",
+        "yaw": 0.0
+      },
+      {
+        "asset": "construction_barrel",
+        "base_z": 0.0,
+        "id": "barrel_2",
+        "kind": "clutter",
+        "max": [
+          64.5101,
+          94.4099,
+          1.55
+        ],
+        "measured_max": [
+          64.5101,
+          94.4099,
+          1.55
+        ],
+        "measured_min": [
+          63.4902,
+          93.3901,
+          0.0
+        ],
+        "min": [
+          63.4902,
+          93.3901,
+          0.0
+        ],
+        "position": [
+          64.0,
+          93.9,
+          0.0
+        ],
+        "static_override": true,
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/construction%20barrel/4",
+        "yaw": 0.0
+      },
+      {
+        "asset": "falling_rock_1",
+        "base_z": 0.0,
+        "id": "rock_0",
+        "kind": "clutter",
+        "max": [
+          181.2261,
+          143.2408,
+          1.3923
+        ],
+        "measured_max": [
+          181.2261,
+          143.2408,
+          1.3923
+        ],
+        "measured_min": [
+          179.7361,
+          141.7592,
+          0.0
+        ],
+        "min": [
+          179.7361,
+          141.7592,
+          0.0
+        ],
+        "position": [
+          180.481,
+          142.5,
+          0.6962
+        ],
+        "static_override": true,
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%201/6",
+        "yaw": 0.0
+      },
+      {
+        "asset": "falling_rock_2",
+        "base_z": 0.0,
+        "id": "rock_1",
+        "kind": "clutter",
+        "max": [
+          182.3649,
+          142.9966,
+          0.8386
+        ],
+        "measured_max": [
+          182.3649,
+          142.9966,
+          0.8386
+        ],
+        "measured_min": [
+          181.4754,
+          142.0034,
+          0.0
+        ],
+        "min": [
+          181.4754,
+          142.0034,
+          0.0
+        ],
+        "position": [
+          181.92,
+          142.5,
+          0.4193
+        ],
+        "static_override": true,
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%202/6",
+        "yaw": 0.0
+      },
+      {
+        "asset": "falling_rock_3",
+        "base_z": 0.0,
+        "id": "rock_2",
+        "kind": "clutter",
+        "max": [
+          183.2646,
+          142.8132,
+          0.5902
+        ],
+        "measured_max": [
+          183.2646,
+          142.8132,
+          0.5902
+        ],
+        "measured_min": [
+          182.6156,
+          142.1868,
+          0.0
+        ],
+        "min": [
+          182.6156,
+          142.1868,
+          0.0
+        ],
+        "position": [
+          182.94,
+          142.5,
+          0.2951
+        ],
+        "static_override": true,
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%203/6",
+        "yaw": 0.0
+      },
+      {
+        "asset": "truss_bridge",
+        "base_z": 1.8,
+        "id": "truss_bridge",
+        "kind": "bridge",
+        "max": [
+          163.8068,
+          136.236,
+          6.6816
+        ],
+        "measured_max": [
+          163.8068,
+          136.236,
+          6.6816
+        ],
+        "measured_min": [
+          148.1932,
+          127.7642,
+          1.8
+        ],
+        "min": [
+          148.1932,
+          127.7642,
+          1.8
+        ],
+        "position": [
+          156.0,
+          132.0,
+          2.7311
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/truss%20bridge/3",
+        "yaw": 1.5708
+      },
+      {
+        "asset": "oak_tree",
+        "base_z": 0.0,
+        "canopy_max": [
+          76.4839,
+          115.4723,
+          6.5279
+        ],
+        "canopy_min": [
+          65.0285,
+          105.8998,
+          1.2349
+        ],
+        "id": "oak_village_0",
+        "kind": "tree",
+        "max": [
+          78.9745,
+          118.1454,
+          11.0025
+        ],
+        "measured_max": [
+          76.0143,
+          115.1519,
+          6.4242
+        ],
+        "measured_min": [
+          65.2451,
+          106.3801,
+          0.0
+        ],
+        "min": [
+          63.6871,
+          102.4307,
+          -3.357
+        ],
+        "position": [
+          71.3621,
+          110.5618,
+          0.0
+        ],
+        "trunk_max": [
+          73.1168,
+          112.3788,
+          0.9121
+        ],
+        "trunk_min": [
+          69.4195,
+          109.1668,
+          -0.0703
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7",
+        "yaw": -0.1068
+      },
+      {
+        "asset": "oak_tree",
+        "base_z": 0.0,
+        "canopy_max": [
+          100.0495,
+          119.2417,
+          6.5279
+        ],
+        "canopy_min": [
+          89.2463,
+          110.5102,
+          1.2349
+        ],
+        "id": "oak_village_1",
+        "kind": "tree",
+        "max": [
+          102.3365,
+          121.8452,
+          11.0025
+        ],
+        "measured_max": [
+          99.603,
+          118.934,
+          6.4242
+        ],
+        "measured_min": [
+          89.4274,
+          110.9561,
+          0.0
+        ],
+        "min": [
+          88.1711,
+          107.2097,
+          -3.357
+        ],
+        "position": [
+          95.2621,
+          114.8028,
+          0.0
+        ],
+        "trunk_max": [
+          96.889,
+          116.4764,
+          0.9121
+        ],
+        "trunk_min": [
+          93.4126,
+          113.534,
+          -0.0703
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7",
+        "yaw": -0.023
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          116.4647,
+          97.9788,
+          3.5778
+        ],
+        "canopy_min": [
+          112.4725,
+          93.9866,
+          -0.8984
+        ],
+        "id": "pine_meadow_0",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          117.2654,
+          98.7746,
+          3.595
+        ],
+        "measured_max": [
+          117.2654,
+          98.7746,
+          3.595
+        ],
+        "measured_min": [
+          111.6814,
+          93.1657,
+          -1.5186
+        ],
+        "min": [
+          111.6814,
+          93.1657,
+          -1.5186
+        ],
+        "position": [
+          114.4686,
+          95.9827,
+          -1.5
+        ],
+        "trunk_max": [
+          114.6521,
+          96.1705,
+          -1.2893
+        ],
+        "trunk_min": [
+          114.281,
+          95.7994,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.3116
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          119.2933,
+          150.9036,
+          3.5778
+        ],
+        "canopy_min": [
+          115.2559,
+          146.8662,
+          -0.8984
+        ],
+        "id": "pine_meadow_1",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          120.098,
+          151.7038,
+          3.595
+        ],
+        "measured_max": [
+          120.098,
+          151.7038,
+          3.595
+        ],
+        "measured_min": [
+          114.4262,
+          146.0559,
+          -1.5186
+        ],
+        "min": [
+          114.4262,
+          146.0559,
+          -1.5186
+        ],
+        "position": [
+          117.2746,
+          148.8849,
+          -1.5
+        ],
+        "trunk_max": [
+          117.4644,
+          149.0746,
+          -1.2893
+        ],
+        "trunk_min": [
+          117.0891,
+          148.6993,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -1.2366
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          148.1051,
+          103.2132,
+          3.5778
+        ],
+        "canopy_min": [
+          143.6885,
+          98.7966,
+          -0.8984
+        ],
+        "id": "pine_meadow_2",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          148.983,
+          104.0916,
+          3.595
+        ],
+        "measured_max": [
+          148.983,
+          104.0916,
+          3.595
+        ],
+        "measured_min": [
+          142.7964,
+          97.8954,
+          -1.5186
+        ],
+        "min": [
+          142.7964,
+          97.8954,
+          -1.5186
+        ],
+        "position": [
+          145.8968,
+          101.0049,
+          -1.5
+        ],
+        "trunk_max": [
+          146.1026,
+          101.2132,
+          -1.2893
+        ],
+        "trunk_min": [
+          145.6921,
+          100.8026,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.6088
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          145.5201,
+          188.4892,
+          3.5778
+        ],
+        "canopy_min": [
+          142.3405,
+          185.3096,
+          -0.8984
+        ],
+        "id": "pine_meadow_3",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          146.1821,
+          189.1192,
+          3.595
+        ],
+        "measured_max": [
+          146.1821,
+          189.1192,
+          3.595
+        ],
+        "measured_min": [
+          141.7054,
+          184.6811,
+          -1.5186
+        ],
+        "min": [
+          141.7054,
+          184.6811,
+          -1.5186
+        ],
+        "position": [
+          143.9303,
+          186.8994,
+          -1.5
+        ],
+        "trunk_max": [
+          144.0753,
+          187.0459,
+          -1.2893
+        ],
+        "trunk_min": [
+          143.7798,
+          186.7504,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 1.5731
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          116.6301,
+          193.0028,
+          3.5778
+        ],
+        "canopy_min": [
+          112.7511,
+          189.1238,
+          -0.8984
+        ],
+        "id": "pine_meadow_4",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          117.4067,
+          193.7763,
+          3.595
+        ],
+        "measured_max": [
+          117.4067,
+          193.7763,
+          3.595
+        ],
+        "measured_min": [
+          111.9827,
+          188.3247,
+          -1.5186
+        ],
+        "min": [
+          111.9827,
+          188.3247,
+          -1.5186
+        ],
+        "position": [
+          114.6906,
+          191.0633,
+          -1.5
+        ],
+        "trunk_max": [
+          114.869,
+          191.2459,
+          -1.2893
+        ],
+        "trunk_min": [
+          114.5084,
+          190.8853,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.259
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          142.4163,
+          147.7469,
+          3.5778
+        ],
+        "canopy_min": [
+          138.7043,
+          144.0349,
+          -0.8984
+        ],
+        "id": "pine_meadow_5",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          143.1562,
+          148.5137,
+          3.595
+        ],
+        "measured_max": [
+          143.1562,
+          148.5137,
+          3.595
+        ],
+        "measured_min": [
+          137.9681,
+          143.2948,
+          -1.5186
+        ],
+        "min": [
+          137.9681,
+          143.2948,
+          -1.5186
+        ],
+        "position": [
+          140.5603,
+          145.8909,
+          -1.5
+        ],
+        "trunk_max": [
+          140.7335,
+          146.0605,
+          -1.2893
+        ],
+        "trunk_min": [
+          140.3885,
+          145.7154,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 2.9526
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          121.3156,
+          135.1991,
+          3.5778
+        ],
+        "canopy_min": [
+          116.8294,
+          130.7129,
+          -0.8984
+        ],
+        "id": "pine_meadow_6",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          122.2268,
+          136.0915,
+          3.595
+        ],
+        "measured_max": [
+          122.2268,
+          136.0915,
+          3.595
+        ],
+        "measured_min": [
+          115.9381,
+          129.8023,
+          -1.5186
+        ],
+        "min": [
+          115.9381,
+          129.8023,
+          -1.5186
+        ],
+        "position": [
+          119.0725,
+          132.956,
+          -1.5
+        ],
+        "trunk_max": [
+          119.2782,
+          133.1656,
+          -1.2893
+        ],
+        "trunk_min": [
+          118.8612,
+          132.7486,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.7759
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          172.8277,
+          91.0155,
+          3.5778
+        ],
+        "canopy_min": [
+          168.4989,
+          86.6867,
+          -0.8984
+        ],
+        "id": "pine_east_0",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          173.7,
+          91.9009,
+          3.595
+        ],
+        "measured_max": [
+          173.7,
+          91.9009,
+          3.595
+        ],
+        "measured_min": [
+          167.6388,
+          85.8254,
+          -1.5186
+        ],
+        "min": [
+          167.6388,
+          85.8254,
+          -1.5186
+        ],
+        "position": [
+          170.6633,
+          88.8511,
+          -1.5
+        ],
+        "trunk_max": [
+          170.8642,
+          89.0493,
+          -1.2893
+        ],
+        "trunk_min": [
+          170.4618,
+          88.6469,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 2.622
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          191.544,
+          101.8645,
+          3.5778
+        ],
+        "canopy_min": [
+          187.6728,
+          97.9933,
+          -0.8984
+        ],
+        "id": "pine_east_1",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          192.3121,
+          102.636,
+          3.595
+        ],
+        "measured_max": [
+          192.3121,
+          102.636,
+          3.595
+        ],
+        "measured_min": [
+          186.8992,
+          97.1954,
+          -1.5186
+        ],
+        "min": [
+          186.8992,
+          97.1954,
+          -1.5186
+        ],
+        "position": [
+          189.6084,
+          99.9289,
+          -1.5
+        ],
+        "trunk_max": [
+          189.7878,
+          100.1118,
+          -1.2893
+        ],
+        "trunk_min": [
+          189.428,
+          99.7519,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.2555
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          177.906,
+          121.8337,
+          3.5778
+        ],
+        "canopy_min": [
+          173.4638,
+          117.3915,
+          -0.8984
+        ],
+        "id": "pine_east_2",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          178.8108,
+          122.733,
+          3.595
+        ],
+        "measured_max": [
+          178.8108,
+          122.733,
+          3.595
+        ],
+        "measured_min": [
+          172.5797,
+          116.5095,
+          -1.5186
+        ],
+        "min": [
+          172.5797,
+          116.5095,
+          -1.5186
+        ],
+        "position": [
+          175.6849,
+          119.6126,
+          -1.5
+        ],
+        "trunk_max": [
+          175.8899,
+          119.8164,
+          -1.2893
+        ],
+        "trunk_min": [
+          175.477,
+          119.4035,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 2.2157
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          198.0912,
+          121.7258,
+          3.5778
+        ],
+        "canopy_min": [
+          193.7136,
+          117.3482,
+          -0.8984
+        ],
+        "id": "pine_east_3",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          198.9847,
+          122.6101,
+          3.595
+        ],
+        "measured_max": [
+          198.9847,
+          122.6101,
+          3.595
+        ],
+        "measured_min": [
+          192.8421,
+          116.4794,
+          -1.5186
+        ],
+        "min": [
+          192.8421,
+          116.4794,
+          -1.5186
+        ],
+        "position": [
+          195.9024,
+          119.537,
+          -1.5
+        ],
+        "trunk_max": [
+          196.1042,
+          119.7379,
+          -1.2893
+        ],
+        "trunk_min": [
+          195.6973,
+          119.331,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 2.1355
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          60.1919,
+          21.5185,
+          3.5778
+        ],
+        "canopy_min": [
+          56.9597,
+          18.2863,
+          -0.8984
+        ],
+        "id": "pine_south_0",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          60.8642,
+          22.1593,
+          3.595
+        ],
+        "measured_max": [
+          60.8642,
+          22.1593,
+          3.595
+        ],
+        "measured_min": [
+          56.3143,
+          17.6474,
+          -1.5186
+        ],
+        "min": [
+          56.3143,
+          17.6474,
+          -1.5186
+        ],
+        "position": [
+          58.5758,
+          19.9024,
+          -1.5
+        ],
+        "trunk_max": [
+          58.7233,
+          20.0513,
+          -1.2893
+        ],
+        "trunk_min": [
+          58.4228,
+          19.7509,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 1.5898
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          97.4204,
+          13.3977,
+          3.5778
+        ],
+        "canopy_min": [
+          93.2314,
+          9.2087,
+          -0.8984
+        ],
+        "id": "pine_south_1",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          98.2795,
+          14.2296,
+          3.595
+        ],
+        "measured_max": [
+          98.2795,
+          14.2296,
+          3.595
+        ],
+        "measured_min": [
+          92.3975,
+          8.3672,
+          -1.5186
+        ],
+        "min": [
+          92.3975,
+          8.3672,
+          -1.5186
+        ],
+        "position": [
+          95.3259,
+          11.3032,
+          -1.5
+        ],
+        "trunk_max": [
+          95.5176,
+          11.4979,
+          -1.2893
+        ],
+        "trunk_min": [
+          95.1282,
+          11.1085,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 1.1516
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          122.65,
+          35.6699,
+          3.5778
+        ],
+        "canopy_min": [
+          118.6228,
+          31.6427,
+          -0.8984
+        ],
+        "id": "pine_south_2",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          123.4777,
+          36.478,
+          3.595
+        ],
+        "measured_max": [
+          123.4777,
+          36.478,
+          3.595
+        ],
+        "measured_min": [
+          117.8201,
+          30.8446,
+          -1.5186
+        ],
+        "min": [
+          117.8201,
+          30.8446,
+          -1.5186
+        ],
+        "position": [
+          120.6364,
+          33.6563,
+          -1.5
+        ],
+        "trunk_max": [
+          120.8214,
+          33.8414,
+          -1.2893
+        ],
+        "trunk_min": [
+          120.447,
+          33.467,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 1.8998
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          162.9884,
+          17.6548,
+          3.5778
+        ],
+        "canopy_min": [
+          158.5366,
+          13.203,
+          -0.8984
+        ],
+        "id": "pine_south_3",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          163.8948,
+          18.5564,
+          3.595
+        ],
+        "measured_max": [
+          163.8948,
+          18.5564,
+          3.595
+        ],
+        "measured_min": [
+          157.6506,
+          12.319,
+          -1.5186
+        ],
+        "min": [
+          157.6506,
+          12.319,
+          -1.5186
+        ],
+        "position": [
+          160.7625,
+          15.4289,
+          -1.5
+        ],
+        "trunk_max": [
+          160.968,
+          15.6331,
+          -1.2893
+        ],
+        "trunk_min": [
+          160.5542,
+          15.2193,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 2.232
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          188.1652,
+          30.5404,
+          3.5778
+        ],
+        "canopy_min": [
+          184.485,
+          26.8602,
+          -0.8984
+        ],
+        "id": "pine_south_4",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          188.8951,
+          31.2742,
+          3.595
+        ],
+        "measured_max": [
+          188.8951,
+          31.2742,
+          3.595
+        ],
+        "measured_min": [
+          183.7518,
+          26.0997,
+          -1.5186
+        ],
+        "min": [
+          183.7518,
+          26.0997,
+          -1.5186
+        ],
+        "position": [
+          186.3251,
+          28.7003,
+          -1.5
+        ],
+        "trunk_max": [
+          186.4954,
+          28.8743,
+          -1.2893
+        ],
+        "trunk_min": [
+          186.1533,
+          28.5322,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.1765
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          113.2702,
+          67.2708,
+          3.5778
+        ],
+        "canopy_min": [
+          108.8218,
+          62.8224,
+          -0.8984
+        ],
+        "id": "pine_south_5",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          114.1769,
+          68.1552,
+          3.595
+        ],
+        "measured_max": [
+          114.1769,
+          68.1552,
+          3.595
+        ],
+        "measured_min": [
+          107.9373,
+          61.9227,
+          -1.5186
+        ],
+        "min": [
+          107.9373,
+          61.9227,
+          -1.5186
+        ],
+        "position": [
+          111.046,
+          65.0466,
+          -1.5
+        ],
+        "trunk_max": [
+          111.2498,
+          65.254,
+          -1.2893
+        ],
+        "trunk_min": [
+          110.8363,
+          64.8405,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.9156
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          182.7391,
+          62.4126,
+          3.5778
+        ],
+        "canopy_min": [
+          178.9989,
+          58.6724,
+          -0.8984
+        ],
+        "id": "pine_south_6",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          183.485,
+          63.1531,
+          3.595
+        ],
+        "measured_max": [
+          183.485,
+          63.1531,
+          3.595
+        ],
+        "measured_min": [
+          178.2269,
+          57.9252,
+          -1.5186
+        ],
+        "min": [
+          178.2269,
+          57.9252,
+          -1.5186
+        ],
+        "position": [
+          180.869,
+          60.5425,
+          -1.5
+        ],
+        "trunk_max": [
+          181.0453,
+          60.7181,
+          -1.2893
+        ],
+        "trunk_min": [
+          180.6976,
+          60.3704,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -1.3705
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          21.4356,
+          61.3176,
+          3.5778
+        ],
+        "canopy_min": [
+          17.3756,
+          57.2576,
+          -0.8984
+        ],
+        "id": "pine_south_7",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          22.2696,
+          62.1328,
+          3.595
+        ],
+        "measured_max": [
+          22.2696,
+          62.1328,
+          3.595
+        ],
+        "measured_min": [
+          16.5664,
+          56.4529,
+          -1.5186
+        ],
+        "min": [
+          16.5664,
+          56.4529,
+          -1.5186
+        ],
+        "position": [
+          19.4056,
+          59.2876,
+          -1.5
+        ],
+        "trunk_max": [
+          19.5921,
+          59.4742,
+          -1.2893
+        ],
+        "trunk_min": [
+          19.2147,
+          59.0968,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 1.9167
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          72.9021,
+          48.3455,
+          3.5778
+        ],
+        "canopy_min": [
+          69.3955,
+          44.8389,
+          -0.8984
+        ],
+        "id": "pine_south_8",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          73.5972,
+          49.0451,
+          3.595
+        ],
+        "measured_max": [
+          73.5972,
+          49.0451,
+          3.595
+        ],
+        "measured_min": [
+          68.6988,
+          44.1124,
+          -1.5186
+        ],
+        "min": [
+          68.6988,
+          44.1124,
+          -1.5186
+        ],
+        "position": [
+          71.1488,
+          46.5922,
+          -1.5
+        ],
+        "trunk_max": [
+          71.3108,
+          46.7581,
+          -1.2893
+        ],
+        "trunk_min": [
+          70.9849,
+          46.4321,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.1118
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          100.5146,
+          48.0706,
+          3.5778
+        ],
+        "canopy_min": [
+          96.1392,
+          43.6952,
+          -0.8984
+        ],
+        "id": "pine_south_9",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          101.3984,
+          48.9417,
+          3.595
+        ],
+        "measured_max": [
+          101.3984,
+          48.9417,
+          3.595
+        ],
+        "measured_min": [
+          95.2709,
+          42.8021,
+          -1.5186
+        ],
+        "min": [
+          95.2709,
+          42.8021,
+          -1.5186
+        ],
+        "position": [
+          98.3269,
+          45.8829,
+          -1.5
+        ],
+        "trunk_max": [
+          98.5277,
+          46.0879,
+          -1.2893
+        ],
+        "trunk_min": [
+          98.121,
+          45.6812,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.5624
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          177.0129,
+          46.8802,
+          3.5778
+        ],
+        "canopy_min": [
+          172.6975,
+          42.5648,
+          -0.8984
+        ],
+        "id": "pine_south_10",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          177.8821,
+          47.7631,
+          3.595
+        ],
+        "measured_max": [
+          177.8821,
+          47.7631,
+          3.595
+        ],
+        "measured_min": [
+          171.8401,
+          41.7061,
+          -1.5186
+        ],
+        "min": [
+          171.8401,
+          41.7061,
+          -1.5186
+        ],
+        "position": [
+          174.8552,
+          44.7225,
+          -1.5
+        ],
+        "trunk_max": [
+          175.0555,
+          44.9201,
+          -1.2893
+        ],
+        "trunk_min": [
+          174.6544,
+          44.5189,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 2.6332
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -1.5186,
+        "canopy_max": [
+          58.5562,
+          70.9899,
+          3.5778
+        ],
+        "canopy_min": [
+          54.18,
+          66.6137,
+          -0.8984
+        ],
+        "id": "pine_south_11",
+        "in_water": true,
+        "kind": "tree",
+        "max": [
+          59.4502,
+          71.8596,
+          3.595
+        ],
+        "measured_max": [
+          59.4502,
+          71.8596,
+          3.595
+        ],
+        "measured_min": [
+          53.3095,
+          65.7309,
+          -1.5186
+        ],
+        "min": [
+          53.3095,
+          65.7309,
+          -1.5186
+        ],
+        "position": [
+          56.3681,
+          68.8018,
+          -1.5
+        ],
+        "trunk_max": [
+          56.5685,
+          69.0056,
+          -1.2893
+        ],
+        "trunk_min": [
+          56.1617,
+          68.5988,
+          -1.5
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 1.0075
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          7.0337,
+          36.9343,
+          5.0778
+        ],
+        "canopy_min": [
+          3.1963,
+          33.0969,
+          0.6016
+        ],
+        "id": "pine_ops_0",
+        "kind": "tree",
+        "max": [
+          7.7986,
+          37.7007,
+          5.095
+        ],
+        "measured_max": [
+          7.7986,
+          37.7007,
+          5.095
+        ],
+        "measured_min": [
+          2.405,
+          32.3355,
+          -0.0186
+        ],
+        "min": [
+          2.405,
+          32.3355,
+          -0.0186
+        ],
+        "position": [
+          5.115,
+          35.0156,
+          0.0
+        ],
+        "trunk_max": [
+          5.2963,
+          35.1945,
+          0.2107
+        ],
+        "trunk_min": [
+          4.9396,
+          34.8378,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -1.8116
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          37.5205,
+          36.6677,
+          5.0778
+        ],
+        "canopy_min": [
+          33.3313,
+          32.4785,
+          0.6016
+        ],
+        "id": "pine_ops_1",
+        "kind": "tree",
+        "max": [
+          38.355,
+          37.4983,
+          5.095
+        ],
+        "measured_max": [
+          38.355,
+          37.4983,
+          5.095
+        ],
+        "measured_min": [
+          32.4728,
+          31.6357,
+          -0.0186
+        ],
+        "min": [
+          32.4728,
+          31.6357,
+          -0.0186
+        ],
+        "position": [
+          35.4259,
+          34.5731,
+          0.0
+        ],
+        "trunk_max": [
+          35.6226,
+          34.7701,
+          0.2107
+        ],
+        "trunk_min": [
+          35.2332,
+          34.3807,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -1.1515
+      },
+      {
+        "asset": "oak_tree",
+        "base_z": 0.0,
+        "canopy_max": [
+          176.5428,
+          156.9842,
+          6.5279
+        ],
+        "canopy_min": [
+          165.6731,
+          148.1686,
+          1.2349
+        ],
+        "id": "forest_oak_0",
+        "kind": "tree",
+        "max": [
+          178.8501,
+          159.5952,
+          11.0025
+        ],
+        "measured_max": [
+          176.0938,
+          156.6752,
+          6.4242
+        ],
+        "measured_min": [
+          165.8577,
+          148.618,
+          0.0
+        ],
+        "min": [
+          164.5718,
+          144.8508,
+          -3.357
+        ],
+        "position": [
+          171.7215,
+          152.4983,
+          0.0
+        ],
+        "trunk_max": [
+          173.3613,
+          154.1863,
+          0.9121
+        ],
+        "trunk_min": [
+          169.8625,
+          151.2169,
+          -0.0703
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7",
+        "yaw": -0.0311
+      },
+      {
+        "asset": "oak_tree",
+        "base_z": 0.0,
+        "canopy_max": [
+          195.778,
+          195.5946,
+          6.5279
+        ],
+        "canopy_min": [
+          184.9698,
+          186.8568,
+          1.2349
+        ],
+        "id": "forest_oak_1",
+        "kind": "tree",
+        "max": [
+          198.0664,
+          198.1986,
+          11.0025
+        ],
+        "measured_max": [
+          195.3312,
+          195.2868,
+          6.4242
+        ],
+        "measured_min": [
+          185.1511,
+          187.303,
+          0.0
+        ],
+        "min": [
+          183.8927,
+          183.555,
+          -3.357
+        ],
+        "position": [
+          190.988,
+          191.1522,
+          0.0
+        ],
+        "trunk_max": [
+          192.6159,
+          192.8268,
+          0.9121
+        ],
+        "trunk_min": [
+          189.1378,
+          189.8824,
+          -0.0703
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7",
+        "yaw": -0.0236
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          168.0868,
+          166.075,
+          5.0778
+        ],
+        "canopy_min": [
+          164.6952,
+          162.6834,
+          0.6016
+        ],
+        "id": "forest_pine_0",
+        "kind": "tree",
+        "max": [
+          168.7589,
+          166.7518,
+          5.095
+        ],
+        "measured_max": [
+          168.7589,
+          166.7518,
+          5.095
+        ],
+        "measured_min": [
+          164.0225,
+          161.9796,
+          -0.0186
+        ],
+        "min": [
+          164.0225,
+          161.9796,
+          -0.0186
+        ],
+        "position": [
+          166.391,
+          164.3792,
+          0.0
+        ],
+        "trunk_max": [
+          166.5476,
+          164.5397,
+          0.2107
+        ],
+        "trunk_min": [
+          166.2323,
+          164.2244,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.0717
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          167.9084,
+          172.2998,
+          5.0778
+        ],
+        "canopy_min": [
+          164.6078,
+          168.9992,
+          0.6016
+        ],
+        "id": "forest_pine_1",
+        "kind": "tree",
+        "max": [
+          168.5625,
+          172.9588,
+          5.095
+        ],
+        "measured_max": [
+          168.5625,
+          172.9588,
+          5.095
+        ],
+        "measured_min": [
+          163.954,
+          168.3133,
+          -0.0186
+        ],
+        "min": [
+          163.954,
+          168.3133,
+          -0.0186
+        ],
+        "position": [
+          166.2581,
+          170.6495,
+          0.0
+        ],
+        "trunk_max": [
+          166.4104,
+          170.8057,
+          0.2107
+        ],
+        "trunk_min": [
+          166.1036,
+          170.4989,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.0413
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          168.0382,
+          179.0087,
+          5.0778
+        ],
+        "canopy_min": [
+          164.3334,
+          175.3039,
+          0.6016
+        ],
+        "id": "forest_pine_2",
+        "kind": "tree",
+        "max": [
+          168.778,
+          179.7477,
+          5.095
+        ],
+        "measured_max": [
+          168.778,
+          179.7477,
+          5.095
+        ],
+        "measured_min": [
+          163.5999,
+          174.5387,
+          -0.0186
+        ],
+        "min": [
+          163.5999,
+          174.5387,
+          -0.0186
+        ],
+        "position": [
+          166.1858,
+          177.1563,
+          0.0
+        ],
+        "trunk_max": [
+          166.3563,
+          177.331,
+          0.2107
+        ],
+        "trunk_min": [
+          166.0119,
+          176.9866,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.1862
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          168.066,
+          185.7682,
+          5.0778
+        ],
+        "canopy_min": [
+          164.3712,
+          182.0734,
+          0.6016
+        ],
+        "id": "forest_pine_3",
+        "kind": "tree",
+        "max": [
+          168.7988,
+          186.5049,
+          5.095
+        ],
+        "measured_max": [
+          168.7988,
+          186.5049,
+          5.095
+        ],
+        "measured_min": [
+          163.6349,
+          181.31,
+          -0.0186
+        ],
+        "min": [
+          163.6349,
+          181.31,
+          -0.0186
+        ],
+        "position": [
+          166.2186,
+          183.9208,
+          0.0
+        ],
+        "trunk_max": [
+          166.3896,
+          184.0955,
+          0.2107
+        ],
+        "trunk_min": [
+          166.0461,
+          183.752,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.1822
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          168.3213,
+          192.7986,
+          5.0778
+        ],
+        "canopy_min": [
+          164.7213,
+          189.1986,
+          0.6016
+        ],
+        "id": "forest_pine_4",
+        "kind": "tree",
+        "max": [
+          169.0351,
+          193.5166,
+          5.095
+        ],
+        "measured_max": [
+          169.0351,
+          193.5166,
+          5.095
+        ],
+        "measured_min": [
+          164.005,
+          188.4538,
+          -0.0186
+        ],
+        "min": [
+          164.005,
+          188.4538,
+          -0.0186
+        ],
+        "position": [
+          166.5213,
+          190.9986,
+          0.0
+        ],
+        "trunk_max": [
+          166.6878,
+          191.1688,
+          0.2107
+        ],
+        "trunk_min": [
+          166.3531,
+          190.8342,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.1459
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          174.8093,
+          166.451,
+          5.0778
+        ],
+        "canopy_min": [
+          171.1775,
+          162.8192,
+          0.6016
+        ],
+        "id": "forest_pine_5",
+        "kind": "tree",
+        "max": [
+          175.5337,
+          167.1755,
+          5.095
+        ],
+        "measured_max": [
+          175.5337,
+          167.1755,
+          5.095
+        ],
+        "measured_min": [
+          170.4587,
+          162.0683,
+          -0.0186
+        ],
+        "min": [
+          170.4587,
+          162.0683,
+          -0.0186
+        ],
+        "position": [
+          172.9934,
+          164.6351,
+          0.0
+        ],
+        "trunk_max": [
+          173.1605,
+          164.8064,
+          0.2107
+        ],
+        "trunk_min": [
+          172.8229,
+          164.4688,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.1579
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          174.9881,
+          173.0017,
+          5.0778
+        ],
+        "canopy_min": [
+          171.5889,
+          169.6025,
+          0.6016
+        ],
+        "id": "forest_pine_6",
+        "kind": "tree",
+        "max": [
+          175.6618,
+          173.6801,
+          5.095
+        ],
+        "measured_max": [
+          175.6618,
+          173.6801,
+          5.095
+        ],
+        "measured_min": [
+          170.9146,
+          168.8972,
+          -0.0186
+        ],
+        "min": [
+          170.9146,
+          168.8972,
+          -0.0186
+        ],
+        "position": [
+          173.2885,
+          171.3021,
+          0.0
+        ],
+        "trunk_max": [
+          173.4454,
+          171.4629,
+          0.2107
+        ],
+        "trunk_min": [
+          173.1295,
+          171.1469,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.0743
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          174.4623,
+          178.8483,
+          5.0778
+        ],
+        "canopy_min": [
+          171.2073,
+          175.5933,
+          0.6016
+        ],
+        "id": "forest_pine_7",
+        "kind": "tree",
+        "max": [
+          175.1072,
+          179.4982,
+          5.095
+        ],
+        "measured_max": [
+          175.1072,
+          179.4982,
+          5.095
+        ],
+        "measured_min": [
+          170.5631,
+          174.9164,
+          -0.0186
+        ],
+        "min": [
+          170.5631,
+          174.9164,
+          -0.0186
+        ],
+        "position": [
+          172.8348,
+          177.2208,
+          0.0
+        ],
+        "trunk_max": [
+          172.9849,
+          177.3749,
+          0.2107
+        ],
+        "trunk_min": [
+          172.6823,
+          177.0723,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.0264
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          174.991,
+          185.4628,
+          5.0778
+        ],
+        "canopy_min": [
+          171.418,
+          181.8898,
+          0.6016
+        ],
+        "id": "forest_pine_8",
+        "kind": "tree",
+        "max": [
+          175.7031,
+          186.1757,
+          5.095
+        ],
+        "measured_max": [
+          175.7031,
+          186.1757,
+          5.095
+        ],
+        "measured_min": [
+          170.711,
+          181.1505,
+          -0.0186
+        ],
+        "min": [
+          170.711,
+          181.1505,
+          -0.0186
+        ],
+        "position": [
+          173.2045,
+          183.6763,
+          0.0
+        ],
+        "trunk_max": [
+          173.369,
+          183.8449,
+          0.2107
+        ],
+        "trunk_min": [
+          173.0368,
+          183.5128,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.1359
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          174.4207,
+          192.3032,
+          5.0778
+        ],
+        "canopy_min": [
+          171.0067,
+          188.8892,
+          0.6016
+        ],
+        "id": "forest_pine_9",
+        "kind": "tree",
+        "max": [
+          175.0974,
+          192.9845,
+          5.095
+        ],
+        "measured_max": [
+          175.0974,
+          192.9845,
+          5.095
+        ],
+        "measured_min": [
+          170.3293,
+          188.1809,
+          -0.0186
+        ],
+        "min": [
+          170.3293,
+          188.1809,
+          -0.0186
+        ],
+        "position": [
+          172.7137,
+          190.5962,
+          0.0
+        ],
+        "trunk_max": [
+          172.8714,
+          190.7577,
+          0.2107
+        ],
+        "trunk_min": [
+          172.554,
+          190.4404,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.0794
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          181.326,
+          166.4365,
+          5.0778
+        ],
+        "canopy_min": [
+          177.77,
+          162.8805,
+          0.6016
+        ],
+        "id": "forest_pine_10",
+        "kind": "tree",
+        "max": [
+          182.0311,
+          167.1459,
+          5.095
+        ],
+        "measured_max": [
+          182.0311,
+          167.1459,
+          5.095
+        ],
+        "measured_min": [
+          177.0628,
+          162.1442,
+          -0.0186
+        ],
+        "min": [
+          177.0628,
+          162.1442,
+          -0.0186
+        ],
+        "position": [
+          179.548,
+          164.6585,
+          0.0
+        ],
+        "trunk_max": [
+          179.7124,
+          164.8267,
+          0.2107
+        ],
+        "trunk_min": [
+          179.3818,
+          164.4961,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.1297
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          181.0494,
+          172.916,
+          5.0778
+        ],
+        "canopy_min": [
+          177.7344,
+          169.601,
+          0.6016
+        ],
+        "id": "forest_pine_11",
+        "kind": "tree",
+        "max": [
+          181.7075,
+          173.5778,
+          5.095
+        ],
+        "measured_max": [
+          181.7075,
+          173.5778,
+          5.095
+        ],
+        "measured_min": [
+          177.079,
+          168.9124,
+          -0.0186
+        ],
+        "min": [
+          177.079,
+          168.9124,
+          -0.0186
+        ],
+        "position": [
+          179.3919,
+          171.2585,
+          0.0
+        ],
+        "trunk_max": [
+          179.5446,
+          171.4153,
+          0.2107
+        ],
+        "trunk_min": [
+          179.2365,
+          171.1071,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.046
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          181.4139,
+          178.8508,
+          5.0778
+        ],
+        "canopy_min": [
+          177.7383,
+          175.1752,
+          0.6016
+        ],
+        "id": "forest_pine_12",
+        "kind": "tree",
+        "max": [
+          182.1475,
+          179.5839,
+          5.095
+        ],
+        "measured_max": [
+          182.1475,
+          179.5839,
+          5.095
+        ],
+        "measured_min": [
+          177.0108,
+          174.4158,
+          -0.0186
+        ],
+        "min": [
+          177.0108,
+          174.4158,
+          -0.0186
+        ],
+        "position": [
+          179.5761,
+          177.013,
+          0.0
+        ],
+        "trunk_max": [
+          179.7452,
+          177.1863,
+          0.2107
+        ],
+        "trunk_min": [
+          179.4036,
+          176.8447,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.1747
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          181.0727,
+          185.6806,
+          5.0778
+        ],
+        "canopy_min": [
+          177.2127,
+          181.8206,
+          0.6016
+        ],
+        "id": "forest_pine_13",
+        "kind": "tree",
+        "max": [
+          181.8453,
+          186.4503,
+          5.095
+        ],
+        "measured_max": [
+          181.8453,
+          186.4503,
+          5.095
+        ],
+        "measured_min": [
+          176.4482,
+          181.0252,
+          -0.0186
+        ],
+        "min": [
+          176.4482,
+          181.0252,
+          -0.0186
+        ],
+        "position": [
+          179.1427,
+          183.7506,
+          0.0
+        ],
+        "trunk_max": [
+          179.3202,
+          183.9324,
+          0.2107
+        ],
+        "trunk_min": [
+          178.9614,
+          183.5735,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.2506
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          181.0183,
+          192.4326,
+          5.0778
+        ],
+        "canopy_min": [
+          177.1513,
+          188.5656,
+          0.6016
+        ],
+        "id": "forest_pine_14",
+        "kind": "tree",
+        "max": [
+          181.7857,
+          193.2033,
+          5.095
+        ],
+        "measured_max": [
+          181.7857,
+          193.2033,
+          5.095
+        ],
+        "measured_min": [
+          176.3786,
+          187.7685,
+          -0.0186
+        ],
+        "min": [
+          176.3786,
+          187.7685,
+          -0.0186
+        ],
+        "position": [
+          179.0848,
+          190.4991,
+          0.0
+        ],
+        "trunk_max": [
+          179.264,
+          190.6818,
+          0.2107
+        ],
+        "trunk_min": [
+          178.9045,
+          190.3223,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.2537
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          187.9755,
+          153.7346,
+          5.0778
+        ],
+        "canopy_min": [
+          184.1863,
+          149.9454,
+          0.6016
+        ],
+        "id": "forest_pine_15",
+        "kind": "tree",
+        "max": [
+          188.7272,
+          154.49,
+          5.095
+        ],
+        "measured_max": [
+          188.7272,
+          154.49,
+          5.095
+        ],
+        "measured_min": [
+          183.4301,
+          149.1635,
+          -0.0186
+        ],
+        "min": [
+          183.4301,
+          149.1635,
+          -0.0186
+        ],
+        "position": [
+          186.0809,
+          151.84,
+          0.0
+        ],
+        "trunk_max": [
+          186.2564,
+          152.0191,
+          0.2107
+        ],
+        "trunk_min": [
+          185.9042,
+          151.6668,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.2204
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          187.8466,
+          159.4217,
+          5.0778
+        ],
+        "canopy_min": [
+          184.309,
+          155.8841,
+          0.6016
+        ],
+        "id": "forest_pine_16",
+        "kind": "tree",
+        "max": [
+          188.548,
+          160.1275,
+          5.095
+        ],
+        "measured_max": [
+          188.548,
+          160.1275,
+          5.095
+        ],
+        "measured_min": [
+          183.6057,
+          155.1515,
+          -0.0186
+        ],
+        "min": [
+          183.6057,
+          155.1515,
+          -0.0186
+        ],
+        "position": [
+          186.0778,
+          157.6529,
+          0.0
+        ],
+        "trunk_max": [
+          186.2413,
+          157.8202,
+          0.2107
+        ],
+        "trunk_min": [
+          185.9125,
+          157.4914,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.123
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          187.45,
+          166.3124,
+          5.0778
+        ],
+        "canopy_min": [
+          183.6846,
+          162.547,
+          0.6016
+        ],
+        "id": "forest_pine_17",
+        "kind": "tree",
+        "max": [
+          188.197,
+          167.0631,
+          5.095
+        ],
+        "measured_max": [
+          188.197,
+          167.0631,
+          5.095
+        ],
+        "measured_min": [
+          182.9333,
+          161.7697,
+          -0.0186
+        ],
+        "min": [
+          182.9333,
+          161.7697,
+          -0.0186
+        ],
+        "position": [
+          185.5673,
+          164.4297,
+          0.0
+        ],
+        "trunk_max": [
+          185.7417,
+          164.6077,
+          0.2107
+        ],
+        "trunk_min": [
+          185.3916,
+          164.2576,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.2106
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          187.3684,
+          179.5533,
+          5.0778
+        ],
+        "canopy_min": [
+          183.831,
+          176.0159,
+          0.6016
+        ],
+        "id": "forest_pine_18",
+        "kind": "tree",
+        "max": [
+          188.0697,
+          180.259,
+          5.095
+        ],
+        "measured_max": [
+          188.0697,
+          180.259,
+          5.095
+        ],
+        "measured_min": [
+          183.1278,
+          175.2834,
+          -0.0186
+        ],
+        "min": [
+          183.1278,
+          175.2834,
+          -0.0186
+        ],
+        "position": [
+          185.5997,
+          177.7846,
+          0.0
+        ],
+        "trunk_max": [
+          185.7632,
+          177.9519,
+          0.2107
+        ],
+        "trunk_min": [
+          185.4344,
+          177.6231,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.1229
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          194.6188,
+          147.1166,
+          5.0778
+        ],
+        "canopy_min": [
+          191.0342,
+          143.532,
+          0.6016
+        ],
+        "id": "forest_pine_19",
+        "kind": "tree",
+        "max": [
+          195.3333,
+          147.8318,
+          5.095
+        ],
+        "measured_max": [
+          195.3333,
+          147.8318,
+          5.095
+        ],
+        "measured_min": [
+          190.3248,
+          142.7904,
+          -0.0186
+        ],
+        "min": [
+          190.3248,
+          142.7904,
+          -0.0186
+        ],
+        "position": [
+          192.8265,
+          145.3243,
+          0.0
+        ],
+        "trunk_max": [
+          192.9915,
+          145.4935,
+          0.2107
+        ],
+        "trunk_min": [
+          192.6583,
+          145.1602,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.1402
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          194.1507,
+          153.4553,
+          5.0778
+        ],
+        "canopy_min": [
+          190.5111,
+          149.8157,
+          0.6016
+        ],
+        "id": "forest_pine_20",
+        "kind": "tree",
+        "max": [
+          194.8725,
+          154.1812,
+          5.095
+        ],
+        "measured_max": [
+          194.8725,
+          154.1812,
+          5.095
+        ],
+        "measured_min": [
+          189.7864,
+          149.063,
+          -0.0186
+        ],
+        "min": [
+          189.7864,
+          149.063,
+          -0.0186
+        ],
+        "position": [
+          192.3309,
+          151.6355,
+          0.0
+        ],
+        "trunk_max": [
+          192.4993,
+          151.8076,
+          0.2107
+        ],
+        "trunk_min": [
+          192.1609,
+          151.4692,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": -0.1609
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          194.1145,
+          160.2602,
+          5.0778
+        ],
+        "canopy_min": [
+          190.1785,
+          156.3242,
+          0.6016
+        ],
+        "id": "forest_pine_21",
+        "kind": "tree",
+        "max": [
+          194.9031,
+          161.0448,
+          5.095
+        ],
+        "measured_max": [
+          194.9031,
+          161.0448,
+          5.095
+        ],
+        "measured_min": [
+          189.3988,
+          155.5142,
+          -0.0186
+        ],
+        "min": [
+          189.3988,
+          155.5142,
+          -0.0186
+        ],
+        "position": [
+          192.1465,
+          158.2922,
+          0.0
+        ],
+        "trunk_max": [
+          192.3275,
+          158.4774,
+          0.2107
+        ],
+        "trunk_min": [
+          191.9616,
+          158.1115,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.2848
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          193.9694,
+          165.7357,
+          5.0778
+        ],
+        "canopy_min": [
+          190.7564,
+          162.5227,
+          0.6016
+        ],
+        "id": "forest_pine_22",
+        "kind": "tree",
+        "max": [
+          194.6063,
+          166.3774,
+          5.095
+        ],
+        "measured_max": [
+          194.6063,
+          166.3774,
+          5.095
+        ],
+        "measured_min": [
+          190.1212,
+          161.8541,
+          -0.0186
+        ],
+        "min": [
+          190.1212,
+          161.8541,
+          -0.0186
+        ],
+        "position": [
+          192.3629,
+          164.1292,
+          0.0
+        ],
+        "trunk_max": [
+          192.511,
+          164.2813,
+          0.2107
+        ],
+        "trunk_min": [
+          192.2123,
+          163.9826,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.0129
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          194.2256,
+          173.1154,
+          5.0778
+        ],
+        "canopy_min": [
+          190.334,
+          169.2238,
+          0.6016
+        ],
+        "id": "forest_pine_23",
+        "kind": "tree",
+        "max": [
+          195.0049,
+          173.8913,
+          5.095
+        ],
+        "measured_max": [
+          195.0049,
+          173.8913,
+          5.095
+        ],
+        "measured_min": [
+          189.5631,
+          168.4223,
+          -0.0186
+        ],
+        "min": [
+          189.5631,
+          168.4223,
+          -0.0186
+        ],
+        "position": [
+          192.2798,
+          171.1696,
+          0.0
+        ],
+        "trunk_max": [
+          192.4588,
+          171.3528,
+          0.2107
+        ],
+        "trunk_min": [
+          192.097,
+          170.991,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.2646
+      },
+      {
+        "asset": "pine_tree",
+        "base_z": -0.0186,
+        "canopy_max": [
+          194.5358,
+          179.2955,
+          5.0778
+        ],
+        "canopy_min": [
+          190.9116,
+          175.6713,
+          0.6016
+        ],
+        "id": "forest_pine_24",
+        "kind": "tree",
+        "max": [
+          195.2586,
+          180.0185,
+          5.095
+        ],
+        "measured_max": [
+          195.2586,
+          180.0185,
+          5.095
+        ],
+        "measured_min": [
+          190.1943,
+          174.922,
+          -0.0186
+        ],
+        "min": [
+          190.1943,
+          174.922,
+          -0.0186
+        ],
+        "position": [
+          192.7237,
+          177.4834,
+          0.0
+        ],
+        "trunk_max": [
+          192.8905,
+          177.6544,
+          0.2107
+        ],
+        "trunk_min": [
+          192.5536,
+          177.3175,
+          0.0
+        ],
+        "uri": "file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+        "yaw": 0.155
+      }
+    ],
+    "bridge_channel_ids": [
+      "water_channel"
+    ],
+    "bridge_id": "truss_bridge",
+    "launch_pad": {
+      "center_enu": [
+        20,
+        20,
+        0
+      ],
+      "clearance_radius_m": 10,
+      "marker_rgba": [
+        0.9,
+        0.55,
+        0.1,
+        1
+      ],
+      "radius_m": 3
+    },
+    "procedural": [
+      {
+        "id": "flat_roof_building",
+        "kind": "flat_roof_building",
+        "max": [
+          44.0,
+          146.0,
+          3.2
+        ],
+        "min": [
+          36.0,
+          138.0,
+          0.0
+        ],
+        "rgba": [
+          0.62,
+          0.6,
+          0.56,
+          1
+        ]
+      },
+      {
+        "id": "village_road",
+        "kind": "road",
+        "max": [
+          109.0,
+          92.0,
+          0.05
+        ],
+        "min": [
+          0.0,
+          86.0,
+          0.0
+        ],
+        "rgba": [
+          0.27,
+          0.27,
+          0.28,
+          1
+        ]
+      },
+      {
+        "id": "bridge_abutment_west",
+        "kind": "bridge_abutment",
+        "max": [
+          150.0,
+          137.0,
+          1.8
+        ],
+        "min": [
+          142.0,
+          127.0,
+          -1.5
+        ],
+        "rgba": [
+          0.56,
+          0.55,
+          0.52,
+          1
+        ]
+      },
+      {
+        "id": "bridge_abutment_east",
+        "kind": "bridge_abutment",
+        "max": [
+          170.0,
+          137.0,
+          1.8
+        ],
+        "min": [
+          162.0,
+          127.0,
+          -1.5
+        ],
+        "rgba": [
+          0.56,
+          0.55,
+          0.52,
+          1
+        ]
+      },
+      {
+        "id": "sandbar",
+        "in_water": true,
+        "kind": "sandbar",
+        "max": [
+          155.5,
+          108.0,
+          -2.0
+        ],
+        "min": [
+          153.5,
+          104.0,
+          -3.0
+        ],
+        "rgba": [
+          0.4,
+          0.35,
+          0.28,
+          1
+        ]
+      }
+    ],
+    "terrain": [
+      {
+        "id": "ops_terrace",
+        "kind": "land",
+        "max": [
+          40.0,
+          40.0,
+          0.0
+        ],
+        "min": [
+          0.0,
+          0.0,
+          -3.0
+        ],
+        "rgba": [
+          0.34,
+          0.45,
+          0.24,
+          1
+        ],
+        "texture": "field"
+      },
+      {
+        "id": "floodplain_south",
+        "kind": "floodplain",
+        "max": [
+          200.0,
+          40.0,
+          -1.5
+        ],
+        "min": [
+          40.0,
+          0.0,
+          -3.0
+        ],
+        "rgba": [
+          0.33,
+          0.28,
+          0.22,
+          1
+        ],
+        "texture": "mud"
+      },
+      {
+        "id": "floodplain_mid",
+        "kind": "floodplain",
+        "max": [
+          200.0,
+          80.0,
+          -1.5
+        ],
+        "min": [
+          0.0,
+          40.0,
+          -3.0
+        ],
+        "rgba": [
+          0.33,
+          0.28,
+          0.22,
+          1
+        ],
+        "texture": "mud"
+      },
+      {
+        "id": "village_platform",
+        "kind": "land",
+        "max": [
+          110.0,
+          200.0,
+          0.0
+        ],
+        "min": [
+          0.0,
+          80.0,
+          -3.0
+        ],
+        "rgba": [
+          0.34,
+          0.45,
+          0.24,
+          1
+        ],
+        "texture": "field"
+      },
+      {
+        "id": "meadow",
+        "kind": "floodplain",
+        "max": [
+          150.0,
+          200.0,
+          -1.5
+        ],
+        "min": [
+          110.0,
+          80.0,
+          -3.0
+        ],
+        "rgba": [
+          0.33,
+          0.28,
+          0.22,
+          1
+        ],
+        "texture": "mud"
+      },
+      {
+        "id": "channel_bed",
+        "kind": "channel_bed",
+        "max": [
+          162.0,
+          200.0,
+          -3.0
+        ],
+        "min": [
+          150.0,
+          80.0,
+          -4.0
+        ],
+        "rgba": [
+          0.33,
+          0.28,
+          0.22,
+          1
+        ],
+        "texture": "mud"
+      },
+      {
+        "id": "east_bank",
+        "kind": "floodplain",
+        "max": [
+          200.0,
+          140.0,
+          -1.5
+        ],
+        "min": [
+          162.0,
+          80.0,
+          -3.0
+        ],
+        "rgba": [
+          0.33,
+          0.28,
+          0.22,
+          1
+        ],
+        "texture": "mud"
+      },
+      {
+        "id": "forest_hill",
+        "kind": "land",
+        "max": [
+          200.0,
+          200.0,
+          0.0
+        ],
+        "min": [
+          162.0,
+          140.0,
+          -3.0
+        ],
+        "rgba": [
+          0.34,
+          0.45,
+          0.24,
+          1
+        ],
+        "texture": "field"
+      },
+      {
+        "id": "bank_shelf",
+        "kind": "bank_shelf",
+        "max": [
+          152.7,
+          142.0,
+          -0.5
+        ],
+        "min": [
+          150.2,
+          122.0,
+          -3.0
+        ],
+        "rgba": [
+          0.48,
+          0.38,
+          0.26,
+          1
+        ],
+        "texture": "mud"
+      }
+    ],
+    "water": [
+      {
+        "id": "water_floodplain",
+        "kind": "water",
+        "max": [
+          200.0,
+          80.0,
+          -0.8
+        ],
+        "min": [
+          40.0,
+          0.0,
+          -0.82
+        ],
+        "no_landing": true,
+        "pbr": {
+          "metalness": 0.0,
+          "roughness": 0.08
+        },
+        "rgba": [
+          0.24,
+          0.29,
+          0.28,
+          0.9
+        ],
+        "specular": [
+          0.6,
+          0.6,
+          0.6,
+          1.0
+        ],
+        "transparency": 0.12
+      },
+      {
+        "id": "water_west_mid",
+        "kind": "water",
+        "max": [
+          40.0,
+          80.0,
+          -0.8
+        ],
+        "min": [
+          0.0,
+          40.0,
+          -0.82
+        ],
+        "no_landing": true,
+        "pbr": {
+          "metalness": 0.0,
+          "roughness": 0.08
+        },
+        "rgba": [
+          0.24,
+          0.29,
+          0.28,
+          0.9
+        ],
+        "specular": [
+          0.6,
+          0.6,
+          0.6,
+          1.0
+        ],
+        "transparency": 0.12
+      },
+      {
+        "id": "water_meadow",
+        "kind": "water",
+        "max": [
+          150.0,
+          200.0,
+          -0.8
+        ],
+        "min": [
+          110.0,
+          80.0,
+          -0.82
+        ],
+        "no_landing": true,
+        "pbr": {
+          "metalness": 0.0,
+          "roughness": 0.08
+        },
+        "rgba": [
+          0.24,
+          0.29,
+          0.28,
+          0.9
+        ],
+        "specular": [
+          0.6,
+          0.6,
+          0.6,
+          1.0
+        ],
+        "transparency": 0.12
+      },
+      {
+        "id": "water_channel",
+        "kind": "water",
+        "max": [
+          162.0,
+          200.0,
+          -0.8
+        ],
+        "min": [
+          150.0,
+          80.0,
+          -0.82
+        ],
+        "no_landing": true,
+        "pbr": {
+          "metalness": 0.0,
+          "roughness": 0.08
+        },
+        "rgba": [
+          0.24,
+          0.29,
+          0.28,
+          0.9
+        ],
+        "specular": [
+          0.6,
+          0.6,
+          0.6,
+          1.0
+        ],
+        "transparency": 0.12
+      },
+      {
+        "id": "water_east_bank",
+        "kind": "water",
+        "max": [
+          200.0,
+          140.0,
+          -0.8
+        ],
+        "min": [
+          162.0,
+          80.0,
+          -0.82
+        ],
+        "no_landing": true,
+        "pbr": {
+          "metalness": 0.0,
+          "roughness": 0.08
+        },
+        "rgba": [
+          0.24,
+          0.29,
+          0.28,
+          0.9
+        ],
+        "specular": [
+          0.6,
+          0.6,
+          0.6,
+          1.0
+        ],
+        "transparency": 0.12
+      }
+    ],
+    "world_bounds": {
+      "x_max": 200,
+      "x_min": 0,
+      "y_max": 200,
+      "y_min": 0
+    }
+  },
+  "segmentation": {
+    "background_label": 0,
+    "label_source": "gz-sim-label-system on human includes only",
+    "labels": {},
+    "type": "semantic"
+  },
+  "targets": [],
+  "tolerances": {
+    "building_clearance_m": 6.0,
+    "human_overlap_m": 0.05,
+    "human_support_m": 0.05,
+    "provenance": "engineering_default_unfrozen",
+    "public_position_match_m": 0.5,
+    "rig_obstacle_inflation_m": 1.0,
+    "static_overlap_m": 0.05,
+    "static_support_m": 0.1,
+    "tree_gap_m": 0.5
+  },
+  "variant": "absent",
+  "world_sdf_sha256": "bdce2accaec690511102f8091edb0d89cf1506423df276067330ea135adabdd4"
+}

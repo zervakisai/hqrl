@@ -1,0 +1,32 @@
+{
+ "quantum": {
+  "blocks": 36,
+  "gain_mean": 0.01829122596884538,
+  "cum_kl_median": 0.4679698964125627,
+  "gain_per_cum_kl_median": 0.044757381779421554,
+  "gain_per_cum_kl_iqr": [
+   0.030544835429009834,
+   0.0557854416489733
+  ]
+ },
+ "bottleneck": {
+  "blocks": 36,
+  "gain_mean": 0.025510857161529454,
+  "cum_kl_median": 0.12053381380396325,
+  "gain_per_cum_kl_median": 0.20719763222631624,
+  "gain_per_cum_kl_iqr": [
+   0.1386245487190693,
+   0.2661680316216327
+  ]
+ },
+ "surrogate625": {
+  "blocks": 36,
+  "gain_mean": 0.026063374877625688,
+  "cum_kl_median": 0.5876237437912228,
+  "gain_per_cum_kl_median": 0.04885131879196056,
+  "gain_per_cum_kl_iqr": [
+   0.03409710435871321,
+   0.06368512727489054
+  ]
+ }
+}

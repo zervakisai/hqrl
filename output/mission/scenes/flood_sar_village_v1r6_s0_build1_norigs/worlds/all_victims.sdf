@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.9">
+  <world name="flood_sar_village_v1">
+    <physics type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+    </physics>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type="adiabatic" />
+    <scene>
+      <grid>false</grid>
+      <ambient>0.26 0.25 0.28 1</ambient>
+      <background>0.62 0.58 0.56 1</background>
+      <shadows>true</shadows>
+      <fog>
+        <type>linear</type>
+        <color>0.66 0.64 0.62 1</color>
+        <start>40</start>
+        <end>260</end>
+        <density>0.02</density>
+      </fog>
+    </scene>
+    <light name="sunUTC" type="directional">
+      <pose>0 0 500 0 -0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1.0</intensity>
+      <direction>-0.55 -0.72 -0.42</direction>
+      <diffuse>1 0.74 0.5 1</diffuse>
+      <specular>0.3 0.25 0.2 1</specular>
+      <attenuation>
+        <range>2000</range>
+        <linear>0</linear>
+        <constant>1</constant>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>47.397971057728974</latitude_deg>
+      <longitude_deg> 8.546163739800146</longitude_deg>
+      <elevation>0</elevation>
+    </spherical_coordinates>
+    <model name="launch_pad_marker">
+      <static>true</static>
+      <pose>20 20 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>3</radius>
+              <length>0.02</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.9 0.55 0.1 1</ambient>
+            <diffuse>0.9 0.55 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="ops_terrace">
+      <static>true</static>
+      <pose>20 20 -1.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>40 40 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/ops_terrace.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground037_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground037_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground037_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="floodplain_south">
+      <static>true</static>
+      <pose>120 20 -2.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>160 40 1.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/floodplain_south.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground036_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground036_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground036_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="floodplain_mid">
+      <static>true</static>
+      <pose>100 60 -2.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>200 40 1.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/floodplain_mid.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground036_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground036_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground036_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="village_platform">
+      <static>true</static>
+      <pose>55 140 -1.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>110 120 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/village_platform.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground037_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground037_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground037_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="meadow">
+      <static>true</static>
+      <pose>130 140 -2.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>40 120 1.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/meadow.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground036_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground036_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground036_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="channel_bed">
+      <static>true</static>
+      <pose>156 140 -3.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>12 120 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/channel_bed.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground036_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground036_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground036_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="east_bank">
+      <static>true</static>
+      <pose>181 110 -2.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>38 60 1.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/east_bank.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground036_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground036_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground036_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="forest_hill">
+      <static>true</static>
+      <pose>181 170 -1.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>38 60 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/forest_hill.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground037_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground037_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground037_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="bank_shelf">
+      <static>true</static>
+      <pose>151.45 132 -1.75 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2.5 20 2.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://flood_sar_ground/meshes/bank_shelf.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://flood_sar_ground/materials/textures/Ground036_Color.jpg</albedo_map>
+                <normal_map>model://flood_sar_ground/materials/textures/Ground036_NormalGL.jpg</normal_map>
+                <roughness_map>model://flood_sar_ground/materials/textures/Ground036_Roughness.jpg</roughness_map>
+                <metalness>0.0</metalness>
+                <roughness>1.0</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="flat_roof_building">
+      <static>true</static>
+      <pose>40 142 1.6 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>8 8 3.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>8 8 3.2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.62 0.6 0.56 1</ambient>
+            <diffuse>0.62 0.6 0.56 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="village_road">
+      <static>true</static>
+      <pose>54.5 89 0.025 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>109 6 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>109 6 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.27 0.27 0.28 1</ambient>
+            <diffuse>0.27 0.27 0.28 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="bridge_abutment_west">
+      <static>true</static>
+      <pose>146 132 0.15 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>8 10 3.3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>8 10 3.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.56 0.55 0.52 1</ambient>
+            <diffuse>0.56 0.55 0.52 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="bridge_abutment_east">
+      <static>true</static>
+      <pose>166 132 0.15 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>8 10 3.3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>8 10 3.3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.56 0.55 0.52 1</ambient>
+            <diffuse>0.56 0.55 0.52 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="sandbar">
+      <static>true</static>
+      <pose>154.5 106 -2.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2 4 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2 4 1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.4 0.35 0.28 1</ambient>
+            <diffuse>0.4 0.35 0.28 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="water_floodplain">
+      <static>true</static>
+      <pose>120 40 -0.81 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>160 80 0.02</size>
+            </box>
+          </geometry>
+          <transparency>0.12</transparency>
+          <cast_shadows>false</cast_shadows>
+          <material>
+            <ambient>0.24 0.29 0.28 0.9</ambient>
+            <diffuse>0.24 0.29 0.28 0.9</diffuse>
+            <specular>0.6 0.6 0.6 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.08</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="water_west_mid">
+      <static>true</static>
+      <pose>20 60 -0.81 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>40 40 0.02</size>
+            </box>
+          </geometry>
+          <transparency>0.12</transparency>
+          <cast_shadows>false</cast_shadows>
+          <material>
+            <ambient>0.24 0.29 0.28 0.9</ambient>
+            <diffuse>0.24 0.29 0.28 0.9</diffuse>
+            <specular>0.6 0.6 0.6 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.08</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="water_meadow">
+      <static>true</static>
+      <pose>130 140 -0.81 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>40 120 0.02</size>
+            </box>
+          </geometry>
+          <transparency>0.12</transparency>
+          <cast_shadows>false</cast_shadows>
+          <material>
+            <ambient>0.24 0.29 0.28 0.9</ambient>
+            <diffuse>0.24 0.29 0.28 0.9</diffuse>
+            <specular>0.6 0.6 0.6 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.08</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="water_channel">
+      <static>true</static>
+      <pose>156 140 -0.81 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>12 120 0.02</size>
+            </box>
+          </geometry>
+          <transparency>0.12</transparency>
+          <cast_shadows>false</cast_shadows>
+          <material>
+            <ambient>0.24 0.29 0.28 0.9</ambient>
+            <diffuse>0.24 0.29 0.28 0.9</diffuse>
+            <specular>0.6 0.6 0.6 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.08</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="water_east_bank">
+      <static>true</static>
+      <pose>181 110 -0.81 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>38 60 0.02</size>
+            </box>
+          </geometry>
+          <transparency>0.12</transparency>
+          <cast_shadows>false</cast_shadows>
+          <material>
+            <ambient>0.24 0.29 0.28 0.9</ambient>
+            <diffuse>0.24 0.29 0.28 0.9</diffuse>
+            <specular>0.6 0.6 0.6 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.08</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <include>
+      <name>house_n1</name>
+      <pose>14 180 0 0 0 0</pose>
+      <uri>model://house_2_pbr</uri>
+    </include>
+    <include>
+      <name>house_n2</name>
+      <pose>38 182 0 0 0 0</pose>
+      <uri>model://house_3_pbr</uri>
+    </include>
+    <include>
+      <name>police_station</name>
+      <pose>70 178 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20police%20station/3</uri>
+    </include>
+    <include>
+      <name>house_n3</name>
+      <pose>98 186 0 0 0 0</pose>
+      <uri>model://house_2_pbr</uri>
+    </include>
+    <include>
+      <name>house_m1</name>
+      <pose>14 140 0 0 0 0</pose>
+      <uri>model://house_1_pbr</uri>
+    </include>
+    <include>
+      <name>fire_station</name>
+      <pose>74 138 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20fire%20station/3</uri>
+    </include>
+    <include>
+      <name>collapsed_house</name>
+      <pose>100 164 0 0 0 0.3</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20house/4</uri>
+    </include>
+    <include>
+      <name>house_s1</name>
+      <pose>14 104 0 0 0 0</pose>
+      <uri>model://house_3_pbr</uri>
+    </include>
+    <include>
+      <name>house_s2</name>
+      <pose>40 106 0 0 0 0</pose>
+      <uri>model://house_2_pbr</uri>
+    </include>
+    <include>
+      <name>flooded_house_meadow</name>
+      <pose>130 170 -1.5 0 0 0.2</pose>
+      <uri>model://house_2_pbr</uri>
+    </include>
+    <include>
+      <name>flooded_ruin_south</name>
+      <pose>150 58 -1.5 0 0 1.2</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20house/4</uri>
+    </include>
+    <include>
+      <name>car_road_1</name>
+      <pose>24 89 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20red/4</uri>
+    </include>
+    <include>
+      <name>car_road_2</name>
+      <pose>62 89 0 0 0 3.1416</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pickup/4</uri>
+    </include>
+    <include>
+      <name>car_meadow</name>
+      <pose>126 118 -1.5 0 0 0.7</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/suv/4</uri>
+    </include>
+    <include>
+      <name>car_floodplain</name>
+      <pose>84 60 -1.5 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20blue/5</uri>
+    </include>
+    <include>
+      <name>car_floodplain_2</name>
+      <pose>132 22 -1.5 0 0 2.2</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20red/4</uri>
+    </include>
+    <include>
+      <name>ambulance</name>
+      <pose>33 8 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/ambulance/4</uri>
+    </include>
+    <include>
+      <name>pole_0</name>
+      <pose>8 95 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3</uri>
+    </include>
+    <include>
+      <name>pole_1</name>
+      <pose>30 95 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3</uri>
+    </include>
+    <include>
+      <name>pole_2</name>
+      <pose>52 95 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3</uri>
+    </include>
+    <include>
+      <name>pole_3</name>
+      <pose>74 95 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3</uri>
+    </include>
+    <include>
+      <name>pole_4</name>
+      <pose>96 95 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3</uri>
+    </include>
+    <include>
+      <name>debris_pile_0</name>
+      <pose>101.197 132 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/garbagepilev1/2</uri>
+    </include>
+    <include>
+      <name>debris_pile_1</name>
+      <pose>102.481 132 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/garbagepilev2/2</uri>
+    </include>
+    <include>
+      <name>barrel_0</name>
+      <pose>40 93.8 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/construction%20barrel/4</uri>
+      <static>true</static>
+    </include>
+    <include>
+      <name>barrel_1</name>
+      <pose>42.2 94.2 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/construction%20barrel/4</uri>
+      <static>true</static>
+    </include>
+    <include>
+      <name>barrel_2</name>
+      <pose>64 93.9 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/construction%20barrel/4</uri>
+      <static>true</static>
+    </include>
+    <include>
+      <name>rock_0</name>
+      <pose>180.481 142.5 0.6962 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%201/6</uri>
+      <static>true</static>
+    </include>
+    <include>
+      <name>rock_1</name>
+      <pose>181.92 142.5 0.4193 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%202/6</uri>
+      <static>true</static>
+    </include>
+    <include>
+      <name>rock_2</name>
+      <pose>182.94 142.5 0.2951 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%203/6</uri>
+      <static>true</static>
+    </include>
+    <include>
+      <name>truss_bridge</name>
+      <pose>156 132 2.7311 0 0 1.5708</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/truss%20bridge/3</uri>
+    </include>
+    <include>
+      <name>oak_village_0</name>
+      <pose>71.3621 110.5618 0 0 0 -0.1068</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7</uri>
+    </include>
+    <include>
+      <name>oak_village_1</name>
+      <pose>95.2621 114.8028 0 0 0 -0.023</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7</uri>
+    </include>
+    <include>
+      <name>pine_meadow_0</name>
+      <pose>114.4686 95.9827 -1.5 0 0 0.3116</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_meadow_1</name>
+      <pose>117.2746 148.8849 -1.5 0 0 -1.2366</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_meadow_2</name>
+      <pose>145.8968 101.0049 -1.5 0 0 -0.6088</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_meadow_3</name>
+      <pose>143.9303 186.8994 -1.5 0 0 1.5731</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_meadow_4</name>
+      <pose>114.6906 191.0633 -1.5 0 0 0.259</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_meadow_5</name>
+      <pose>140.5603 145.8909 -1.5 0 0 2.9526</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_meadow_6</name>
+      <pose>119.0725 132.956 -1.5 0 0 0.7759</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_east_0</name>
+      <pose>170.6633 88.8511 -1.5 0 0 2.622</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_east_1</name>
+      <pose>189.6084 99.9289 -1.5 0 0 -0.2555</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_east_2</name>
+      <pose>175.6849 119.6126 -1.5 0 0 2.2157</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_east_3</name>
+      <pose>195.9024 119.537 -1.5 0 0 2.1355</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_0</name>
+      <pose>58.5758 19.9024 -1.5 0 0 1.5898</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_1</name>
+      <pose>95.3259 11.3032 -1.5 0 0 1.1516</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_2</name>
+      <pose>120.6364 33.6563 -1.5 0 0 1.8998</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_3</name>
+      <pose>160.7625 15.4289 -1.5 0 0 2.232</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_4</name>
+      <pose>186.3251 28.7003 -1.5 0 0 -0.1765</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_5</name>
+      <pose>111.046 65.0466 -1.5 0 0 0.9156</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_6</name>
+      <pose>180.869 60.5425 -1.5 0 0 -1.3705</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_7</name>
+      <pose>19.4056 59.2876 -1.5 0 0 1.9167</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_8</name>
+      <pose>71.1488 46.5922 -1.5 0 0 -0.1118</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_9</name>
+      <pose>98.3269 45.8829 -1.5 0 0 0.5624</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_10</name>
+      <pose>174.8552 44.7225 -1.5 0 0 2.6332</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_south_11</name>
+      <pose>56.3681 68.8018 -1.5 0 0 1.0075</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_ops_0</name>
+      <pose>5.115 35.0156 0 0 0 -1.8116</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>pine_ops_1</name>
+      <pose>35.4259 34.5731 0 0 0 -1.1515</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_oak_0</name>
+      <pose>171.7215 152.4983 0 0 0 -0.0311</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7</uri>
+    </include>
+    <include>
+      <name>forest_oak_1</name>
+      <pose>190.988 191.1522 0 0 0 -0.0236</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7</uri>
+    </include>
+    <include>
+      <name>forest_pine_0</name>
+      <pose>166.391 164.3792 0 0 0 -0.0717</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_1</name>
+      <pose>166.2581 170.6495 0 0 0 -0.0413</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_2</name>
+      <pose>166.1858 177.1563 0 0 0 0.1862</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_3</name>
+      <pose>166.2186 183.9208 0 0 0 -0.1822</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_4</name>
+      <pose>166.5213 190.9986 0 0 0 -0.1459</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_5</name>
+      <pose>172.9934 164.6351 0 0 0 0.1579</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_6</name>
+      <pose>173.2885 171.3021 0 0 0 -0.0743</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_7</name>
+      <pose>172.8348 177.2208 0 0 0 -0.0264</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_8</name>
+      <pose>173.2045 183.6763 0 0 0 0.1359</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_9</name>
+      <pose>172.7137 190.5962 0 0 0 -0.0794</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_10</name>
+      <pose>179.548 164.6585 0 0 0 -0.1297</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_11</name>
+      <pose>179.3919 171.2585 0 0 0 0.046</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_12</name>
+      <pose>179.5761 177.013 0 0 0 0.1747</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_13</name>
+      <pose>179.1427 183.7506 0 0 0 0.2506</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_14</name>
+      <pose>179.0848 190.4991 0 0 0 -0.2537</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_15</name>
+      <pose>186.0809 151.84 0 0 0 -0.2204</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_16</name>
+      <pose>186.0778 157.6529 0 0 0 -0.123</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_17</name>
+      <pose>185.5673 164.4297 0 0 0 -0.2106</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_18</name>
+      <pose>185.5997 177.7846 0 0 0 -0.1229</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_19</name>
+      <pose>192.8265 145.3243 0 0 0 0.1402</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_20</name>
+      <pose>192.3309 151.6355 0 0 0 -0.1609</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_21</name>
+      <pose>192.1465 158.2922 0 0 0 0.2848</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_22</name>
+      <pose>192.3629 164.1292 0 0 0 0.0129</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_23</name>
+      <pose>192.2798 171.1696 0 0 0 0.2646</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>forest_pine_24</name>
+      <pose>192.7237 177.4834 0 0 0 0.155</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6</uri>
+    </include>
+    <include>
+      <name>human_rooftop</name>
+      <pose>37.5 145 3.2 0 0 2</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/casual%20female/4</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>101</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_canopy</name>
+      <pose>95.2621 117.6028 0 0 0 1.2</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>102</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_rubble</name>
+      <pose>89.5 138 0 0 0 3</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/rescue%20randy/3</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>103</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_bridge</name>
+      <pose>151.2 126 -0.5 0 0 0.6</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/standing%20person/3</uri>
+      <static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>104</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_floodwater</name>
+      <pose>70 62 -1.5 0 0 1.1</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/casual%20female/4</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>105</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_vehicle</name>
+      <pose>84 63.6 -1.5 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/rescue%20randy/3</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>106</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_shadow</name>
+      <pose>27 104 0 0 0 0.9</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/standing%20person/3</uri>
+      <static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>107</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_road</name>
+      <pose>46 89 0.05 0 0 1.9</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>108</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_inside_collapsed</name>
+      <pose>66 174 0 0 0 2.1</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>109</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_inside_house</name>
+      <pose>98 186 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/casual%20female/4</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>110</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_under_rocks</name>
+      <pose>181.35 141.4 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>111</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_in_car</name>
+      <pose>126.3 118.3 -0.9 0 0 0.7</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/rescue%20randy%20sitting/8</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>112</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_under_car</name>
+      <pose>62 90.236 0.05 0 0 1.5708</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>113</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_forest</name>
+      <pose>186 171 0 0 0 0.9</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>114</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_roof_seated</name>
+      <pose>42.5 141 3.2 0 0 3.5</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/rescue%20randy%20sitting/8</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>115</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_family_adult</name>
+      <pose>42 139.8 3.2 0 0 2.2</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/standing%20person/3</uri>
+      <static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>116</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_debris_elder</name>
+      <pose>102 132.3 0 0 0 0</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2</uri>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>117</label>
+      </plugin>
+    </include>
+    <include>
+      <name>human_half_submerged</name>
+      <pose>154.5 106 -2 0 0 0.5</pose>
+      <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/standing%20person/3</uri>
+      <static>true</static>
+      <plugin filename="gz-sim-label-system" name="gz::sim::systems::Label">
+        <label>118</label>
+      </plugin>
+    </include>
+  </world>
+</sdf>

@@ -1,0 +1,972 @@
+{
+ "plan_sha256": "efd8b1d7b0af55aa142c978c8bccac24d5f6f2a6af21e3e8e93435f3a068bb7e",
+ "provisional": false,
+ "reproduction_max_rel_diff": 2.040385013262197e-07,
+ "holm": {
+  "X2": true,
+  "X1": true
+ },
+ "verdict": "partial",
+ "damping_all_negative": true,
+ "results": {
+  "shipped": {
+   "n_units": 33,
+   "excluded": [
+    13,
+    14,
+    15
+   ],
+   "X1@0.01": {
+    "n": 33,
+    "mean": 1.4698811643203846,
+    "lo": 0.5257482707172815,
+    "hi": 2.4140140579234877,
+    "p": 0.0033385722790470235,
+    "dz": 0.5520379614245554
+   },
+   "X2@0.01": {
+    "n": 33,
+    "mean": -4.7213535590098585,
+    "lo": -7.216084867290322,
+    "hi": -2.226622250729396,
+    "p": 0.0005254729085098188,
+    "dz": -0.6710619181879343
+   },
+   "m4-TAN@0.01": {
+    "n": 33,
+    "mean": -6.123667977419298,
+    "lo": -8.692864890892956,
+    "hi": -3.55447106394564,
+    "p": 3.0272822349466756e-05,
+    "dz": -0.8451505749789789
+   },
+   "TAN16-TAN@0.01": {
+    "n": 33,
+    "mean": -0.40065848851246116,
+    "lo": -0.6679713125897683,
+    "hi": -0.13334566443515405,
+    "p": 0.004534726272588418,
+    "dz": -0.5314646727899539
+   },
+   "arm:HQ-Fisher-m4@0.01": {
+    "n": 33,
+    "mean": -1.3775937706985306,
+    "lo": -3.137671408052168,
+    "hi": 0.3824838666551067
+   },
+   "arm:HQ-Fisher-m16@0.01": {
+    "n": 33,
+    "mean": 0.02472064771090899,
+    "lo": -1.713190979519823,
+    "hi": 1.762632274941641
+   },
+   "arm:TAN-m16@0.01": {
+    "n": 33,
+    "mean": 4.345415718208306,
+    "lo": 2.766240724667271,
+    "hi": 5.9245907117493415
+   },
+   "diag_m4@0.01": {
+    "steps_median": 6.0,
+    "steps_max": 10
+   },
+   "diag@0.01": {
+    "steps_median": 32.0,
+    "steps_max": 97,
+    "steps_min": 19,
+    "cos_to_TAN_median": -0.03636105647183697,
+    "status": {
+     "ok": 33
+    }
+   },
+   "diag_tan@0.01": {
+    "steps_median": 16.0,
+    "cos_to_TAN_median": 0.9893174140229821
+   },
+   "X1@0.001": {
+    "n": 33,
+    "mean": 0.8062021065672876,
+    "lo": 0.32793045391262865,
+    "hi": 1.2844737592219466,
+    "p": 0.0016658574955917234,
+    "dz": 0.5977080916055921
+   },
+   "X2@0.001": {
+    "n": 33,
+    "mean": -0.9259364749509305,
+    "lo": -1.6115982167424834,
+    "hi": -0.24027473315937742,
+    "p": 0.009703628718388937,
+    "dz": -0.47884077191752655
+   },
+   "m4-TAN@0.001": {
+    "n": 33,
+    "mean": -1.518550944523476,
+    "lo": -2.349367185511457,
+    "hi": -0.6877347035354952,
+    "p": 0.0007572561328711736,
+    "dz": -0.6481033049092074
+   },
+   "TAN16-TAN@0.001": {
+    "n": 33,
+    "mean": -0.08462233286451572,
+    "lo": -0.1524188812361263,
+    "hi": -0.016825784492905144,
+    "p": 0.01604614233175609,
+    "dz": -0.4425855774026742
+   },
+   "arm:HQ-Fisher-m4@0.001": {
+    "n": 33,
+    "mean": -0.014453803638703902,
+    "lo": -0.5542169039157238,
+    "hi": 0.525309296638316
+   },
+   "arm:HQ-Fisher-m16@0.001": {
+    "n": 33,
+    "mean": 0.5781606659338415,
+    "lo": 0.10714361859452265,
+    "hi": 1.0491777132731603
+   },
+   "arm:TAN-m16@0.001": {
+    "n": 33,
+    "mean": 1.4194748080202564,
+    "lo": 0.9336516003722863,
+    "hi": 1.9052980156682264
+   },
+   "diag_m4@0.001": {
+    "steps_median": 6.0,
+    "steps_max": 15
+   },
+   "diag@0.001": {
+    "steps_median": 27.0,
+    "steps_max": 103,
+    "steps_min": 17,
+    "cos_to_TAN_median": 0.058419110362780295,
+    "status": {
+     "ok": 33
+    }
+   },
+   "diag_tan@0.001": {
+    "steps_median": 16.0,
+    "cos_to_TAN_median": 0.9926860810669776
+   },
+   "damp:B1@0.001": {
+    "n": 33,
+    "mean": -1.732138581518218,
+    "lo": -2.6062970324237726,
+    "hi": -0.8579801306126635,
+    "p": 0.00031635499198313726,
+    "dz": -0.7026067572243948
+   },
+   "damp:0.0001@0.001": {
+    "n": 33,
+    "mean": -1.9205093251444945,
+    "lo": -2.6697453012965218,
+    "hi": -1.1712733489924674,
+    "p": 1.0439704106828016e-05,
+    "dz": -0.9089032261030098
+   },
+   "arm:HQ-Fisher@0.0001@0.001": {
+    "n": 33,
+    "mean": -0.34948888012509716,
+    "lo": -0.8485617933070747,
+    "hi": 0.1495840330568804
+   },
+   "arm:TAN@0.0001@0.001": {
+    "n": 33,
+    "mean": 1.5710204450193972,
+    "lo": 1.1128581211937187,
+    "hi": 2.0291827688450756
+   },
+   "damp:0.01@0.001": {
+    "n": 33,
+    "mean": -1.5856924255877096,
+    "lo": -2.301744670993736,
+    "hi": -0.8696401801816833,
+    "p": 8.185057358401302e-05,
+    "dz": -0.7852249457302478
+   },
+   "arm:HQ-Fisher@0.01@0.001": {
+    "n": 33,
+    "mean": -0.14008483835036106,
+    "lo": -0.6684920867003796,
+    "hi": 0.38832240999965745
+   },
+   "arm:TAN@0.01@0.001": {
+    "n": 33,
+    "mean": 1.4456075872373484,
+    "lo": 1.0106402119536408,
+    "hi": 1.880574962521056
+   },
+   "damp:1@0.001": {
+    "n": 33,
+    "mean": -1.1887720213600883,
+    "lo": -1.891863215080141,
+    "hi": -0.4856808276400356,
+    "p": 0.0016197794710987934,
+    "dz": -0.5995242633898662
+   },
+   "arm:HQ-Fisher@1@0.001": {
+    "n": 33,
+    "mean": 0.27719989890477537,
+    "lo": -0.2519022211354217,
+    "hi": 0.8063020189449724
+   },
+   "arm:TAN@1@0.001": {
+    "n": 33,
+    "mean": 1.4659719202648636,
+    "lo": 0.9868869105454843,
+    "hi": 1.9450569299842428
+   },
+   "damp:plain@0.001": {
+    "n": 33,
+    "mean": -0.8524460756816897,
+    "lo": -1.502922056144756,
+    "hi": -0.2019700952186234,
+    "p": 0.01183567759495154,
+    "dz": -0.46468162438494903
+   },
+   "damp:B1@0.01": {
+    "n": 33,
+    "mean": -6.191234723330243,
+    "lo": -8.874349981168862,
+    "hi": -3.508119465491625,
+    "p": 4.740158888653852e-05,
+    "dz": -0.8181968212446981
+   },
+   "damp:0.0001@0.01": {
+    "n": 33,
+    "mean": -6.325246762007044,
+    "lo": -8.84718157480658,
+    "hi": -3.8033119492075085,
+    "p": 1.4481208077182242e-05,
+    "dz": -0.8893310668855158
+   },
+   "arm:HQ-Fisher@0.0001@0.01": {
+    "n": 33,
+    "mean": -1.3147787402100097,
+    "lo": -3.2435017779397812,
+    "hi": 0.6139442975197618
+   },
+   "arm:TAN@0.0001@0.01": {
+    "n": 33,
+    "mean": 5.010468021797034,
+    "lo": 3.559806776648424,
+    "hi": 6.461129266945644
+   },
+   "damp:0.01@0.01": {
+    "n": 33,
+    "mean": -5.961011509379064,
+    "lo": -8.335232439858059,
+    "hi": -3.5867905789000694,
+    "p": 1.425722153612791e-05,
+    "dz": -0.8902637264419269
+   },
+   "arm:HQ-Fisher@0.01@0.01": {
+    "n": 33,
+    "mean": -1.2972119023351718,
+    "lo": -3.063984652035976,
+    "hi": 0.4695608473656321
+   },
+   "arm:TAN@0.01@0.01": {
+    "n": 33,
+    "mean": 4.663799607043893,
+    "lo": 3.271940550637993,
+    "hi": 6.055658663449794
+   },
+   "damp:1@0.01": {
+    "n": 33,
+    "mean": -5.493623334816578,
+    "lo": -8.125127884479754,
+    "hi": -2.862118785153403,
+    "p": 0.00017149128772302587,
+    "dz": -0.7402434978931158
+   },
+   "arm:HQ-Fisher@1@0.01": {
+    "n": 33,
+    "mean": -0.8734816593873337,
+    "lo": -2.6913277364541512,
+    "hi": 0.944364417679484
+   },
+   "arm:TAN@1@0.01": {
+    "n": 33,
+    "mean": 4.620141675429245,
+    "lo": 3.1229586325558474,
+    "hi": 6.117324718302643
+   },
+   "damp:plain@0.01": {
+    "n": 33,
+    "mean": -5.51052967330247,
+    "lo": -8.233264594039547,
+    "hi": -2.787794752565394,
+    "p": 0.0002479113079935214,
+    "dz": -0.7176419726517487
+   },
+   "damp:B1@0.05": {
+    "n": 32,
+    "mean": -15.534860562144502,
+    "lo": -21.757788287659167,
+    "hi": -9.311932836629836,
+    "p": 1.6526157028532827e-05,
+    "dz": -0.9000449225071014
+   },
+   "damp:0.0001@0.05": {
+    "n": 31,
+    "mean": -16.24612682123631,
+    "lo": -22.160816239196052,
+    "hi": -10.331437403276567,
+    "p": 4.1700315638787214e-06,
+    "dz": -1.0075131603965402
+   },
+   "arm:HQ-Fisher@0.0001@0.05": {
+    "n": 31,
+    "mean": -5.306936716083647,
+    "lo": -10.034941202219134,
+    "hi": -0.5789322299481601
+   },
+   "arm:TAN@0.0001@0.05": {
+    "n": 33,
+    "mean": 11.416057333108352,
+    "lo": 8.122698461714158,
+    "hi": 14.709416204502546
+   },
+   "damp:0.01@0.05": {
+    "n": 32,
+    "mean": -15.392823392369797,
+    "lo": -21.467833882466948,
+    "hi": -9.317812902272646,
+    "p": 1.3278781737571427e-05,
+    "dz": -0.9135300508383196
+   },
+   "arm:HQ-Fisher@0.01@0.05": {
+    "n": 32,
+    "mean": -4.572680841015646,
+    "lo": -9.20402529177655,
+    "hi": 0.058663609745257084
+   },
+   "arm:TAN@0.01@0.05": {
+    "n": 33,
+    "mean": 10.867815194306052,
+    "lo": 7.5554734225402,
+    "hi": 14.180156966071905
+   },
+   "damp:1@0.05": {
+    "n": 32,
+    "mean": -13.335550967889919,
+    "lo": -19.765075319863616,
+    "hi": -6.906026615916222,
+    "p": 0.00019191774521920094,
+    "dz": -0.7477969712129778
+   },
+   "arm:HQ-Fisher@1@0.05": {
+    "n": 32,
+    "mean": -3.2045699556486857,
+    "lo": -7.752161280765116,
+    "hi": 1.3430213694677446
+   },
+   "arm:TAN@1@0.05": {
+    "n": 33,
+    "mean": 10.287583250598784,
+    "lo": 6.920382583767884,
+    "hi": 13.654783917429684
+   },
+   "damp:plain@0.05": {
+    "n": 32,
+    "mean": -15.882605596134933,
+    "lo": -22.332574535222168,
+    "hi": -9.432636657047698,
+    "p": 2.0156104016685522e-05,
+    "dz": -0.8878011678950303
+   }
+  },
+  "heldout": {
+   "n_units": 34,
+   "excluded": [
+    13,
+    22
+   ],
+   "X1@0.01": {
+    "n": 34,
+    "mean": 1.5367516913422943,
+    "lo": 0.4105599439644749,
+    "hi": 2.662943438720114,
+    "p": 0.008991974557828016,
+    "dz": 0.4761160921491555
+   },
+   "X2@0.01": {
+    "n": 34,
+    "mean": -4.361067655751536,
+    "lo": -6.781410663646744,
+    "hi": -1.9407246478563276,
+    "p": 0.0008591341400969521,
+    "dz": -0.6286912374730441
+   },
+   "m4-TAN@0.01": {
+    "n": 34,
+    "mean": -5.129237647791425,
+    "lo": -7.847385215855336,
+    "hi": -2.411090079727513,
+    "p": 0.000529801871678974,
+    "dz": -0.6584173879772858
+   },
+   "TAN16-TAN@0.01": {
+    "n": 34,
+    "mean": 0.18672367743730248,
+    "lo": -0.14341041207024377,
+    "hi": 0.5168577669448488,
+    "p": 0.25811732898504086,
+    "dz": 0.19734699665604175
+   },
+   "arm:HQ-Fisher-m4@0.01": {
+    "n": 34,
+    "mean": 0.099538355438319,
+    "lo": -1.782266566513344,
+    "hi": 1.9813432773899817
+   },
+   "arm:HQ-Fisher-m16@0.01": {
+    "n": 34,
+    "mean": 0.8677083474782076,
+    "lo": -0.7453556702557856,
+    "hi": 2.480772365212201
+   },
+   "arm:TAN-m16@0.01": {
+    "n": 34,
+    "mean": 5.415499680667046,
+    "lo": 3.913008754117394,
+    "hi": 6.917990607216698
+   },
+   "diag_m4@0.01": {
+    "steps_median": 6.0,
+    "steps_max": 12
+   },
+   "diag@0.01": {
+    "steps_median": 26.0,
+    "steps_max": 94,
+    "steps_min": 18,
+    "cos_to_TAN_median": -0.012001676322048866,
+    "status": {
+     "ok": 34
+    }
+   },
+   "diag_tan@0.01": {
+    "steps_median": 17.0,
+    "cos_to_TAN_median": 0.9837386716208985
+   },
+   "X1@0.001": {
+    "n": 33,
+    "mean": 0.6621621216507135,
+    "lo": 0.12854255919504576,
+    "hi": 1.1957816841063813,
+    "p": 0.01662026536931977,
+    "dz": 0.43999975916799205
+   },
+   "X2@0.001": {
+    "n": 33,
+    "mean": -0.452388161284988,
+    "lo": -1.054033774581785,
+    "hi": 0.149257452011809,
+    "p": 0.13544694179055825,
+    "dz": -0.266618526622068
+   },
+   "m4-TAN@0.001": {
+    "n": 34,
+    "mean": -0.7746298543603685,
+    "lo": -1.455407022553667,
+    "hi": -0.09385268616706977,
+    "p": 0.026975974044050246,
+    "dz": -0.397018505180903
+   },
+   "TAN16-TAN@0.001": {
+    "n": 34,
+    "mean": 0.05783059477441001,
+    "lo": -0.026660963517299047,
+    "hi": 0.14232215306611906,
+    "p": 0.1730738056440561,
+    "dz": 0.2388173308470404
+   },
+   "arm:HQ-Fisher-m4@0.001": {
+    "n": 34,
+    "mean": 0.8676028806668278,
+    "lo": 0.38861900196439114,
+    "hi": 1.3465867593692644
+   },
+   "arm:HQ-Fisher-m16@0.001": {
+    "n": 33,
+    "mean": 1.2081015128031276,
+    "lo": 0.6615121739865824,
+    "hi": 1.7546908516196729
+   },
+   "arm:TAN-m16@0.001": {
+    "n": 34,
+    "mean": 1.7000633298016063,
+    "lo": 1.2396243048402882,
+    "hi": 2.1605023547629245
+   },
+   "diag_m4@0.001": {
+    "steps_median": 7.0,
+    "steps_max": 14
+   },
+   "diag@0.001": {
+    "steps_median": 24.0,
+    "steps_max": 42,
+    "steps_min": 19,
+    "cos_to_TAN_median": 0.023076006780279823,
+    "status": {
+     "unattained": 1,
+     "ok": 33
+    }
+   },
+   "diag_tan@0.001": {
+    "steps_median": 16.5,
+    "cos_to_TAN_median": 0.9933951757945796
+   },
+   "damp:B1@0.001": {
+    "n": 34,
+    "mean": -1.0957129078015277,
+    "lo": -1.9372598286738028,
+    "hi": -0.25416598692925274,
+    "p": 0.012291836875559294,
+    "dz": -0.45429707814739506
+   },
+   "damp:0.0001@0.001": {
+    "n": 34,
+    "mean": -1.2629438911905777,
+    "lo": -2.015189028297633,
+    "hi": -0.5106987540835224,
+    "p": 0.0017040025757452777,
+    "dz": -0.5857956856248588
+   },
+   "arm:HQ-Fisher@0.0001@0.001": {
+    "n": 34,
+    "mean": 0.4135770774437523,
+    "lo": -0.09898058861768544,
+    "hi": 0.92613474350519
+   },
+   "arm:TAN@0.0001@0.001": {
+    "n": 34,
+    "mean": 1.6765209686343303,
+    "lo": 1.2092487702705474,
+    "hi": 2.143793166998113
+   },
+   "damp:0.01@0.001": {
+    "n": 34,
+    "mean": -1.3617955701035305,
+    "lo": -2.063340800872198,
+    "hi": -0.6602503393348628,
+    "p": 0.0003884770292682187,
+    "dz": -0.6772948005883084
+   },
+   "arm:HQ-Fisher@0.01@0.001": {
+    "n": 34,
+    "mean": 0.38274472703843065,
+    "lo": -0.11992970468385367,
+    "hi": 0.885419158760715
+   },
+   "arm:TAN@0.01@0.001": {
+    "n": 34,
+    "mean": 1.7445402971419612,
+    "lo": 1.2641861710170266,
+    "hi": 2.224894423266896
+   },
+   "damp:1@0.001": {
+    "n": 34,
+    "mean": -0.27713799727728616,
+    "lo": -0.6791133712912452,
+    "hi": 0.12483737673667278,
+    "p": 0.17005166737597516,
+    "dz": -0.24055707111002217
+   },
+   "arm:HQ-Fisher@1@0.001": {
+    "n": 34,
+    "mean": 1.6169973432471203,
+    "lo": 1.1601987765173716,
+    "hi": 2.073795909976869
+   },
+   "arm:TAN@1@0.001": {
+    "n": 34,
+    "mean": 1.8941353405244064,
+    "lo": 1.3613586274796143,
+    "hi": 2.4269120535691986
+   },
+   "damp:plain@0.001": {
+    "n": 34,
+    "mean": 0.08368755035104715,
+    "lo": -0.364694554690423,
+    "hi": 0.5320696553925173,
+    "p": 0.7065796123315808,
+    "dz": 0.0651229529730134
+   },
+   "damp:B1@0.01": {
+    "n": 34,
+    "mean": -5.89781934709383,
+    "lo": -8.521557736660785,
+    "hi": -3.2740809575268752,
+    "p": 6.447827279925594e-05,
+    "dz": -0.7843184605210086
+   },
+   "damp:0.0001@0.01": {
+    "n": 34,
+    "mean": -5.511340380077743,
+    "lo": -8.177276051565595,
+    "hi": -2.84540470858989,
+    "p": 0.0001868179575898585,
+    "dz": -0.7213218190270486
+   },
+   "arm:HQ-Fisher@0.0001@0.01": {
+    "n": 34,
+    "mean": -0.185232155303508,
+    "lo": -1.9491022877385356,
+    "hi": 1.5786379771315193
+   },
+   "arm:TAN@0.0001@0.01": {
+    "n": 34,
+    "mean": 5.326108224774237,
+    "lo": 3.7724267957280144,
+    "hi": 6.87978965382046
+   },
+   "damp:0.01@0.01": {
+    "n": 34,
+    "mean": -5.470785585210042,
+    "lo": -7.946608391522158,
+    "hi": -2.9949627788979267,
+    "p": 8.085138048620136e-05,
+    "dz": -0.7709951318894503
+   },
+   "arm:HQ-Fisher@0.01@0.01": {
+    "n": 34,
+    "mean": 0.13642634119048325,
+    "lo": -1.555427453868203,
+    "hi": 1.8282801362491692
+   },
+   "arm:TAN@0.01@0.01": {
+    "n": 34,
+    "mean": 5.607211926400526,
+    "lo": 4.017794876407791,
+    "hi": 7.19662897639326
+   },
+   "damp:1@0.01": {
+    "n": 34,
+    "mean": -4.265571384416745,
+    "lo": -6.758665159414842,
+    "hi": -1.7724776094186483,
+    "p": 0.001427615608900744,
+    "dz": -0.5969804390802748
+   },
+   "arm:HQ-Fisher@1@0.01": {
+    "n": 34,
+    "mean": 1.8358836006940877,
+    "lo": 0.020411286524725902,
+    "hi": 3.6513559148634496
+   },
+   "arm:TAN@1@0.01": {
+    "n": 34,
+    "mean": 6.101454985110833,
+    "lo": 4.368083529829221,
+    "hi": 7.834826440392446
+   },
+   "damp:plain@0.01": {
+    "n": 34,
+    "mean": -3.646624301647382,
+    "lo": -6.1847265068369435,
+    "hi": -1.1085220964578206,
+    "p": 0.00621650284249786,
+    "dz": -0.5013065932401873
+   },
+   "damp:B1@0.05": {
+    "n": 34,
+    "mean": -12.37170423576572,
+    "lo": -18.623040454222625,
+    "hi": -6.120368017308812,
+    "p": 0.000312138051553448,
+    "dz": -0.6905230382460811
+   },
+   "damp:0.0001@0.05": {
+    "n": 34,
+    "mean": -12.167620802908086,
+    "lo": -18.17434535669193,
+    "hi": -6.160896249124244,
+    "p": 0.00023817415697334,
+    "dz": -0.70678846092909
+   },
+   "arm:HQ-Fisher@0.0001@0.05": {
+    "n": 34,
+    "mean": -0.06504180165875387,
+    "lo": -4.114128483992378,
+    "hi": 3.9840448806748703
+   },
+   "arm:TAN@0.0001@0.05": {
+    "n": 34,
+    "mean": 12.102579001249334,
+    "lo": 8.315003449307504,
+    "hi": 15.890154553191163
+   },
+   "damp:0.01@0.05": {
+    "n": 33,
+    "mean": -13.956175924294435,
+    "lo": -20.553389552707756,
+    "hi": -7.358962295881113,
+    "p": 0.00014590064586102625,
+    "dz": -0.7501113472931896
+   },
+   "arm:HQ-Fisher@0.01@0.05": {
+    "n": 33,
+    "mean": -0.8307924756008813,
+    "lo": -5.075800438955105,
+    "hi": 3.414215487753343
+   },
+   "arm:TAN@0.01@0.05": {
+    "n": 34,
+    "mean": 12.88216276751448,
+    "lo": 9.022861936495278,
+    "hi": 16.74146359853368
+   },
+   "damp:1@0.05": {
+    "n": 33,
+    "mean": -15.431720410804756,
+    "lo": -22.36365923895177,
+    "hi": -8.499781582657741,
+    "p": 7.643372065030509e-05,
+    "dz": -0.7893679190590108
+   },
+   "arm:HQ-Fisher@1@0.05": {
+    "n": 33,
+    "mean": -0.8665092105696512,
+    "lo": -5.366088640147637,
+    "hi": 3.633070219008334
+   },
+   "arm:TAN@1@0.05": {
+    "n": 34,
+    "mean": 13.997575662948805,
+    "lo": 9.895288646107387,
+    "hi": 18.09986267979022
+   },
+   "damp:plain@0.05": {
+    "n": 32,
+    "mean": -9.46617855190455,
+    "lo": -14.878841223364722,
+    "hi": -4.053515880444378,
+    "p": 0.0011971752436804948,
+    "dz": -0.630543878664069
+   }
+  }
+ },
+ "paragraph": "Re-linearised steps and intermediate damping (post hoc). A post-hoc extension, with its analysis plan fixed by hash before any run, tested this interpretation on the 72 B1 units. Their fit, calibration and held-out sets were regenerated from the frozen B1 seeds with the B1 code tree of record, and at κ ≤ 0.01 the re-computed HQ-Fisher and TAN gains matched the stored values in every unit (largest relative difference 3 × 10⁻⁹). Five units (three two-layer, two three-layer) exceeded the planned tolerance of 10⁻⁶ only for HQ-Fisher at κ = 0.05, where the calibrated step scale reached 6 × 10⁸; the circuit angles are periodic, so such steps are numerically ill-posed, and this stress level enters no test of the extension. As the plan requires, the five units were excluded from every contrast, leaving 33 two-layer and 34 three-layer units. The circuit's damped natural step was then iterated in re-linearised sub-steps (HQ-Fisher-m, m = 4 or 16): at each sub-step the importance-weighted gradient and the Fisher were recomputed on the fit set at the current policy, the damped natural step was taken through the circuit with a KL of κ/m² on the calibration set, and sub-steps continued until the total mean forward KL from the initial policy reached κ (for m = 16 at κ = 0.01, a median of 32 sub-steps, range 19–97). At κ = 0.01, HQ-Fisher-16 differed from the single step by +1.47 [+0.53, +2.41] × 10⁻⁵ (two-sided p = 0.0033) and from TAN by −4.72 [−7.22, −2.23] × 10⁻⁵ (p = 5.3 × 10⁻⁴); both contrasts were rejected after Holm adjustment over the two in the two-layer stratum. In the three-layer stratum they were +1.54 [+0.41, +2.66] (p = 0.009) and −4.36 [−6.78, −1.94] (p = 8.6 × 10⁻⁴), and with the excluded units reinstated (not in the plan) the two-layer contrasts were +1.41 [+0.53, +2.30] and −4.29 [−6.62, −1.95]. Re-linearising the circuit step therefore recovered part of the shortfall, and part remained. Descriptively (a ratio not in the plan), HQ-Fisher-16 closed 24% (95% bootstrap interval 11–41%) of the single-step gap to TAN in the two-layer stratum (1.47 of 6.19 × 10⁻⁵ in the same units) and 26% (10–47%) in the three-layer stratum; at κ = 0.001 the shares were 47% and 59%. With m = 4 (median 6 sub-steps) the difference to TAN at κ = 0.01 was −6.12 [−8.69, −3.55] × 10⁻⁵, against −6.19 for the single step, so the recovered share was still rising at m = 16. The net coefficient displacement of HQ-Fisher-16 was nearly orthogonal to the initial direction (median cosine −0.04), whereas TAN-16, the same iteration inside the initial tangent span applied linearly, stayed aligned with it (0.99), reached κ in a median of 16 sub-steps and differed from TAN by −0.40 [−0.67, −0.13] × 10⁻⁵. The iterated circuit update therefore does not retrace the initial direction, whereas TAN continues along it in coefficient space, where the circuit need not be able to follow; this experiment does not separate the size of the realised steps from the curvature of the set of policies the circuit can reach as causes of the remaining gap. Over a damping ladder, HQ-Fisher − TAN at κ = 0.01 in the 33 retained two-layer units was δ = 10⁻⁶: −6.19 [−8.87, −3.51]; δ = 10⁻⁴: −6.33 [−8.85, −3.80]; δ = 10⁻²: −5.96 [−8.34, −3.59]; δ = 1: −5.49 [−8.13, −2.86] (× 10⁻⁵; δ = 10⁻⁶ is the B1 setting); at this KL, the shortfall of the circuit-realised step is therefore not specific to near-zero damping. Outside this primary cell the difference was unresolved for δ = 1 at κ = 0.001 in the three-layer stratum (−0.28 [−0.68, +0.12]) and for the plain step at κ = 0.001 in the three-layer stratum (+0.08 [−0.36, +0.53]). Appendix A lists every arm.",
+ "paragraphs": [
+  "Re-linearised steps and intermediate damping (post hoc). A post-hoc extension, with its analysis plan fixed by hash before any run, tested this interpretation on the 72 B1 units. Their fit, calibration and held-out sets were regenerated from the frozen B1 seeds with the B1 code tree of record, and at κ ≤ 0.01 the re-computed HQ-Fisher and TAN gains matched the stored values in every unit (largest relative difference 3 × 10⁻⁹). Five units (three two-layer, two three-layer) exceeded the planned tolerance of 10⁻⁶ only for HQ-Fisher at κ = 0.05, where the calibrated step scale reached 6 × 10⁸; the circuit angles are periodic, so such steps are numerically ill-posed, and this stress level enters no test of the extension. As the plan requires, the five units were excluded from every contrast, leaving 33 two-layer and 34 three-layer units.",
+  "The circuit's damped natural step was then iterated in re-linearised sub-steps (HQ-Fisher-m, m = 4 or 16): at each sub-step the importance-weighted gradient and the Fisher were recomputed on the fit set at the current policy, the damped natural step was taken through the circuit with a KL of κ/m² on the calibration set, and sub-steps continued until the total mean forward KL from the initial policy reached κ (for m = 16 at κ = 0.01, a median of 32 sub-steps, range 19–97). At κ = 0.01, HQ-Fisher-16 differed from the single step by +1.47 [+0.53, +2.41] × 10⁻⁵ (two-sided p = 0.0033) and from TAN by −4.72 [−7.22, −2.23] × 10⁻⁵ (p = 5.3 × 10⁻⁴); both contrasts were rejected after Holm adjustment over the two in the two-layer stratum. In the three-layer stratum they were +1.54 [+0.41, +2.66] (p = 0.009) and −4.36 [−6.78, −1.94] (p = 8.6 × 10⁻⁴), and with the excluded units reinstated (not in the plan) the two-layer contrasts were +1.41 [+0.53, +2.30] and −4.29 [−6.62, −1.95]. Re-linearising the circuit step therefore recovered part of the shortfall, and part remained. Descriptively (a ratio not in the plan), HQ-Fisher-16 closed 24% (95% bootstrap interval 11–41%) of the single-step gap to TAN in the two-layer stratum (1.47 of 6.19 × 10⁻⁵ in the same units) and 26% (10–47%) in the three-layer stratum; at κ = 0.001 the shares were 47% and 59%. With m = 4 (median 6 sub-steps) the difference to TAN at κ = 0.01 was −6.12 [−8.69, −3.55] × 10⁻⁵, against −6.19 for the single step, so the recovered share was still rising at m = 16. The net coefficient displacement of HQ-Fisher-16 was nearly orthogonal to the initial direction (median cosine −0.04), whereas TAN-16, the same iteration inside the initial tangent span applied linearly, stayed aligned with it (0.99), reached κ in a median of 16 sub-steps and differed from TAN by −0.40 [−0.67, −0.13] × 10⁻⁵. The iterated circuit update therefore does not retrace the initial direction, whereas TAN continues along it in coefficient space, where the circuit need not be able to follow; this experiment does not separate the size of the realised steps from the curvature of the set of policies the circuit can reach as causes of the remaining gap.",
+  "Over a damping ladder, HQ-Fisher − TAN at κ = 0.01 in the 33 retained two-layer units was δ = 10⁻⁶: −6.19 [−8.87, −3.51]; δ = 10⁻⁴: −6.33 [−8.85, −3.80]; δ = 10⁻²: −5.96 [−8.34, −3.59]; δ = 1: −5.49 [−8.13, −2.86] (× 10⁻⁵; δ = 10⁻⁶ is the B1 setting); at this KL, the shortfall of the circuit-realised step is therefore not specific to near-zero damping. Outside this primary cell the difference was unresolved for δ = 1 at κ = 0.001 in the three-layer stratum (−0.28 [−0.68, +0.12]) and for the plain step at κ = 0.001 in the three-layer stratum (+0.08 [−0.36, +0.53]). Appendix A lists every arm."
+ ],
+ "table7_rows": [
+  [
+   "0.001",
+   "HQ-Fisher-16 − HQ-Fisher, post hoc",
+   "+0.81 [+0.33, +1.28] (n = 33)",
+   "+0.66 [+0.13, +1.20] (n = 33)"
+  ],
+  [
+   "0.001",
+   "HQ-Fisher-16 − TAN, post hoc",
+   "−0.93 [−1.61, −0.24] (n = 33)",
+   "−0.45 [−1.05, +0.15] (n = 33)"
+  ],
+  [
+   "0.01",
+   "HQ-Fisher-16 − HQ-Fisher, post hoc",
+   "+1.47 [+0.53, +2.41] (n = 33)",
+   "+1.54 [+0.41, +2.66] (n = 34)"
+  ],
+  [
+   "0.01",
+   "HQ-Fisher-16 − TAN, post hoc",
+   "−4.72 [−7.22, −2.23] (n = 33)",
+   "−4.36 [−6.78, −1.94] (n = 34)"
+  ]
+ ],
+ "appendix_rows": {
+  "shipped": [
+   [
+    "HQ-Fisher-4 (post hoc)",
+    "−0.01 [−0.55, +0.53] (n = 33)",
+    "−1.38 [−3.14, +0.38] (n = 33)",
+    "—"
+   ],
+   [
+    "HQ-Fisher-16 (post hoc)",
+    "+0.58 [+0.11, +1.05] (n = 33)",
+    "+0.02 [−1.71, +1.76] (n = 33)",
+    "—"
+   ],
+   [
+    "TAN-16 (post hoc)",
+    "+1.42 [+0.93, +1.91] (n = 33)",
+    "+4.35 [+2.77, +5.92] (n = 33)",
+    "—"
+   ],
+   [
+    "HQ-Fisher, δ = 10⁻⁴ (post hoc)",
+    "−0.35 [−0.85, +0.15] (n = 33)",
+    "−1.31 [−3.24, +0.61] (n = 33)",
+    "−5.31 [−10.03, −0.58] (n = 31)"
+   ],
+   [
+    "HQ-Fisher, δ = 10⁻² (post hoc)",
+    "−0.14 [−0.67, +0.39] (n = 33)",
+    "−1.30 [−3.06, +0.47] (n = 33)",
+    "−4.57 [−9.20, +0.06] (n = 32)"
+   ],
+   [
+    "HQ-Fisher, δ = 1 (post hoc)",
+    "+0.28 [−0.25, +0.81] (n = 33)",
+    "−0.87 [−2.69, +0.94] (n = 33)",
+    "−3.20 [−7.75, +1.34] (n = 32)"
+   ],
+   [
+    "TAN, δ = 10⁻⁴ (post hoc)",
+    "+1.57 [+1.11, +2.03] (n = 33)",
+    "+5.01 [+3.56, +6.46] (n = 33)",
+    "+11.42 [+8.12, +14.71] (n = 33)"
+   ],
+   [
+    "TAN, δ = 10⁻² (post hoc)",
+    "+1.45 [+1.01, +1.88] (n = 33)",
+    "+4.66 [+3.27, +6.06] (n = 33)",
+    "+10.87 [+7.56, +14.18] (n = 33)"
+   ],
+   [
+    "TAN, δ = 1 (post hoc)",
+    "+1.47 [+0.99, +1.95] (n = 33)",
+    "+4.62 [+3.12, +6.12] (n = 33)",
+    "+10.29 [+6.92, +13.65] (n = 33)"
+   ]
+  ],
+  "heldout": [
+   [
+    "HQ-Fisher-4 (post hoc)",
+    "+0.87 [+0.39, +1.35] (n = 34)",
+    "+0.10 [−1.78, +1.98] (n = 34)",
+    "—"
+   ],
+   [
+    "HQ-Fisher-16 (post hoc)",
+    "+1.21 [+0.66, +1.75] (n = 33)",
+    "+0.87 [−0.75, +2.48] (n = 34)",
+    "—"
+   ],
+   [
+    "TAN-16 (post hoc)",
+    "+1.70 [+1.24, +2.16] (n = 34)",
+    "+5.42 [+3.91, +6.92] (n = 34)",
+    "—"
+   ],
+   [
+    "HQ-Fisher, δ = 10⁻⁴ (post hoc)",
+    "+0.41 [−0.10, +0.93] (n = 34)",
+    "−0.19 [−1.95, +1.58] (n = 34)",
+    "−0.07 [−4.11, +3.98] (n = 34)"
+   ],
+   [
+    "HQ-Fisher, δ = 10⁻² (post hoc)",
+    "+0.38 [−0.12, +0.89] (n = 34)",
+    "+0.14 [−1.56, +1.83] (n = 34)",
+    "−0.83 [−5.08, +3.41] (n = 33)"
+   ],
+   [
+    "HQ-Fisher, δ = 1 (post hoc)",
+    "+1.62 [+1.16, +2.07] (n = 34)",
+    "+1.84 [+0.02, +3.65] (n = 34)",
+    "−0.87 [−5.37, +3.63] (n = 33)"
+   ],
+   [
+    "TAN, δ = 10⁻⁴ (post hoc)",
+    "+1.68 [+1.21, +2.14] (n = 34)",
+    "+5.33 [+3.77, +6.88] (n = 34)",
+    "+12.10 [+8.32, +15.89] (n = 34)"
+   ],
+   [
+    "TAN, δ = 10⁻² (post hoc)",
+    "+1.74 [+1.26, +2.22] (n = 34)",
+    "+5.61 [+4.02, +7.20] (n = 34)",
+    "+12.88 [+9.02, +16.74] (n = 34)"
+   ],
+   [
+    "TAN, δ = 1 (post hoc)",
+    "+1.89 [+1.36, +2.43] (n = 34)",
+    "+6.10 [+4.37, +7.83] (n = 34)",
+    "+14.00 [+9.90, +18.10] (n = 34)"
+   ]
+  ]
+ },
+ "summary_clause": "smaller re-linearised circuit steps recovered 24% of the gap to the linear path at the primary KL",
+ "share_recovered_pct": {
+  "shipped": {
+   "point": 23.741325115351803,
+   "boot95": [
+    10.56777479895985,
+    41.45042947290717
+   ]
+  },
+  "heldout": {
+   "point": 26.056269290437545,
+   "boot95": [
+    9.960484318237459,
+    46.522068414338065
+   ]
+  }
+ },
+ "share_recovered_pct_kappa_0.001": {
+  "shipped": 46.54374165955312,
+  "heldout": 59.41069970451154
+ },
+ "sensitivity_all_units": {
+  "shipped": {
+   "X1": {
+    "n": 36,
+    "mean": 1.411546842947736,
+    "lo": 0.5273363089406775,
+    "hi": 2.2957573769547945,
+    "p": 0.002615860802569385,
+    "dz": 0.5401414268723744
+   },
+   "X2": {
+    "n": 36,
+    "mean": -4.2864878447073185,
+    "lo": -6.621883332056082,
+    "hi": -1.9510923573585552,
+    "p": 0.0006838965264444032,
+    "dz": -0.621024933109435
+   }
+  },
+  "heldout": {
+   "X1": {
+    "n": 36,
+    "mean": 1.5047919012139204,
+    "lo": 0.4427456828560905,
+    "hi": 2.5668381195717505,
+    "p": 0.00680584380651388,
+    "dz": 0.4794031741457315
+   },
+   "X2": {
+    "n": 36,
+    "mean": -4.501120802056084,
+    "lo": -6.961383898053628,
+    "hi": -2.04085770605854,
+    "p": 0.0007075415925298901,
+    "dz": -0.6190232961352982
+   }
+  }
+ },
+ "abstract_clause": "smaller re-linearised circuit steps recovered 24% of that gap at the primary KL",
+ "reproduction_detail": {
+  "failing_arm_kappa": [
+   [
+    "HQ-Fisher@B1",
+    "0.05"
+   ]
+  ],
+  "worst_failing": 0.000799985469566359,
+  "worst_kappa_le_0.01": 2.5260871029470446e-09,
+  "max_alpha_failing": 627137361.1137708
+ },
+ "discussion_sentence": "In a post-hoc extension, smaller re-linearised circuit steps recovered 24% of the gap to the linear path at the primary KL, and at that KL the single-step shortfall persisted at every tested damping from 10⁻⁶ to 1 (Section 4.4).",
+ "conclusion_sentence": "A post-hoc extension found that smaller re-linearised circuit steps recovered 24% of the gap to the linear path at the primary KL and that no tested damping removed it there; at the tested step sizes most of the difference remained, and its cause is not identified."
+}

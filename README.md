@@ -1,15 +1,13 @@
 # hqrl — Same Policy, Different Learning
 
-Code and summary results for the study *Same Policy, Different Learning: Diagnosing a Quantum
-Reinforcement-Learning Update Deficit in UAV Search and Rescue Reporting*, with a simulated flood case study.
+Code and summary results for the study *Same Policy, Different Learning: Evaluating a Hybrid Quantum Policy Head
+against Classical Controls in a Simulated Unmanned Aerial Vehicle Flood Search-and-Report Benchmark*.
 
 A four-qubit hybrid quantum policy head (HQ) computes a finite Fourier series of its input angles, so each
 circuit can be transplanted into an exact classical Fourier twin that starts from the **same policy**. From that
 shared starting point, after matching the measured mean forward KL divergence of the update on a calibration set,
 the study compares how much held-out improvement an update realised through the circuit achieves against updates
 taken in the twin's coefficient space.
-
-Author: Konstantinos Zervakis
 
 ## Studies
 
@@ -22,6 +20,9 @@ Author: Konstantinos Zervakis
 | B2 | From-scratch training replication (HQ, C-matched, exact S625 twin; 36 paired blocks, 30,000 decisions) | `dq_b2.py`, `dq_b2_analysis.py` |
 | Freeze A | Stress evaluation on the 12 E1 evaluation blocks | `dq_freeze_a.py`, `dq_freeze_a_analysis.py` |
 | Post hoc | Descriptive analyses (finite-step path difference, arm ladder, pair-preserving bootstrap) | `analysis/posthoc/` |
+| Post hoc v3 | Pre-submission checks: B2 at matched learning rates (72 new runs, plan fixed by hash before the runs), damping limits of B1, sign-flip permutation tests, held-out KL transfer, stress-test block intervals, KL efficiency | `analysis/posthoc_v3/` |
+| Post hoc HQLR | B2's HQ re-trained at learning rate 1e-2, beyond its selection grid (36 new runs; own hashed plan) | `analysis/posthoc_hqlr/` |
+| Post hoc B1X | B1 extended with re-linearised circuit steps and a damping ladder on the 72 B1 units, run with the B1 code tree (own hashed plan) | `analysis/posthoc_b1x/` |
 
 Every confirmatory study was frozen before it was run: a freeze names the code tree, seeds, namespaces and
 analysis, and the runners refuse to start when the live tree differs from the frozen one.
@@ -32,8 +33,9 @@ analysis, and the runners refuse to start when the live tree differs from the fr
 src/aerial_qrl/              environment, mission executive, georeferencing, PPO and actor heads
 scripts/gnss_qrl_runtime/    study runtime (dq_*), the P3/P4/E1 machinery it reuses
 tests/gnss_qrl_dq/           tests of the study code
-analysis/posthoc/            post-hoc descriptive scripts and their outputs
+analysis/posthoc*/           post-hoc scripts, analysis plans and their outputs
 output/study/gnss_qrl_v1/     records and reports of record (see below)
+output/mission/scenes/       Gazebo scene of the case study (see below)
 ```
 
 ## Data and results
@@ -53,7 +55,33 @@ All files below are the original outputs of record, unchanged. `SHA256SUMS` list
 | `e1/e1_report_v1/report.json` | E1 report (earlier exploratory comparison of learned heads) |
 | `p3/p3_gate_verdict_v1/gate_verdict.json` | P3 gate verdict (earlier planner study) |
 
-Post-hoc descriptive outputs are in `analysis/posthoc/`.
+Post-hoc descriptive outputs are in `analysis/posthoc/` and `analysis/posthoc_v3/`. The matched-learning-rate runs are
+in `output/study/gnss_qrl_v1/dq/b2_matched_lr_posthoc/` (`runs/*/run/*/metrics.jsonl`, `records/`, `lr_results.json`);
+their analysis plan, `analysis/posthoc_v3/PLAN.md`, was written and hashed before any of them ran. The same holds for the
+HQ-at-1e-2 runs (`dq/b2_hq_lr1e-2_posthoc/`, plan `analysis/posthoc_hqlr/PLAN.md`) and the B1 extension
+(`dq/b1_relinearised_posthoc/`, plan `analysis/posthoc_b1x/PLAN.md`). Changes after hashing are logged next to each plan
+(`PLAN_ADDENDUM.md`, `PLAN_LOG.md`). Model checkpoints are not included; `hqlr_analysis.py` reads them only for the
+descriptive angle-displacement values, which are stored in the result JSON files. `SHA256SUMS` also lists every
+post-hoc file and every scene file.
+
+## Simulation scene
+
+`output/mission/scenes/flood_sar_village_v1r6_s0_build1_norigs/` is the Gazebo scene of the flood case study,
+unchanged: the world files (`worlds/all_victims.sdf`, `worlds/absent.sdf`), the scenario and evaluator files
+(`public/`, `private/`), the ground model with its CC0 ambientCG textures, the three derived house models, the
+asset-attribution file `ATTRIBUTION.md` and the scene manifest `manifest.json` (SHA-256
+`b6647dad1c5f0c0a0db1d182d261abef85f01af319c2bdc763e77610097ca8de`, the scene identity recorded in every part of
+observation bank s0).
+
+The scene uses 26 Gazebo Fuel models (six under CC BY 4.0, 20 under CC0 1.0) without copying them: the world files
+include them through absolute `file://` URIs into a local Fuel cache, so they have to be pointed at a local download
+of the same model versions, whose versions, URLs and per-file SHA-256 values are in `manifest.json` (`assets`).
+`ATTRIBUTION.md` is kept as generated. Its title carries the generator's template name (`flood_sar_segment_v1`), and
+its "Derived model" section lists only `house_1_pbr`; `house_2_pbr` and `house_3_pbr` are derived in the same way
+(`manifest.json`, `derived_models`).
+
+Observation bank s0, the views and detector outputs recorded in this scene (about 54 GB), is too large for the
+repository and is available from the authors on reasonable request.
 
 ## Installation
 

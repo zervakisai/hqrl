@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.9">
+  <model name="house_1_pbr">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%201/3/meshes/house_1.dae</uri>
+            <scale>1.5 1.5 1.5</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%201/3/meshes/house_1.dae</uri>
+            <scale>1.5 1.5 1.5</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <pbr>
+            <metal>
+              <albedo_map>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%201/3/materials/textures/House_1_Diffuse.png</albedo_map>
+              <normal_map>file:///home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%201/3/materials/textures/House_1_Normal.png</normal_map>
+              <metalness>0.0</metalness>
+              <roughness>0.9</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

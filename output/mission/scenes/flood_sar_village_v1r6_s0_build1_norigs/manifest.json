@@ -1,0 +1,2145 @@
+{
+  "assets": {
+    "ambulance": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.0203,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/ambulance.png": "a62ff05d398e28e0a6cfcfcc56e77e8d6a4f815669af31ffc447a62514ae8ca1",
+        "meshes/ambulance.mtl": "c03ecd421ca8027d0dbd038174750a9cea657f54bd2b79e337da1442c85bdb79",
+        "meshes/ambulance.obj": "d5eea54ea1f8e3eb777e0f8380c792c2e828d75fff745b4e248b024c1e8297dd",
+        "metadata.pbtxt": "e6cb64e8d5d41c637d26b9079fa2484d7e03247b88c777cdb6ece4c8bdb42b69",
+        "model.config": "627446f45b525bce0013f9f949fd0762b144570e50a42250657cd33cc7c73fca",
+        "model.sdf": "a4d17ac14f47c72d4a3a98525daf6ef698540164526fcc890da3cf08526f6567",
+        "thumbnails/1.png": "3629c003cb3ea66070b32b90e299db1129dc31110c3ed41af48b20c1dae3160d",
+        "thumbnails/2.png": "8d0d22203effe1b3c43675fc3c4ddeffc1918006518280588962d3c68b53e49b",
+        "thumbnails/3.png": "8e929ca106098f93e23f62227cae11ee82cdc86174255ecb237a3ad5f92a8c82",
+        "thumbnails/4.png": "c0bb3d70078befba0e4c46c143ae5a6b2263ebe3b9c87fb7a6c4e9e26040307c",
+        "thumbnails/5.png": "cfbb3870580508c82a0a0d46ae08f29af6dd0ea17f28242325ea790da846175f"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        1.4843,
+        3.6857,
+        2.8738
+      ],
+      "measured_min": [
+        -1.484,
+        -3.8495,
+        -0.0203
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/ambulance/4",
+      "name": "Ambulance",
+      "obstacle_max": [
+        1.4843,
+        3.6857,
+        2.8738
+      ],
+      "obstacle_min": [
+        -1.484,
+        -3.8495,
+        -0.0203
+      ],
+      "role": "emergency_vehicle",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ambulance",
+      "version": "4"
+    },
+    "casual_female": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Rohit Salem"
+      ],
+      "base_z": -0.0087,
+      "collider": "box (simplified)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/brown_eye.png": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+        "materials/textures/casual_female.png": "75bce8773b7fbaca854d4f7e3f6b7bef20dbbc38b027e529e026c675d619531e",
+        "materials/textures/eyebrow002.png": "1de4e4cb69b3f4324390219ffbeb17a0b2555104d3211d1ac667655b69b64038",
+        "materials/textures/eyelashes01.png": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+        "materials/textures/female_casualsuit01_diffuse.png": "414d46afa55fba09ad0913484d57df2ba6b597dc8193595a13a12436137dc21b",
+        "materials/textures/female_casualsuit01_normal.png": "7bff7afbbc3f068e06f69abcddc8c2c9ce667ec181e0f2a918f8af78eba12610",
+        "materials/textures/female_casualsuit02_diffuse.png": "23bd3c8e4df3993fe3bdb849daba7a4dd0476f3a28fd8402cd28abbb26666f49",
+        "materials/textures/female_casualsuit02_normal.png": "37143dabd78647ca37689f0b65d969c958a962d728dffd94e60c9beacf76a3df",
+        "materials/textures/ponytail01_diffuse.png": "dcb364300cac06ce8bef91b2f7c0970baf310898bbdd06b0c6b884ee9306eb97",
+        "materials/textures/shoes05_diffuse.png": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af",
+        "materials/textures/tongue01_diffuse.png": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9",
+        "materials/textures/young_lightskinned_female_diffuse.png": "b2a6ac8cd4f9febdb447368e29c76cd68410bb66e46d9dcfa2d5f75126eea8fc",
+        "meshes/casual_female.dae": "b0f47228b4a1cfa5026f24f5955d5f2b7cc7f7a770888951041a787b3e51d994",
+        "model.config": "19d1bdb5e4a769c9dc48c21ffe9dd5c9c4cb20a198afabe229c2475f2ac9b771",
+        "model.sdf": "70a3a24f3b80f6bbd780a05a5a2c10d974e2928bbc50427bb54fcbb000b05222",
+        "thumbnails/1.png": "2a2934422ead27a15934b65889e14099227495e2cda913bb3c4727f3875e8bf9",
+        "thumbnails/2.png": "5fe50285923d76b97bb767e3bde5d3cd5b5e115a32a8651696dc6eb68642a627",
+        "thumbnails/3.png": "f725a9ace69ba680d8e92c7967fe4ff866cebe62a4e46e5766e5359a4c5bc9c0",
+        "thumbnails/4.png": "5cb8edc4c74c64fe13a08db35cade3d41ebff088e1bf574409f9249af6b113d3",
+        "thumbnails/5.png": "0056e9d4c16716c1e98a4bc75ac09469de1b122b934a98507835b6bacdd5a572"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        0.3223,
+        0.209,
+        1.6787
+      ],
+      "measured_min": [
+        -0.2876,
+        -0.4275,
+        -0.0087
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/casual%20female/4",
+      "name": "Casual female",
+      "obstacle_max": [
+        0.3223,
+        0.209,
+        1.6787
+      ],
+      "obstacle_min": [
+        -0.2876,
+        -0.4275,
+        -0.0087
+      ],
+      "role": "human_standing",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Casual%20female",
+      "version": "4"
+    },
+    "collapsed_fire_station": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -1.0227,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/collapsed_fire_station_diffuse.jpg": "0eeaa7c3f4ae812e50bb3be5e68d31ea9050a6fc7cb432de96133559c8b7cf07",
+        "materials/textures/collapsed_firestation_spec.jpg": "d6cd5e11c5f5bee71cba40702ff5cf14ad041e8bf7d61b3f57a9a54d6778112a",
+        "materials/textures/rubble_diffuse.jpg": "93f8db37a33d43f7c5a8a22845b4789b3cbc3456bd0c7f566a33effa438f1642",
+        "materials/textures/rubble_spec.jpg": "8e57a6cff87d3f46cbcf7506f2791e083031dc6a90d39c4c117679968e5c9444",
+        "meshes/collapsed_fire_station.dae": "de6fb32a2850b0005043647cba1af83a080d6bac843aa71ca6d10ce729d351f3",
+        "model.config": "4bf90d0a71e064068c1a87245feeebab079ad00a36fec777ac69216cc37cfa55",
+        "model.sdf": "036bacda2db977280fdf8056ae293ac8a5883b79ba804704144ee484e2044557",
+        "thumbnails/1.png": "b76883445c04d8a3dbd65423f2902c3e4886250131635251e1efaf8804e36ba4",
+        "thumbnails/2.png": "a7080af46481841b70d0429fdb94e9f755e1cf3b94d806739a50cd73b4366199",
+        "thumbnails/3.png": "eb391149ad6021246c358ff6a80425a8f7c4815446e618017315947e3974ecf5",
+        "thumbnails/4.png": "70d56aa789f6392bbfda26132fabf6ec66c32bc0b75248a42a9294148a033cdb",
+        "thumbnails/5.png": "287e3d6cee4bd4a856d87015e64b861b31a8e557ee3b0252a8fb7cf62cc277aa"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        13.9857,
+        9.142,
+        11.4702
+      ],
+      "measured_min": [
+        -13.9854,
+        -9.142,
+        -1.0227
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20fire%20station/3",
+      "name": "Collapsed Fire Station",
+      "obstacle_max": [
+        13.9857,
+        9.142,
+        11.4702
+      ],
+      "obstacle_min": [
+        -13.9854,
+        -9.142,
+        -1.0227
+      ],
+      "role": "building_damaged",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Collapsed%20Fire%20Station",
+      "version": "3"
+    },
+    "collapsed_house": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.0002,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/collapsed_house_diffuse.jpg": "72ab7a31e7a60c65af0c3ef1f3cea82fff07bea0292a96a2e6865c79bb366433",
+        "materials/textures/collapsed_house_spec.jpg": "fb0feb9c18deac1cd78a624a81d8b3f3180045a59e03dec4c7965453f460429d",
+        "meshes/collapsed_house.dae": "5803cdea41bc3c93c78d56fb92fe7514aa43185959647caa1152f84e3f23e6ec",
+        "metadata.pbtxt": "89ca1ea4699fc7670405ac7001e479dd9514146e64779ea1c8b4824bdb038438",
+        "model.config": "ef1d19e170823dc33f133f27900092c95e4ea0dd1bff9e9354235f4835836d0e",
+        "model.sdf": "f44b45ba88bbc4ff3a8c0aead50029f27f3c14c2edd39656ba1a72d2057f0bb4",
+        "thumbnails/1.png": "e86352296e5b708e75483c6184835840e652a7ebf6188da7410d264a3127f59b",
+        "thumbnails/2.png": "7a601d05f7fc2e55c5dc96ad6853620bb497f229167c0c3a5144cd30e3011e0a",
+        "thumbnails/3.png": "d939de0b7c71f2f066a68faccc88f093356c2023a801d48cd76d84766bfd2530",
+        "thumbnails/4.png": "e48eb21c4dbe0e9d5c196331316d37efa71a867d1c95b8fdce68c1674f0ad9e2",
+        "thumbnails/5.png": "6bc74d3948e6869b5e9bf5c543c4a72f05e6bcc6d34e3d545be3c032142ef51b"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        8.0852,
+        6.4653,
+        5.8007
+      ],
+      "measured_min": [
+        -8.085,
+        -6.4653,
+        -0.0002
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20house/4",
+      "name": "Collapsed House",
+      "obstacle_max": [
+        8.0852,
+        6.4653,
+        5.8007
+      ],
+      "obstacle_min": [
+        -8.085,
+        -6.4653,
+        -0.0002
+      ],
+      "role": "building_damaged",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Collapsed%20House",
+      "version": "4"
+    },
+    "collapsed_police_station": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.3053,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/collapsed_police_station_diffuse.jpg": "ef606e80f227e1d2a1fb403ba87ba94f9a45c662665c88496d4dbcc21f761271",
+        "materials/textures/collapsed_police_station_spec.jpg": "adfb82a8a0af1620070f799b235eb9d688f57db8370efc53994fcb16bca92e83",
+        "materials/textures/rough_concrete_diffuse.jpg": "05a6b3485f2df53d2975d47dd23c37fc93e424aa703d5d51b6fd0f07b56f90e2",
+        "materials/textures/rough_concrete_spec.jpg": "cbbe180046f071c15530c73df50fbb8bf2a89fb1aa79cfe0d14ded98c4f40ca3",
+        "materials/textures/rubble_diffuse.jpg": "3cddb2147798e21a0c6bf38f2a95b6754e3c781012b24e8a61ee533e6a438b88",
+        "materials/textures/rubble_spec.jpg": "7d2aeffe53635617f938da0c24f2fef5c9ef69dfbb63f3d64d45fb9192b6e4ef",
+        "meshes/collapsed_police_station.dae": "3df727d7c3b93ed22574cacfa145f0f5a2042f2f0e016a298885ac1e89a2378a",
+        "model.config": "cd53ef218e92a51c53810f7c867a53e9c46a0629f6f803b2ca76a6d2c4aaa755",
+        "model.sdf": "5d694e6dc32eb0de10795a25ac93feea43451719ecbff0e7a7df6ac645e8e6d0",
+        "thumbnails/1.png": "5c2dac24e92f0b5da31bb966ed3ce1a611b6548e8f1305b067e3b903f9dc7cb5",
+        "thumbnails/2.png": "9c59da57376fe44f17078906037dd91be2d4371ffd00823aa901dbacbe2620b1",
+        "thumbnails/3.png": "2e4fa84c588848c45cf3f02d784452727769f991d9d08b6d3a2de7313bce8bef",
+        "thumbnails/4.png": "9251290f10d0ae6d8a4ec63562a2c910edf4f4382b47a94c62e267963e7f9c90",
+        "thumbnails/5.png": "cbb03fb318b2f92eda874569a3fb7d7cbc0bf44849d1dbca8a5d8fbc4dd8f563"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        9.796,
+        11.0746,
+        8.5831
+      ],
+      "measured_min": [
+        -9.7958,
+        -11.0746,
+        -0.3053
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20police%20station/3",
+      "name": "Collapsed police station",
+      "obstacle_max": [
+        9.796,
+        11.0746,
+        8.5831
+      ],
+      "obstacle_min": [
+        -9.7958,
+        -11.0746,
+        -0.3053
+      ],
+      "role": "building_damaged",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Collapsed%20police%20station",
+      "version": "3"
+    },
+    "construction_barrel": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Cole Biesemeyer",
+        "Nate Koenig"
+      ],
+      "base_z": 0.0,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/Construction_Barrel_Diffuse.png": "2d1a70d5b26afdc4f5a6d8b87cb4bd580160f3587fd6b55201a9e4e316d37549",
+        "materials/textures/Construction_Barrel_Spec.png": "19e48b317b86e67dce94ead2ee0844b0e908eca2cea8a4ebf96742f31ca3d925",
+        "meshes/construction_barrel.dae": "c27bd4d4964b8c896f9a1810f9fbfc91eb13d2077df464fa5b7238ffaf770c97",
+        "model-1_3.sdf": "e88ad3238dc67d7fc7fbe7a244d20c67ae2f8da17da5deab7aa4223e2627f6c4",
+        "model-1_4.sdf": "d332065536ac40ab022be188ed477dbdfd92dd173817c78f31f0b31f45c4114b",
+        "model.config": "b39eadbd4de66895df1bcb5861db36a727e56c137325f649625cdadc17b1d343",
+        "model.sdf": "84af44056aae69a7b98dde8f7bfa258964299fba4d36dea11a2396526f9424b5",
+        "thumbnails/1.png": "ec8347a0429fa40d8ddd29a82cbd249f2b03376ce498d03d95150bb8b45ebf8a",
+        "thumbnails/2.png": "f35277320c50e367b7b1ee705442020364e3e25027a3f557bbdb4a5247dd5e55",
+        "thumbnails/3.png": "e89dc7f68bd3f93eb0232b9c5b582ee35a51d39176db004463dc6597096543cf",
+        "thumbnails/4.png": "a07485a4bb286492d1638afc1d9e99a17e73a66f8755ecd5ddcf955b2a729b39",
+        "thumbnails/5.png": "fe6d80b7fccefb4e603e017f38a7f191823e9fab86cb5852e09976fbd095af26"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        0.5101,
+        0.5099,
+        1.55
+      ],
+      "measured_min": [
+        -0.5098,
+        -0.5099,
+        0.0
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/construction%20barrel/4",
+      "name": "Construction Barrel",
+      "obstacle_max": [
+        0.5101,
+        0.5099,
+        1.55
+      ],
+      "obstacle_min": [
+        -0.5098,
+        -0.5099,
+        0.0
+      ],
+      "role": "clutter",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Construction%20Barrel",
+      "version": "4"
+    },
+    "falling_rock_1": {
+      "attribution_required": true,
+      "authors_from_model_config": [
+        "Addisu Taddese",
+        "Cole Biesemeyer"
+      ],
+      "base_z": -0.6962,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/model.material": "efb6953bd2f9ed5cdc896f84c851ceab825a70c5108916a6ac2f76a37387ab58",
+        "materials/textures/FallingRocks_Albedo.jpg": "aa9a0f8061b165d01e6d5fbe2dbf621fca9b187c540f5d0a8221265efff6279b",
+        "materials/textures/FallingRocks_Normal.jpg": "35fe4376c8f058085ddf50c5e3e8ff129180d5137c996e1e0114b5f130d96cd8",
+        "materials/textures/FallingRocks_Roughness.jpg": "c7770c4b4aade20d8090efee6458d851bf50a0fb0ab94233afb92773e7c0c505",
+        "meshes/FallingRock01.dae": "8b60fb044fabd4cf2b9b70121a93c627b675d36c31e6adfce5967e5063108cd2",
+        "meshes/FallingRock01_Collider.dae": "afc359d2b4379f8d1b8940428a2c3d0cda17654237c08a826dd7fd438111f3e1",
+        "model.config": "69fb10c5446b29947b1f29dcd76f5b9b19af8fdf2e12379e20ae71a0c5981daa",
+        "model.sdf": "998661c5cc28f888bf848093958e9b277087bac7ff98e3e3aa9c5a1156251a64",
+        "thumbnails/1.jpg": "49eadf21e02b0a55513308de926130fc2a64e0fa151278bc9a0022ba2e8f8552",
+        "thumbnails/2.jpg": "b8a227c2d751351f8d5531b0b50697da3cdba4cd92e1448e91a1d3ecb150a7f1",
+        "thumbnails/3.jpg": "a69c7df70dfb29b3d585b8ecdc6cbe033b4cd87f7b7915a6a347b5c3ced357df",
+        "thumbnails/4.jpg": "0d1c1554e9835c6235958bbb22099ce6a23eeb68f0f62737b335691e4f9aa45b",
+        "thumbnails/5.jpg": "3d18c69adbab0edb6279c6338c1b7097af7e61dd981d9707265b77c4b2504690"
+      },
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "measured_max": [
+        0.7451,
+        0.7408,
+        0.6961
+      ],
+      "measured_min": [
+        -0.7449,
+        -0.7408,
+        -0.6962
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%201/6",
+      "name": "Falling Rock 1",
+      "obstacle_max": [
+        0.7451,
+        0.7408,
+        0.6961
+      ],
+      "obstacle_min": [
+        -0.7449,
+        -0.7408,
+        -0.6962
+      ],
+      "role": "clutter",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%201",
+      "version": "6"
+    },
+    "falling_rock_2": {
+      "attribution_required": true,
+      "authors_from_model_config": [
+        "Addisu Taddese",
+        "Cole Biesemeyer"
+      ],
+      "base_z": -0.4193,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/model.material": "efb6953bd2f9ed5cdc896f84c851ceab825a70c5108916a6ac2f76a37387ab58",
+        "materials/textures/FallingRocks_Albedo.jpg": "aa9a0f8061b165d01e6d5fbe2dbf621fca9b187c540f5d0a8221265efff6279b",
+        "materials/textures/FallingRocks_Normal.jpg": "35fe4376c8f058085ddf50c5e3e8ff129180d5137c996e1e0114b5f130d96cd8",
+        "materials/textures/FallingRocks_Roughness.jpg": "c7770c4b4aade20d8090efee6458d851bf50a0fb0ab94233afb92773e7c0c505",
+        "meshes/FallingRock02.dae": "b561b502fa6d6ab7b99604e49a22887505cbec0b8384d34bc0e2b82a8b6b83d5",
+        "meshes/FallingRock02_Collider.dae": "0b4456c1df62b9635f6029a3a3c13c10ad730e3b591c9e38655c7ee46bcc9dae",
+        "model.config": "3216e1e323dbf5eb7c7754e3442096ed5c2cb3cfd36152aff2101f8872abd677",
+        "model.sdf": "79c91fe1f2c7fdda463668b946446605e15e74b10af596e4f87b697cb8348e11",
+        "thumbnails/1.jpg": "70c43415f2e43e71f4c0fe9b2f35a075dc331c3625f1ef86a6aa7885adcf77c0",
+        "thumbnails/2.jpg": "6ebd1dd64a757fabdbc4143f7f96c3afb79d17947f186b126647db14d65d3a47",
+        "thumbnails/3.jpg": "6d838bdafce6643435564e886945a7e3c4b18cc6c79465b44c6b1a67bbb35044",
+        "thumbnails/4.jpg": "115e08281c17b2f55619bebda41edc15583a16cd8edf067a11a739fe2fd9277a",
+        "thumbnails/5.jpg": "63e9e33f62ca843a8b42ef8eb99237bf1511a7888071fe985a9d774a21b8e44f"
+      },
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "measured_max": [
+        0.4449,
+        0.4966,
+        0.4193
+      ],
+      "measured_min": [
+        -0.4446,
+        -0.4966,
+        -0.4193
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%202/6",
+      "name": "Falling Rock 2",
+      "obstacle_max": [
+        0.4449,
+        0.4966,
+        0.4193
+      ],
+      "obstacle_min": [
+        -0.4446,
+        -0.4966,
+        -0.4193
+      ],
+      "role": "clutter",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%202",
+      "version": "6"
+    },
+    "falling_rock_3": {
+      "attribution_required": true,
+      "authors_from_model_config": [
+        "Addisu Taddese",
+        "Cole Biesemeyer"
+      ],
+      "base_z": -0.2951,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/model.material": "efb6953bd2f9ed5cdc896f84c851ceab825a70c5108916a6ac2f76a37387ab58",
+        "materials/textures/FallingRocks_Albedo.jpg": "aa9a0f8061b165d01e6d5fbe2dbf621fca9b187c540f5d0a8221265efff6279b",
+        "materials/textures/FallingRocks_Normal.jpg": "35fe4376c8f058085ddf50c5e3e8ff129180d5137c996e1e0114b5f130d96cd8",
+        "materials/textures/FallingRocks_Roughness.jpg": "c7770c4b4aade20d8090efee6458d851bf50a0fb0ab94233afb92773e7c0c505",
+        "meshes/FallingRock03.dae": "2315a7382c685ee30d13ad0084a431a6d3b21aa0898ee0251f62245920453cba",
+        "meshes/FallingRock03_Collider.dae": "ce700a43f91a85a564cc765901df5a1242654c362e069dc76c6ca8f69436bc8a",
+        "model.config": "95078f8b698bf4925ba7c825ac50b6353f1fb64e473b53879fae92feef6dbd8d",
+        "model.sdf": "a64a4165099d75da77c4ccba13b3a19739185c0f504983acaa40530c4994c461",
+        "thumbnails/1.jpg": "16d5b9d9710637284573c9c81c5d6a15e2c5756ec44965a353e7ea366d519a5a",
+        "thumbnails/2.jpg": "ff0ff2dc50468eb0e51dd47a97729cee5db964c1b1852cb4092a0d70fe788575",
+        "thumbnails/3.jpg": "e354f5314fdab939bd4663a037cf8a0a23f31ab822e3bed34e01f6e726fbf4ce",
+        "thumbnails/4.jpg": "bd2cdd0aa9de31527beafa8cdcb831465ba2d2888a26e0dc9e3fe81df8a8384f",
+        "thumbnails/5.jpg": "70c58a45ee2385e570ac21e0d90983c454f3c7be5af882f9ef0d92e6cb8040da"
+      },
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "measured_max": [
+        0.3246,
+        0.3132,
+        0.2951
+      ],
+      "measured_min": [
+        -0.3244,
+        -0.3132,
+        -0.2951
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/falling%20rock%203/6",
+      "name": "Falling Rock 3",
+      "obstacle_max": [
+        0.3246,
+        0.3132,
+        0.2951
+      ],
+      "obstacle_min": [
+        -0.3244,
+        -0.3132,
+        -0.2951
+      ],
+      "role": "clutter",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%203",
+      "version": "6"
+    },
+    "garbagepilev1": {
+      "attribution_required": true,
+      "authors_from_model_config": [
+        "Roselle Carmen"
+      ],
+      "base_z": -0.027,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "meshes/bag1.png": "facc828727f597f63e759f4d8152eeeb4c4e73ed831775e5566fc71491b3db1d",
+        "meshes/bag2.png": "a294ced0fab262742bb8242b94739826be1d61bf6f33f792ddc0da57f8c95e57",
+        "meshes/bag3.png": "477f6a86680c04f1309131ab76fcedcfa23a133885b5c78a7c23403cf1009e3a",
+        "meshes/bags.mtl": "80b671c706e9093c539203b1fb958707d88f8f380975fa98ddf3c0b641a52e47",
+        "meshes/bags.obj": "0092482e043b616d123680c580c915e376dbbb5d014217656a4b0b929e4e5a16",
+        "model.config": "e7aac615c52403d348ea47ee7161ef0d5262af1a2c150785edb7f3006ca903bd",
+        "model.sdf": "a9c8905b1bda778b70328a7ca3f42312aec72091956e3bebaa8b88931b32cff5",
+        "thumbnails/1.png": "859351943e9fbe52f8b2a6dc4186e87ef21de02652161dc8dc235a34eae9e0a7",
+        "thumbnails/2.png": "dd01f3f5f59d0e9d3aad07b80a36750a1a2b1c44da30105e4dafaaeb1b0af0e4",
+        "thumbnails/3.png": "9f3b8cacac2a8d2dfbfeb6f3fcfad6257287b3d859178d1f7ee5ca9f1535cbe0",
+        "thumbnails/4.png": "334f8980cc6daa71fb40df1e664a07f522922a2eac74dd8b2444d2f0d70da440",
+        "thumbnails/5.png": "fc9fad35c41f3836b59c86ac78788f62c89cab0035f5a778e49691f6cbe3914c"
+      },
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "measured_max": [
+        0.6027,
+        1.0606,
+        0.2588
+      ],
+      "measured_min": [
+        -0.3718,
+        -0.0646,
+        -0.027
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/garbagepilev1/2",
+      "name": "GarbagePileV1",
+      "obstacle_max": [
+        0.6027,
+        1.0606,
+        0.2588
+      ],
+      "obstacle_min": [
+        -0.3718,
+        -0.0646,
+        -0.027
+      ],
+      "role": "clutter",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/GarbagePileV1",
+      "version": "2"
+    },
+    "garbagepilev2": {
+      "attribution_required": true,
+      "authors_from_model_config": [
+        "Roselle Carmen"
+      ],
+      "base_z": -0.0447,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "meshes/bag1.png": "facc828727f597f63e759f4d8152eeeb4c4e73ed831775e5566fc71491b3db1d",
+        "meshes/bag2.png": "a294ced0fab262742bb8242b94739826be1d61bf6f33f792ddc0da57f8c95e57",
+        "meshes/bag3.png": "477f6a86680c04f1309131ab76fcedcfa23a133885b5c78a7c23403cf1009e3a",
+        "meshes/bags.mtl": "b330571f8cf63717f5c130e59cd8f3acf41855bced23961d58b4fbb6fd3e5f53",
+        "meshes/bags.obj": "e184e7a84a11fcaa86b411bb72944e3a00a208eda43467004c5f30bb9d4fa293",
+        "model.config": "b174b32ba6b23b5285217564f0109ed255e22c08b91ac07e86d4362ef84b3bd0",
+        "model.sdf": "94d9935c1b530e95ee6000721ac06f0c7dc6e09f24c9f327d84a5b7f2ec7e2bb",
+        "thumbnails/1.png": "bd0dc613f1131878bee1b6f420baa659aa49793723b63580ca2e7ca8bba890e6",
+        "thumbnails/2.png": "2133d8d70edfb2aa092c0024975d8c27da1198fbdfdca5699d691b0febd1e3cc",
+        "thumbnails/3.png": "bbe779b4f432f719defe30114edd8528b1c68a41f6b95771fc45612a301542a5",
+        "thumbnails/4.png": "4d23e4ad3191bf8a8d51ccb4fc677c1eb96bdf1b12c7affcf76c973f06364ee8",
+        "thumbnails/5.png": "9605a282382e202ca5a40ac1e9f4131adfd93c10c962c0515472a2e83d2a3921"
+      },
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "measured_max": [
+        0.6936,
+        0.5846,
+        0.2394
+      ],
+      "measured_min": [
+        -0.4309,
+        -0.3555,
+        -0.0447
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/garbagepilev2/2",
+      "name": "GarbagePileV2",
+      "obstacle_max": [
+        0.6936,
+        0.5846,
+        0.2394
+      ],
+      "obstacle_min": [
+        -0.4309,
+        -0.3555,
+        -0.0447
+      ],
+      "role": "clutter",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/GarbagePileV2",
+      "version": "2"
+    },
+    "hatchback_blue": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.0114,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/hatchback.png": "ef831a4135d067c29f5d804eb470248dd4499c5562f2029ee3ac9a60597988ec",
+        "meshes/hatchback.mtl": "9a27b5212168eefce6ba6c68ae8b597fe92f8cac6afb11f53d98e87af571218f",
+        "meshes/hatchback.obj": "75d609dee9b8c2467ddac0cc1fc0b23c750b250f50cc75d6480a21302358d4d8",
+        "metadata.pbtxt": "5d73ed00c02c67a448525320f42fd5d810d6e33ac0e5f56883707831eb0933a2",
+        "model.config": "e76f8f645ddb6cf6e779c8c75518f85fbbf6060c9d71f03ad4eacb39e5d94938",
+        "model.sdf": "fadff56fcfda925c122ace03c03e701f9cdaf48c4dec8cd24740d10ea562adc1",
+        "thumbnails/1.png": "b7f5ec4d7e9f79ffd441cd308f37caf9b67796e20bef315794ee3c885310c15d",
+        "thumbnails/2.png": "3fcb389d2a0ad4b76114cefdd13f47272bf39d5d6c751497e06ffcb75905a88c",
+        "thumbnails/3.png": "759d5de903b9266c2edc301705156c256a453f5d8bf3952e303db034632dfc79",
+        "thumbnails/4.png": "781693b058344341f0aaf0f31161fb05d3cc0d4eb76e1faa2318358690f80ad7",
+        "thumbnails/5.png": "8ebf6a897461b4eba3cef5f97be8b47c646535b3dab48048e0998402cc41bc07"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        2.3442,
+        1.0702,
+        1.5565
+      ],
+      "measured_min": [
+        -1.6569,
+        -1.0702,
+        -0.0114
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20blue/5",
+      "name": "Hatchback blue",
+      "obstacle_max": [
+        2.3442,
+        1.0702,
+        1.5565
+      ],
+      "obstacle_min": [
+        -1.6569,
+        -1.0702,
+        -0.0114
+      ],
+      "role": "vehicle",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Hatchback%20blue",
+      "version": "5"
+    },
+    "hatchback_red": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.0114,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/hatchback.png": "14bb5a8dd1d8177e6a0017ae5fb0a5a182c9a589b61bf41b551c6eb5faebc2b3",
+        "meshes/hatchback.mtl": "b427c3c90d7abe4486f645d6d4f794f7e2501115b1ec8b54b94ad2267f5a713f",
+        "meshes/hatchback.obj": "75d609dee9b8c2467ddac0cc1fc0b23c750b250f50cc75d6480a21302358d4d8",
+        "metadata.pbtxt": "64cc4d7a9e98ac62f09f6e9d3568c9111f18a957eb00c3d79bb1e6f3f5d05eb9",
+        "model.config": "eb39abcc058ef309a427b04f6940fe3312074f2f2d70a9facd123cd7ff81945e",
+        "model.sdf": "913391ff3712265dcd89fc8505e8ef9a06ac19481265b9b72ae598b61158570e",
+        "thumbnails/1.png": "9da8b91f846a0fe7a85a53150ed9372c8f759ef8bfc0aa705759b96b034785ac",
+        "thumbnails/2.png": "b76aa599bb3fd709b9f8d2094f059b8f1ab421e08b062aa61f35850bbb48b6cf",
+        "thumbnails/3.png": "4cdcf0f924af7af56c5074e5f5045f8804e47f6c0d34771af5a38eaf84965129",
+        "thumbnails/4.png": "bdee661268d33916860d6f37f1a49e5f32907b09442a7243a6334b74f8562b17",
+        "thumbnails/5.png": "33ea2165cad4ab70ca4728a7bb471638f9c831789d0776542cc34c807e043a51"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        2.3442,
+        1.0702,
+        1.5565
+      ],
+      "measured_min": [
+        -1.6569,
+        -1.0702,
+        -0.0114
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/hatchback%20red/4",
+      "name": "Hatchback red",
+      "obstacle_max": [
+        2.3442,
+        1.0702,
+        1.5565
+      ],
+      "obstacle_min": [
+        -1.6569,
+        -1.0702,
+        -0.0114
+      ],
+      "role": "vehicle",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Hatchback%20red",
+      "version": "4"
+    },
+    "house_1": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Cole Biesemeyer",
+        "Nate Koenig"
+      ],
+      "base_z": -0.0002,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/house_1.material": "601c05b0c82cf6d13ba1e61e4fcadfb49327b941dd58da9e3ba8ecd946f61f17",
+        "materials/textures/House_1_Diffuse.png": "5f4369cc3e8a0b5642be1b9bebb650cdae6fd73d1c10049d5597c67081b24f39",
+        "materials/textures/House_1_Normal.png": "12dc7a0d7baa237f904900ea9f13ca41e67ac0d91fbdf0c0de6d849d6520f94f",
+        "materials/textures/House_1_Spec.png": "21a0809c7dbe6d40e702f3680449f9ce93bdc0b77c230d0609658719ecf57015",
+        "meshes/house_1.dae": "0e4d77fe3369dea0d06957cf2571aa8d4509256510dc285b6423230cf94753ee",
+        "model-1_3.sdf": "99974f9b492d633d3d33eed36fe7007ad5a33830e0d3fdf5f1db7a73fa4836fb",
+        "model-1_4.sdf": "23f85cc72e290e891839fc9487ce88ae126a6f4e7efbede2aaeee5961a0e1cdb",
+        "model.config": "b9c11a6d2b712336ecac8d1b5e4400740610691ac8dc415c454c3143680bc4d0",
+        "model.sdf": "9e0de06c3b0fad8f826d1707d9f46934d4bb559378812d92cc033e76022f3df2",
+        "thumbnails/1.png": "8a5cfdd237be6bc675c7ee5d48851239b0a7dd5dd0b4c4126d30f0305786b1a0",
+        "thumbnails/2.png": "ed0b0f25010945285f6729d1c9f212d425bf3a26800916e24b4d252a73338873",
+        "thumbnails/3.png": "77a28fce8c1703bd7ec388fb9a73dc76537ad68e023348c79e2712fd4b89006d",
+        "thumbnails/4.png": "e3452e30c8a50cb465bc2dcd5832dfca95caa6f0b59bbf51ab9b23e96e8007e0",
+        "thumbnails/5.png": "0bd7a048e18df6e1a1e802a5473a9b66256ca0224ef6a2158c9730faa4304731"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        7.8482,
+        6.0905,
+        7.6867
+      ],
+      "measured_min": [
+        -8.6419,
+        -6.8402,
+        -0.0002
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%201/3",
+      "name": "House 1",
+      "obstacle_max": [
+        7.8482,
+        6.0905,
+        7.6867
+      ],
+      "obstacle_min": [
+        -8.6419,
+        -6.8402,
+        -0.0002
+      ],
+      "role": "building",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/House%201",
+      "version": "3"
+    },
+    "house_2": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Cole Biesemeyer",
+        "Nate Koenig"
+      ],
+      "base_z": -0.0364,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/house_2.material": "2cddf1f6e4913ce89a448727275e07665c2aebb12c02fb539d6c1989526a148f",
+        "materials/textures/House_2_Diffuse.png": "bc6b3931f200c23a6bbe8ca95bd2f78f2ec3af352e26cd88ddac89a92747ead3",
+        "meshes/house_2.dae": "99a279004e1bc14b5323e98503cb2b788f8390465596fe7e17700e0631395fcf",
+        "model-1_3.sdf": "62b110ef444ff7f9829ef9c4b91c7b4e7245821fcac56c0a1bd6fc6195b91c3a",
+        "model-1_4.sdf": "76c06c77a72c09b4c992014842e7d81ecdabb0a87961a3e01938c64a87e9db27",
+        "model.config": "6242467ba4e9d1960754dc9b177051e504a65326223c65438a66cac6d051be1d",
+        "model.sdf": "6a3cbe0253424a8185bd8c652c32b3d5a2b88b2ecdca8dc2a3367632d3bde116",
+        "thumbnails/1.png": "b01512595ba810d02c6c9f3718d195cacdb3e6cd64b13d6b320ef785fe94fc9e",
+        "thumbnails/2.png": "9b08e2c0c457766a96358c87ae530de6ac6834dc326850d05ef2bb1562fbd8ee",
+        "thumbnails/3.png": "3ffa40d55000fbaa9740c1a5c27037cab9189736d858da254ec68970c4c8ebc0",
+        "thumbnails/4.png": "5b7fd1bfcaaab540165dc7da39c740c4d1f3654576904f2e6e2f748a5cef2b81",
+        "thumbnails/5.png": "c5be387bcaf5db77fd24edbd90098077ee01e46cc63a7fa00ef8f2f4b6c76110"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        7.5626,
+        5.6623,
+        7.1905
+      ],
+      "measured_min": [
+        -5.1485,
+        -4.1105,
+        -0.0364
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%202/3",
+      "name": "House 2",
+      "obstacle_max": [
+        7.5626,
+        5.6623,
+        7.1905
+      ],
+      "obstacle_min": [
+        -5.1485,
+        -4.1105,
+        -0.0364
+      ],
+      "role": "building",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/House%202",
+      "version": "3"
+    },
+    "house_3": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Cole Biesemeyer",
+        "Nate Koenig"
+      ],
+      "base_z": 0.0,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/house_3.material": "b132aec7359c58b590ad37cb83d0d3e4dea7b208d82c1a9d91178ad84d3abebe",
+        "materials/textures/House_3_Diffuse.png": "af602fa919b22b617b8dafd0d68f9dcfd4f181403d09fe434c4e9294462518aa",
+        "meshes/house_3.dae": "712e1a3f2947a3fd354fe15f8ca36b2a1315ae76737387dbe815cd6112f56a2d",
+        "model-1_3.sdf": "3572a238846786302e82a3b4e6bbba29544125dda47008b79db1791392510664",
+        "model-1_4.sdf": "306759ba295b27bad624975a62ff9f43aa0f0e0d47bd6e1b6ae920e44288f879",
+        "model.config": "d3a4f4ca2be8cde24a4b35bf4fc6c33bb9fbca53e4b27a5e12b3759a6afe1007",
+        "model.sdf": "571345b35ab4911936b4a48c2205bcdc863217fbc4b9fde976b0fba7641dc3dc",
+        "thumbnails/1.png": "832b05cd11ccab067ddde71470e9c9fc73df2765377f92120a244c7171cbe484",
+        "thumbnails/2.png": "0812d513f1eb2db48d5d8d7814562ce8a28ebebfc99709fbb2caf67023573636",
+        "thumbnails/3.png": "15a45e3a2162da2e63e64e956820af7158d74c3bfccff60068411c476017dc8f",
+        "thumbnails/4.png": "26d3a7738f4447a18728e6c730d090f58683cc04134a4d5660271ce62f23cb95",
+        "thumbnails/5.png": "f5800d9b6f7c991ca8d770cf9b3ffef5029395cd108103f30aff600ddfcbefd4"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        4.3746,
+        2.4088,
+        10.6112
+      ],
+      "measured_min": [
+        -8.2646,
+        -2.3904,
+        0.0
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%203/3",
+      "name": "House 3",
+      "obstacle_max": [
+        4.3746,
+        2.4088,
+        10.6112
+      ],
+      "obstacle_min": [
+        -8.2646,
+        -2.3904,
+        0.0
+      ],
+      "role": "building",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/House%203",
+      "version": "3"
+    },
+    "oak_tree": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Louise Poubel"
+      ],
+      "base_z": 0.0,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 3D box inconsistent (FINDINGS_EL.md): measured extent = depth footprint + max height with base z 0; obstacle extent = union with the larger 3D box (conservative)",
+      "files_sha256": {
+        "materials/scripts/caster_fp.glsl": "86818f35f5b6b7e99fa4dd276c6b1090fae157a7b95d199f877b43a5bb1a394f",
+        "materials/scripts/caster_vp.glsl": "ed8df153446011e1d7f77c7c12f5387de99a6e3216f98661ed96c59a8b8f1d84",
+        "materials/scripts/oak_tree.material": "da1045a12bc2e1f889eb855116c13e514a3b1ec8d780d94bf76ccf1a29defb7a",
+        "materials/textures/bark_diffuse.png": "35b52144a8c5522df4e97a9a2125231699ad143f6f7273815a47a5064660f794",
+        "materials/textures/branch_diffuse.png": "f378bfa2f09f309ac79729afc0a4b6b482e5caa47ac6d982cadf1ebea880d872",
+        "meshes/oak_tree.dae": "b3edcfcf4875d2898103ee841ae6530d251730548c0575de8334d4e96d19bd27",
+        "model.config": "f258f8caff9d910972c484baa4624a966731efd95a06cb66e6ab1cf26134f7c7",
+        "model.sdf": "2112fc9c62e74b88fd9d77ef2954c011aa8336e4c5135517cd4290c796328315",
+        "thumbnails/1.png": "8cbdf7be5cd9b6fde416adeb973cc40e187e35006d7a0e8f8dc29d3ced4b114a",
+        "thumbnails/2.png": "5d1f40c853eac828204dd15a0ca116dacf2ba378a8d0023a3f45644491d14a8c",
+        "thumbnails/3.png": "b7ca75b138aff35ade3f9b5795e27cc0ac65487cfe4190ce4854fba1938608cc",
+        "thumbnails/4.png": "fb8cc34da30a4d3e563b1e4b201d28f29c7e41b1365400da8b3442c206450d3a",
+        "thumbnails/5.png": "ca7199b33afc4b47ebd3a6e23b52d2892d9f817e25655a210c397f83e58e396d"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        4.25,
+        4.0,
+        6.4242
+      ],
+      "measured_min": [
+        -5.75,
+        -3.75,
+        0.0
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/oak%20tree/7",
+      "name": "Oak tree",
+      "obstacle_max": [
+        6.9179,
+        6.885,
+        11.0025
+      ],
+      "obstacle_min": [
+        -6.9218,
+        -7.436,
+        -3.357
+      ],
+      "role": "tree",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Oak%20tree",
+      "version": "7"
+    },
+    "pickup": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.0074,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/pickup_diffuse.jpg": "828211a3dde36ad50abdcd18ae677c718bc50ddb7ae33cfc9563ebf573d1e2e5",
+        "materials/textures/wheels2.jpg": "d8c626c5f1463a68c34d6f46e4f98e1c5d010282530697f1358725c27fb36f15",
+        "meshes/pickup.dae": "4458a556de5997174a747962a88116649cc628b5973d42ff23f00ed6c781d796",
+        "metadata.pbtxt": "a745f33e5e78005f71af3918638c4693fbff482a200a81af9cd5212f44086248",
+        "model.config": "d3499b0adb4dce33998532a7a41225cfb9f50e56b8e3b453a9354d8c6aa2b022",
+        "model.sdf": "2a6ca7a9290608b55ba3da45ec2c8fe1ca41910910d3fd7413e5ed9c59eb20df",
+        "thumbnails/1.png": "8447430c0fda7ca0d73b48e1a0d268bc864eb11780dc233a9cd533ac3fa5ae63",
+        "thumbnails/2.png": "e3adb4360d0ccb74bb070cd491ad2f1da2dc5d2efaae8057f2e71ffd985a729d",
+        "thumbnails/3.png": "d1ea6dd4f549f2a69cad786c1e99e9081831bd182aaec66b1c2498ddac81e7b5",
+        "thumbnails/4.png": "e1fe5ed8eb4cb946aed59a822d975038ea130b7fc9e10043d79d7e4202aede84",
+        "thumbnails/5.png": "445f74ff9d4747be11a8590a91f0451843b76d05f3ca55f0b604db881a854be7"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        2.7123,
+        1.2365,
+        1.8582
+      ],
+      "measured_min": [
+        -2.9523,
+        -1.2365,
+        -0.0074
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pickup/4",
+      "name": "Pickup",
+      "obstacle_max": [
+        2.7123,
+        1.2365,
+        1.8582
+      ],
+      "obstacle_min": [
+        -2.9523,
+        -1.2365,
+        -0.0074
+      ],
+      "role": "vehicle",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pickup",
+      "version": "4"
+    },
+    "pine_tree": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Louise Poubel"
+      ],
+      "base_z": -0.0186,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/caster_fp.glsl": "86818f35f5b6b7e99fa4dd276c6b1090fae157a7b95d199f877b43a5bb1a394f",
+        "materials/scripts/caster_vp.glsl": "ed8df153446011e1d7f77c7c12f5387de99a6e3216f98661ed96c59a8b8f1d84",
+        "materials/scripts/pine_tree.material": "b7ccb8199349eb12324eeabed0cf652803c6c2677acb1838095b7a98f3c372ce",
+        "materials/textures/bark_diffuse.png": "344e17ef587dc7d0e2e36d3094c7aa0d0dbd048b3f5af05e917a84f21d9abd17",
+        "materials/textures/branch_2_diffuse.png": "aece9329148a3cb072c252029bd00624d7e62541b25c3303c0e0152e6bdd0c99",
+        "meshes/pine_tree.dae": "59ed97a15067ff158d2e165f651bb71756ebbe8261146672e0cce085eb1e99c4",
+        "model.config": "01d6020e5589492b84a6a36bffacdcfd68f0a18abba9e3057806e818b2966528",
+        "model.sdf": "cfb96d93e07bd856d6068a8768804ee4c6396a2c33fdd12e7a2ba57c909d5169",
+        "thumbnails/1.png": "7a79f36b73c666de6d04f9816a39345ee86194b1702ab7c18236030b9c5bf9a9",
+        "thumbnails/2.png": "cf13fcb97959a5ff3c1da8d60589eef2b61688a54843858dd41e85558bf07f6e",
+        "thumbnails/3.png": "9f90846a5da2adf430cdc3056f2c4af497f9c7db8b28dfdb0692a0e2a1c89524",
+        "thumbnails/4.png": "80a9c59f6c9f184a5e16837f0989ec71b738c7b45c22748eaec825d5b3f8a196",
+        "thumbnails/5.png": "2315d1d2e918644c716635e501ccc64630c846f38f8a38100c27fcdfc0bd598a"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        2.2146,
+        2.2198,
+        5.095
+      ],
+      "measured_min": [
+        -2.2132,
+        -2.2467,
+        -0.0186
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/pine%20tree/6",
+      "name": "Pine Tree",
+      "obstacle_max": [
+        2.2146,
+        2.2198,
+        5.095
+      ],
+      "obstacle_min": [
+        -2.2132,
+        -2.2467,
+        -0.0186
+      ],
+      "role": "tree",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pine%20Tree",
+      "version": "6"
+    },
+    "rescue_randy": {
+      "attribution_required": true,
+      "authors_from_model_config": [
+        "Ian Chen",
+        "Cole Biesemeyer"
+      ],
+      "base_z": 0.0,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/scripts/rescue_randy.material": "6169ed9970790ba1818492c64b43fccbca13ea7193fcfdd8987a8aa1ab7092da",
+        "materials/textures/RescueRandy_Thermal.png": "94ac16c2dd8d7e208cbeb61027df3a0eb18db9f37314a64007b9ccaee17306f0",
+        "materials/textures/rescue_randy_albedo.png": "13da763ef7312bf953164030fb13d3909fd31bde3be29d97e9988e5ccf873306",
+        "materials/textures/rescue_randy_metalness.png": "6ccc422ba6fc0c87b854d084291c217da4fb1a936802cdde4b23083945bb6725",
+        "materials/textures/rescue_randy_normal.png": "387391b5d0ac611f50e13ca1c1eef76a8a16ee0b8f911c4d1723b530a7f58bbf",
+        "materials/textures/rescue_randy_roughness.png": "6bd73826906e0a40d37a5f3b531a69a6a66656edbe66b17951ccbb08a1b4cffa",
+        "meshes/rescue_randy.dae": "39cefdd4b3cb18ac7a2a80439200bd301e19c3d44547587333cda9a0809c8d92",
+        "model.config": "d164c0285aa3160e435d6eef938a82b73eda49c7b5bf27c24326ee55501fa69a",
+        "model.sdf": "4fd9eda0f313ec40602d4c9a52ce742f03a4bfa2707e3e764434e4b84a0ef9a2",
+        "thumbnails/1.png": "f3822a87a9fe0b38816b340e56b095aae7bfc56fabd70b2dcd51864ac7515fe5",
+        "thumbnails/2.png": "5f96bfd64714974f140405fed1bbb9bff48030b3d658390d48f0d68637d6e5c2",
+        "thumbnails/3.png": "26e8030aa3518a6e20136da803f81e4b012591c130b67f596e4696e695e8041f",
+        "thumbnails/4.png": "e065164b6a2c69c6c8878582af9250d4a5af2197cd3395c1d24809b2d8a7c57a",
+        "thumbnails/5.png": "95bd5dd5c930b3839698401dcac3b3df4f143ec157d60afe3d044506fe35bb3a"
+      },
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "measured_max": [
+        0.682,
+        0.1788,
+        1.8211
+      ],
+      "measured_min": [
+        -0.6816,
+        -0.1785,
+        0.0
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/rescue%20randy/3",
+      "name": "Rescue Randy",
+      "obstacle_max": [
+        0.682,
+        0.1788,
+        1.8211
+      ],
+      "obstacle_min": [
+        -0.6816,
+        -0.1785,
+        0.0
+      ],
+      "role": "human_pbr",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Rescue%20Randy",
+      "version": "3"
+    },
+    "rescue_randy_sitting": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Ian Chen",
+        "Cole Biesemeyer"
+      ],
+      "base_z": -0.0063,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/RescueRandy_Diffuse.jpg": "886afd5405b282cfb2b7f0c86b8010276df54b8f02863a65c3bceb32bc97d8fc",
+        "materials/textures/RescueRandy_Thermal.png": "94ac16c2dd8d7e208cbeb61027df3a0eb18db9f37314a64007b9ccaee17306f0",
+        "meshes/rescue_randy.dae": "6c315e975bceabe954fe0621651f4ca8956736f0d57dccf1b9262eeb76c5d576",
+        "model.config": "b82335498a31439fd73e12d081a04a86b4b5b4367c0fa077e130ce719b6f3a2f",
+        "model.sdf": "f4e2c03dfac1e41abf8a20e7a516fe91c0116e89f9910ab1ce82660cee7fac9f",
+        "thumbnails/1.jpg": "01050f8fd00434c23b0856efbd8ab159275e72e5ea128cb0d85ef1e77884ab38",
+        "thumbnails/2.jpg": "0ecb09d4bd755c5d595de6e81e95f799f3d685ca16dee98f0d368cb703295705",
+        "thumbnails/3.jpg": "2b89eddcd5866f85191ae6cba1cdc80818d1157e31ffb8ec10a1dd61d68582a0",
+        "thumbnails/4.jpg": "f69c0506bf6e26d8eb7e7e97aad2d195c218feb5b54222ee67c9c24f8faa3595",
+        "thumbnails/5.jpg": "2d8dd46dfa3dd69cc396e99b5026b6039061ee602f248a930c1c56799dd4532a"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        0.2745,
+        0.304,
+        0.7235
+      ],
+      "measured_min": [
+        -0.4727,
+        -0.7144,
+        -0.0063
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/rescue%20randy%20sitting/8",
+      "name": "Rescue Randy Sitting",
+      "obstacle_max": [
+        0.2745,
+        0.304,
+        0.7235
+      ],
+      "obstacle_min": [
+        -0.4727,
+        -0.7144,
+        -0.0063
+      ],
+      "role": "human_pose_to_check",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Rescue%20Randy%20Sitting",
+      "version": "8"
+    },
+    "standing_person": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Marina Kollmitz"
+      ],
+      "base_z": 0.0037,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/eyebrow001-unmodified.png": "bd9d94033a85c16af38fb135f5fed4ab2e1a26982db952826e58a2672c8c9a9c",
+        "materials/textures/eyebrow001.png": "b2b15dd52470d6d073d18ebf56bcb1f3b45567cd42a2c75557c0ed2adc0f1ec1",
+        "materials/textures/green_eye.png": "97b79fb62dde7211c142ce398b9506d42a74bdc478230e90ec69377ffdce4e22",
+        "materials/textures/jeans01_normals.png": "2aa953834fa0bcf240fe069dc1ef283d801573e077bc5f9da04847370e9837d1",
+        "materials/textures/jeans_basic_diffuse.png": "c4b2f9126873078ecf8a3678e28622196fa6cb47e131b6067d6ffe81919b0ca6",
+        "materials/textures/male02_diffuse_black-unmodified.png": "d3ef0f625df4d5cea6c9cd89e00b9e86c3b488d63672f9ed5b1327a17abd60dc",
+        "materials/textures/male02_diffuse_black.png": "37c166c53575369f57cf233e775f87ef225b3fe9f66ff7ba34b3abb12dcd46be",
+        "materials/textures/teeth.png": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43",
+        "materials/textures/tshirt02_normals.png": "f31407a3f8ae20736f8f9693906f6ad64569032bc4afd0798c305526fa51d33d",
+        "materials/textures/tshirt02_texture.png": "932e21f76307fda21692a3b4db03fcddc68127d410b4ccbf9fb5cf95ecfbc1b1",
+        "materials/textures/young_lightskinned_male_diffuse.png": "4233a4e1e2d423daf8e5aa25521df93253be54b0ab6490147afae39b076f4fcb",
+        "meshes/standing.dae": "bc20dd2cd005d70a35627e38cb52d4c84f3d66034b196efa28e11b10b3295c15",
+        "model.config": "5867d0c4417ded2c20d6d70857ac638eb5c16b460a0af3140dc9552c2f9e5a34",
+        "model.sdf": "7ce4c8a3197c1002e6f1699b595928c9f7064c55f6100ddb00131190c6ce3224",
+        "thumbnails/1.png": "7c825622e8a23dd896d61e0997c0826e63196e48699d8cc418f7bd3d21f25d70",
+        "thumbnails/2.png": "3d2171c1c9b1039875e23d23e8d7fcb80af59901ce9b592398c01f363d525993",
+        "thumbnails/3.png": "10103cbcfa5ec0917f608570d63ed767583057e71195223872eb862e9442d3b9",
+        "thumbnails/4.png": "6cb6e8ed665747eff758288ca3291ecb420a3d10c057af145e36674c88188fe6",
+        "thumbnails/5.png": "dad08a00bde7d28eafb94b18f77bad89d6296f281fe94c1e3e05f120c05051fe"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        0.267,
+        0.1107,
+        1.9337
+      ],
+      "measured_min": [
+        -0.2773,
+        -0.3278,
+        0.0037
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/standing%20person/3",
+      "name": "Standing person",
+      "obstacle_max": [
+        0.267,
+        0.1107,
+        1.9337
+      ],
+      "obstacle_min": [
+        -0.2773,
+        -0.3278,
+        0.0037
+      ],
+      "role": "human_standing",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Standing%20person",
+      "version": "3"
+    },
+    "survivor_male": {
+      "attribution_required": false,
+      "authors_from_model_config": [],
+      "base_z": -0.0046,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/Survivor Male.png": "e30d957b2160eda8cd6ceaeb08a47f9374866301ff1cae3dff4f1e225c7a1a97",
+        "meshes/Survivor Male.dae": "6dbe5ade530e415f21d88991bd1a9ac507e92a843b526717977c2eaf7f149fdc",
+        "model.config": "bb233961001e0d33c118457480aa50739f6cf006ffb913ce84373cc461d58932",
+        "model.sdf": "2a3ab781c5002b7a127457902e7be0245d076e63faaf084046391069ea717cf4",
+        "thumbnails/1.png": "52a5a4b887755aa673da98b33f7e8b2f42c12ab47562e6420e4dee5f01aff455",
+        "thumbnails/2.png": "e7bafd55ff5049f329445c403e690b5b7011a4f26519e4e77f8894a750ca7f98",
+        "thumbnails/3.png": "739cdc8699fc57748c6aef0541822e4b48b65a5dd7a6bc38ccbe35318040f7a3",
+        "thumbnails/4.png": "32656cb82948e7d852514aa273dd2c295d41c37fe3173f50d6a0553c3e31970d",
+        "thumbnails/5.png": "a54cbb6be34dff6b066278b703aa5c491bd9097a2e72ad6407f1f46d7f3c0929"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        0.5691,
+        0.9729,
+        0.3829
+      ],
+      "measured_min": [
+        -0.4828,
+        -1.0562,
+        -0.0046
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2",
+      "name": "Survivor Male",
+      "obstacle_max": [
+        0.5691,
+        0.9729,
+        0.3829
+      ],
+      "obstacle_min": [
+        -0.4828,
+        -1.0562,
+        -0.0046
+      ],
+      "role": "human_pose_to_check",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Survivor%20Male",
+      "version": "2"
+    },
+    "suv": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.0084,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/suv.png": "ddf8c7c2646190e7f315fbc4a523dda92c1172a510eff2bdbe9898e7495ebcee",
+        "materials/textures/wheels_01.png": "9b76e5f5e37f226d1fc9ff31c9d91c904a104bf930833c0c8b5cf4bb24793d85",
+        "meshes/suv.mtl": "5591535188369ef07f515c54358e42f88e7d10d8f22d8069be7d8a5c3d6e0b60",
+        "meshes/suv.obj": "37ab9ef37a4880f9c4f191e441f51d3afa05973793c004a7606a893f19b63e7c",
+        "metadata.pbtxt": "f20462d3baae32db095b61a16a8efeca973fb23d3beb8c79ea79205884c47999",
+        "model.config": "2a0dc091922174fde22b6a97e0cd811e85b9a8c04122300fe2620f3d11e061ea",
+        "model.sdf": "47fd176e9cacfdaca00f3acbadebcbfb4be6246c7321666ddfc3d7317e50a165",
+        "thumbnails/1.png": "1e49e60d5bfaa142885a632f160c9b6ccd9d3b113e63c985cb8695031e5e0f4c",
+        "thumbnails/2.png": "e33d649fb83f3e680bd69e843a92f7ff280117eee93fbebc679dfda8f037c66a",
+        "thumbnails/3.png": "9bb8d3e131313cbc78944cbd6ff025875e5b6c22f681300b845ece2b846a9d72",
+        "thumbnails/4.png": "383006f2dadd5423bfa66b5cfad3a9b9b6925199a14e51f24e7a607dd02ed3ae",
+        "thumbnails/5.png": "a700774a57f5aed6021694aa4c93ab23a106928da45767d739c2e6086f3b88df"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        2.5769,
+        1.3358,
+        2.1482
+      ],
+      "measured_min": [
+        -2.4432,
+        -1.268,
+        -0.0084
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/suv/4",
+      "name": "SUV",
+      "obstacle_max": [
+        2.5769,
+        1.3358,
+        2.1482
+      ],
+      "obstacle_min": [
+        -2.4432,
+        -1.268,
+        -0.0084
+      ],
+      "role": "vehicle",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/SUV",
+      "version": "4"
+    },
+    "telephone_pole": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": 0.0,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/telephone_pole_metal_diffuse.jpg": "bc72843aec04a5bb2017fc441dbec11fa9059b2af71c14575cba1f1515501859",
+        "materials/textures/telephone_pole_metal_spec.jpg": "b20255aae5172466b23a422401147c0af969717a89c3a0ea660ca11d3496a0b3",
+        "materials/textures/telephone_pole_wood_diffuse.jpg": "8750eae2c0c4cf43a1144c73401444f7a11c02f1c8a5221103d952fd584222a0",
+        "materials/textures/telephone_pole_wood_spec.jpg": "910a99744b405ed02f9d12f80cabe7366d1420415a5819c15e6c3b91295dc718",
+        "meshes/telephone_pole.dae": "560c3861062f63ea3270442bfb1059015cda25034bebf4075ad2aa4a5c71f597",
+        "model.config": "d6f713afbb45739dd2894beabd03ab9239d8ef168d36c668c5b7a3805c290035",
+        "model.sdf": "94a312db8b579f845812c80533f43506cdc0cc4578ffbe1bbeafdbfc59faf084",
+        "thumbnails/1.png": "00bf067c69cc06a7df8ffde8d7a614c4d2c7c180766ee0c9a613fdf7245b4188",
+        "thumbnails/2.png": "4a45685c6da74090d51ae68c01b55185e74025e1528766385dc90bf2c14427cf",
+        "thumbnails/3.png": "baebb3a490110f016a64096e0427325b60a5fdacee72a8bc39fdd2a5d345583d",
+        "thumbnails/4.png": "18cfef76960f3602a9c11785cff3321b5b05528ea201479123ba3db77e0820d6",
+        "thumbnails/5.png": "9fe0c3933f009e1c858a0fbbb385b5c350f2d978dc6598fc51a4a014dc3da46c"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        1.0582,
+        0.078,
+        9.2235
+      ],
+      "measured_min": [
+        -1.0579,
+        -0.1569,
+        0.0
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/telephone%20pole/3",
+      "name": "Telephone pole",
+      "obstacle_max": [
+        1.0582,
+        0.078,
+        9.2235
+      ],
+      "obstacle_min": [
+        -1.0579,
+        -0.1569,
+        0.0
+      ],
+      "role": "pole",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Telephone%20pole",
+      "version": "3"
+    },
+    "truss_bridge": {
+      "attribution_required": false,
+      "authors_from_model_config": [
+        "Nate Koenig"
+      ],
+      "base_z": -0.9311,
+      "collider": "same mesh as visual (model.sdf)",
+      "extent_source": "pass-1 Gazebo 3D box minus slot origin",
+      "files_sha256": {
+        "materials/textures/truss_bridge_diffuse.jpg": "61a7e304929e04cb1660a5db22a1bd9c5bbd94e2c1a4d6f09e8530097a03a41e",
+        "materials/textures/truss_bridge_spec.jpg": "b564246f397984bb2eee4dc196057578ca11ff2e3fbc0540f1f981dd20dea36a",
+        "meshes/truss_bridge.dae": "788f8a27d38e770c8fd57fe2fa1279932c34adcc797169b6d6cfc5001c1c2b7a",
+        "model.config": "751824d5b7a7b3f3dd24fc4756204debe96a03102a639de18e522d5e7ecf10ab",
+        "model.sdf": "b416a26a2599e2c99e3e67e8a9c019d80f8d00f7d26fbfc2157717b14676dac9",
+        "thumbnails/1.png": "54aa4760dc678e8e27ad9125c81038259c65cf8b730d4b9d8aa48c4e1d544ccf",
+        "thumbnails/2.png": "a0d89a2c8ad4a2b14c64912a8b25bbfed91accd1f2753ce849a7a8d809279148",
+        "thumbnails/3.png": "19b352b7c0569ce743093fb72da0d24daa2c08631fd3668707cab3a7b3e40417",
+        "thumbnails/4.png": "174a9cfcc45a2ffc0bf29d593d8c3f1b4359c5fc76ae4b107dfca9fe41ffbd2a",
+        "thumbnails/5.png": "837ef403a702068ada23fc3fa4a20636ebf26518ce56fc78dd376cebbf3360fb"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "measured_max": [
+        4.236,
+        7.8068,
+        3.9505
+      ],
+      "measured_min": [
+        -4.2358,
+        -7.8068,
+        -0.9311
+      ],
+      "model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/truss%20bridge/3",
+      "name": "Truss bridge",
+      "obstacle_max": [
+        4.236,
+        7.8068,
+        3.9505
+      ],
+      "obstacle_min": [
+        -4.2358,
+        -7.8068,
+        -0.9311
+      ],
+      "role": "bridge",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Truss%20bridge",
+      "version": "3"
+    }
+  },
+  "attribution": [
+    {
+      "asset": "falling_rock_1",
+      "authors": [
+        "Addisu Taddese",
+        "Cole Biesemeyer"
+      ],
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%201"
+    },
+    {
+      "asset": "falling_rock_2",
+      "authors": [
+        "Addisu Taddese",
+        "Cole Biesemeyer"
+      ],
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%202"
+    },
+    {
+      "asset": "falling_rock_3",
+      "authors": [
+        "Addisu Taddese",
+        "Cole Biesemeyer"
+      ],
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Falling%20Rock%203"
+    },
+    {
+      "asset": "garbagepilev1",
+      "authors": [
+        "Roselle Carmen"
+      ],
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/GarbagePileV1"
+    },
+    {
+      "asset": "garbagepilev2",
+      "authors": [
+        "Roselle Carmen"
+      ],
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/GarbagePileV2"
+    },
+    {
+      "asset": "rescue_randy",
+      "authors": [
+        "Ian Chen",
+        "Cole Biesemeyer"
+      ],
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/Rescue%20Randy"
+    }
+  ],
+  "bridge": {
+    "aabb_max": [
+      163.8068,
+      136.236,
+      6.6816
+    ],
+    "aabb_min": [
+      148.1932,
+      127.7642,
+      1.8
+    ],
+    "lowest_point_z_m": 1.8,
+    "model_origin_z_m": 2.7311,
+    "rationale": "Measured local z range -0.931..3.950 with the span along local y (15.61 m); yaw pi/2 puts the span along world x (92.19..107.81), ends on land beyond the 94..106 channel. Mesh vertices (COLLADA with node transforms, design level) reach -0.931 both at the end bearings (|local y| 7.3..7.81) and at mid-span underside beams, so the whole AABB bottom is the lowest point. It is set to z=1.8 m so the 1.821 m Rescue Randy on the -0.5 m shelf stands 0.48 m below the bridge AABB; the ends rest on 1.8 m abutment boxes on land. Model origin z = 2.731 m; deck top approx. local +0.29 m (mesh) = world approx. 3.02 m; channel bed -2.0, water -0.8."
+  },
+  "counts": {
+    "bridges": 1,
+    "buildings": 11,
+    "humans_per_variant": {
+      "absent": 0,
+      "all_victims": 18
+    },
+    "procedural_obstacles": 5,
+    "terrain_boxes": 9,
+    "trees": {
+      "oak_tree": 4,
+      "pine_tree": 50
+    },
+    "water_surfaces": 5
+  },
+  "derived_models": {
+    "house_1_pbr": {
+      "change": "derived copy: same mesh for visual and collision (absolute file:// path, scale 1.5), material replaced by PBR metal workflow with the original House_1_Diffuse.png albedo and House_1_Normal.png normal maps; metalness 0 and roughness 0.9 are declared engineering values (SDF default 0.5 each); House_1_Spec.png unused; original files untouched",
+      "defect": "House 1 v3 ships only an Ogre1 material script (House_1/Diffuse) and its mesh has no texture reference, so it renders black in Gazebo Sim (A2 pass 1)",
+      "inputs_sha256": {
+        "materials/textures/House_1_Diffuse.png": "5f4369cc3e8a0b5642be1b9bebb650cdae6fd73d1c10049d5597c67081b24f39",
+        "materials/textures/House_1_Normal.png": "12dc7a0d7baa237f904900ea9f13ca41e67ac0d91fbdf0c0de6d849d6520f94f",
+        "meshes/house_1.dae": "0e4d77fe3369dea0d06957cf2571aa8d4509256510dc285b6423230cf94753ee"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "original_model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%201/3",
+      "original_url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/House%201",
+      "original_version": "3"
+    },
+    "house_2_pbr": {
+      "change": "derived copy as house_1_pbr: same mesh for visual and collision (absolute file://, scale 1.5), PBR metal material with the original House_2_Diffuse.png albedo (the model ships no normal map); original files untouched",
+      "defect": "House 2 v3 ships only an Ogre1 material script (House_2/Diffuse); it rendered black in the first flood-sar-village/1 renders (output/mission/village_v1/renders_all_victims)",
+      "inputs_sha256": {
+        "materials/textures/House_2_Diffuse.png": "bc6b3931f200c23a6bbe8ca95bd2f78f2ec3af352e26cd88ddac89a92747ead3",
+        "meshes/house_2.dae": "99a279004e1bc14b5323e98503cb2b788f8390465596fe7e17700e0631395fcf"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "original_model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%202/3",
+      "original_url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/House%202",
+      "original_version": "3"
+    },
+    "house_3_pbr": {
+      "change": "derived copy as house_1_pbr: same mesh for visual and collision (absolute file://, scale 1.5), PBR metal material with the original House_3_Diffuse.png albedo (the model ships no normal map); original files untouched",
+      "defect": "House 3 v3 ships only an Ogre1 material script (House_3/Diffuse); it rendered black in the first flood-sar-village/1 renders (output/mission/village_v1/renders_all_victims)",
+      "inputs_sha256": {
+        "materials/textures/House_3_Diffuse.png": "af602fa919b22b617b8dafd0d68f9dcfd4f181403d09fe434c4e9294462518aa",
+        "meshes/house_3.dae": "712e1a3f2947a3fd354fe15f8ca36b2a1315ae76737387dbe815cd6112f56a2d"
+      },
+      "license": "Creative Commons Zero v1.0 Universal",
+      "original_model_dir": "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/house%203/3",
+      "original_url": "https://fuel.gazebosim.org/1.0/OpenRobotics/models/House%203",
+      "original_version": "3"
+    }
+  },
+  "files": {
+    "ATTRIBUTION.md": "86f9a59ed687a709b39b91d35080e61126702a6db4ccc420514baf5612769815",
+    "models/flood_sar_ground/materials/textures/Grass004_Color.jpg": "9e1c60da44b34a9738b1256ba827541f097dc583521b1d281e61b5f4b4217bc5",
+    "models/flood_sar_ground/materials/textures/Grass004_NormalGL.jpg": "8014a81d896a5c589b60612a769bc39eb1213e48d96f6146f485ea36e9e9610f",
+    "models/flood_sar_ground/materials/textures/Grass004_Roughness.jpg": "706580983860f942e141acdd68c4128dd683be50fcc5d85b7c67a9a3a8c7bac0",
+    "models/flood_sar_ground/materials/textures/Ground036_Color.jpg": "8dc72cb2d5aaa4ddf9c79b4e92c6977c4bf6577ca38608444f7bd57a253021dc",
+    "models/flood_sar_ground/materials/textures/Ground036_NormalGL.jpg": "3f6bab659ad2ca2e6ac15cab9843f60b5ed2303b644205888dd7198c5312e76c",
+    "models/flood_sar_ground/materials/textures/Ground036_Roughness.jpg": "25421ae63aca5ae60bcf4eec35486d0d366b5f8c28d45ae70b901186bf20938d",
+    "models/flood_sar_ground/materials/textures/Ground037_Color.jpg": "d92bec8a35b9cb16ec79b421ca0f572a7400286eae109beafa266629ef49a6cf",
+    "models/flood_sar_ground/materials/textures/Ground037_NormalGL.jpg": "ea59dbdcfa5bf2f28bdd4aa896d4e5f96c4cce5939100dcc6db4bbbcdebfe38d",
+    "models/flood_sar_ground/materials/textures/Ground037_Roughness.jpg": "3786b088e981aae562f06b6477972d379cffd09a5cc542ab42f9ffd94f9bcb0e",
+    "models/flood_sar_ground/meshes/bank_shelf.obj": "f898197543bb4973b543a3f2b11e01405d58bb6bce31304e993a24167c135160",
+    "models/flood_sar_ground/meshes/channel_bed.obj": "9fffe17fb5fe7fccea561bd214258095747733283f964dd3a02b2d3517636436",
+    "models/flood_sar_ground/meshes/east_bank.obj": "a2eb82cc6083f3981244a8c5a72fe9a26de7e34aedcbd68b1cc698bee8dc8ec7",
+    "models/flood_sar_ground/meshes/floodplain_mid.obj": "1b8206ace5d3f5b78bed842e1fef1fc358f823ceadebbff9d989f1f79ca301a4",
+    "models/flood_sar_ground/meshes/floodplain_south.obj": "75cbf50f07abc775db10ac8a80733d883a91c5f705d5d4c8c0440337a3edd6c0",
+    "models/flood_sar_ground/meshes/forest_hill.obj": "96c14d8c6a27d991dd84b37724dcabd6e6e7378989bfb492e0f849357bdc401e",
+    "models/flood_sar_ground/meshes/meadow.obj": "eaab85dacdeac969b30ff81cc5ab09fb925d7f96c5b0ea9c59f3b249a7e763ce",
+    "models/flood_sar_ground/meshes/ops_terrace.obj": "6d1349ce1ba1d5444cfab241914833b20efa3bbb28342a239eb251328b99bf59",
+    "models/flood_sar_ground/meshes/village_platform.obj": "4c00b907b5d9df47a9c8a6ba48d383d8bf0cab6090c95374039fb1151a0d34a3",
+    "models/flood_sar_ground/model.config": "a3b85734ed238d205c2e194e3c9bb8c2b4240ccd5b48510db0e5ff06320749ca",
+    "models/flood_sar_ground/model.sdf": "9aaa829d21e04820d6e19ba4cb09233f86bdc1093e677521d0827ec845365cce",
+    "models/house_1_pbr/model.config": "a49beb7fbf3d6c3b7dbb1ef8d15d827e9edaedae4b66c5d8166daae55723b2a1",
+    "models/house_1_pbr/model.sdf": "564012ede2da287e75447f49ffcf78a38257fcb00933397b08bbccd2c62c2e27",
+    "models/house_2_pbr/model.config": "40883c96c5e5ea3723b36c1fd2eb6290f59a139f6dedc9317cadce17b7402f41",
+    "models/house_2_pbr/model.sdf": "f3678d9735a285abc141b5f43d0a356b233c7ae1c8cf87c8f83b2d6a29b11504",
+    "models/house_3_pbr/model.config": "547330da0f6a6c55c501779eabbf0c733c8cbe6cffc580069531fe95bbcddffa",
+    "models/house_3_pbr/model.sdf": "4afe316cbfbe4fa5112f237e915f1885d35ceec8c8a81aa29d8e2a13a90356dd",
+    "obstacle_map.json": "9347b591eb30462cba54a577c9dd8e1c95b5455c25631876cd8133496ecfec24",
+    "private/absent_evaluator.json": "06d2d5ada44c0b90d69b91f27bf2323dc75c17a6dc6aee76e882043b2d74562a",
+    "private/all_victims_evaluator.json": "35eb3b878d3839283545249b2a59baaa4d5a305fcd23edb3585c1bc6431dae4b",
+    "public/absent_scenario.json": "b49465c4300903a3cedcb4c0d8d062bec3ead494b6688813c496465cfbda8035",
+    "public/all_victims_scenario.json": "b49465c4300903a3cedcb4c0d8d062bec3ead494b6688813c496465cfbda8035",
+    "worlds/absent.sdf": "bdce2accaec690511102f8091edb0d89cf1506423df276067330ea135adabdd4",
+    "worlds/all_victims.sdf": "260f33af9bdf6dfedd9341122afadde263b52ed292b78ac42df44d29dd6b2a7b"
+  },
+  "generator": "flood-sar-segment-builder/1",
+  "generator_sources_sha256": {
+    "scripts/build_flood_sar_world.py": "c70dff08e0e37d5f6fc3a6d6ecd3d7da0c01bfe2944c470c0b2830857a84503d",
+    "src/aerial_qrl/mission/contracts.py": "74efb4cf3077008555cef69d995b1d88b2512af231950c962b84e2c87689bbce",
+    "src/aerial_qrl/mission/leakage.py": "3f0cc2d8c7242e8cc266e21edab055abcbd00deb8fa83f305eb9d0fb1050306e",
+    "src/aerial_qrl/mission/minimal_scene.py": "be9ce420f586ec9924d939b8238847741d7a4cf1e94a91166cad8767a682b102",
+    "src/aerial_qrl/mission/scene_layout.py": "7e4532f8616290987fecf96ba70d91fc23a5a405c527875fc63e6a0c77279b07"
+  },
+  "ground_materials": {
+    "intake": {
+      "path": "output/mission/texture_intake_v1/intake.json",
+      "sha256": "ad58a026c6c4c56742d884fce012ab53e6ac1e63ab6537f9f7c9e97b793438e6"
+    },
+    "materials": {
+      "field": {
+        "metalness": 0.0,
+        "role": "flooded field (land)",
+        "roughness": 1.0,
+        "source": "Ground037",
+        "tile_m": 4.0
+      },
+      "levee": {
+        "metalness": 0.0,
+        "role": "levee embankment",
+        "roughness": 1.0,
+        "source": "Grass004",
+        "tile_m": 3.0
+      },
+      "mud": {
+        "metalness": 0.0,
+        "role": "wet mud (channel bed, bank shelf)",
+        "roughness": 1.0,
+        "source": "Ground036",
+        "tile_m": 3.0
+      }
+    },
+    "model": "flood_sar_ground",
+    "sources": {
+      "Grass004": {
+        "download_url": "https://ambientcg.com/get?file=Grass004_1K-JPG.zip",
+        "license": "CC0-1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "resolution": "1K JPG",
+        "source_url": "https://ambientcg.com/view?id=Grass004",
+        "zip_sha256": "4b63495f459db8481f4d5144e4e9069345c81cf898cc71f2216f5dd3bb344469"
+      },
+      "Ground036": {
+        "download_url": "https://ambientcg.com/get?file=Ground036_1K-JPG.zip",
+        "license": "CC0-1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "resolution": "1K JPG",
+        "source_url": "https://ambientcg.com/view?id=Ground036",
+        "zip_sha256": "d0f3e5356f06fddfeeef20492d0163e728939caedd72b0576e42e85b90913d62"
+      },
+      "Ground037": {
+        "download_url": "https://ambientcg.com/get?file=Ground037_1K-JPG.zip",
+        "license": "CC0-1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "resolution": "1K JPG",
+        "source_url": "https://ambientcg.com/view?id=Ground037",
+        "zip_sha256": "4e69db2b7251b1736fa70fe6fe4ab80d64bd220117dd5dd4c7caaead51c2574e"
+      }
+    },
+    "textured_boxes": {
+      "bank_shelf": "mud",
+      "channel_bed": "mud",
+      "east_bank": "mud",
+      "floodplain_mid": "mud",
+      "floodplain_south": "mud",
+      "forest_hill": "field",
+      "meadow": "mud",
+      "ops_terrace": "field",
+      "village_platform": "field"
+    }
+  },
+  "inputs": {
+    "development_config": {
+      "path": "configs/mission/development.json",
+      "sha256": "371097bbe61a5ed3cc51f222c6369465058c51238692f7ab5fa4fb2d897ff8cb"
+    },
+    "intake": {
+      "path": "output/mission/village_v1/intake_v5/intake.json",
+      "sha256": "628e3996f4de235adc9c564394ff49c77a2a1d9329becb35234fbbd067eee77d"
+    },
+    "measurement": {
+      "path": "output/mission/village_v1/a2_pass1_v5/analysis.json",
+      "sha256": "2a75661e9ae67e0ec129f6c67807044eeae8f612516cac052f39b6e3200d3156"
+    },
+    "template_world": {
+      "path": "/home/konstantinos/.local/share/aerial-qrl/src/PX4-Autopilot/Tools/simulation/gz/worlds/default.sdf",
+      "sha256": "457a363a22c437b788a4aaf1e2335aa149efce4e5b988cdc108065663cd879b2"
+    }
+  },
+  "layout_path": "configs/mission/village_layouts/village_v1r6_s0.json",
+  "layout_sha256": "5c4b2d82f0f25ea79fbcae8f3358e05c721df37031ef5abd68580eef950937d6",
+  "layout_status": "development_village_v1r6",
+  "layout_version": "flood-sar-segment-layout/1",
+  "note": "Canonical manifest without timestamps or output paths; build time and code tree hash live in build_info.json and code_version.json",
+  "numpy_version": "2.5.3",
+  "ownership": {
+    "private": [
+      "worlds/*.sdf",
+      "private/*_evaluator.json",
+      "models/seg200_render_rigs/",
+      "manifest.json"
+    ],
+    "public": [
+      "public/*_scenario.json",
+      "obstacle_map.json",
+      "ATTRIBUTION.md"
+    ]
+  },
+  "render_rigs": false,
+  "resource_path_note": "prepend <scene>/models and resource_paths to GZ_SIM_RESOURCE_PATH before gz sim",
+  "resource_paths": [
+    "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/truss%20bridge/3/materials/textures",
+    "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/survivor%20male/2/materials/textures",
+    "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20fire%20station/3/materials/textures",
+    "/home/konstantinos/.local/share/aerial-qrl/fuel_cache/fuel.gazebosim.org/openrobotics/models/collapsed%20police%20station/3/materials/textures"
+  ],
+  "rng": {
+    "layout_stream": 1,
+    "method": "numpy default_rng([layout_stream, seed]); each tree attempt draws radius u, angle u, yaw u in that order",
+    "seed": 0,
+    "victim_slot_draws": {
+      "bridge": {
+        "of": 2,
+        "slot": 1
+      },
+      "canopy": {
+        "of": 2,
+        "slot": 1
+      },
+      "debris_elder": {
+        "of": 2,
+        "slot": 0
+      },
+      "family_adult": {
+        "of": 2,
+        "slot": 0
+      },
+      "floodwater": {
+        "of": 3,
+        "slot": 2
+      },
+      "forest": {
+        "of": 2,
+        "slot": 0
+      },
+      "half_submerged": {
+        "of": 2,
+        "slot": 0
+      },
+      "in_car": {
+        "of": 1,
+        "slot": 0
+      },
+      "inside_collapsed": {
+        "of": 2,
+        "slot": 1
+      },
+      "inside_house": {
+        "of": 2,
+        "slot": 0
+      },
+      "road": {
+        "of": 3,
+        "slot": 0
+      },
+      "roof_seated": {
+        "of": 2,
+        "slot": 1
+      },
+      "rooftop": {
+        "of": 2,
+        "slot": 1
+      },
+      "rubble": {
+        "of": 2,
+        "slot": 1
+      },
+      "shadow": {
+        "of": 2,
+        "slot": 1
+      },
+      "under_car": {
+        "of": 1,
+        "slot": 0
+      },
+      "under_rocks": {
+        "of": 2,
+        "slot": 0
+      },
+      "vehicle": {
+        "of": 2,
+        "slot": 0
+      }
+    },
+    "victim_slots": "one slot per class drawn with numpy default_rng([seed, crc32(case)]) from the declared R6_SLOTS"
+  },
+  "scene_id": "flood_sar_village_v1r6_s0",
+  "scene_resource_paths_relative": [
+    "models"
+  ],
+  "tree_mesh_geometry": {
+    "oak_tree": {
+      "canopy_base_z": 1.2349,
+      "canopy_max": [
+        4.6897,
+        4.3039,
+        6.5279
+      ],
+      "canopy_min": [
+        -5.9211,
+        -4.1859,
+        1.2349
+      ],
+      "source": "COLLADA vertices with node transforms (design level, not simulator-validated)",
+      "trunk_max": [
+        1.5898,
+        1.6321,
+        0.9121
+      ],
+      "trunk_min": [
+        -1.8216,
+        -1.2326,
+        -0.0703
+      ]
+    },
+    "pine_tree": {
+      "canopy_base_z": 0.6016,
+      "canopy_max": [
+        1.5862,
+        1.5862,
+        5.0778
+      ],
+      "canopy_min": [
+        -1.5862,
+        -1.5862,
+        0.6016
+      ],
+      "source": "COLLADA vertices with node transforms (design level, not simulator-validated)",
+      "trunk_max": [
+        0.1462,
+        0.1502,
+        0.2107
+      ],
+      "trunk_min": [
+        -0.1487,
+        -0.1447,
+        0.0
+      ]
+    }
+  },
+  "tree_sampling": [
+    {
+      "attempts": 1,
+      "cluster": "oak_village",
+      "id": "oak_village_0",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "oak_village",
+      "id": "oak_village_1",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_meadow",
+      "id": "pine_meadow_0",
+      "rejected": []
+    },
+    {
+      "attempts": 2,
+      "cluster": "pine_meadow",
+      "id": "pine_meadow_1",
+      "rejected": [
+        {
+          "attempt": 0,
+          "reasons": [
+            "within 6.0 m of collapsed_house"
+          ],
+          "xy": [
+            117.0073,
+            149.6681
+          ],
+          "yaw": 0.2397
+        }
+      ]
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_meadow",
+      "id": "pine_meadow_2",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_meadow",
+      "id": "pine_meadow_3",
+      "rejected": []
+    },
+    {
+      "attempts": 2,
+      "cluster": "pine_meadow",
+      "id": "pine_meadow_4",
+      "rejected": [
+        {
+          "attempt": 0,
+          "reasons": [
+            "within 6.0 m of house_n3"
+          ],
+          "xy": [
+            113.9455,
+            193.0984
+          ],
+          "yaw": 3.0206
+        }
+      ]
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_meadow",
+      "id": "pine_meadow_5",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_meadow",
+      "id": "pine_meadow_6",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_east",
+      "id": "pine_east_0",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_east",
+      "id": "pine_east_1",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_east",
+      "id": "pine_east_2",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_east",
+      "id": "pine_east_3",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_0",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_1",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_2",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_3",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_4",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_5",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_6",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_7",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_8",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_9",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_10",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_south",
+      "id": "pine_south_11",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "pine_ops",
+      "id": "pine_ops_0",
+      "rejected": []
+    },
+    {
+      "attempts": 2,
+      "cluster": "pine_ops",
+      "id": "pine_ops_1",
+      "rejected": [
+        {
+          "attempt": 0,
+          "reasons": [
+            "footprint not on one flat terrain support",
+            "over water_floodplain"
+          ],
+          "xy": [
+            37.6837,
+            34.7001
+          ],
+          "yaw": 2.0451
+        }
+      ]
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_oak",
+      "id": "forest_oak_0",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_oak",
+      "id": "forest_oak_1",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_0",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_1",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_2",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_3",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_4",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_5",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_6",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_7",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_8",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_9",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_10",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_11",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_12",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_13",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_14",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_15",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_16",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_17",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_18",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_19",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_20",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_21",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_22",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_23",
+      "rejected": []
+    },
+    {
+      "attempts": 1,
+      "cluster": "forest_pine",
+      "id": "forest_pine_24",
+      "rejected": []
+    }
+  ],
+  "variants": {
+    "absent": {
+      "background_sha256": "b28441b1995f86a0504b74271dd6791065a7567cf52593d8333b948f0a62ae62",
+      "private": "private/absent_evaluator.json",
+      "public": "public/absent_scenario.json",
+      "targets": [],
+      "world": "worlds/absent.sdf",
+      "world_sha256": "bdce2accaec690511102f8091edb0d89cf1506423df276067330ea135adabdd4"
+    },
+    "all_victims": {
+      "background_sha256": "b28441b1995f86a0504b74271dd6791065a7567cf52593d8333b948f0a62ae62",
+      "private": "private/all_victims_evaluator.json",
+      "public": "public/all_victims_scenario.json",
+      "targets": [
+        "human_rooftop",
+        "human_canopy",
+        "human_rubble",
+        "human_bridge",
+        "human_floodwater",
+        "human_vehicle",
+        "human_shadow",
+        "human_road",
+        "human_inside_collapsed",
+        "human_inside_house",
+        "human_under_rocks",
+        "human_in_car",
+        "human_under_car",
+        "human_forest",
+        "human_roof_seated",
+        "human_family_adult",
+        "human_debris_elder",
+        "human_half_submerged"
+      ],
+      "world": "worlds/all_victims.sdf",
+      "world_sha256": "260f33af9bdf6dfedd9341122afadde263b52ed292b78ac42df44d29dd6b2a7b"
+    }
+  },
+  "world_name": "flood_sar_village_v1"
+}
