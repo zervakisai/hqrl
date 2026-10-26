@@ -1,0 +1,12 @@
+.....
+[mlp] random inputs: max |dlogit| 1.388e-16, max |dvalue| 4.857e-17
+.
+[bottleneck] random inputs: max |dlogit| 1.110e-16, max |dvalue| 4.857e-17
+.
+[rule episode] decisions 153, reports checked 8, inspections checked 18
+.
+[mlp] learned episodes 3, encodes checked 129, executed inspections 9, max |dlogit|,|dvalue| (wide vs base, real obs) 0.000e+00
+.
+[bottleneck] learned episodes 2, encodes checked 78, executed inspections 7, max |dlogit|,|dvalue| (wide vs base, real obs) 0.000e+00
+....
+13 passed in 42.21s

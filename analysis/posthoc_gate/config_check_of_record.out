@@ -1,0 +1,105 @@
+{
+ "version": "e1-gate-config/2",
+ "tool": "e1-gate-train/1",
+ "study": "e1gate",
+ "salt": [
+  20261025,
+  1
+ ],
+ "training_namespace": "gate_training",
+ "training_seed_rule": "gate_training.start + block * 5000 + episode",
+ "initialisation": "from_scratch: torch.manual_seed(SeedSequence([20261025, 1, block, 0])), no warm start",
+ "block": 0,
+ "rule": {
+  "name": "uncertainty_fix",
+  "parameters": {
+   "sigma_threshold_m": 1.5
+  },
+  "candidate_sha256": "09e437b9c3db35ebb7bd07b065484d4258f3f102fb7e2eeae88b361604835b4d",
+  "comparator_protocol_sha256": "72ed9ac32c6b3cce2a1307e3beae567dcd926086240ed64a09848f60b69140f5",
+  "policy_source_sha256": "a120c2d27b13322a95c487366f89c3e869b562ce28216848ec025c2c8886a94b"
+ },
+ "model": {
+  "kind": "gate-mlp/1",
+  "hidden": 64,
+  "features": [
+   "rms_horizontal_error_m/3",
+   "min(time_since_fix_s,T)/T",
+   "min(fixes_attempted,10)/10",
+   "min(fixes_accepted,10)/10",
+   "last_fix_accepted",
+   "no_fix_yet",
+   "elapsed_s/T",
+   "remaining_time_s/T",
+   "return_estimate_s/T",
+   "(remaining-return_estimate-R)/T",
+   "T/2700",
+   "cheapest_anchor.estimated_duration_s/100",
+   "cheapest_anchor.available",
+   "share_of_anchors_reachable_and_available",
+   "min(reports,20)/20",
+   "candidate.detections(cap20)/20",
+   "candidate.credited_viewpoints(cap8)/8",
+   "candidate.max_score",
+   "candidate.sqrt(cov_xx+cov_yy)/10",
+   "candidate.age_s/T",
+   "candidate.inspections/max_inspections_per_track",
+   "other_rule_ready_open_tracks(cap5)/5",
+   "open_tracks(cap10)/10",
+   "plan_pending_fraction"
+  ]
+ },
+ "budget_gate_decisions": 12800,
+ "grid": [
+  0,
+  3200,
+  6400,
+  9600,
+  12800
+ ],
+ "transitions_per_update": 256,
+ "ppo": {
+  "learning_rate": 0.001,
+  "clip_range": 0.2,
+  "value_coef": 0.5,
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "epochs": 10,
+  "minibatch_transitions": 64,
+  "advantage_std_floor": 0.0056,
+  "max_segment_length": 1
+ },
+ "gamma_ref": 1.0,
+ "reference_duration_s": 60.0,
+ "lambda_ref": 0.95,
+ "lambda_mode": "time",
+ "curve_suite": "e1_development",
+ "final_suite": "e1_evaluation",
+ "readout": "argmax",
+ "sampled_readout": {
+  "role": "descriptive",
+  "suite": "final_suite",
+  "cells": "target-present",
+  "eval_stream": 4,
+  "point_index": 5,
+  "stream_rule": "SeedSequence([20261025, 1, 4, 5, cell_index, realization])"
+ },
+ "curve_realizations": null,
+ "final_realizations": null,
+ "plan_sha256": "20faccb84e4f9c79bd821af38a2190b0f0c110b2ac7c61f49e05879857e67a7c",
+ "code_sha256": {
+  "runner.py": "6199562538131ed985b05915c468d91b041d0c1c5b1e2b2144d969b37d28a6a2",
+  "gate_core.py": "3d052478dc088624de904634a7f1775f42a1efd6007fd8db8561c4224668cc1e",
+  "test_gate.py": "08b83f19afebe7ef2c6bb856a88ccea6f51667f7c13e07f371849946ee60ab61",
+  "test_analysis.py": "d680570e7fabf2cfef2fadf56584c835c56200e37bafcc9a38202bde7ea8c1aa",
+  "gate_analysis.py": "77ee337fb649791a0d404f56cc15f41a78456665b101508b90b8b8fd16bd92ea",
+  "config_check.py": "12efd83f44465aed85d494221ff746ad8bc947aa819241c28517952a4a319d1e"
+ }
+}
+{
+ "plan_sha256": "20faccb84e4f9c79bd821af38a2190b0f0c110b2ac7c61f49e05879857e67a7c",
+ "plan_hashed": true,
+ "precheck": "precheck.json",
+ "ok": true,
+ "problems": {}
+}

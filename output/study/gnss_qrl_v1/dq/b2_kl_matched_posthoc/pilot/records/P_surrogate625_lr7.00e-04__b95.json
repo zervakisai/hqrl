@@ -1,0 +1,149 @@
+{
+ "kind": "pilot",
+ "set": "P1",
+ "arm": "surrogate625",
+ "block": 95,
+ "learning_rate": 0.0007,
+ "status": "completed",
+ "plan_sha256": null,
+ "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68",
+ "config": {
+  "hidden": 64,
+  "memory": "gru",
+  "critic_gradient": "stop",
+  "dtype": "float64",
+  "torch_threads": 1,
+  "note": "E3 calibration pilot (development): S625-twin lr 7.00e-04 block 95",
+  "max_updates": null,
+  "config_version": "gnss-p4-train-config/1",
+  "freeze": "output/study/gnss_qrl_v1/claude/p3_freeze_v1/p3_frozen_configuration.json",
+  "execution_manifest": "output/study/gnss_qrl_v1/claude/p3_execution_manifest_v1/p3_execution_manifest.json",
+  "time_model": "output/training/time_model_village_v1/20260917T074923Z/time_model.json",
+  "critic": "mlp",
+  "transitions_per_update": 512,
+  "gamma_ref": 1.0,
+  "reference_duration_s": 60.0,
+  "lambda_ref": 0.95,
+  "lambda_mode": "time",
+  "study": "dq_b2_smoke",
+  "role": "dq_b2_smoke",
+  "arms": [
+   "surrogate625"
+  ],
+  "candidate": "e3_lr7.00e-04_ent0",
+  "block": 95,
+  "total_policy_decisions": 30000,
+  "checkpoint_decisions": [
+   0
+  ],
+  "ppo": {
+   "clip_range": 0.2,
+   "value_coef": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "minibatch_transitions": 256,
+   "advantage_std_floor": 0.05,
+   "max_segment_length": 32,
+   "learning_rate": 0.0007,
+   "entropy_coef": 0.0
+  },
+  "evaluation": null,
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+ },
+ "code_tree_sha256": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "twin_parity": {
+  "P4": {
+   "cell_id": "d4__tight_derived__positive",
+   "seed": 20262016000,
+   "decisions": 35,
+   "max_abs_dlogprob": 1.1102230246251565e-15
+  },
+  "static": {
+   "P1_solve_residual": 9.853229343548264e-15,
+   "P2_offgrid_max_abs": 9.880984919163893e-15,
+   "P5_shared_tensors": 16,
+   "P5_unequal": [],
+   "P6_max_off_support": 8.863779325971336e-16,
+   "P7_max_abs_z": 0.9764655882492062,
+   "static_failures": []
+  }
+ },
+ "summary": {
+  "arm": "surrogate625",
+  "role": "Surrogate625",
+  "block": 95,
+  "run_role": "dq_b2_smoke",
+  "candidate": "e3_lr7.00e-04_ent0",
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "study": "dq_b2_smoke",
+  "updates": 56,
+  "policy_decisions": 30358,
+  "episodes": 570,
+  "empty_episodes": 0,
+  "infrastructure_episodes": 0,
+  "dropped_reward": 0.0,
+  "wall_s": 1763.6237144370098,
+  "walls": {
+   "rollout_s": 1750.0105522408267,
+   "update_s": 12.975925956096034,
+   "checkpoint_s": 0.04059922299347818
+  },
+  "cpu": {
+   "rollout_s": 1693.408471049,
+   "update_s": 12.276390501999554,
+   "checkpoint_s": 0.009362336000000582,
+   "evaluation_s": 0.0
+  },
+  "load_average": {
+   "start": [
+    17.68798828125,
+    17.72412109375,
+    17.84423828125
+   ],
+   "end": [
+    18.18408203125,
+    18.10986328125,
+    18.0869140625
+   ]
+  },
+  "process_rusage": {
+   "user_s": 1716.71125,
+   "system_s": 3.338536,
+   "max_rss_kib": 604804
+  },
+  "rollout_per_decision_s": 0.05764577878123811,
+  "update_per_decision_s": 0.0004274301981716857,
+  "actor_head_parameters": 2899,
+  "model_parameters": 52564,
+  "checkpoints": [
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/update00000_decisions00000000.pt",
+    "sha256": "bf37bb00adf652d2b81537cabe791f5af1f543858f57f031c30f47db9fe8f2ad",
+    "points": [
+     0
+    ],
+    "final": false,
+    "policy_decisions": 0
+   },
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/final_update00056_decisions00030358.pt",
+    "sha256": "a7c244b00481976ea9025b94b590168a71b36373469e6095a7874d22b5225448",
+    "points": [],
+    "final": true,
+    "policy_decisions": 30358
+   }
+  ],
+  "status": "completed",
+  "failure": null,
+  "learning_curve": {},
+  "auc": {}
+ },
+ "kl": {
+  "mean": 0.008331987981198144,
+  "median": 0.007974535795618722,
+  "updates": 56
+ },
+ "wall_s": 1777.4611515759898
+}

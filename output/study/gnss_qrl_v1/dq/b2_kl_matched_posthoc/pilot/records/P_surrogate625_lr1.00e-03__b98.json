@@ -1,0 +1,149 @@
+{
+ "kind": "pilot",
+ "set": "P1",
+ "arm": "surrogate625",
+ "block": 98,
+ "learning_rate": 0.001,
+ "status": "completed",
+ "plan_sha256": null,
+ "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68",
+ "config": {
+  "hidden": 64,
+  "memory": "gru",
+  "critic_gradient": "stop",
+  "dtype": "float64",
+  "torch_threads": 1,
+  "note": "E3 calibration pilot (development): S625-twin lr 1.00e-03 block 98",
+  "max_updates": null,
+  "config_version": "gnss-p4-train-config/1",
+  "freeze": "output/study/gnss_qrl_v1/claude/p3_freeze_v1/p3_frozen_configuration.json",
+  "execution_manifest": "output/study/gnss_qrl_v1/claude/p3_execution_manifest_v1/p3_execution_manifest.json",
+  "time_model": "output/training/time_model_village_v1/20260917T074923Z/time_model.json",
+  "critic": "mlp",
+  "transitions_per_update": 512,
+  "gamma_ref": 1.0,
+  "reference_duration_s": 60.0,
+  "lambda_ref": 0.95,
+  "lambda_mode": "time",
+  "study": "dq_b2_smoke",
+  "role": "dq_b2_smoke",
+  "arms": [
+   "surrogate625"
+  ],
+  "candidate": "e3_lr1.00e-03_ent0",
+  "block": 98,
+  "total_policy_decisions": 30000,
+  "checkpoint_decisions": [
+   0
+  ],
+  "ppo": {
+   "clip_range": 0.2,
+   "value_coef": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "minibatch_transitions": 256,
+   "advantage_std_floor": 0.05,
+   "max_segment_length": 32,
+   "learning_rate": 0.001,
+   "entropy_coef": 0.0
+  },
+  "evaluation": null,
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+ },
+ "code_tree_sha256": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "twin_parity": {
+  "P4": {
+   "cell_id": "d2__tight_derived__no_human",
+   "seed": 20262019000,
+   "decisions": 45,
+   "max_abs_dlogprob": 1.3322676295501878e-15
+  },
+  "static": {
+   "P1_solve_residual": 8.93729534823251e-15,
+   "P2_offgrid_max_abs": 9.880984919163893e-15,
+   "P5_shared_tensors": 16,
+   "P5_unequal": [],
+   "P6_max_off_support": 9.992007221626407e-16,
+   "P7_max_abs_z": 0.9829570357150044,
+   "static_failures": []
+  }
+ },
+ "summary": {
+  "arm": "surrogate625",
+  "role": "Surrogate625",
+  "block": 98,
+  "run_role": "dq_b2_smoke",
+  "candidate": "e3_lr1.00e-03_ent0",
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "study": "dq_b2_smoke",
+  "updates": 56,
+  "policy_decisions": 30220,
+  "episodes": 555,
+  "empty_episodes": 0,
+  "infrastructure_episodes": 0,
+  "dropped_reward": 0.0,
+  "wall_s": 1656.9185759539832,
+  "walls": {
+   "rollout_s": 1648.2869885879918,
+   "update_s": 8.322317475976888,
+   "checkpoint_s": 0.006186035985592753
+  },
+  "cpu": {
+   "rollout_s": 1647.7439595740004,
+   "update_s": 8.319025558000014,
+   "checkpoint_s": 0.0061740680000870185,
+   "evaluation_s": 0.0
+  },
+  "load_average": {
+   "start": [
+    14.4873046875,
+    14.90234375,
+    15.7724609375
+   ],
+   "end": [
+    6.33349609375,
+    8.6923828125,
+    11.2275390625
+   ]
+  },
+  "process_rusage": {
+   "user_s": 1668.148033,
+   "system_s": 2.406717,
+   "max_rss_kib": 606780
+  },
+  "rollout_per_decision_s": 0.05454291821932468,
+  "update_per_decision_s": 0.00027539104817924845,
+  "actor_head_parameters": 2899,
+  "model_parameters": 52564,
+  "checkpoints": [
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/update00000_decisions00000000.pt",
+    "sha256": "4af8c593968f45da6039637297b87d72c66e79f2dfbb7d544ab586b6c0095fc9",
+    "points": [
+     0
+    ],
+    "final": false,
+    "policy_decisions": 0
+   },
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/final_update00056_decisions00030220.pt",
+    "sha256": "dadcdec8beeeaa273aeed1c3e881f4c190e6f22f8f352886fb5fe228cef88999",
+    "points": [],
+    "final": true,
+    "policy_decisions": 30220
+   }
+  ],
+  "status": "completed",
+  "failure": null,
+  "learning_curve": {},
+  "auc": {}
+ },
+ "kl": {
+  "mean": 0.011892320532524533,
+  "median": 0.0108223769435549,
+  "updates": 56
+ },
+ "wall_s": 1670.8281246719998
+}

@@ -1,0 +1,149 @@
+{
+ "kind": "pilot",
+ "set": "P1",
+ "arm": "surrogate625",
+ "block": 97,
+ "learning_rate": 0.001,
+ "status": "completed",
+ "plan_sha256": null,
+ "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68",
+ "config": {
+  "hidden": 64,
+  "memory": "gru",
+  "critic_gradient": "stop",
+  "dtype": "float64",
+  "torch_threads": 1,
+  "note": "E3 calibration pilot (development): S625-twin lr 1.00e-03 block 97",
+  "max_updates": null,
+  "config_version": "gnss-p4-train-config/1",
+  "freeze": "output/study/gnss_qrl_v1/claude/p3_freeze_v1/p3_frozen_configuration.json",
+  "execution_manifest": "output/study/gnss_qrl_v1/claude/p3_execution_manifest_v1/p3_execution_manifest.json",
+  "time_model": "output/training/time_model_village_v1/20260917T074923Z/time_model.json",
+  "critic": "mlp",
+  "transitions_per_update": 512,
+  "gamma_ref": 1.0,
+  "reference_duration_s": 60.0,
+  "lambda_ref": 0.95,
+  "lambda_mode": "time",
+  "study": "dq_b2_smoke",
+  "role": "dq_b2_smoke",
+  "arms": [
+   "surrogate625"
+  ],
+  "candidate": "e3_lr1.00e-03_ent0",
+  "block": 97,
+  "total_policy_decisions": 30000,
+  "checkpoint_decisions": [
+   0
+  ],
+  "ppo": {
+   "clip_range": 0.2,
+   "value_coef": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "minibatch_transitions": 256,
+   "advantage_std_floor": 0.05,
+   "max_segment_length": 32,
+   "learning_rate": 0.001,
+   "entropy_coef": 0.0
+  },
+  "evaluation": null,
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+ },
+ "code_tree_sha256": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "twin_parity": {
+  "P4": {
+   "cell_id": "d4__tight_derived__positive",
+   "seed": 20262018000,
+   "decisions": 32,
+   "max_abs_dlogprob": 1.1102230246251565e-15
+  },
+  "static": {
+   "P1_solve_residual": 1.021405182655144e-14,
+   "P2_offgrid_max_abs": 1.1324274851176597e-14,
+   "P5_shared_tensors": 16,
+   "P5_unequal": [],
+   "P6_max_off_support": 1.296362614901374e-15,
+   "P7_max_abs_z": 0.9837825930750542,
+   "static_failures": []
+  }
+ },
+ "summary": {
+  "arm": "surrogate625",
+  "role": "Surrogate625",
+  "block": 97,
+  "run_role": "dq_b2_smoke",
+  "candidate": "e3_lr1.00e-03_ent0",
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "study": "dq_b2_smoke",
+  "updates": 56,
+  "policy_decisions": 30296,
+  "episodes": 607,
+  "empty_episodes": 0,
+  "infrastructure_episodes": 0,
+  "dropped_reward": 0.0,
+  "wall_s": 330.08316931300214,
+  "walls": {
+   "rollout_s": 319.1303293010278,
+   "update_s": 10.577866076957434,
+   "checkpoint_s": 0.008715407020645216
+  },
+  "cpu": {
+   "rollout_s": 318.16670393099986,
+   "update_s": 10.545129092000035,
+   "checkpoint_s": 0.008716576999987069,
+   "evaluation_s": 0.0
+  },
+  "load_average": {
+   "start": [
+    15.58544921875,
+    15.498046875,
+    16.28271484375
+   ],
+   "end": [
+    14.7216796875,
+    14.9658203125,
+    15.80712890625
+   ]
+  },
+  "process_rusage": {
+   "user_s": 340.875229,
+   "system_s": 1.442061,
+   "max_rss_kib": 604376
+  },
+  "rollout_per_decision_s": 0.01053374469570332,
+  "update_per_decision_s": 0.00034915058347496155,
+  "actor_head_parameters": 2899,
+  "model_parameters": 52564,
+  "checkpoints": [
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/update00000_decisions00000000.pt",
+    "sha256": "b1f09111d6ea787f2bb5eadf74bee6236316b36e478d6d70edfd38153db1f0da",
+    "points": [
+     0
+    ],
+    "final": false,
+    "policy_decisions": 0
+   },
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/final_update00056_decisions00030296.pt",
+    "sha256": "8cef0ecf3abdfbdb7faede07fc415add0d579dbbb2051f61b76a701163a6bbd8",
+    "points": [],
+    "final": true,
+    "policy_decisions": 30296
+   }
+  ],
+  "status": "completed",
+  "failure": null,
+  "learning_curve": {},
+  "auc": {}
+ },
+ "kl": {
+  "mean": 0.003105105617159831,
+  "median": 0.00044075928297355625,
+  "updates": 56
+ },
+ "wall_s": 343.03418331599096
+}

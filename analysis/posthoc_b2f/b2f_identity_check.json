@@ -1,0 +1,35 @@
+[
+ {
+  "block": 0,
+  "shared_trainable_tensors": 16,
+  "only_in_one": [],
+  "trainable_params_hq_frozen": 50060,
+  "trainable_params_twin_frozen": 50060,
+  "max_abs_logit_diff": 3.9968028886505635e-15,
+  "max_abs_value_diff": 0.0,
+  "max_abs_grad_diff": 2.1094237467877974e-15,
+  "max_abs_grad": 1.0
+ },
+ {
+  "block": 7,
+  "shared_trainable_tensors": 16,
+  "only_in_one": [],
+  "trainable_params_hq_frozen": 50060,
+  "trainable_params_twin_frozen": 50060,
+  "max_abs_logit_diff": 1.4988010832439613e-15,
+  "max_abs_value_diff": 0.0,
+  "max_abs_grad_diff": 9.645062526431047e-16,
+  "max_abs_grad": 1.0
+ },
+ {
+  "block": 21,
+  "shared_trainable_tensors": 16,
+  "only_in_one": [],
+  "trainable_params_hq_frozen": 50060,
+  "trainable_params_twin_frozen": 50060,
+  "max_abs_logit_diff": 1.942890293094024e-15,
+  "max_abs_value_diff": 0.0,
+  "max_abs_grad_diff": 1.2212453270876722e-15,
+  "max_abs_grad": 1.0
+ }
+]

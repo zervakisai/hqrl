@@ -1,0 +1,9 @@
+pilot: 8 of 8 runs to do, 2 workers
+pilot mlp__ent0.01__b6 completed 7054 
+pilot mlp__ent0.003__b6 completed 8930 
+pilot bottleneck__ent0.003__b6 completed 4521 
+pilot bottleneck__ent0.01__b6 completed 4486 
+pilot mlp__ent0.003__b7 completed 2620 
+pilot mlp__ent0.01__b7 completed 3029 
+pilot bottleneck__ent0.003__b7 completed 4617 
+pilot bottleneck__ent0.01__b7 completed 4928 

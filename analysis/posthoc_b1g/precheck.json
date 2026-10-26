@@ -1,0 +1,102 @@
+{
+ "plan_sha256": "42835046e437078f88dfc94341c4faa495ac15b5cfe56e48bc1ee020b9851487",
+ "tasks": [
+  {
+   "part": "G",
+   "index": 0,
+   "status": "complete",
+   "rows": {
+    "fit": 11273,
+    "oracle": 11193,
+    "calibration": 11211,
+    "heldout": 11296
+   },
+   "row_info": null,
+   "self_check": null,
+   "certificate": {
+    "P1_solve_residual": 9.853229343548264e-15,
+    "P2_offgrid_max_abs": 1.0658141036401503e-14,
+    "P5_shared_tensors": 16,
+    "P5_unequal": [],
+    "P6_max_off_support": 1.0558848421106703e-15,
+    "P7_max_abs_z": 0.9122879022359044,
+    "static_failures": []
+   },
+   "trunk_identical_to_B1_unit": null,
+   "instrument_wall_s": 112.0666334280013,
+   "wall_s": 1939.5204409780017,
+   "error": null,
+   "traceback": null,
+   "arm_status": {
+    "SPAN": {
+     "0.001": "ok",
+     "0.01": "ok",
+     "0.05": "ok"
+    },
+    "TAN": {
+     "0.001": "ok",
+     "0.01": "ok",
+     "0.05": "ok"
+    },
+    "HQ-Fisher": {
+     "0.001": "ok",
+     "0.01": "ok",
+     "0.05": "ok"
+    }
+   }
+  },
+  {
+   "part": "D",
+   "index": 0,
+   "status": "complete",
+   "rows": {
+    "fit": 12004,
+    "calibration": 11825,
+    "heldout": 11785
+   },
+   "row_info": {
+    "fit": {
+     "replay_max_abs_logprob": 8.881784197001252e-16,
+     "baseline_fallback_rows": 0,
+     "logits_vs_model_max_abs_logprob": 8.881784197001252e-16
+    },
+    "calibration": {
+     "replay_max_abs_logprob": 8.881784197001252e-16,
+     "baseline_fallback_rows": 0,
+     "logits_vs_model_max_abs_logprob": 8.881784197001252e-16
+    },
+    "heldout": {
+     "replay_max_abs_logprob": 8.881784197001252e-16,
+     "baseline_fallback_rows": 0,
+     "logits_vs_model_max_abs_logprob": 8.881784197001252e-16
+    }
+   },
+   "self_check": {
+    "J_rel": 1.1102232018308464e-16,
+    "g_rel": 4.220829060122569e-16,
+    "F_rel": 3.6566818711836464e-16,
+    "passed": true
+   },
+   "certificate": null,
+   "trunk_identical_to_B1_unit": true,
+   "instrument_wall_s": 1.2564228129995172,
+   "wall_s": 1655.2014578489998,
+   "error": null,
+   "traceback": null,
+   "arm_status": {
+    "C-Fisher": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "C-TAN": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "C-plain": {
+     "0.001": "ok",
+     "0.01": "ok"
+    }
+   }
+  }
+ ]
+}

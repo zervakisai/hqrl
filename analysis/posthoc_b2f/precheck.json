@@ -1,0 +1,38 @@
+{
+ "plan_sha256": "a5e573b365ae694375e9f04eb36ed8b7e102120110e60484811d972ede422cd6",
+ "b_init": {
+  "parameters": 17,
+  "differ": [],
+  "angles_requires_grad": false,
+  "trainable_actor_parameters": 395
+ },
+ "a_reproduction": {
+  "evaluation": {
+   "compared": 2,
+   "identical": true
+  },
+  "update": {
+   "compared": 6,
+   "identical": true
+  },
+  "episode": {
+   "compared": 77,
+   "identical": true
+  }
+ },
+ "c_frozen": {
+  "checkpoints": 3,
+  "all_equal_initial": true,
+  "max_abs_change": 0.0,
+  "point0_evaluation_identical": true,
+  "arm_start_parameter_counts": {
+   "actor": 395,
+   "critic_head": 8385,
+   "encoder": 16320,
+   "encoder_gru_actor": 41675,
+   "gru": 24960,
+   "total": 50060
+  }
+ },
+ "passed": true
+}

@@ -1,0 +1,13 @@
+precheck PC surrogate625 0 1.00e-03 completed 169
+precheck PC quantum 0 3.00e-03 completed 253
+Traceback (most recent call last):
+  File "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b2k/runner.py", line 502, in <module>
+    la = sub.add_parser('launch')
+        ^^^^^^^^^^
+  File "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b2k/runner.py", line 315, in precheck
+    exact = all(c['identical'] and c['compared'] > 0 for k, c in checks.items() if k != 'update') and \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b2k/runner.py", line 315, in <genexpr>
+    exact = all(c['identical'] and c['compared'] > 0 for k, c in checks.items() if k != 'update') and \
+                                   ~^^^^^^^^^^^^
+KeyError: 'compared'

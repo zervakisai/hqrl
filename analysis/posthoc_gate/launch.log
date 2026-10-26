@@ -1,0 +1,13 @@
+gate 0 completed attempt 1 50163
+gate 4 completed attempt 1 50193
+gate 2 completed attempt 1 50327
+gate 1 completed attempt 1 50354
+gate 3 completed attempt 1 50462
+gate 5 completed attempt 1 50882
+gate 7 completed attempt 1 23730
+gate 10 completed attempt 1 23695
+gate 11 completed attempt 1 23421
+gate 6 completed attempt 1 24147
+gate 8 completed attempt 1 24009
+gate 9 completed attempt 1 24424
+{"launch_utc": "2026-10-25T135203Z", "final_status": {"0": "completed", "4": "completed", "2": "completed", "1": "completed", "3": "completed", "5": "completed", "7": "completed", "10": "completed", "11": "completed", "6": "completed", "8": "completed", "9": "completed"}}

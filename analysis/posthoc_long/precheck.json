@@ -1,0 +1,17 @@
+{
+ "plan_sha256": "58471290aea646c6914f38f10ec4d28c1fb839b3d31bc706d85992c855de1ef2",
+ "status": "completed",
+ "error": null,
+ "training_seed_range": [
+  20262661000,
+  20262671000
+ ],
+ "episode_seeds_seen": 74,
+ "all_seeds_in_range": true,
+ "first_seeds": [
+  20262661000,
+  20262661001,
+  20262661002
+ ],
+ "wall_s": 549.0458765020012
+}

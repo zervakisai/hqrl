@@ -1,0 +1,183 @@
+{
+ "plan_sha256": "c1643c27ebfba342a8e2a83b431d4a69d4e989f8a49d1bfafa77c97e7fb8e3f1",
+ "units": [
+  {
+   "circuit": "shipped",
+   "index": 0,
+   "status": "complete",
+   "rows": {
+    "fit": 11635,
+    "calibration": 11540,
+    "heldout": 11582
+   },
+   "reproduction": {
+    "same_rows": true,
+    "same_episode_J": true,
+    "max_rel_diff_G_H_B1_arms": 3.5033827537783317e-10,
+    "passed": true
+   },
+   "data_wall_s": 1030.762871762001,
+   "instrument_wall_s": 56.949534617999234,
+   "mission_wall_s": 14.505726096000217,
+   "wall_s": 1102.2181330170006,
+   "error": null,
+   "traceback": null,
+   "arm_status": {
+    "HQ-Fisher": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "TAN": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "QTAY": {
+     "0.001": "ok",
+     "0.01": "ok"
+    }
+   },
+   "ctrig_status": [
+    {
+     "CTRIG": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx0.1": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx10": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CQR": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIG-16": {
+      "0.01": "ok"
+     }
+    },
+    {
+     "CTRIG": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx0.1": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx10": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CQR": {
+      "0.001": "ok",
+      "0.01": "ok"
+     }
+    }
+   ],
+   "mission_status": {
+    "BASE": "ok",
+    "HQ-Fisher": "ok",
+    "TAN": "ok",
+    "CTRIG#0": "ok"
+   },
+   "mission_episodes": {
+    "BASE": 8,
+    "HQ-Fisher": 8,
+    "TAN": 8,
+    "CTRIG#0": 8
+   }
+  },
+  {
+   "circuit": "heldout",
+   "index": 0,
+   "status": "complete",
+   "rows": {
+    "fit": 10523,
+    "calibration": 10552,
+    "heldout": 10431
+   },
+   "reproduction": {
+    "same_rows": true,
+    "same_episode_J": true,
+    "max_rel_diff_G_H_B1_arms": 2.7278527765107142e-11,
+    "passed": true
+   },
+   "data_wall_s": 723.6434679840004,
+   "instrument_wall_s": 295.831269798,
+   "mission_wall_s": 24.17319894799948,
+   "wall_s": 1043.6479372209997,
+   "error": null,
+   "traceback": null,
+   "arm_status": {
+    "HQ-Fisher": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "TAN": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "QTAY": {
+     "0.001": "ok",
+     "0.01": "ok"
+    }
+   },
+   "ctrig_status": [
+    {
+     "CTRIG": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx0.1": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx10": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CQR": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIG-16": {
+      "0.01": "ok"
+     }
+    },
+    {
+     "CTRIG": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx0.1": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CTRIGx10": {
+      "0.001": "ok",
+      "0.01": "ok"
+     },
+     "CQR": {
+      "0.001": "ok",
+      "0.01": "ok"
+     }
+    }
+   ],
+   "mission_status": {
+    "BASE": "ok",
+    "HQ-Fisher": "ok",
+    "TAN": "ok",
+    "CTRIG#0": "ok"
+   },
+   "mission_episodes": {
+    "BASE": 8,
+    "HQ-Fisher": 8,
+    "TAN": 8,
+    "CTRIG#0": 8
+   }
+  }
+ ]
+}

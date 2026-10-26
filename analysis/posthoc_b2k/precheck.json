@@ -1,0 +1,200 @@
+{
+ "utc": "2026-10-25T12:08:07+00:00",
+ "runner_sha256": "210923c4e93c9fa6f0cb67e74ac0b0f28f83246a7a4f351040c6f1b0c2acc3f9",
+ "plan_sha256_at_precheck": null,
+ "static": {
+  "c_main_configs": {
+   "differing_keys": [
+    "candidate",
+    "note",
+    "ppo.learning_rate",
+    "protocol_freeze_sha256"
+   ],
+   "ok": true
+  },
+  "d_pilot_configs": {
+   "blocks": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+   ],
+   "study": [
+    "dq_b2_smoke"
+   ],
+   "training_namespace": "dq_development",
+   "evaluation": [
+    "None"
+   ],
+   "budget": [
+    30000
+   ],
+   "seeds_in_dq_development_only": true,
+   "ppo_equal_to_b2_except_lr": true,
+   "disjoint_from_b2_blocks_and_suite": true,
+   "ok": true
+  },
+  "e_targets": {
+   "recomputed": {
+    "surrogate625": 0.007823255686871039,
+    "quantum": 0.00419994415996206
+   },
+   "declared": {
+    "surrogate625": 0.007823255686871039,
+    "quantum": 0.00419994415996206
+   },
+   "ok": true
+  },
+  "f_slopes": {
+   "recomputed": {
+    "surrogate625": 0.9385004171529107,
+    "quantum": 0.8421691057010121
+   },
+   "declared": {
+    "surrogate625": 0.9385004171529107,
+    "quantum": 0.8421691057010121
+   },
+   "stored_means": {
+    "HQ_1e-3": 0.0031014925628297715,
+    "HQ_3e-3": 0.007823255686871039,
+    "twin_1e-3": 0.009926246381340396,
+    "twin_3e-3": 0.027833226083031033,
+    "Cmatched_1e-2": 0.00419994415996206
+   },
+   "ok": true
+  },
+  "g_build_path": {
+   "ok": true
+  },
+  "h_code_tree": {
+   "live": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+   "ok": true
+  }
+ },
+ "dynamic": {
+  "quantum": {
+   "checks": {
+    "evaluation": {
+     "compared": 2,
+     "identical": true
+    },
+    "update": {
+     "compared": 6,
+     "identical": true,
+     "max_relative_difference": 0.0
+    },
+    "episode": {
+     "compared": 77,
+     "identical": true
+    },
+    "arm_start": {
+     "compared": 1,
+     "identical": true
+    },
+    "initial_checkpoint": {
+     "compared": 17,
+     "identical": true
+    }
+   },
+   "ok": true
+  },
+  "surrogate625": {
+   "checks": {
+    "evaluation": {
+     "compared": 2,
+     "identical": true
+    },
+    "update": {
+     "compared": 6,
+     "identical": true,
+     "max_relative_difference": 0.0
+    },
+    "episode": {
+     "compared": 80,
+     "identical": true
+    },
+    "arm_start": {
+     "compared": 1,
+     "identical": true
+    },
+    "initial_checkpoint": {
+     "compared": 18,
+     "identical": true
+    }
+   },
+   "ok": true,
+   "twin_parity": {
+    "P4": {
+     "cell_id": "d4__nominal_2700s__positive",
+     "seed": 20262621000,
+     "decisions": 41,
+     "max_abs_dlogprob": 1.3322676295501878e-15
+    },
+    "static": {
+     "P1_solve_residual": 9.103828801926284e-15,
+     "P2_offgrid_max_abs": 1.0630385460785874e-14,
+     "P5_shared_tensors": 16,
+     "P5_unequal": [],
+     "P6_max_off_support": 1.2199301535773255e-15,
+     "P7_max_abs_z": 0.9737739368524014,
+     "static_failures": []
+    }
+   },
+   "twin_parity_equals_stored_b2_record": true
+  }
+ },
+ "timing_current_load": {
+  "quantum": {
+   "evaluation_episodes": 160,
+   "policy_decisions": 3203,
+   "episodes": 77,
+   "rollout_wall_s_per_1000_decisions": 14.558892103670313,
+   "rollout_cpu_s_per_1000_decisions": 14.552717049640957,
+   "update_wall_s_per_1000_decisions": 0.3837936312877441,
+   "evaluation_wall_s_per_episode": 0.4950918561688013,
+   "evaluation_cpu_s_per_episode": 0.49506786751875004,
+   "run_wall_s": 129.38986072299303,
+   "load_average": {
+    "start": [
+     3.13916015625,
+     2.974609375,
+     3.98486328125
+    ],
+    "end": [
+     4.40283203125,
+     3.55517578125,
+     4.07470703125
+    ]
+   }
+  },
+  "surrogate625": {
+   "evaluation_episodes": 160,
+   "policy_decisions": 3245,
+   "episodes": 80,
+   "rollout_wall_s_per_1000_decisions": 8.760904285372256,
+   "rollout_cpu_s_per_1000_decisions": 8.760164538366716,
+   "update_wall_s_per_1000_decisions": 0.18698513403445918,
+   "evaluation_wall_s_per_episode": 0.3059736904875535,
+   "evaluation_cpu_s_per_episode": 0.30585190038750004,
+   "run_wall_s": 84.69764487200882,
+   "load_average": {
+    "start": [
+     3.28857421875,
+     3.00830078125,
+     3.99072265625
+    ],
+    "end": [
+     4.30029296875,
+     3.3935546875,
+     4.0498046875
+    ]
+   }
+  }
+ },
+ "passed": true
+}

@@ -1,0 +1,40 @@
+{
+ "plan_sha256": "9717ddf3bbb3a94e1421e650ee6358a3076318e324e7e86ffa2285477f4f0063",
+ "provisional": false,
+ "n_new_runs": 36,
+ "Z1_HQ_1e-2_minus_Cmatched_1e-2": {
+  "n": 36,
+  "mean": -0.009038309900723076,
+  "lo": -0.014722865631436072,
+  "hi": -0.0033537541700100794,
+  "p": 0.0027090488395595204,
+  "dz": -0.5379706423466347,
+  "share_negative": 0.6944444444444444
+ },
+ "Z1_rejected": true,
+ "Z1_reading": "below zero",
+ "Cmatched_1e-2_minus_3e-3": {
+  "n": 36,
+  "mean": 0.003563333139814182,
+  "lo": -0.0005925624410717638,
+  "hi": 0.007719228720700128,
+  "p": 0.09053152126469845,
+  "dz": 0.29010798103320967,
+  "share_negative": 0.3333333333333333
+ },
+ "final_J": {
+  "Cmatched_1e-2": 0.043138831318933174,
+  "Cmatched_3e-3": 0.03857422135835769,
+  "HQ_1e-2": 0.028494757664265742
+ },
+ "mean_update_kl": {
+  "Cmatched_1e-2": 0.004199944159962061,
+  "Cmatched_3e-3": 0.0023404006315387873,
+  "HQ_1e-2": 0.006975896048019968
+ },
+ "updates_range": [
+  55,
+  57
+ ],
+ "text": "C-matched beyond its grid edge (post hoc). Under an analysis plan fixed by hash before the runs, C-matched was also re-trained at 10⁻² on the same 36 blocks, so that both arms were run at 3 × 10⁻³ and 10⁻². HQ (10⁻²) − C-matched (10⁻²) AUC was −0.0090 [−0.0147, −0.0034] (two-sided p = 0.0027; HQ lower in 69% of blocks): HQ learned less than C-matched also when both used 1e-2. C-matched's own AUC changed by +0.0036 [−0.0006, +0.0077] from 3 × 10⁻³ to 10⁻², and its mean final-checkpoint weighted J was 0.043 at 10⁻²."
+}

@@ -1,0 +1,919 @@
+"""B1R: confirmatory replication of three B1 local contrasts on 36 fresh two-layer units (see PLAN.md).
+
+Everything that computes an arm is imported unchanged: the B1 code tree of record (a66f8979), the runner of
+extension C (idea_dq_posthoc_b1c: HQ-Fisher, TAN, QTAY, CTRIG with 20 draws, its ladder and CQR) and the runner of
+extension E (idea_dq_posthoc_b1e: OPT-CIRC, OPT-TAN, HQ-plain, TAN-c, first crossing). Only the unit index changes.
+
+A fresh unit is B1's two-layer unit construction at an index i in FRESH = 100..135, which no study has used:
+    initialisation   torch.manual_seed(Study('dq').stream(50, i))            (dq_b1.build_unit, unchanged)
+    episode seed     namespace.start + (i * 8 + cell) * 32 + offset           (B1's rule with slot = i)
+                     -> [start + 25,600, start + 34,816) in dq_fit, dq_calibration, dq_heldout
+    action stream    Study('dq').stream(SET_TAG[set], 1000 + i, cell, offset)  (B1's rule, stream unit 1100..1135)
+    CTRIG draws      SHA-256 of 'b1c|shipped|<i>|<draw>'                       (extension C's rule, unchanged)
+    OPT random starts SHA-256 of 'b1e|shipped|<i>|<kind><j>|<kappa>'           (extension E's rule, unchanged)
+For a B1 unit (i = 0..35) the same functions give exactly B1's seeds and streams; the precheck uses this.
+
+    python runner.py seeds                 # static design checks, no episode (seed disjointness, distinct inits)
+    python runner.py precheck --quick      # development check: unit shipped 0, 48 episodes + arms on B1C's saved rows
+    python runner.py precheck              # the precheck of record: B1 unit shipped 0 regenerated in full through this
+                                           # runner must reproduce the stored B1, B1C and B1E values (30-60 min). It
+                                           # writes precheck.json; a rerun after a failed one writes precheck_2.json, ...
+    python runner.py launch --canary       # fresh unit 100 alone, first (PLAN.md, failure rule 1)
+    python runner.py launch --workers 5    # the other 35; refuses unless PLAN.md is hashed, the latest precheck of
+                                           # record passed for this PLAN.md and this runner, and the canary has a record
+    python runner.py status                # counts, statuses, certificates, timings, running units; never an arm value
+    python runner.py supersede --deviation-logged   # failure rule 2: move every record and staged file aside
+"""
+from __future__ import annotations
+
+import sys
+
+sys.dont_write_bytecode = True                    # never write __pycache__ into the B1 tree or the extension folders
+
+import argparse                                                                                   # noqa: E402
+import datetime                                                                                   # noqa: E402
+import hashlib                                                                                    # noqa: E402
+import importlib.util                                                                             # noqa: E402
+import json                                                                                       # noqa: E402
+import math                                                                                       # noqa: E402
+import os                                                                                         # noqa: E402
+from pathlib import Path                                                                          # noqa: E402
+import shutil                                                                                     # noqa: E402
+import time                                                                                       # noqa: E402
+import traceback                                                                                  # noqa: E402
+
+HERE = Path(__file__).resolve().parent
+CHATGPT = Path('/home/konstantinos/Documents/ChatGPT')
+IDEA_DQ = CHATGPT / 'idea_dq_b1_tree_a66f8979'    # the B1 code tree of record, as used by every B1 extension
+B1C_DIR = CHATGPT / 'idea_dq_posthoc_b1c'
+B1E_DIR = CHATGPT / 'idea_dq_posthoc_b1e'
+B1_UNITS = CHATGPT / 'idea_dq/output/study/gnss_qrl_v1/dq/b1_campaign_v1/units'
+#: the reused runners, by content; any change is a refusal before import
+REUSED = {B1C_DIR / 'runner.py': 'a712ee54f5568ab9e9cb4c34e719f9865bce9d3feea8ddb109d4b26e0f0d7d14',
+          B1E_DIR / 'runner.py': '909d6f54346d81f85ddf6c3cd1be1e6f0121347178557fdbed8bab1d6a12e446'}
+B1_TREE = 'a66f89793664b63bdf6e1ece843667972d30d142dc0fd5b8c2f684b7fbeecb56'
+
+
+def sha256_file(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+for _path, _want in REUSED.items():
+    if sha256_file(_path) != _want:
+        raise SystemExit(f'{_path} changed (sha256 {sha256_file(_path)}, expected {_want}): refusing to run')
+for _extra in (IDEA_DQ / 'src', IDEA_DQ / 'scripts', IDEA_DQ / 'scripts' / 'gnss_qrl_runtime'):
+    if str(_extra) not in sys.path:
+        sys.path.insert(0, str(_extra))
+
+
+def _load(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+c_ext = _load('b1c_runner', B1C_DIR / 'runner.py')                                 # extension C, unchanged
+e_ext = _load('b1e_runner', B1E_DIR / 'runner.py')                                 # extension E, unchanged
+
+import numpy as np                                                                                # noqa: E402
+import torch                                                                                      # noqa: E402
+import dq_b1 as b1                                                                                # noqa: E402
+import dq_batches as db                                                                           # noqa: E402
+import dq_circuits as qc                                                                          # noqa: E402
+import dq_instruments as ins                                                                      # noqa: E402
+import dq_runtime as dq                                                                           # noqa: E402
+import dq_transplant as tp                                                                        # noqa: E402
+import p4_train as p4                                                                             # noqa: E402
+
+PLAN = HERE / 'PLAN.md'
+PLAN_SHA256 = sha256_file(PLAN) if PLAN.exists() else None
+CIRCUIT = 'shipped'
+FRESH = tuple(range(100, 136))                    # the 36 fresh unit indices (= slots and stream units 1100..1135)
+CANARY = FRESH[0]                                 # fresh unit 100 runs alone, first (PLAN.md, failure rule 1)
+RUNNER_SHA256 = sha256_file(__file__)             # recorded in every unit record, precheck and launch
+ENVIRONMENTAL = (MemoryError, OSError)            # failures that may be rerun once from scratch (failure rule 3)
+#: the precheck of record writes precheck.json; a rerun after a failed one writes precheck_2.json, precheck_3.json, ...
+PRECHECK_NAMES = ('precheck',) + tuple(f'precheck_{n}' for n in range(2, 100))
+B1_INDICES = tuple(range(b1.UNITS_PER_CIRCUIT))   # B1 two-layer units (precheck only)
+SETS = ('fit', 'calibration', 'heldout')          # B1C and B1E need F, K and H; the oracle set O is not collected
+DRAWS = c_ext.DRAWS                               # 20 CTRIG draws, as B1C
+SUB_STEPS = False                                 # CTRIG-16 (descriptive in B1C) is not part of the replication
+QUICK_OFFSETS = 2                                 # quick precheck: offsets 0-1 of every cell (16 episodes per set)
+REL_TOL = 1e-9                                    # precheck tolerance on every reproduced float (expected: exact)
+#: seeds other studies drew from the three namespaces besides B1's own (documented in their runners)
+OTHER_USED = {'dq_fit': [(50_000, 50_000 + 36 * 8 * 96)]}          # extension N's 768 extra fit episodes per unit
+
+
+def utc():
+    return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
+
+
+# -- seeds ------------------------------------------------------------------------------------------------------------
+
+def check_index(index):
+    if index not in FRESH and index not in B1_INDICES:
+        raise ValueError(f'unit index {index} is neither a fresh unit {FRESH[0]}..{FRESH[-1]} nor a B1 two-layer unit')
+    return index
+
+
+def episode_seed(namespace, index, cell_index, offset, set_name):
+    """B1's rule (dq_b1.episode_seed) with slot = index; for index 0..35 it equals dq_b1.episode_seed('shipped', ...)."""
+    check_index(index)
+    per_cell = b1.PER_CELL[set_name]
+    if not 0 <= offset < per_cell or not 0 <= cell_index < b1.CELLS:
+        raise ValueError(f'offset {offset} / cell {cell_index} outside the {set_name} design')
+    space = dq.DQ_NAMESPACES[namespace]
+    seed = space['start'] + (index * b1.CELLS + cell_index) * per_cell + offset
+    if not space['start'] <= seed < space['end']:
+        raise ValueError(f'seed {seed} outside {namespace}')
+    return seed
+
+
+def stream_unit(index):
+    return 1000 + check_index(index)
+
+
+def action_seed(set_name, index, cell_index, offset):
+    return dq.DQ_STUDY.stream(db.SET_TAG[set_name], stream_unit(index), cell_index, offset)
+
+
+def seed_checks(build_models=True):
+    """Static checks of the fresh design; no episode is run and no outcome is computed."""
+    out = {}
+    fresh, b1_used = {}, {}
+    for s in SETS:
+        ns = b1.SET_NAMESPACE[s]
+        fresh[ns] = {episode_seed(ns, i, c, o, s) for i in FRESH for c in range(b1.CELLS) for o in range(b1.PER_CELL[s])}
+    for s, ns in b1.SET_NAMESPACE.items():
+        b1_used[ns] = {b1.episode_seed(ns, circ, i, c, o, s) for circ in b1.CIRCUITS for i in range(b1.UNITS_PER_CIRCUIT)
+                       for c in range(b1.CELLS) for o in range(b1.PER_CELL[s])}
+    out['fresh_seed_counts'] = {ns: len(v) for ns, v in fresh.items()}
+    out['fresh_seed_ranges'] = {ns: [min(v) - dq.DQ_NAMESPACES[ns]['start'], max(v) - dq.DQ_NAMESPACES[ns]['start']]
+                                for ns, v in fresh.items()}
+    out['overlap_with_b1_formula'] = {ns: len(v & b1_used.get(ns, set())) for ns, v in fresh.items()}
+    out['overlap_with_other_extensions'] = {
+        ns: sum(1 for x in v for lo, hi in OTHER_USED.get(ns, []) if dq.DQ_NAMESPACES[ns]['start'] + lo <= x <
+                dq.DQ_NAMESPACES[ns]['start'] + hi) for ns, v in fresh.items()}
+    # the B1 rule through this runner equals dq_b1's for every B1 two-layer unit
+    out['b1_rule_identical'] = all(
+        episode_seed(b1.SET_NAMESPACE[s], i, c, o, s) == b1.episode_seed(b1.SET_NAMESPACE[s], CIRCUIT, i, c, o, s)
+        and stream_unit(i) == b1.stream_unit(CIRCUIT, i)
+        for s in SETS for i in B1_INDICES for c in range(b1.CELLS) for o in (0, b1.PER_CELL[s] - 1))
+    # the seeds B1 actually used, as stored in its unit records
+    stored = {}
+    for f in sorted(B1_UNITS.glob('*.json')):
+        r = json.loads(f.read_text())
+        for s, recs in r['episode_records'].items():
+            stored.setdefault(b1.SET_NAMESPACE[s], set()).update(e['seed'] for e in recs)
+    out['b1_stored_seed_counts'] = {ns: len(v) for ns, v in stored.items()}
+    out['overlap_with_b1_stored'] = {ns: len(v & stored.get(ns, set())) for ns, v in fresh.items()}
+    out['b1_stored_within_formula'] = all(v <= b1_used[ns] for ns, v in stored.items())
+    # action streams: (set tag, stream unit) pairs; B1 1000..1071, B1N/B1C 1000..1071 (offsets 1000+), D-6 < 100
+    fresh_units = {stream_unit(i) for i in FRESH}
+    out['fresh_stream_units'] = [min(fresh_units), max(fresh_units)]
+    out['stream_units_disjoint'] = not (fresh_units & set(range(1000, 1072))) and min(fresh_units) >= 1100
+    # initialisations
+    init_fresh = {i: dq.DQ_STUDY.stream(b1.INIT_TAG, i) for i in FRESH}
+    init_b1 = {i: dq.DQ_STUDY.stream(b1.INIT_TAG, i) for i in B1_INDICES}
+    init_train = {b: dq.DQ_STUDY.stream(b, p4.INIT_STREAM) for b in range(200)}        # B2/LONG-style training blocks
+    out['init_seeds_distinct'] = (len(set(init_fresh.values())) == len(FRESH)
+                                  and not set(init_fresh.values()) & set(init_b1.values())
+                                  and not set(init_fresh.values()) & set(init_train.values()))
+    if build_models:
+        stored_w = {json.loads(f.read_text())['circuit_weights_sha256'] for f in sorted(B1_UNITS.glob('shipped_*.json'))}
+        fresh_w = {}
+        for i in FRESH:
+            m = b1.build_unit(CIRCUIT, i)
+            fresh_w[i] = hashlib.sha256(b1.circuit_weights(m).numpy().astype('<f8').tobytes()).hexdigest()
+        out['fresh_weights_distinct'] = len(set(fresh_w.values())) == len(FRESH) and not set(fresh_w.values()) & stored_w
+        rebuilt0 = hashlib.sha256(b1.circuit_weights(b1.build_unit(CIRCUIT, 0)).numpy().astype('<f8').tobytes()).hexdigest()
+        out['b1_unit0_weights_rebuilt'] = rebuilt0 == json.loads((B1_UNITS / 'shipped_00.json').read_text())[
+            'circuit_weights_sha256']
+    out['passed'] = (all(v == 0 for v in out['overlap_with_b1_formula'].values())
+                     and all(v == 0 for v in out['overlap_with_other_extensions'].values())
+                     and all(v == 0 for v in out['overlap_with_b1_stored'].values())
+                     and out['b1_rule_identical'] and out['b1_stored_within_formula'] and out['stream_units_disjoint']
+                     and out['init_seeds_distinct']
+                     and (not build_models or (out['fresh_weights_distinct'] and out['b1_unit0_weights_rebuilt'])))
+    return out
+
+
+# -- episodes (dq_b1.run_unit_episode / collect_set / trajectory_parity_b1 with the index rule above) -------------------
+
+def run_episode(model, runtime, set_name, index, cell_index, offset, label):
+    namespace = dq.require_open(b1.SET_NAMESPACE[set_name])            # B1's gate, incl. the calendar cut-off
+    cell = runtime.cells[cell_index]
+    seed = episode_seed(namespace, index, cell_index, offset, set_name)
+    generator = torch.Generator().manual_seed(action_seed(set_name, index, cell_index, offset))
+    return p4.run_learned_episode(runtime, cell, namespace, seed, model, generator, False,
+                                  f'b1-{CIRCUIT}{index}-{set_name}-c{cell_index}-o{offset}-{label}', 0,
+                                  db.GAMMA_REF, db.TAU)
+
+
+def collect_set(model, runtime, set_name, index, offsets=None, keep_first=False):
+    episodes, first = [], None
+    for offset in range(offsets or b1.PER_CELL[set_name]):
+        for cell_index in range(b1.CELLS):
+            run = run_episode(model, runtime, set_name, index, cell_index, offset, 'unit')
+            rec = run['record']
+            if rec['infrastructure'] or rec['invalid_rows']:
+                raise db.BatchError(f'infrastructure/invalid episode {set_name} c{cell_index} o{offset}: '
+                                    f'{rec["termination_reason"]}')
+            if keep_first and first is None:
+                first = run
+            episodes.append({'cell': runtime.cells[cell_index], 'realization': offset, 'record': rec,
+                             'rows': [r for r in run['transitions'].rows if r['valid']]})
+    return episodes, first
+
+
+def trajectory_parity(first_run, twin, runtime, index):
+    """P4: the twin re-flies F episode (cell 0, offset 0) with the same seed and action stream."""
+    rerun = run_episode(twin, runtime, 'fit', index, 0, 0, 'twin')
+    a, b = first_run['policy'].decisions, rerun['policy'].decisions
+    if len(a) != len(b):
+        raise tp.TransplantParityError(f'P4: {len(a)} vs {len(b)} decisions')
+    worst = 0.
+    for x, y in zip(a, b):
+        if x.action_index != y.action_index or not np.array_equal(x.obs, y.obs) or \
+                not np.array_equal(x.public_mask, y.public_mask):
+            raise tp.TransplantParityError(f'P4: decision {x.index} differs')
+        if x.log_prob is not None:
+            worst = max(worst, abs(x.log_prob - y.log_prob))
+    if first_run['record']['J'] != rerun['record']['J'] or not worst <= tp.TOL['P4']:
+        raise tp.TransplantParityError(f'P4: outcome or log-prob differs ({worst:.3e})')
+    return {'decisions': len(a), 'max_abs_dlogprob': worst}
+
+
+# -- the unit pipeline -------------------------------------------------------------------------------------------------
+
+def configure_stage(root):
+    """Point the unchanged extension functions at this runner's staging folder: extension C's save_rows writes
+    <root>/rows/<circuit>_<index>.pt and extension E's unit() reads that file and <root>/records/<circuit>_<index>.json."""
+    root = Path(root)
+    for sub in ('rows', 'records', 'started'):
+        (root / sub).mkdir(parents=True, exist_ok=True)
+    c_ext.HERE = root
+    e_ext.B1C = root
+    return root
+
+
+def stage_files(root, index):
+    """[staged rows (extension C's save_rows), staged C record (read by extension E), start marker (watchdog)]."""
+    root = Path(root)
+    return [root / 'rows' / f'{CIRCUIT}_{index:02d}.pt', root / 'records' / f'{CIRCUIT}_{index:02d}.json',
+            root / 'started' / f'{CIRCUIT}_{index:02d}.json']
+
+
+def decisions_of(episodes):
+    return sum(e['record']['decisions'] for e in episodes)
+
+
+def failure_class(exc):
+    """The class of a unit failure, for the plan's failure rules (the record also keeps the type and raising line)."""
+    if isinstance(exc, ENVIRONMENTAL):
+        return 'environmental'                    # MemoryError, OSError (incl. disk full): rerun once (rule 3)
+    if isinstance(exc, tp.TransplantParityError):
+        return 'parity_refused'                   # B1's statuses (dq_b1.run_unit)
+    if isinstance(exc, db.BatchError):
+        return 'episode_failure'
+    if isinstance(exc, dq.DQError):
+        return 'refused'
+    return 'algorithmic_failure'
+
+
+def run_unit(index, stage_root, offsets=None, with_arms=True):
+    """One unit, in B1's fail-closed order (dq_b1.run_unit): F, K, H -> static certificate P1, P2, P5-P7 -> rows ->
+    row parity P3 and trajectory parity P4 (its re-flight passes require_open) -> staged rows -> extension C arms ->
+    staged C record -> extension E arms. No arm is computed before the certificate has passed.
+    Never raises; a failure is recorded (status 'failure', with its class, type and raising line)."""
+    check_index(index)
+    torch.set_num_threads(1)
+    rec = {'circuit': CIRCUIT, 'index': index, 'status': 'started', 'plan_sha256': PLAN_SHA256,
+           'runner_sha256': RUNNER_SHA256, 'utc_start': utc(),
+           'settings': {'draws': DRAWS, 'sub_steps': SUB_STEPS, 'offsets': offsets or 'all', 'with_arms': with_arms},
+           'init_seed': dq.DQ_STUDY.stream(b1.INIT_TAG, index), 'stream_unit': stream_unit(index),
+           'pid': os.getpid(), 'loadavg_start': os.getloadavg(), 'timing': {}}
+    t0 = time.perf_counter()
+    T = rec['timing']
+    try:
+        root = configure_stage(stage_root)
+        stage_files(root, index)[2].write_text(json.dumps({'index': index, 'pid': os.getpid(),
+                                                           'utc_start': rec['utc_start'], 'runner_sha256': RUNNER_SHA256}))
+        runtime = dq.cell_runtime()
+        support = tp.support(b1.SPEC[CIRCUIT])[0]
+        model = b1.build_unit(CIRCUIT, index)
+        rec['circuit_weights_sha256'] = hashlib.sha256(b1.circuit_weights(model).numpy().astype('<f8').tobytes()).hexdigest()
+        episodes, rows, infos, first = {}, {}, {}, None
+        for s in SETS:
+            t = time.perf_counter()
+            episodes[s], f = collect_set(model, runtime, s, index, offsets, keep_first=(s == 'fit'))
+            first = first or f
+            T[f'collect_{s}_s'] = time.perf_counter() - t
+            T[f'episodes_{s}'] = len(episodes[s])
+            T[f'decisions_{s}'] = decisions_of(episodes[s])
+        rec['episode_records'] = {s: [e['record'] for e in episodes[s]] for s in SETS}
+        t = time.perf_counter()
+        twin = b1.twin_of(CIRCUIT, model)
+        cert = b1.certify_unit(CIRCUIT, model, twin, support)                 # P1, P2, P5-P7; raises on a failure
+        T['certificate_s'] = time.perf_counter() - t
+        for s in SETS:
+            t = time.perf_counter()
+            rows[s], infos[s] = b1.rows_of(model, episodes[s], CIRCUIT)
+            T[f'rows_{s}_s'] = time.perf_counter() - t
+        rec['rows'] = {s: rows[s].n for s in SETS}
+        rec['row_info'] = infos                                                # B1's row diagnostics, as dq_b1 keeps them
+        t = time.perf_counter()
+        cert.update(tp.certify_rows(model, twin, db.raw_rows(episodes['fit'])))      # P3
+        cert['P4'] = trajectory_parity(first, twin, runtime, index)                   # P4 (re-flight, require_open)
+        rec['certificate'] = cert
+        T['certificate_s'] += time.perf_counter() - t
+        t = time.perf_counter()
+        rec['rows_saved'] = c_ext.save_rows(CIRCUIT, index, model, episodes, rows)
+        T['save_rows_s'] = time.perf_counter() - t
+        rec['data_wall_s'] = time.perf_counter() - t0
+        if with_arms:
+            if not rec['rows_saved'].get('saved'):
+                raise RuntimeError(f'rows not saved: {rec["rows_saved"]}')
+            t = time.perf_counter()
+            rec['arms'], _ = c_ext.unit_arms(CIRCUIT, index, model, rows, support, DRAWS, SUB_STEPS)
+            T['arms_c_s'] = time.perf_counter() - t
+            staged = stage_files(root, index)[1]
+            staged.write_text(json.dumps({'circuit': CIRCUIT, 'index': index, 'status': 'complete', 'arms': rec['arms'],
+                                          'note': 'staged for extension E (runner.py configure_stage)'}, default=float))
+            t = time.perf_counter()
+            opt = e_ext.unit((CIRCUIT, index))
+            T['arms_e_s'] = time.perf_counter() - t
+            opt['b1e_plan_sha256'] = opt.pop('plan_sha256', None)
+            rec['opt'] = opt
+            if opt['status'] != 'complete':
+                raise RuntimeError(f'extension E arms failed: {opt.get("error")}')
+        rec['status'] = 'complete'
+    except Exception as exc:                                                        # recorded, never retried here
+        tb = traceback.extract_tb(exc.__traceback__)
+        where = f'{Path(tb[-1].filename).name}:{tb[-1].lineno}' if tb else '?'
+        rec.update(status='failure', failure_class=failure_class(exc), error_type=type(exc).__name__,
+                   error_where=where, error=f'{type(exc).__name__}: {exc}', traceback=traceback.format_exc()[-4000:])
+    rec['wall_s'] = time.perf_counter() - t0
+    rec['loadavg_end'] = os.getloadavg()
+    rec['utc_end'] = utc()
+    return rec
+
+
+# -- comparison helpers (precheck) ----------------------------------------------------------------------------------------
+
+def compare(new, old, path='', skip=(), out=None, tol=REL_TOL):
+    """Walk every key of `old`; numbers must agree within `tol` (relative), everything else exactly."""
+    out = out if out is not None else {'compared': 0, 'max_rel': 0., 'mismatch': [], 'missing': []}
+    if isinstance(old, dict):
+        for k, v in old.items():
+            if k in skip:
+                continue
+            if not isinstance(new, dict) or k not in new:
+                out['missing'].append(f'{path}/{k}')
+                continue
+            compare(new[k], v, f'{path}/{k}', skip, out, tol)
+    elif isinstance(old, list):
+        if not isinstance(new, (list, tuple)) or len(new) != len(old):
+            out['mismatch'].append(f'{path}: length')
+        else:
+            for j, (a, b) in enumerate(zip(new, old)):
+                compare(a, b, f'{path}[{j}]', skip, out, tol)
+    elif isinstance(old, bool) or old is None or isinstance(old, str):
+        out['compared'] += 1
+        if new != old:
+            out['mismatch'].append(f'{path}: {new!r} != {old!r}')
+    elif isinstance(old, (int, float)):
+        out['compared'] += 1
+        a, b = float(new), float(old)
+        if math.isnan(a) or math.isnan(b):                       # NaN matches NaN only; NaN against a number fails
+            if math.isnan(a) != math.isnan(b):
+                out['mismatch'].append(f'{path}: {a!r} != {b!r}')
+            return out
+        rel = abs(a - b) / max(abs(b), 1e-300) if a != b else 0.
+        out['max_rel'] = max(out['max_rel'], rel)
+        if rel > tol:
+            out['mismatch'].append(f'{path}: {a!r} != {b!r}')
+    return out
+
+
+def ok(c):
+    return c['compared'] > 0 and not c['mismatch'] and not c['missing']
+
+
+def rows_compare(staged_path, b1c_path, prefix_episodes=None, spec=None):
+    """Tensors of the staged rows against extension C's saved rows (bitwise)."""
+    a = torch.load(staged_path, weights_only=False) if not isinstance(staged_path, dict) else staged_path
+    b = torch.load(b1c_path, weights_only=False)
+    res = {'readout_equal': bool(torch.equal(a['readout_W'], b['readout_W']) and torch.equal(a['readout_b'], b['readout_b']))}
+    for s in SETS:
+        x, y = a['sets'][s], b['sets'][s]
+        if prefix_episodes is not None:
+            # quick check only: the GRU replay runs all rows of a set as one batch, so a 16-episode prefix differs
+            # from the 256-episode batch in the last bit of a few angles (BLAS blocking depends on the batch size;
+            # measured 2e-16 in 8 of 2,876 values). The angles are therefore compared within 1e-15 here; the
+            # precheck of record replays the full sets and compares every tensor bitwise.
+            n = int((y['episode'] < prefix_episodes).sum())
+            res[s] = {k: bool(torch.equal(x[k], y[k][:n])) for k in ('mask', 'action', 'episode')}
+            res[s]['angles_bitwise'] = bool(torch.equal(x['angles'], y['angles'][:n]))
+            res[s]['angles_max_abs_diff'] = float((x['angles'] - y['angles'][:n]).abs().max())
+            res[s]['angles'] = res[s]['angles_max_abs_diff'] <= 1e-15
+            res[s]['rows'] = n
+        else:
+            res[s] = {k: bool(torch.equal(x[k], y[k])) for k in ('angles', 'mask', 'action', 'advantage', 'episode')}
+    res['passed'] = res['readout_equal'] and all(
+        all(v for k, v in res[s].items() if k not in ('rows', 'angles_bitwise', 'angles_max_abs_diff')) for s in SETS)
+    return res
+
+
+def episodes_compare(new_records, stored, n_per_set=None):
+    out = {}
+    for s in SETS:
+        old = stored['episode_records'][s][:n_per_set] if n_per_set else stored['episode_records'][s]
+        new = new_records[s]
+        out[s] = {'episodes': len(new), 'same_count': len(new) == len(old),
+                  'same_seed': [e['seed'] for e in new] == [e['seed'] for e in old],
+                  'same_J': [e['J'] for e in new] == [e['J'] for e in old],
+                  'same_decisions': [e['decisions'] for e in new] == [e['decisions'] for e in old]}
+    out['passed'] = all(all(v for k, v in out[s].items() if k != 'episodes') for s in SETS)
+    return out
+
+
+def timing_summary(rec):
+    T = rec.get('timing', {})
+    eps = sum(T.get(f'episodes_{s}', 0) for s in SETS)
+    dec = sum(T.get(f'decisions_{s}', 0) for s in SETS)
+    col = sum(T.get(f'collect_{s}_s', 0.) for s in SETS)
+    return {'episodes': eps, 'decisions': dec, 'collect_s': col,
+            's_per_episode': col / eps if eps else None, 's_per_1000_decisions': 1000 * col / dec if dec else None,
+            'rows_s': sum(T.get(f'rows_{s}_s', 0.) for s in SETS), 'save_rows_s': T.get('save_rows_s'),
+            'arms_c_s': T.get('arms_c_s'), 'arms_e_s': T.get('arms_e_s'), 'certificate_s': T.get('certificate_s'),
+            'wall_s': rec.get('wall_s'), 'loadavg_start': rec.get('loadavg_start'), 'loadavg_end': rec.get('loadavg_end')}
+
+
+# -- precheck ---------------------------------------------------------------------------------------------------------
+
+def _stored(index):
+    return {'b1': json.loads((B1_UNITS / f'{CIRCUIT}_{index:02d}.json').read_text()),
+            'b1c': json.loads((B1C_DIR / 'records' / f'{CIRCUIT}_{index:02d}.json').read_text()),
+            'b1e': json.loads((B1E_DIR / 'records' / f'{CIRCUIT}_{index:02d}.json').read_text())}
+
+
+def check_full(rec, index, stage_root):
+    """Precheck of record: the regenerated B1 unit against B1 (episodes), B1C (rows, arms) and B1E (arms)."""
+    st = _stored(index)
+    out = {'status': rec['status'], 'error': rec.get('error'), 'traceback': rec.get('traceback'),
+           'timing': timing_summary(rec)}
+    if rec['status'] != 'complete':
+        out['passed'] = False
+        return out
+    out['episodes_vs_b1'] = episodes_compare(rec['episode_records'], st['b1'])
+    out['row_counts_vs_b1'] = rec['rows'] == {s: st['b1']['rows'][s] for s in SETS}
+    out['rows_vs_b1c'] = rows_compare(stage_files(stage_root, index)[0], B1C_DIR / 'rows' / f'{CIRCUIT}_{index:02d}.pt')
+    out['rows_file_sha256_equal_b1c'] = (sha256_file(stage_files(stage_root, index)[0])
+                                         == st['b1c']['rows_saved'].get('sha256'))
+    out['arms_vs_b1c'] = compare(rec['arms'], st['b1c']['arms'], skip=('CTRIG-16',))
+    out['arms_vs_b1e'] = compare(rec['opt']['arms'], st['b1e']['arms'])
+    # against B1's own instrument (a different but equivalent computation): B1C's criterion, G_H within relative 1e-6
+    out['b1_arms_vs_b1'] = compare({a: rec['arms'][a] for a in ('HQ-Fisher', 'TAN')},
+                                   {a: {k: {'G_H': v['G_H']} for k, v in st['b1']['instruments']['arms'][a].items()
+                                        if k in ('0.001', '0.01')} for a in ('HQ-Fisher', 'TAN')}, tol=1e-6)
+    out['certificate'] = {k: rec['certificate'].get(k) for k in ('static_failures', 'P1_solve_residual',
+                                                                 'P2_offgrid_max_abs', 'P3_max_abs_logprob', 'P4')}
+    # reported, not a pass criterion: B1's row diagnostics of the same sets (dq_b1 row_info)
+    out['row_info_vs_b1'] = {s: {'baseline_fallback_rows_equal': rec['row_info'][s]['baseline_fallback_rows']
+                                 == st['b1']['row_info'][s]['baseline_fallback_rows'],
+                                 'replay_max_abs_logprob': [rec['row_info'][s]['replay_max_abs_logprob'],
+                                                            st['b1']['row_info'][s]['replay_max_abs_logprob']]}
+                             for s in SETS}
+    out['record_runner_sha256_ok'] = rec.get('runner_sha256') == RUNNER_SHA256
+    out['passed'] = (out['episodes_vs_b1']['passed'] and out['row_counts_vs_b1'] and out['rows_vs_b1c']['passed']
+                     and ok(out['arms_vs_b1c']) and ok(out['arms_vs_b1e']) and ok(out['b1_arms_vs_b1'])
+                     and not rec['certificate'].get('static_failures') and out['record_runner_sha256_ok'])
+    return out
+
+
+def _quick_data(args):
+    """Quick precheck part A: offsets 0-1 of F, K, H of B1 unit shipped 0 (48 episodes) through this runner."""
+    index, stage_root = args
+    rec = run_unit(index, stage_root, offsets=QUICK_OFFSETS, with_arms=False)
+    st = _stored(index)
+    out = {'part': 'A: episodes, row prefix, certificate', 'status': rec['status'], 'error': rec.get('error'),
+           'traceback': rec.get('traceback'), 'timing': timing_summary(rec)}
+    if rec['status'] == 'complete':
+        n = QUICK_OFFSETS * b1.CELLS
+        out['episodes_vs_b1'] = episodes_compare(rec['episode_records'], st['b1'], n_per_set=n)
+        out['rows_prefix_vs_b1c'] = rows_compare(stage_files(stage_root, index)[0],
+                                                 B1C_DIR / 'rows' / f'{CIRCUIT}_{index:02d}.pt', prefix_episodes=n)
+        out['certificate'] = {k: rec['certificate'].get(k) for k in ('static_failures', 'P1_solve_residual',
+                                                                     'P2_offgrid_max_abs', 'P3_max_abs_logprob', 'P4')}
+        out['passed'] = (out['episodes_vs_b1']['passed'] and out['rows_prefix_vs_b1c']['passed']
+                         and not rec['certificate'].get('static_failures'))
+    else:
+        out['passed'] = False
+    return out
+
+
+def _quick_arms(args):
+    """Quick precheck part B: extension C and E arms through this runner on extension C's saved rows of unit 0."""
+    index, stage_root = args
+    torch.set_num_threads(1)
+    out = {'part': 'B: arms on B1C saved rows', 'loadavg_start': os.getloadavg()}
+    t0 = time.perf_counter()
+    try:
+        root = configure_stage(stage_root)
+        st = _stored(index)
+        src = B1C_DIR / 'rows' / f'{CIRCUIT}_{index:02d}.pt'
+        shutil.copyfile(src, stage_files(root, index)[0])                       # a copy inside this folder
+        spec = b1.SPEC[CIRCUIT]
+        d = torch.load(src, weights_only=False)
+        rows = {s: ins.Rows(phi=qc.basis(spec, v['angles']), W=d['readout_W'], b=d['readout_b'], mask=v['mask'],
+                            action=v['action'], advantage=v['advantage'], episode=v['episode'])
+                for s, v in d['sets'].items()}
+        model = b1.build_unit(CIRCUIT, index)
+        support = tp.support(spec)[0]
+        t = time.perf_counter()
+        arms, _ = c_ext.unit_arms(CIRCUIT, index, model, rows, support, DRAWS, SUB_STEPS)
+        out['arms_c_s'] = time.perf_counter() - t
+        out['arms_vs_b1c'] = compare(arms, st['b1c']['arms'], skip=('CTRIG-16',))
+        stage_files(root, index)[1].write_text(json.dumps({'circuit': CIRCUIT, 'index': index, 'status': 'complete',
+                                                           'arms': arms}, default=float))
+        t = time.perf_counter()
+        opt = e_ext.unit((CIRCUIT, index))
+        out['arms_e_s'] = time.perf_counter() - t
+        out['opt_status'] = opt['status']
+        out['opt_error'] = opt.get('error')
+        out['arms_vs_b1e'] = compare(opt.get('arms', {}), st['b1e']['arms'])
+        out['passed'] = ok(out['arms_vs_b1c']) and ok(out['arms_vs_b1e']) and opt['status'] == 'complete'
+    except Exception as exc:
+        out.update(passed=False, error=f'{type(exc).__name__}: {exc}', traceback=traceback.format_exc()[-4000:])
+    out['wall_s'] = time.perf_counter() - t0
+    out['loadavg_end'] = os.getloadavg()
+    return out
+
+
+def _summarise_compare(c):
+    if isinstance(c, dict) and 'compared' in c:
+        return {'compared': c['compared'], 'max_rel': c['max_rel'], 'mismatch': c['mismatch'][:20],
+                'missing': c['missing'][:20], 'ok': ok(c)}
+    if isinstance(c, dict):
+        return {k: _summarise_compare(v) for k, v in c.items()}
+    return c
+
+
+def next_precheck_name(root=HERE):
+    """The first free name of record: precheck, precheck_2, precheck_3, ... (a json or a work folder takes a name)."""
+    root = Path(root)
+    for name in PRECHECK_NAMES:
+        if not (root / f'{name}.json').exists() and not (root / name).exists():
+            return name
+    raise SystemExit('no free precheck name')
+
+
+def latest_precheck_name(root=HERE):
+    """The most recent precheck of record (the highest name taken), or None."""
+    root = Path(root)
+    taken = [n for n in PRECHECK_NAMES if (root / f'{n}.json').exists() or (root / n).exists()]
+    return taken[-1] if taken else None
+
+
+def precheck(quick):
+    name = 'precheck_quick' if quick else next_precheck_name()
+    out_json = HERE / f'{name}.json'
+    work = HERE / name
+    if out_json.exists() or work.exists():
+        raise SystemExit(f'{out_json.name} or {work.name}/ exists: never overwritten')
+    work.mkdir()
+    shutil.copyfile(__file__, work / 'runner_snapshot.py.txt')                      # the code of this run, archived
+    result = {'kind': 'development check (not the precheck of record)' if quick else 'precheck of record',
+              'name': name, 'utc_start': utc(), 'plan_sha256': PLAN_SHA256, 'runner_sha256': RUNNER_SHA256,
+              'reused_sha256': {str(p): h for p, h in REUSED.items()}, 'b1_tree_live_copy': p4.live_copy_tree(),
+              'unit': f'{CIRCUIT} 0 (a B1 unit; never a fresh unit)'}
+    result['b1_tree_ok'] = result['b1_tree_live_copy'] == B1_TREE
+    result['seeds'] = seed_checks()
+    if quick:
+        import multiprocessing as mp
+        with mp.get_context('fork').Pool(2, maxtasksperchild=1) as pool:
+            parts = pool.map(_dispatch_quick, [('A', 0, str(work / 'stage_A')), ('B', 0, str(work / 'stage_B'))])
+        result['A'], result['B'] = parts
+        result['passed'] = bool(result['b1_tree_ok'] and result['seeds']['passed'] and parts[0]['passed']
+                                and parts[1]['passed'])
+    else:
+        rec = run_unit(0, work / 'stage')
+        result['unit_check'] = check_full(rec, 0, work / 'stage')
+        result['unit_check']['failure'] = {k: rec.get(k) for k in ('failure_class', 'error_type', 'error_where')}
+        result['passed'] = bool(result['b1_tree_ok'] and result['seeds']['passed'] and result['unit_check']['passed'])
+    result['utc_end'] = utc()
+    result = _summarise_compare(result)
+    out_json.write_text(json.dumps(result, indent=1, default=float))
+    print(json.dumps(result, indent=1, default=float))
+    # values of B1 unit 0 only (already published); no fresh unit is touched by any precheck
+
+
+def _dispatch_quick(task):
+    part, index, root = task
+    return _quick_data((index, root)) if part == 'A' else _quick_arms((index, root))
+
+
+# -- launch --------------------------------------------------------------------------------------------------------------
+
+def record_path(root, index):
+    return Path(root) / 'records' / f'{CIRCUIT}_{index:02d}.json'
+
+
+def require_ready(root):
+    """Refuses unless PLAN.md matches PLAN.sha256; this runner's SHA-256 is recorded in PLAN.md (or, after a disclosed
+    deviation, in PLAN_LOG.md); the latest precheck of record passed under this PLAN.md, run by this runner with the
+    reused runners and the B1 tree of record, which is still the live copy; and at least 8 h remain before the DQ
+    calendar cut-off."""
+    root = Path(root)
+    plan, plan_hash = root / 'PLAN.md', root / 'PLAN.sha256'
+    if not plan.exists() or not plan_hash.exists():
+        raise SystemExit('PLAN.md is not hashed yet (PLAN.md and PLAN.sha256 needed): no launch')
+    want = plan_hash.read_text().split()[0]
+    have = sha256_file(plan)
+    if want != have:
+        raise SystemExit(f'PLAN.md sha256 {have} differs from PLAN.sha256 {want}: no launch')
+    if sha256_file(__file__) != RUNNER_SHA256:
+        raise SystemExit('runner.py changed after this process imported it: no launch')
+    log = root / 'PLAN_LOG.md'
+    if RUNNER_SHA256 not in plan.read_text() and not (log.exists() and RUNNER_SHA256 in log.read_text()):
+        raise SystemExit(f'runner.py {RUNNER_SHA256} is recorded neither in PLAN.md nor in PLAN_LOG.md: no launch')
+    name = latest_precheck_name(root)
+    if name is None:
+        raise SystemExit('no precheck of record (precheck.json): run `runner.py precheck` first')
+    pre = root / f'{name}.json'
+    if not pre.exists():
+        raise SystemExit(f'{name}/ exists without {name}.json: that precheck is running or was interrupted; no launch')
+    p = json.loads(pre.read_text())
+    if not (p.get('passed') is True and p.get('plan_sha256') == have and p.get('kind') == 'precheck of record'):
+        raise SystemExit(f'{pre.name}, the latest precheck of record, did not pass for this PLAN.md: no launch '
+                         '(failure rule 4: diagnose, log in PLAN_LOG, rerun `runner.py precheck`)')
+    if p.get('runner_sha256') != RUNNER_SHA256:
+        raise SystemExit(f'{pre.name} was run by runner.py {p.get("runner_sha256")}, not by this runner.py '
+                         f'{RUNNER_SHA256}: no launch')
+    if p.get('reused_sha256') != {str(k): v for k, v in REUSED.items()}:
+        raise SystemExit(f'{pre.name} was run with other reused runners: no launch')
+    tree = p4.live_copy_tree()
+    if not (p.get('b1_tree_live_copy') == B1_TREE and tree == B1_TREE):
+        raise SystemExit(f'B1 tree: precheck {p.get("b1_tree_live_copy")}, live copy now {tree}, of record {B1_TREE}: '
+                         'no launch')
+    hours = (datetime.datetime.fromisoformat(dq.CALENDAR_CUTOFF_UTC)
+             - datetime.datetime.now(datetime.timezone.utc)).total_seconds() / 3600
+    if hours < 8:
+        raise SystemExit(f'only {hours:.1f} h before the DQ calendar cut-off {dq.CALENDAR_CUTOFF_UTC}; the B1 namespaces '
+                         'close then (dq_runtime.require_open). Not launched; see README_BUILD.md, open risks.')
+    return {'plan_sha256': have, 'hours_to_cutoff': hours, 'precheck': pre.name}
+
+
+def read_records(root):
+    """{unit index: record} of records/; an unreadable file counts as a failure (it is never skipped as done)."""
+    out = {}
+    for f in sorted((Path(root) / 'records').glob(f'{CIRCUIT}_*.json')):
+        i = int(f.stem.split('_')[-1])
+        try:
+            out[i] = json.loads(f.read_text())
+        except ValueError as exc:
+            out[i] = {'index': i, 'status': 'unreadable', 'error_type': 'unreadable record', 'error': str(exc)}
+    return out
+
+
+def failure_types(records):
+    """Failure type (the exception class) -> unit indices; failure rule 2 counts these."""
+    out = {}
+    for i, r in sorted(records.items()):
+        if r.get('status') != 'complete':
+            out.setdefault(r.get('error_type') or str(r.get('status')), []).append(i)
+    return out
+
+
+def write_record(root, rec, stamp):
+    """Serialise first, then write a temporary file and os.replace it into place: a record is complete JSON or absent,
+    never empty. A record that cannot be serialised becomes a failure record of the same unit, saying so. An existing
+    record is never overwritten (a second record of a unit goes to records_conflict/)."""
+    path = record_path(root, rec['index'])
+    try:
+        text = json.dumps(rec, indent=1, default=float)
+    except Exception as exc:                                                        # noqa: BLE001
+        stub = {k: rec.get(k) for k in ('circuit', 'index', 'plan_sha256', 'runner_sha256', 'utc_start', 'utc_end',
+                                        'wall_s', 'timing')}
+        stub.update(status='failure', failure_class='algorithmic_failure', error_type=type(exc).__name__,
+                    error_where='runner.write_record', original_status=rec.get('status'),
+                    error=f'record not serialisable: {type(exc).__name__}: {exc}')
+        rec, text = stub, json.dumps(stub, indent=1, default=str)
+    if path.exists():
+        path = Path(root) / 'records_conflict' / f'{stamp}_{path.name}'
+        path.parent.mkdir(exist_ok=True)
+        print(f'unit {rec["index"]} already has a record: this one is kept as {path}', flush=True)
+    tmp = path.with_name(f'.{path.name}.{stamp}.{os.getpid()}.tmp')
+    tmp.write_text(text)
+    os.replace(tmp, path)
+    return rec
+
+
+def acquire_lock(root, stamp):
+    """One launch at a time; a stale lock (its pid is gone) is moved to interrupted/<UTC>/."""
+    lock = Path(root) / 'launch.lock'
+    if lock.exists():
+        try:
+            pid = int(json.loads(lock.read_text())['pid'])
+        except (ValueError, KeyError, TypeError):
+            pid = None
+        if pid is not None and Path(f'/proc/{pid}').exists():
+            raise SystemExit(f'another launch is running (pid {pid}, {lock}): no second launch')
+        dest = Path(root) / 'interrupted' / stamp
+        dest.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(lock), str(dest / 'launch.lock'))
+    with open(lock, 'x') as f:
+        f.write(json.dumps({'pid': os.getpid(), 'utc': stamp}))
+    return lock
+
+
+def rerun_once_already(root, index):
+    return any((Path(root) / 'failed_environmental').glob(f'*/{CIRCUIT}_{index:02d}.json'))
+
+
+def _launch_task(args):
+    index, stage_root = args
+    return run_unit(index, stage_root)
+
+
+def launch(workers, root=HERE, task=_launch_task, indices=FRESH, ready=require_ready, canary=False,
+           canary_failure_logged=False, failures_diagnosed=False, rerun_environmental=False):
+    """The fresh units (PLAN.md, run instructions and failure rules 1-3). A unit with a record is skipped; a unit with
+    staged files but no record (interrupted by a crash, reboot or kill) is moved to interrupted/<UTC>/ and rerun from
+    scratch. The launch stops when two units fail with the same exception type (rule 2)."""
+    root = Path(root)
+    info = ready(root)
+    records, stage = root / 'records', root / 'stage'
+    records.mkdir(exist_ok=True)
+    stamp = time.strftime('%Y-%m-%dT%H%M%SZ', time.gmtime())
+    lock = acquire_lock(root, stamp)
+    try:
+        existing = read_records(root)
+        if canary:
+            indices = (CANARY,)
+        elif CANARY in indices:
+            c = existing.get(CANARY)
+            if c is None:
+                raise SystemExit(f'failure rule 1: the canary (unit {CANARY}) has no record; run `runner.py launch '
+                                 '--canary` first and read only its status, certificate and timing (`runner.py status`)')
+            if c.get('status') != 'complete' and not canary_failure_logged:
+                raise SystemExit(f'failure rule 1: the canary failed ({c.get("error_type")}, {c.get("failure_class")}). '
+                                 'Diagnose from status, error and traceback only, log the classification in PLAN_LOG, '
+                                 'then apply rule 2 or 3, or relaunch with --canary-failure-logged (unit-level failure)')
+        repeated = {t: v for t, v in failure_types(existing).items() if len(v) >= 2}
+        if repeated and not failures_diagnosed:
+            raise SystemExit(f'failure rule 2: units share a failure type {repeated}. Diagnose without reading any arm '
+                             'value and log it in PLAN_LOG; then `runner.py supersede --deviation-logged` and rerun every '
+                             'unit from scratch, or relaunch with --failures-diagnosed if the log says they are '
+                             'unit-level failures')
+        acknowledged = set(repeated) if failures_diagnosed else set()
+        env_rerun, env_kept = [], []
+        if rerun_environmental:
+            for i, r in sorted(existing.items()):
+                if i in indices and r.get('status') != 'complete' and r.get('failure_class') == 'environmental':
+                    if rerun_once_already(root, i):
+                        env_kept.append(i)                                    # rerun once only: stays failed
+                        continue
+                    dest = root / 'failed_environmental' / stamp
+                    dest.mkdir(parents=True, exist_ok=True)
+                    shutil.move(str(record_path(root, i)), str(dest / record_path(root, i).name))
+                    env_rerun.append(i)
+            existing = read_records(root)
+        tasks = []
+        for i in indices:
+            if i in existing:
+                continue
+            leftovers = [f for f in stage_files(stage, i) if f.exists()]
+            if leftovers:                                 # a unit killed mid-run: moved aside, redone from scratch
+                dest = root / 'interrupted' / stamp
+                dest.mkdir(parents=True, exist_ok=True)
+                for f in leftovers:
+                    shutil.move(str(f), str(dest / f'{f.parent.name}_{f.name}'))
+            tasks.append((i, str(stage)))
+        snaps = root / 'launch_snapshots'
+        snaps.mkdir(exist_ok=True)
+        shutil.copyfile(__file__, snaps / f'{stamp}_runner.py.txt')                  # the code of this launch
+        with open(root / 'launches.jsonl', 'a') as f:
+            f.write(json.dumps({'utc': stamp, 'workers': workers, 'canary': canary, **info,
+                                'runner_sha256': RUNNER_SHA256,
+                                'reused_sha256': {str(p): h for p, h in REUSED.items()},
+                                'b1_tree_live_copy': p4.live_copy_tree(),
+                                'canary_failure_logged': canary_failure_logged,
+                                'failures_acknowledged': sorted(acknowledged), 'environmental_rerun': env_rerun,
+                                'environmental_kept_failed': env_kept, 'tasks': [t[0] for t in tasks]}) + '\n')
+        stop = None
+        if tasks:
+            import multiprocessing as mp
+            with mp.get_context('fork').Pool(workers, maxtasksperchild=1) as pool:
+                for rec in pool.imap_unordered(task, tasks):
+                    rec = write_record(root, rec, stamp)
+                    print(rec['index'], rec['status'], rec.get('error_type') or '', round(rec.get('wall_s') or 0),
+                          flush=True)
+                    if rec['status'] != 'complete':
+                        kind = rec.get('error_type') or str(rec.get('status'))
+                        same = failure_types(read_records(root)).get(kind, [])
+                        if kind not in acknowledged and len(same) >= 2:
+                            stop = (f'failure rule 2: units {same} failed with {kind}; launch stopped. Diagnose '
+                                    'without reading any arm value, log the fix and the new runner hash in PLAN_LOG, '
+                                    'then `runner.py supersede --deviation-logged` and rerun every unit from scratch')
+                            pool.terminate()
+                            break
+        if stop:
+            with open(root / 'launches.jsonl', 'a') as f:
+                f.write(json.dumps({'utc': utc(), 'stopped': stop}) + '\n')
+            raise SystemExit(stop)
+    finally:
+        try:
+            lock.unlink()
+        except FileNotFoundError:
+            pass
+
+
+def status(root=HERE):
+    """What the operator reads while the units run: counts, statuses, failure classes and errors, certificates,
+    timings, and the units started without a record (the watchdog). Never an arm value."""
+    root = Path(root)
+    recs = read_records(root)
+    now = datetime.datetime.now(datetime.timezone.utc)
+    cert_keys = ('static_failures', 'P1_solve_residual', 'P2_offgrid_max_abs', 'P3_max_abs_logprob', 'P4')
+    out = {'utc': utc(), 'records': len(recs), 'complete': sum(r.get('status') == 'complete' for r in recs.values()),
+           'missing': [i for i in FRESH if i not in recs], 'failure_types': failure_types(recs),
+           'runner_sha256_of_records': sorted({str(r.get('runner_sha256')) for r in recs.values()}),
+           'units': {}}
+    for i, r in sorted(recs.items()):
+        u = {'status': r.get('status'), 'certificate': {k: (r.get('certificate') or {}).get(k) for k in cert_keys},
+             'timing': timing_summary(r)}
+        if r.get('status') != 'complete':
+            u.update({k: r.get(k) for k in ('failure_class', 'error_type', 'error_where', 'error')})
+        out['units'][i] = u
+    running = []
+    for m in sorted((root / 'stage' / 'started').glob(f'{CIRCUIT}_*.json')):
+        i = int(m.stem.split('_')[-1])
+        if i in recs:
+            continue
+        d = json.loads(m.read_text())
+        age = (now - datetime.datetime.fromisoformat(d['utc_start'])).total_seconds()
+        running.append({'index': i, 'pid': d['pid'], 'pid_alive': Path(f'/proc/{d["pid"]}').exists(),
+                        'minutes_since_start': round(age / 60, 1)})
+    out['started_without_record'] = running
+    lock = root / 'launch.lock'
+    out['launch_lock'] = json.loads(lock.read_text()) if lock.exists() else None
+    out['watchdog'] = ('investigate when a unit has run more than 2x the expected unit time without a record, or its '
+                       'worker pid is gone (a SIGKILLed worker hangs the pool): PLAN.md, run instructions')
+    return out
+
+
+def supersede(root=HERE):
+    """Failure rule 2: before every unit is rerun from scratch, records, staged files and rerun trails are moved (never
+    deleted) to superseded/<UTC>/. The canary then runs first again."""
+    root = Path(root)
+    lock = root / 'launch.lock'
+    if lock.exists():
+        raise SystemExit(f'{lock} exists: a launch is running or ended uncleanly; check `runner.py status` first')
+    stamp = time.strftime('%Y-%m-%dT%H%M%SZ', time.gmtime())
+    dest = root / 'superseded' / stamp
+    moved = []
+    for name in ('records', 'stage', 'interrupted', 'failed_environmental', 'records_conflict'):
+        if (root / name).exists():
+            dest.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(root / name), str(dest / name))
+            moved.append(name)
+    with open(root / 'launches.jsonl', 'a') as f:
+        f.write(json.dumps({'utc': stamp, 'superseded': moved, 'to': str(dest), 'runner_sha256': RUNNER_SHA256}) + '\n')
+    print(f'moved {moved} to {dest}; next: `runner.py launch --canary`')
+    return dest
+
+
+if __name__ == '__main__':
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = ap.add_subparsers(dest='cmd', required=True)
+    sub.add_parser('seeds')
+    pc = sub.add_parser('precheck')
+    pc.add_argument('--quick', action='store_true')
+    la = sub.add_parser('launch')
+    la.add_argument('--workers', type=int, default=5, help='values do not depend on it (one torch thread per worker)')
+    la.add_argument('--canary', action='store_true', help='run fresh unit 100 alone (failure rule 1)')
+    la.add_argument('--canary-failure-logged', action='store_true',
+                    help='launch the rest although the canary failed: only after its PLAN_LOG entry (rule 1)')
+    la.add_argument('--failures-diagnosed', action='store_true',
+                    help='launch although >= 2 records share a failure type: only after the PLAN_LOG entry (rule 2)')
+    la.add_argument('--rerun-environmental', action='store_true',
+                    help='move environmental failures aside and rerun them from scratch, once per unit (rule 3)')
+    sub.add_parser('status')
+    sp = sub.add_parser('supersede')
+    sp.add_argument('--deviation-logged', action='store_true', required=True)
+    a = ap.parse_args()
+    if a.cmd == 'seeds':
+        print(json.dumps(seed_checks(), indent=1))
+    elif a.cmd == 'precheck':
+        precheck(a.quick)
+    elif a.cmd == 'status':
+        print(json.dumps(status(), indent=1, default=float))
+    elif a.cmd == 'supersede':
+        supersede()
+    else:
+        launch(1 if a.canary else a.workers, canary=a.canary, canary_failure_logged=a.canary_failure_logged,
+               failures_diagnosed=a.failures_diagnosed, rerun_environmental=a.rerun_environmental)

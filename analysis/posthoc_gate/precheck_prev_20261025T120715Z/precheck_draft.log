@@ -1,0 +1,29 @@
+{
+ "suite": "e1_evaluation",
+ "episodes": 80,
+ "identical": 80,
+ "all_identical": true,
+ "segment_identity_all": true,
+ "pre_gate_reward_all_zero": true,
+ "kept_plus_pre_equals_J_all": true,
+ "gate_fix_rows_equal_fixes_all": true,
+ "min_segment_duration_s": 1.3559999999999945,
+ "gate_rows_total": 310,
+ "gate_rows_per_positive_episode": 7.75,
+ "gate_rows_per_no_human_episode": 0.0,
+ "resamples_total": 0,
+ "no_anchor_skips_total": 9,
+ "wall_s": 555.604689749016,
+ "workers": 2,
+ "episode_wall_s_mean": {
+  "positive": 22.577131441373787,
+  "no_human": 4.116503009351436
+ }
+}
+{
+ "passed": true,
+ "reproduced": "80/80",
+ "unit_tests": true,
+ "smoke": true,
+ "wall_s": 1713.1551336720004
+}

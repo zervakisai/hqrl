@@ -1,0 +1,53 @@
+{
+ "R_A": {
+  "quantum": {
+   "mean": -0.20945181983339864,
+   "lo95": -0.2230419395953325,
+   "hi95": -0.19586170007146478,
+   "holm_adjusted_p": 6.996332152964562e-12,
+   "reading_R_A": "holds",
+   "episode_level_agrees": true
+  },
+  "bottleneck": {
+   "mean": -0.20685742905397625,
+   "lo95": -0.23209600909134023,
+   "hi95": -0.18161884901661227,
+   "holm_adjusted_p": 1.6116826569520121e-09,
+   "reading_R_A": "holds",
+   "episode_level_agrees": true
+  },
+  "mlp": {
+   "mean": -0.19210133992741651,
+   "lo95": -0.2095983430719613,
+   "hi95": -0.17460433678287174,
+   "holm_adjusted_p": 2.089264746355182e-10,
+   "reading_R_A": "holds",
+   "episode_level_agrees": true
+  },
+  "surrogate625": {
+   "mean": -0.1657383768942336,
+   "lo95": -0.18398613746861797,
+   "hi95": -0.14749061631984922,
+   "holm_adjusted_p": 1.0741421396619966e-09,
+   "reading_R_A": "holds",
+   "episode_level_agrees": true
+  }
+ },
+ "R_B": {
+  "best_family_argmax": "surrogate625",
+  "ratio_rule_over_best": 2.91637306368115,
+  "readings": {
+   "2x": "holds",
+   "3x": "not resolved"
+  }
+ },
+ "reading_text": [
+  "HQ (quantum), argmax: weighted J -0.004 (95% t interval -0.017 to 0.010, 12 blocks; sampled 0.024; argmax minus sampled -0.028, -0.043 to -0.013, descriptive). Minus the rule (0.206 on the same 80 episodes): -0.209 (-0.223 to -0.196), Holm-adjusted p = 7e-12: the systems gap holds under the argmax read-out; the episode-level interval agrees (episode-level -0.257 to -0.162). Per episode: 0.30 timely credited and 0.49 false reports (sampled 0.49 and 0.33).",
+  "C-matched (bottleneck), argmax: weighted J -0.001 (95% t interval -0.026 to 0.024, 12 blocks; sampled 0.037; argmax minus sampled -0.039, -0.061 to -0.016, descriptive). Minus the rule (0.206 on the same 80 episodes): -0.207 (-0.232 to -0.182), Holm-adjusted p = 1.6e-09: the systems gap holds under the argmax read-out; the episode-level interval agrees (episode-level -0.254 to -0.160). Per episode: 0.53 timely credited and 0.70 false reports (sampled 0.65 and 0.33).",
+  "C-strong (mlp), argmax: weighted J 0.014 (95% t interval -0.004 to 0.031, 12 blocks; sampled 0.052; argmax minus sampled -0.038, -0.056 to -0.021, descriptive). Minus the rule (0.206 on the same 80 episodes): -0.192 (-0.210 to -0.175), Holm-adjusted p = 2.1e-10: the systems gap holds under the argmax read-out; the episode-level interval agrees (episode-level -0.237 to -0.148). Per episode: 0.43 timely credited and 0.31 false reports (sampled 0.79 and 0.25).",
+  "Surrogate625 (surrogate625), argmax: weighted J 0.040 (95% t interval 0.022 to 0.058, 12 blocks; sampled 0.045; argmax minus sampled -0.005, -0.020 to +0.010, descriptive). Minus the rule (0.206 on the same 80 episodes): -0.166 (-0.184 to -0.147), Holm-adjusted p = 1.1e-09: the systems gap holds under the argmax read-out; the episode-level interval agrees (episode-level -0.205 to -0.127). Per episode: 0.82 timely credited and 0.43 false reports (sampled 0.73 and 0.29).",
+  "R-B: the rule earns 2.39 timely credited reports per episode, 2.92 times the best family under argmax (Surrogate625, 0.82; block bootstrap 2.17 to 4.13); at least 2x: holds; at least 3x: not resolved (sampled: 3.01 times C-strong).",
+  "These block-level intervals condition on the 80 e1_evaluation episodes (post hoc, evaluation only)."
+ ]
+}
+written /home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_e1argmax/argmax_results.json

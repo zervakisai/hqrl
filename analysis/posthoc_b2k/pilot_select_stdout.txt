@@ -1,0 +1,178 @@
+{
+ "utc": "2026-10-25T11:40:39+00:00",
+ "stage": "1",
+ "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68",
+ "statistic": "run mean of metrics.approx_kl over update records; arm value = mean over pilot blocks",
+ "arms": {
+  "quantum": {
+   "candidates_used": [
+    0.001,
+    0.0014,
+    0.002
+   ],
+   "mean_kl": {
+    "1.00e-03": 0.003991147947524192,
+    "1.40e-03": 0.00518348498195803,
+    "2.00e-03": 0.00581397211608245
+   },
+   "level_a": 0.21731175489207497,
+   "slope_fixed": 0.8421691057010121,
+   "lr_selected_raw": 0.0011634590198722787,
+   "lr_selected": 0.00116,
+   "lr_selected_str": "1.16e-03",
+   "range_guard": {
+    "lo": 0.0006666666666666666,
+    "hi": 0.003,
+    "inside": true
+   },
+   "stage_1b_needed": false,
+   "descriptive_not_used": {
+    "ols_slope_pilot": 0.5405123554149576,
+    "lr_with_ols_slope": 0.0010453481814451033,
+    "predicted_kl_at_selected_lr": 0.004189425830082755
+   },
+   "target": {
+    "value": 0.00419994415996206,
+    "source": "stored CMLR C-matched (bottleneck, lr 1e-2), blocks 0-35"
+   },
+   "candidates": [
+    "1.00e-03",
+    "1.40e-03",
+    "2.00e-03"
+   ],
+   "per_run": {
+    "P_quantum_lr1.00e-03__b90": {
+     "mean": 0.003976842859801666,
+     "median": 0.0029386489989572584,
+     "updates": 56
+    },
+    "P_quantum_lr1.00e-03__b91": {
+     "mean": 0.003367934191704852,
+     "median": 0.0019910782549191425,
+     "updates": 57
+    },
+    "P_quantum_lr1.00e-03__b92": {
+     "mean": 0.004628666791066059,
+     "median": 0.003631131481817094,
+     "updates": 56
+    },
+    "P_quantum_lr1.40e-03__b93": {
+     "mean": 0.006098550195927115,
+     "median": 0.005882721860992179,
+     "updates": 56
+    },
+    "P_quantum_lr1.40e-03__b94": {
+     "mean": 0.004776771488873613,
+     "median": 0.0038142238043059984,
+     "updates": 57
+    },
+    "P_quantum_lr1.40e-03__b95": {
+     "mean": 0.004675133261073363,
+     "median": 0.004225141736270207,
+     "updates": 56
+    },
+    "P_quantum_lr2.00e-03__b96": {
+     "mean": 0.008164649596708934,
+     "median": 0.006570969342765668,
+     "updates": 56
+    },
+    "P_quantum_lr2.00e-03__b97": {
+     "mean": 0.0020076547651229374,
+     "median": 0.0009339516750545242,
+     "updates": 57
+    },
+    "P_quantum_lr2.00e-03__b98": {
+     "mean": 0.0072696119864154776,
+     "median": 0.006311880327394684,
+     "updates": 56
+    }
+   },
+   "failed_runs": []
+  },
+  "surrogate625": {
+   "candidates_used": [
+    0.0005,
+    0.0007,
+    0.001
+   ],
+   "mean_kl": {
+    "5.00e-04": 0.00500086487259873,
+    "7.00e-04": 0.008656018604932784,
+    "1.00e-03": 0.008353437770635722
+   },
+   "level_a": 1.867108401411507,
+   "slope_fixed": 0.9385004171529107,
+   "lr_selected_raw": 0.0007786293836608381,
+   "lr_selected": 0.000779,
+   "lr_selected_str": "7.79e-04",
+   "range_guard": {
+    "lo": 0.0003333333333333333,
+    "hi": 0.0015,
+    "inside": true
+   },
+   "stage_1b_needed": false,
+   "descriptive_not_used": {
+    "ols_slope_pilot": 0.7317964420940576,
+    "lr_with_ols_slope": 0.0008008729798197741,
+    "predicted_kl_at_selected_lr": 0.007826750382943769
+   },
+   "target": {
+    "value": 0.007823255686871039,
+    "source": "stored B2 HQ (quantum, lr 3e-3), blocks 0-35"
+   },
+   "candidates": [
+    "5.00e-04",
+    "7.00e-04",
+    "1.00e-03"
+   ],
+   "per_run": {
+    "P_surrogate625_lr5.00e-04__b90": {
+     "mean": 0.00445755680584752,
+     "median": 0.00379010020368163,
+     "updates": 57
+    },
+    "P_surrogate625_lr5.00e-04__b91": {
+     "mean": 0.0050058107119678235,
+     "median": 0.004079597800054098,
+     "updates": 56
+    },
+    "P_surrogate625_lr5.00e-04__b92": {
+     "mean": 0.005539227099980846,
+     "median": 0.004474788306139009,
+     "updates": 56
+    },
+    "P_surrogate625_lr7.00e-04__b93": {
+     "mean": 0.00848093150931919,
+     "median": 0.00820156644266886,
+     "updates": 56
+    },
+    "P_surrogate625_lr7.00e-04__b94": {
+     "mean": 0.009155136324281015,
+     "median": 0.007825533469769566,
+     "updates": 56
+    },
+    "P_surrogate625_lr7.00e-04__b95": {
+     "mean": 0.008331987981198144,
+     "median": 0.007974535795618722,
+     "updates": 56
+    },
+    "P_surrogate625_lr1.00e-03__b96": {
+     "mean": 0.010062887162222802,
+     "median": 0.008683342755077397,
+     "updates": 56
+    },
+    "P_surrogate625_lr1.00e-03__b97": {
+     "mean": 0.003105105617159831,
+     "median": 0.00044075928297355625,
+     "updates": 56
+    },
+    "P_surrogate625_lr1.00e-03__b98": {
+     "mean": 0.011892320532524533,
+     "median": 0.0108223769435549,
+     "updates": 56
+    }
+   },
+   "failed_runs": []
+  }
+ }
+}

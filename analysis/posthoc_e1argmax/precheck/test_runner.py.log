@@ -1,0 +1,391 @@
+
+--- stderr ---
+test_bound_plan_passes (__main__.Binding.test_bound_plan_passes) ... ok
+test_listed_scripts_parse (__main__.Binding.test_listed_scripts_parse) ... ok
+test_refusals (__main__.Binding.test_refusals) ... ok
+test_files_touched (__main__.Helpers.test_files_touched) ... ok
+test_light (__main__.Helpers.test_light) ... ok
+test_lpt (__main__.Helpers.test_lpt) ... ok
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/e1_study.py:346: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/jobs.jsonl' mode='r' encoding='UTF-8'>
+  rows = [json.loads(l) for l in open(Path(stage_dir) / 'jobs.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-4_ent0__b0/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-4_ent0__b1/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-4_ent0__b2/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-4_ent0.01__b0/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-4_ent0.01__b1/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-4_ent0.01__b2/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr1e-3_ent0__b0/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr1e-3_ent0__b1/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr1e-3_ent0__b2/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr1e-3_ent0.01__b0/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr1e-3_ent0.01__b1/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr1e-3_ent0.01__b2/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-3_ent0__b0/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-3_ent0__b1/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-3_ent0__b2/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-3_ent0.01__b0/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-3_ent0.01__b1/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/quantum__lr3e-3_ent0.01__b2/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-4_ent0__b0/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-4_ent0__b1/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-4_ent0__b2/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-4_ent0.01__b0/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-4_ent0.01__b1/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-4_ent0.01__b2/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr1e-3_ent0__b0/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr1e-3_ent0__b1/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr1e-3_ent0__b2/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr1e-3_ent0.01__b0/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr1e-3_ent0.01__b1/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr1e-3_ent0.01__b2/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-3_ent0__b0/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-3_ent0__b1/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-3_ent0__b2/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-3_ent0.01__b0/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-3_ent0.01__b1/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/bottleneck__lr3e-3_ent0.01__b2/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-4_ent0__b0/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-4_ent0__b1/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-4_ent0__b2/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-4_ent0.01__b0/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-4_ent0.01__b1/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-4_ent0.01__b2/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr1e-3_ent0__b0/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr1e-3_ent0__b1/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr1e-3_ent0__b2/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr1e-3_ent0.01__b0/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr1e-3_ent0.01__b1/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr1e-3_ent0.01__b2/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-3_ent0__b0/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-3_ent0__b1/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-3_ent0__b2/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-3_ent0.01__b0/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-3_ent0.01__b1/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/mlp__lr3e-3_ent0.01__b2/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-4_ent0__b0/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-4_ent0__b1/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-4_ent0__b2/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-4_ent0.01__b0/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-4_ent0.01__b1/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-4_ent0.01__b2/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr1e-3_ent0__b0/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr1e-3_ent0__b1/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr1e-3_ent0__b2/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr1e-3_ent0.01__b0/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr1e-3_ent0.01__b1/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr1e-3_ent0.01__b2/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-3_ent0__b0/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-3_ent0__b1/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-3_ent0__b2/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-3_ent0.01__b0/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-3_ent0.01__b1/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/tuning/surrogate625__lr3e-3_ent0.01__b2/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/e1_study.py:346: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/jobs.jsonl' mode='r' encoding='UTF-8'>
+  rows = [json.loads(l) for l in open(Path(stage_dir) / 'jobs.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b10/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b11/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b12/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b13/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b14/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b15/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b16/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b17/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b18/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b19/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b20/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/quantum__lr3e-3_ent0__b21/run/quantum/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b10/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b11/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b12/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b13/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b14/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b15/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b16/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b17/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b18/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b19/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b20/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/bottleneck__lr3e-3_ent0__b21/run/bottleneck/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b10/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b11/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b12/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b13/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b14/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b15/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b16/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b17/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b18/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b19/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b20/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/mlp__lr3e-3_ent0__b21/run/mlp/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b10/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b11/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b12/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b13/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b14/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b15/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b16/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b17/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b18/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b19/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b20/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/konstantinos/Documents/ChatGPT/idea_e1/scripts/gnss_qrl_runtime/p4_tuning.py:259: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/konstantinos/Documents/ChatGPT/idea_e1/output/study/gnss_qrl_v1/e1/e1_campaign_v2/evaluation/surrogate625__lr1e-3_ent0__b21/run/surrogate625/metrics.jsonl' mode='r' encoding='UTF-8'>
+  lines = [json.loads(l) for l in open(attempt / 'run' / family / 'metrics.jsonl')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_48 (__main__.PolicyTable.test_48) ... ok
+test_digest_stable (__main__.PolicyTable.test_digest_stable) ... ok
+test_stored_order_is_the_rule_order (__main__.PolicyTable.test_stored_order_is_the_rule_order) ... ok
+test_invalid (__main__.Records.test_invalid) ... ok
+test_read_record_unparsable (__main__.Records.test_read_record_unparsable) ... ok
+test_valid (__main__.Records.test_valid) ... ok
+test_credited (__main__.Rows.test_credited) ... ok
+test_digest (__main__.Rows.test_digest) ... ok
+test_identical (__main__.Rows.test_identical) ... ok
+test_numpy_float_is_compared_as_json_stores_it (__main__.Rows.test_numpy_float_is_compared_as_json_stores_it) ... ok
+test_one_ulp (__main__.Rows.test_one_ulp) ... ok
+test_type_and_fields_and_count (__main__.Rows.test_type_and_fields_and_count) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 3.414s
+
+OK

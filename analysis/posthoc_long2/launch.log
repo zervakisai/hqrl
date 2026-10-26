@@ -1,0 +1,13 @@
+main: 12 of 12 runs to do, 12 workers
+main bottleneck__b7 completed 21436 
+main bottleneck__b8 completed 22772 
+main bottleneck__b9 completed 24236 
+main bottleneck__b6 completed 25353 
+main mlp__b7 completed 25376 
+main mlp__b8 completed 25542 
+main bottleneck__b5 completed 27549 
+main mlp__b4 completed 27824 
+main mlp__b5 completed 31092 
+main bottleneck__b4 completed 31919 
+main mlp__b9 completed 33136 
+main mlp__b6 completed 33648 

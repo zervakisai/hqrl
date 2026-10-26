@@ -1,0 +1,210 @@
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+104 complete  1211
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+102 complete  1436
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+101 complete  1651
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+105 complete  2101
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+103 complete  2224
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+106 complete  1721
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+107 complete  1726
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+108 complete  2080
+110 complete  1549
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+109 complete  1912
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+111 complete  1450
+112 complete  1460
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+116 complete  1226
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+114 complete  2060
+115 complete  1905
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+113 complete  2461
+117 complete  1693
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+118 complete  1808
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+119 complete  1979
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+122 complete  1551
+120 complete  2169
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+121 complete  2077
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+123 complete  1326
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+125 complete  1331
+126 complete  1294
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+127 complete  1540
+124 complete  2120
+128 complete  1459
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+131 complete  1493
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+132 complete  1748
+133 complete  1522
+130 complete  2429
+129 complete  2724
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+135 complete  1079
+134 complete  1824

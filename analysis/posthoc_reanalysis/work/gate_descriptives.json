@@ -1,0 +1,324 @@
+{
+ "source": "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_gate/gate_results.json",
+ "source_sha256": "22c92f36e93d347d2710b55485a1cedb8e812e7d27f81568f7ce57cca06a9cea",
+ "plan_sha256": "20faccb84e4f9c79bd821af38a2190b0f0c110b2ac7c61f49e05879857e67a7c",
+ "note": "descriptive, post hoc summaries over blocks of gate_results.json; no test, no reading",
+ "blocks_D_positive": 11,
+ "blocks": 12,
+ "D_min": -4.173656185840757e-05,
+ "D_max": 0.0060588749777863715,
+ "rule_J": 0.20564463190957744,
+ "gate_J": {
+  "mean": 0.2086444789103443,
+  "min": 0.20560289534771903,
+  "max": 0.2117035068873638,
+  "n": 12
+ },
+ "fixes_per_positive_episode": {
+  "gate": {
+   "mean": 3.889583333333333,
+   "min": 3.45,
+   "max": 4.6,
+   "n": 12
+  },
+  "rule": 4.125
+ },
+ "fp_per_positive_episode": {
+  "gate": {
+   "mean": 0.12708333333333335,
+   "min": 0.1,
+   "max": 0.15,
+   "n": 12
+  },
+  "rule": 0.15
+ },
+ "tp_timely_per_positive_episode": {
+  "gate": {
+   "mean": 4.821584108816079,
+   "min": 4.7760651453236775,
+   "max": 4.8706232670962155,
+   "n": 12
+  },
+  "rule": 4.777004217965491
+ },
+ "return_rate": {
+  "mean": 1.0,
+  "min": 1.0,
+  "max": 1.0,
+  "n": 12
+ },
+ "infrastructure_episodes": 0,
+ "gate_rows_per_positive_episode": {
+  "mean": 7.89375,
+  "min": 7.75,
+  "max": 8.025,
+  "n": 12
+ },
+ "fix_rate_by_rms_m": {
+  "[0,1.0)": {
+   "mean": 0.053051643192488264,
+   "min": 0.0,
+   "max": 0.43661971830985913,
+   "n": 12
+  },
+  "[1.0,1.5)": {
+   "mean": 0.01622205428001564,
+   "min": 0.0,
+   "max": 0.05194805194805195,
+   "n": 12
+  },
+  "[1.5,2.0)": {
+   "mean": 0.8374443944428241,
+   "min": 0.6,
+   "max": 1.0,
+   "n": 12
+  },
+  "[2.0,99)": {
+   "mean": 0.9268964608765503,
+   "min": 0.8130841121495327,
+   "max": 1.0,
+   "n": 12
+  }
+ },
+ "per_cell_d_mean_over_blocks": {
+  "d2__nominal_2700s__no_human": 0.0,
+  "d2__nominal_2700s__positive": -0.0008223994320305594,
+  "d2__tight_derived__no_human": 0.0,
+  "d2__tight_derived__positive": 0.00042795094545566354,
+  "d4__nominal_2700s__no_human": 0.0,
+  "d4__nominal_2700s__positive": 0.0012260082715081116,
+  "d4__tight_derived__no_human": 0.0,
+  "d4__tight_derived__positive": 0.014167675218901119
+ },
+ "per_cell_blocks_positive": {
+  "d2__nominal_2700s__positive": 5,
+  "d2__tight_derived__positive": 4,
+  "d4__nominal_2700s__positive": 10,
+  "d4__tight_derived__positive": 11
+ },
+ "sampled_readout_across_blocks": {
+  "n": 12,
+  "mean": -0.001630765624888367,
+  "sd": 0.0014268840631310971,
+  "se": 0.00041190594897556296,
+  "lo95": -0.0025373645059370447,
+  "hi95": -0.0007241667438396891,
+  "lo90": -0.0023705012653874626,
+  "hi90": -0.0008910299843892712,
+  "p_two_sided": 0.0022376105160522184,
+  "dz": -1.1428858636979098,
+  "tost_p": 5.346047543705689e-07,
+  "tost_p_lower": 5.346047543705689e-07,
+  "tost_p_upper": 1.0775089562172886e-09,
+  "delta": 0.0056,
+  "mean_report_equivalents": -0.029353781247990603,
+  "share_negative": 0.9166666666666666,
+  "share_zero": 0.0
+ },
+ "per_cell_weighted_contribution": {
+  "d2__nominal_2700s__no_human": 0.0,
+  "d2__nominal_2700s__positive": -0.00016447988640611188,
+  "d2__tight_derived__no_human": 0.0,
+  "d2__tight_derived__positive": 8.559018909113271e-05,
+  "d4__nominal_2700s__no_human": 0.0,
+  "d4__nominal_2700s__positive": 0.00024520165430162234,
+  "d4__tight_derived__no_human": 0.0,
+  "d4__tight_derived__positive": 0.002833535043780224
+ },
+ "learning_curve_dev": {
+  "grid": [
+   0,
+   3200,
+   6400,
+   9600,
+   12800
+  ],
+  "gate_minus_rule_mean": [
+   -0.10316693824552368,
+   -0.0015365988534508425,
+   -0.0008079809000968788,
+   -0.0004387373813217327,
+   -0.0002848737730924168
+  ],
+  "blocks_above_rule": [
+   0,
+   4,
+   3,
+   5,
+   6
+  ],
+  "note": "e1_development read-outs (development episodes), argmax"
+ },
+ "p_fix_after_last_update": {
+  "rms_lt_1.5": {
+   "mean": 0.1036377783822805,
+   "min": 0.017676282075400934,
+   "max": 0.33202418244438486,
+   "n": 12
+  },
+  "rms_ge_1.5": {
+   "mean": 0.8684528533462772,
+   "min": 0.796650268125421,
+   "max": 0.9356353125926095,
+   "n": 12
+  }
+ },
+ "approx_kl_last10_updates_mean": {
+  "mean": 0.0068696855811250295,
+  "min": 0.0054431441281389695,
+  "max": 0.0084550243485574,
+  "n": 12
+ },
+ "training_gate_decisions": {
+  "mean": 12971.583333333334,
+  "min": 12948.0,
+  "max": 12989.0,
+  "n": 12
+ },
+ "training_episodes": {
+  "mean": 2074.5833333333335,
+  "min": 2043.0,
+  "max": 2100.0,
+  "n": 12
+ },
+ "per_episode": {
+  "note": "post hoc, descriptive; not in the plan",
+  "false_report_J_split": {
+   "two_favourable": 0.0022222222222222222,
+   "third": -0.0007407407407407407,
+   "other_episodes": -0.000462962962962963,
+   "other_episodes_with_change": [
+    "d2__nominal_2700s__positive r4",
+    "d2__tight_derived__positive r3",
+    "d4__nominal_2700s__positive r8"
+   ],
+   "total": 0.0010185185185185186
+  },
+  "top2": [
+   {
+    "cell_id": "d4__tight_derived__positive",
+    "seed": 20261827004,
+    "realization": 4,
+    "mean_d": 0.08461436070393286,
+    "weighted_contribution": 0.0016922872140786571,
+    "blocks_above_rule": 8,
+    "blocks_below_rule": 0,
+    "rule_fp": 2,
+    "mean_fp_change": -1.3333333333333333,
+    "blocks_fp_lower": 8,
+    "blocks_fp_higher": 0,
+    "fp_change_values": [
+     -2.0,
+     0.0
+    ]
+   },
+   {
+    "cell_id": "d4__tight_derived__positive",
+    "seed": 20261827001,
+    "realization": 1,
+    "mean_d": 0.06016538998898907,
+    "weighted_contribution": 0.0012033077997797815,
+    "blocks_above_rule": 9,
+    "blocks_below_rule": 0,
+    "rule_fp": 1,
+    "mean_fp_change": -0.6666666666666666,
+    "blocks_fp_lower": 8,
+    "blocks_fp_higher": 0,
+    "fp_change_values": [
+     -1.0,
+     0.0
+    ]
+   }
+  ],
+  "largest_negative": {
+   "cell_id": "d4__tight_derived__positive",
+   "seed": 20261827006,
+   "realization": 6,
+   "mean_d": -0.06219853394427521,
+   "weighted_contribution": -0.001243970678885504,
+   "blocks_above_rule": 0,
+   "blocks_below_rule": 8,
+   "rule_fp": 0,
+   "mean_fp_change": 0.6666666666666666,
+   "blocks_fp_lower": 0,
+   "blocks_fp_higher": 8,
+   "fp_change_values": [
+    0.0,
+    1.0
+   ]
+  },
+  "top2_weighted_contribution": 0.0028955950138584386,
+  "without_top2": {
+   "mean": 0.00010425198690842818,
+   "p_two_sided": 0.7220803283367487
+  },
+  "without_top2_and_largest_negative": {
+   "mean": 0.0013482226657939324,
+   "p_two_sided": 0.0021189323422164297
+  },
+  "episodes_mean_d_positive": 32,
+  "episodes_mean_d_negative": 8
+ },
+ "precheck": {
+  "passed": true,
+  "unit_tests": 33,
+  "unit_tests_passed": true,
+  "rule_reproduction": "80/80",
+  "rule_gate_rows_per_positive_episode": 7.75,
+  "smoke_passed": true
+ },
+ "pre_gate_reward_all_zero": true,
+ "dropped_reward_all_zero": true,
+ "unweighted_80_episode_d": {
+  "n": 12,
+  "mean": 0.0018749043754792917,
+  "sd": 0.001297063593750392,
+  "se": 0.0003744300075039261,
+  "lo95": 0.0010507894854701492,
+  "hi95": 0.002699019265488434,
+  "lo90": 0.0012024712093357498,
+  "hi90": 0.0025473375416228336,
+  "p_two_sided": 0.00039788881506418915,
+  "dz": 1.445499191028948,
+  "tost_p": 3.891308354050251e-07,
+  "tost_p_lower": 2.725156133651818e-10,
+  "tost_p_upper": 3.891308354050251e-07,
+  "delta": 0.0056,
+  "mean_report_equivalents": 0.03374827875862725,
+  "share_negative": 0.08333333333333333,
+  "share_zero": 0.0
+ },
+ "episode_level": {
+  "n": 40,
+  "mean": 0.002999847000766867,
+  "sd": 0.015869553131166975,
+  "se": 0.0025091966671772236,
+  "lo95": -0.002075482314519006,
+  "hi95": 0.00807517631605274,
+  "lo90": -0.0012278360392407573,
+  "hi90": 0.007227530040774491,
+  "p_two_sided": 0.23909481611084468,
+  "dz": 0.18903159880887407,
+  "tost_p": 0.15323432056299294,
+  "tost_p_lower": 0.0007253793328871291,
+  "tost_p_upper": 0.15323432056299294,
+  "delta": 0.0056,
+  "mean_report_equivalents": 0.0539972460138036,
+  "share_negative": 0.2,
+  "share_zero": 0.0,
+  "episodes": 40,
+  "episodes_used": "target-present",
+  "blocks": 12,
+  "weight_total": 0.8,
+  "weights_equal": true,
+  "d_mean_unweighted": 0.003749808750958583,
+  "d_sd": 0.01983694141395872,
+  "share_episodes_d_negative": 0.2,
+  "share_episodes_d_zero": 0.0,
+  "method": "one-sample t of u_e = n w_e d_e, df = n - 1; w_e = cell weight / episodes in the cell"
+ },
+ "gain_split_eq1": {
+  "timely_J": 0.00198132848224838,
+  "false_report_J": 0.0010185185185185173
+ }
+}

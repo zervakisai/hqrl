@@ -1,0 +1,24 @@
+{
+ "provisional": false,
+ "counts": {
+  "planned": 12,
+  "recorded": 12,
+  "completed": 12,
+  "algorithmic_failure": 0,
+  "infrastructure_failure": 0,
+  "missing": 0,
+  "unparsable_records": [],
+  "retried_after_infrastructure_failure": []
+ },
+ "P1": {
+  "n": 12,
+  "mean": 0.002999847000766845,
+  "lo95": 0.0016812631767522184,
+  "hi95": 0.004318430824781471,
+  "p_two_sided": 0.0003978888150642093,
+  "tost_p": 0.0005872179211339045,
+  "reading": "equivalent and better (a gain smaller than the margin)",
+  "generalises": false,
+  "reading_text": "On the 80 E1 evaluation episodes (40 target-present), the learned trigger matches the tuned rule within \u00b10.0056 J (TOST p = 0.000587), with a detectable gain smaller than the margin: mean +0.0030 J, 95% interval [+0.0017, +0.0043] J. The episode-level interval does not agree (episode-level estimate +0.0030 J, 95% interval [-0.0021, +0.0081], 90% interval [-0.0012, +0.0072], 40 episodes), so the reading is conditional on these episodes only. Blocks: 12 of 12 completed; 0 ended in an algorithmic failure and 0 in an infrastructure failure after one retry."
+ }
+}

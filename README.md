@@ -23,6 +23,22 @@ taken in the twin's coefficient space.
 | Post hoc v3 | Pre-submission checks: B2 at matched learning rates (72 new runs, plan fixed by hash before the runs), damping limits of B1, sign-flip permutation tests, held-out KL transfer, stress-test block intervals, KL efficiency | `analysis/posthoc_v3/` |
 | Post hoc HQLR | B2's HQ re-trained at learning rate 1e-2, beyond its selection grid (36 new runs; own hashed plan) | `analysis/posthoc_hqlr/` |
 | Post hoc B1X | B1 extended with re-linearised circuit steps and a damping ladder on the 72 B1 units, run with the B1 code tree (own hashed plan) | `analysis/posthoc_b1x/` |
+| Post hoc CMLR | B2's C-matched at learning rate 1e-2 (own hashed plan) | `analysis/posthoc_cmlr/` |
+| Post hoc B1C | Matched classical trigonometric charts (CTRIG) for the local path comparison | `analysis/posthoc_b1c/` |
+| Post hoc B1G | Local comparison at generic circuit angles | `analysis/posthoc_b1g/` |
+| Post hoc B1E | Optimised circuit and tangent steps (OPT-CIRC, OPT-TAN) | `analysis/posthoc_b1e/` |
+| Post hoc B1N | Local comparison with a four times larger fit set | `analysis/posthoc_b1n/` |
+| Post hoc B1T | Local comparison at the trained B2 policies | `analysis/posthoc_b1t/` |
+| Post hoc LONG, LONG-HQ | Ten times the training budget for C-strong, C-matched and HQ | `analysis/posthoc_long/`, `analysis/posthoc_longhq/` |
+| Post hoc B2G | Early training from generic circuit angles | `analysis/posthoc_b2g/` |
+| Post hoc SENSL | Alternative false-report weights (re-analysis of stored stress records) | `analysis/posthoc_sensl/` |
+| Post hoc B2F | HQ with frozen circuit angles | `analysis/posthoc_b2f/` |
+| Post hoc B2K | KL-matched early training (learning rates calibrated to mean per-update KL) | `analysis/posthoc_b2k/` |
+| Post hoc E4 (long2) | C-strong and C-matched re-tuned with the rule's evidence counts, 300,000 decisions | `analysis/posthoc_long2/` |
+| Post hoc gate | A learned correction trigger inside the rule's executive | `analysis/posthoc_gate/` |
+| B1R | Prespecified replication of the local path contrasts on 36 fresh units | `analysis/posthoc_b1r/` |
+| Post hoc E1 argmax | Argmax read-out of the 48 E1 final policies (evaluation only) | `analysis/posthoc_e1argmax/` |
+| Re-analyses | Interval re-analyses of stored records and descriptive summaries | `analysis/posthoc_reanalysis/` |
 
 Every confirmatory study was frozen before it was run: a freeze names the code tree, seeds, namespaces and
 analysis, and the runners refuse to start when the live tree differs from the frozen one.
@@ -63,6 +79,11 @@ HQ-at-1e-2 runs (`dq/b2_hq_lr1e-2_posthoc/`, plan `analysis/posthoc_hqlr/PLAN.md
 (`PLAN_ADDENDUM.md`, `PLAN_LOG.md`). Model checkpoints are not included; `hqlr_analysis.py` reads them only for the
 descriptive angle-displacement values, which are stored in the result JSON files. `SHA256SUMS` also lists every
 post-hoc file and every scene file.
+
+The post-hoc studies added before submission (2026-10-23 to 2026-10-26) are described in
+`analysis/POSTHOC_ADDITIONS_2026-10-26.md`, which also maps the plan labels used in the Supplementary Material
+(PL1–PL17, PL1-A) to the full SHA-256 of each plan. Each plan was hashed before its runs; model checkpoints are not
+included. `SHA256SUMS` lists every added file.
 
 ## Simulation scene
 

@@ -1,0 +1,308 @@
+{
+ "utc": "2026-10-25T075502Z",
+ "runner_sha256": "ae36bc0ea97d06f86ec0dd50b8b943594b314b2320177cd7e576b6f6ab63829a",
+ "e4lib_sha256": "9d72adf6b5df54fa3c3f5d2074430ba037a097ee8bbda972d5b0923ef1b8d6c6",
+ "idea_dq_tree": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "plan_draft_sha256": "66520936006454d185fdef447a9b163eba882e4fdac15e2a30a01c60a97d3f91",
+ "b_init": {
+  "mlp": {
+   "base_equals_stored_LONG_init_bitwise": true,
+   "stored_checkpoint": "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_long/runs/mlp__b4/run/mlp/checkpoints/update00000_decisions00000000.pt",
+   "wide_obs_dim": 270,
+   "wide_other_tensors_equal": true,
+   "wide_encoder_columns_ok": true,
+   "max_abs_dlogit": 1.249000902703301e-16,
+   "max_abs_dvalue": 4.163336342344337e-17,
+   "max_abs_dstate": 5.551115123125783e-17,
+   "global_rng_after_build_equal": true,
+   "passed": true
+  },
+  "bottleneck": {
+   "base_equals_stored_LONG_init_bitwise": true,
+   "stored_checkpoint": "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_long/runs/bottleneck__b4/run/bottleneck/checkpoints/update00000_decisions00000000.pt",
+   "wide_obs_dim": 270,
+   "wide_other_tensors_equal": true,
+   "wide_encoder_columns_ok": true,
+   "max_abs_dlogit": 2.220446049250313e-16,
+   "max_abs_dvalue": 4.163336342344337e-17,
+   "max_abs_dstate": 5.551115123125783e-17,
+   "global_rng_after_build_equal": true,
+   "passed": true
+  }
+ },
+ "a_reproduction": {
+  "mlp": {
+   "evaluation_point0": {
+    "compared": 1,
+    "identical": true
+   },
+   "update": {
+    "compared": 6,
+    "identical": true
+   },
+   "episode": {
+    "compared": 74,
+    "identical": true
+   },
+   "arm_start": {
+    "identical": true
+   },
+   "status": "completed",
+   "passed": true,
+   "wall_s": 283.5739415999851
+  },
+  "bottleneck": {
+   "evaluation_point0": {
+    "compared": 1,
+    "identical": true
+   },
+   "update": {
+    "compared": 6,
+    "identical": true
+   },
+   "episode": {
+    "compared": 69,
+    "identical": true
+   },
+   "arm_start": {
+    "identical": true
+   },
+   "status": "completed",
+   "passed": true,
+   "wall_s": 318.4882647819759
+  }
+ },
+ "c_e4_path": {
+  "mlp": {
+   "status": "completed",
+   "obs_dim": 270,
+   "obs_encoding_version": "obs-encoding/4-gnss+ev16/1",
+   "evaluations": [
+    {
+     "points": [
+      0
+     ],
+     "episodes": 80,
+     "weighted_J": -0.005450092913244825,
+     "wall_s": 140.09127100699698
+    },
+    {
+     "points": [
+      3000
+     ],
+     "episodes": 80,
+     "weighted_J": 0.014862681182031927,
+     "wall_s": 177.79388817198924
+    }
+   ],
+   "evaluation_point0_identical_to_LONG": true,
+   "update1_episodes": 12,
+   "update1_episodes_identical_to_LONG": true,
+   "schedule_paired_with_LONG": true,
+   "all_seeds_in_range": true,
+   "updates": [
+    {
+     "update": 1,
+     "decisions_before": 0,
+     "learning_rate": 0.003,
+     "expected": 0.003,
+     "entropy_coef": 0.01,
+     "entropy": 1.9360612327233273,
+     "approx_kl": 0.010889518243485066
+    },
+    {
+     "update": 2,
+     "decisions_before": 533,
+     "learning_rate": 0.00299467,
+     "expected": 0.00299467,
+     "entropy_coef": 0.01,
+     "entropy": 1.8610931050126238,
+     "approx_kl": 0.009000967068247321
+    },
+    {
+     "update": 3,
+     "decisions_before": 1046,
+     "learning_rate": 0.00298954,
+     "expected": 0.00298954,
+     "entropy_coef": 0.01,
+     "entropy": 1.8674819074390065,
+     "approx_kl": 0.007795104533908609
+    },
+    {
+     "update": 4,
+     "decisions_before": 1560,
+     "learning_rate": 0.0029844,
+     "expected": 0.0029844,
+     "entropy_coef": 0.01,
+     "entropy": 2.0172246756068946,
+     "approx_kl": 0.009390656663540616
+    },
+    {
+     "update": 5,
+     "decisions_before": 2118,
+     "learning_rate": 0.00297882,
+     "expected": 0.00297882,
+     "entropy_coef": 0.01,
+     "entropy": 1.9871600860931842,
+     "approx_kl": 0.008337132933405189
+    },
+    {
+     "update": 6,
+     "decisions_before": 2663,
+     "learning_rate": 0.00297337,
+     "expected": 0.00297337,
+     "entropy_coef": 0.01,
+     "entropy": 1.9562052877880465,
+     "approx_kl": 0.011773980418624793
+    }
+   ],
+   "lr_and_entropy_logged_as_intended": true,
+   "evidence_stats": {
+    "ev_encodes": 3211,
+    "ev_viewpoint_feature_nonzero": 713,
+    "ev_inspection_feature_nonzero": 435,
+    "ev_slots_ge2_viewpoints": 731,
+    "ev_feedback_errors": 0,
+    "decisions": 3211
+   },
+   "evidence_populated": true,
+   "final_checkpoint": {
+    "obs_dim": 270,
+    "optimizer_lr": [
+     0.00297337
+    ],
+    "entropy_coef_in_config": 0.01,
+    "extra_columns_max_abs": 0.10147736703308319
+   },
+   "final_checkpoint_ok": true,
+   "throughput": {
+    "rollout_s_per_1000_decisions": 50.29654688226788,
+    "update_s_per_1000_decisions": 0.5607424079632977,
+    "evaluation_s_per_episode": [
+     1.7511408875874621,
+     2.2224236021498656
+    ],
+    "training_episode_wall_s_mean": 2.2061951710553105
+   },
+   "passed": true,
+   "wall_s": 484.2946769010159
+  },
+  "bottleneck": {
+   "status": "completed",
+   "obs_dim": 270,
+   "obs_encoding_version": "obs-encoding/4-gnss+ev16/1",
+   "evaluations": [
+    {
+     "points": [
+      0
+     ],
+     "episodes": 80,
+     "weighted_J": -0.007446259311156578,
+     "wall_s": 150.32600335599273
+    },
+    {
+     "points": [
+      3000
+     ],
+     "episodes": 80,
+     "weighted_J": 0.008686562883448221,
+     "wall_s": 154.84414506997564
+    }
+   ],
+   "evaluation_point0_identical_to_LONG": true,
+   "update1_episodes": 11,
+   "update1_episodes_identical_to_LONG": true,
+   "schedule_paired_with_LONG": true,
+   "all_seeds_in_range": true,
+   "updates": [
+    {
+     "update": 1,
+     "decisions_before": 0,
+     "learning_rate": 0.003,
+     "expected": 0.003,
+     "entropy_coef": 0.01,
+     "entropy": 1.8907862910892268,
+     "approx_kl": 0.01385704980692534
+    },
+    {
+     "update": 2,
+     "decisions_before": 520,
+     "learning_rate": 0.0029948,
+     "expected": 0.0029948,
+     "entropy_coef": 0.01,
+     "entropy": 1.8805491854450551,
+     "approx_kl": 0.004178042971314203
+    },
+    {
+     "update": 3,
+     "decisions_before": 1084,
+     "learning_rate": 0.00298916,
+     "expected": 0.00298916,
+     "entropy_coef": 0.01,
+     "entropy": 2.0262771004449047,
+     "approx_kl": 0.0005641431271076728
+    },
+    {
+     "update": 4,
+     "decisions_before": 1642,
+     "learning_rate": 0.00298358,
+     "expected": 0.00298358,
+     "entropy_coef": 0.01,
+     "entropy": 1.921310023405549,
+     "approx_kl": 0.00038902408023125666
+    },
+    {
+     "update": 5,
+     "decisions_before": 2186,
+     "learning_rate": 0.00297814,
+     "expected": 0.00297814,
+     "entropy_coef": 0.01,
+     "entropy": 1.9259809743042258,
+     "approx_kl": 0.000314311696287607
+    },
+    {
+     "update": 6,
+     "decisions_before": 2709,
+     "learning_rate": 0.00297291,
+     "expected": 0.00297291,
+     "entropy_coef": 0.01,
+     "entropy": 1.9474616076770637,
+     "approx_kl": 0.0002903848156392666
+    }
+   ],
+   "lr_and_entropy_logged_as_intended": true,
+   "evidence_stats": {
+    "ev_encodes": 3229,
+    "ev_viewpoint_feature_nonzero": 670,
+    "ev_inspection_feature_nonzero": 517,
+    "ev_slots_ge2_viewpoints": 868,
+    "ev_feedback_errors": 0,
+    "decisions": 3229
+   },
+   "evidence_populated": true,
+   "final_checkpoint": {
+    "obs_dim": 270,
+    "optimizer_lr": [
+     0.00297291
+    ],
+    "entropy_coef_in_config": 0.01,
+    "extra_columns_max_abs": 0.08260049733851532
+   },
+   "final_checkpoint_ok": true,
+   "throughput": {
+    "rollout_s_per_1000_decisions": 43.520897546289234,
+    "update_s_per_1000_decisions": 0.35732271909104013,
+    "evaluation_s_per_episode": [
+     1.8790750419499092,
+     1.9355518133746954
+    ],
+    "training_episode_wall_s_mean": 2.0926687380450137
+   },
+   "passed": true,
+   "wall_s": 449.91885035598534
+  }
+ },
+ "idea_dq_tree_after": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "passed": true,
+ "wall_s": 935.3056386449898
+}

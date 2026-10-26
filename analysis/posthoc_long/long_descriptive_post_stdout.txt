@@ -1,0 +1,7 @@
+C-strong final no-timely 4 {4: 120000, 5: 90000, 6: None, 7: 270000, 8: None, 9: 240000} entropy first/last (median) 1.96 0.26 family timely max 0.79 @ 30000 family J max 0.0575 @ 30000
+   final timely [0.0, 0.0, 0.42, 0.0, 0.01, 0.0] peaks [(np.float64(0.07), 30000), (np.float64(0.066), 30000), (np.float64(0.072), 120000), (np.float64(0.068), 210000), (np.float64(0.086), 180000), (np.float64(0.106), 60000)]
+C-matched final no-timely 1 {4: None, 5: None, 6: 180000, 7: None, 8: None, 9: None} entropy first/last (median) 1.9 0.75 family timely max 0.773 @ 90000 family J max 0.0518 @ 90000
+   final timely [0.82, 0.84, 0.0, 0.31, 0.84, 0.8] peaks [(np.float64(0.061), 300000), (np.float64(0.063), 240000), (np.float64(0.068), 120000), (np.float64(0.056), 90000), (np.float64(0.065), 300000), (np.float64(0.077), 210000)]
+HQ final no-timely 0 {4: None, 5: None, 6: None, 7: None, 8: None, 9: None} entropy first/last (median) 1.86 1.2 family timely max 0.763 @ 300000 family J max 0.0469 @ 300000
+   final timely [0.81, 0.77, 0.72, 0.73, 0.76, 0.78] peaks [(np.float64(0.053), 300000), (np.float64(0.06), 270000), (np.float64(0.052), 60000), (np.float64(0.048), 180000), (np.float64(0.045), 240000), (np.float64(0.058), 210000)]
+highest single block {'J': np.float64(0.10606883311911587), 'role': 'C-strong', 'block': 9, 'decisions': 60000, 'timely': 1.8682743725900537, 'final_J': np.float64(0.0)}

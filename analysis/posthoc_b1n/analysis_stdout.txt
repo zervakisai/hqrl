@@ -1,0 +1,47 @@
+{
+ "records": 36,
+ "excluded": [],
+ "family_N": {
+  "N1_path_gap_change_1024_minus_256": {
+   "n": 36,
+   "mean": -2.5161747631476445,
+   "lo": -3.7407244273865334,
+   "hi": -1.2916250989087559,
+   "p": 0.00018959735039925695,
+   "dz": -0.6952360372012588,
+   "share_negative": 0.8055555555555556
+  },
+  "N2_SPAN_RNDk_change_1024_minus_256": {
+   "n": 36,
+   "mean": 0.25842592921232166,
+   "lo": -1.3451260442871935,
+   "hi": 1.8619779027118368,
+   "p": 0.7454888335835328,
+   "dz": 0.05452817000732683,
+   "share_negative": 0.4722222222222222
+  },
+  "holm_rejected": {
+   "N1": true,
+   "N2": false
+  },
+  "N1_reading": "resolved negative",
+  "N2_reading": "not resolved",
+  "path_gap_at_1024": {
+   "n": 36,
+   "mean": -8.214209450789566,
+   "lo": -10.48540286858865,
+   "hi": -5.9430160329904815,
+   "p": 1.3891696943286544e-08,
+   "dz": -1.2237128726885012,
+   "share_negative": 0.9444444444444444
+  }
+ },
+ "split_half_cosine": {
+  "F1024_median": -0.01944007420455541,
+  "F256_B1_median": -0.010468619989051773
+ }
+}
+F64: HQ-Fisher−TAN -2.60 [-5.17, -0.02]; SPAN−RND-k -1.43; TAN +1.20; HQ-Fisher -1.39
+F128: HQ-Fisher−TAN -4.35 [-6.89, -1.81]; SPAN−RND-k -1.74; TAN +3.27; HQ-Fisher -1.08
+F256: HQ-Fisher−TAN -5.70 [-8.21, -3.19]; SPAN−RND-k -2.28; TAN +4.38; HQ-Fisher -1.31
+F1024: HQ-Fisher−TAN -8.21 [-10.49, -5.94]; SPAN−RND-k -2.02; TAN +6.89; HQ-Fisher -1.32

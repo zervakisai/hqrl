@@ -1,0 +1,203 @@
+precheck PC surrogate625 0 1.00e-03 completed 183
+precheck PC quantum 0 3.00e-03 completed 270
+{
+ "utc": "2026-10-25T07:51:01+00:00",
+ "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68",
+ "plan_sha256_at_precheck": null,
+ "static": {
+  "c_main_configs": {
+   "differing_keys": [
+    "candidate",
+    "note",
+    "ppo.learning_rate",
+    "protocol_freeze_sha256"
+   ],
+   "ok": true
+  },
+  "d_pilot_configs": {
+   "blocks": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+   ],
+   "study": [
+    "dq_b2_smoke"
+   ],
+   "training_namespace": "dq_development",
+   "evaluation": [
+    "None"
+   ],
+   "budget": [
+    30000
+   ],
+   "seeds_in_dq_development_only": true,
+   "ppo_equal_to_b2_except_lr": true,
+   "disjoint_from_b2_blocks_and_suite": true,
+   "ok": true
+  },
+  "e_targets": {
+   "recomputed": {
+    "surrogate625": 0.007823255686871039,
+    "quantum": 0.00419994415996206
+   },
+   "declared": {
+    "surrogate625": 0.007823255686871039,
+    "quantum": 0.00419994415996206
+   },
+   "ok": true
+  },
+  "f_slopes": {
+   "recomputed": {
+    "surrogate625": 0.9385004171529107,
+    "quantum": 0.8421691057010121
+   },
+   "declared": {
+    "surrogate625": 0.9385004171529107,
+    "quantum": 0.8421691057010121
+   },
+   "stored_means": {
+    "HQ_1e-3": 0.0031014925628297715,
+    "HQ_3e-3": 0.007823255686871039,
+    "twin_1e-3": 0.009926246381340396,
+    "twin_3e-3": 0.027833226083031033,
+    "Cmatched_1e-2": 0.00419994415996206
+   },
+   "ok": true
+  },
+  "g_build_path": {
+   "ok": true
+  },
+  "h_code_tree": {
+   "live": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+   "ok": true
+  }
+ },
+ "dynamic": {
+  "quantum": {
+   "checks": {
+    "evaluation": {
+     "compared": 2,
+     "identical": true
+    },
+    "update": {
+     "compared": 6,
+     "identical": true,
+     "max_relative_difference": 0.0
+    },
+    "episode": {
+     "compared": 77,
+     "identical": true
+    },
+    "arm_start": {
+     "compared": 1,
+     "identical": true
+    },
+    "initial_checkpoint": {
+     "compared": 17,
+     "identical": true
+    }
+   },
+   "ok": true
+  },
+  "surrogate625": {
+   "checks": {
+    "evaluation": {
+     "compared": 2,
+     "identical": true
+    },
+    "update": {
+     "compared": 6,
+     "identical": true,
+     "max_relative_difference": 0.0
+    },
+    "episode": {
+     "compared": 80,
+     "identical": true
+    },
+    "arm_start": {
+     "compared": 1,
+     "identical": true
+    },
+    "initial_checkpoint": {
+     "compared": 18,
+     "identical": true
+    }
+   },
+   "ok": true,
+   "twin_parity": {
+    "P4": {
+     "cell_id": "d4__nominal_2700s__positive",
+     "seed": 20262621000,
+     "decisions": 41,
+     "max_abs_dlogprob": 1.3322676295501878e-15
+    },
+    "static": {
+     "P1_solve_residual": 9.103828801926284e-15,
+     "P2_offgrid_max_abs": 1.0630385460785874e-14,
+     "P5_shared_tensors": 16,
+     "P5_unequal": [],
+     "P6_max_off_support": 1.2199301535773255e-15,
+     "P7_max_abs_z": 0.9737739368524014,
+     "static_failures": []
+    }
+   },
+   "twin_parity_equals_stored_b2_record": true
+  }
+ },
+ "timing_current_load": {
+  "quantum": {
+   "evaluation_episodes": 160,
+   "policy_decisions": 3203,
+   "episodes": 77,
+   "rollout_wall_s_per_1000_decisions": 30.23704716610205,
+   "rollout_cpu_s_per_1000_decisions": 28.950836968154857,
+   "update_wall_s_per_1000_decisions": 0.8592063615346037,
+   "evaluation_wall_s_per_episode": 1.0364188373810976,
+   "evaluation_cpu_s_per_episode": 1.0017767953812498,
+   "run_wall_s": 270.06847118597943,
+   "load_average": {
+    "start": [
+     16.62255859375,
+     16.43408203125,
+     11.73095703125
+    ],
+    "end": [
+     17.0517578125,
+     16.98974609375,
+     13.15966796875
+    ]
+   }
+  },
+  "surrogate625": {
+   "evaluation_episodes": 160,
+   "policy_decisions": 3245,
+   "episodes": 80,
+   "rollout_wall_s_per_1000_decisions": 18.79992354730286,
+   "rollout_cpu_s_per_1000_decisions": 18.214723903852082,
+   "update_wall_s_per_1000_decisions": 0.4366098039960044,
+   "evaluation_wall_s_per_episode": 0.6644496175562381,
+   "evaluation_cpu_s_per_episode": 0.6400907065812501,
+   "run_wall_s": 183.19849145098124,
+   "load_average": {
+    "start": [
+     16.75439453125,
+     16.4697265625,
+     11.79296875
+    ],
+    "end": [
+     17.5048828125,
+     17.009765625,
+     12.77099609375
+    ]
+   }
+  }
+ },
+ "passed": true
+}
+exit 0

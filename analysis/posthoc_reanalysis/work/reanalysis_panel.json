@@ -1,0 +1,1514 @@
+{
+ "label": "POST-HOC RE-ANALYSIS OF STORED RECORDS (no new runs); descriptive intervals; no frozen test or reading changes",
+ "bootstrap": {
+  "draws": 10000,
+  "seed": 20261026,
+  "interval": "percentile 95%",
+  "note": "with few top-level units the percentile bootstrap is narrower than the t interval (no small-sample t quantile, resampling variance (n-1)/n): about 15% for 12 blocks before episode variability is added, about 30% for E4's 6 blocks, so for E4 the t interval is the one to quote"
+ },
+ "table5_E1": {
+  "episodes": "80 = 8 cells x 10 realisations (40 target-present), shared by all 12 blocks, rule and random",
+  "cells": [
+   "d2__nominal_2700s__no_human",
+   "d2__nominal_2700s__positive",
+   "d2__tight_derived__no_human",
+   "d2__tight_derived__positive",
+   "d4__nominal_2700s__no_human",
+   "d4__nominal_2700s__positive",
+   "d4__tight_derived__no_human",
+   "d4__tight_derived__positive"
+  ],
+  "drift_budget_pairs": [
+   "d2__nominal_2700s",
+   "d2__tight_derived",
+   "d4__nominal_2700s",
+   "d4__tight_derived"
+  ],
+  "rows": {
+   "Tuned rule": {
+    "weighted_J": {
+     "point": 0.20564463190957744,
+     "episode_bootstrap95_stratified_by_cell": [
+      0.19625756831888103,
+      0.21345653394780542
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      0.1964717035350079,
+      0.21336810404075043
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": 2.388502108982746,
+     "episode_bootstrap95_stratified_by_cell": [
+      2.342722763041264,
+      2.429920340524354
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      2.3428402675832656,
+      2.428340614772662
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.07500000000000001,
+     "episode_bootstrap95_stratified_by_cell": [
+      0.0125,
+      0.15
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      0.025,
+      0.15
+     ]
+    },
+    "people_located_per_target_present_episode": {
+     "point": 7.825,
+     "episode_bootstrap95_stratified_by_cell": [
+      7.649375,
+      8.0
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      7.6499999999999995,
+      8.0
+     ]
+    }
+   },
+   "C-strong": {
+    "weighted_J": {
+     "point": 0.05201627384171524,
+     "t95_over_12_blocks": [
+      0.03955034110375094,
+      0.06448220657967951
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.03922421463142863,
+      0.06275019397308416
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": 0.7935164140526296,
+     "t95_over_12_blocks": [
+      0.5705105725121805,
+      1.0165222555930788
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.5957583229402098,
+      0.9936603431691025
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.24895833333333334,
+     "t95_over_12_blocks": [
+      0.06846990170383097,
+      0.4294467649628356
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.11247395833333335,
+      0.4354166666666667
+     ]
+    },
+    "people_located_per_target_present_episode": {
+     "point": 1.9958333333333333,
+     "t95_over_12_blocks": [
+      1.3799374879994628,
+      2.611729178667204
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      1.47703125,
+      2.5749999999999997
+     ]
+    }
+   },
+   "Surrogate625": {
+    "weighted_J": {
+     "point": 0.04491176442428537,
+     "t95_over_12_blocks": [
+      0.02995590014238466,
+      0.05986762870618608
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.030009110382232265,
+      0.05785447700697643
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": 0.7292156831065436,
+     "t95_over_12_blocks": [
+      0.5248029551600772,
+      0.93362841105301
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.5426004239433855,
+      0.8925282175093396
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.2895833333333333,
+     "t95_over_12_blocks": [
+      0.1594843756325378,
+      0.4196822910341289
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.171875,
+      0.43125
+     ]
+    },
+    "people_located_per_target_present_episode": {
+     "point": 2.14375,
+     "t95_over_12_blocks": [
+      1.5005540803260364,
+      2.786945919673964
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      1.60828125,
+      2.7271354166666657
+     ]
+    }
+   },
+   "C-matched": {
+    "weighted_J": {
+     "point": 0.037435724908967835,
+     "t95_over_12_blocks": [
+      0.031029539491399902,
+      0.04384191032653578
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.028261309297261422,
+      0.04611199510273368
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": 0.6487560718925549,
+     "t95_over_12_blocks": [
+      0.5868076818782593,
+      0.7107044619068503
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.5868372935961157,
+      0.7104538235666584
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.3260416666666667,
+     "t95_over_12_blocks": [
+      0.2648532748279527,
+      0.3872300585053808
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.20937499999999998,
+      0.4604166666666667
+     ]
+    },
+    "people_located_per_target_present_episode": {
+     "point": 1.8833333333333333,
+     "t95_over_12_blocks": [
+      1.844820063267302,
+      1.921846603399365
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      1.8145833333333332,
+      1.9416666666666667
+     ]
+    }
+   },
+   "HQ": {
+    "weighted_J": {
+     "point": 0.024285791296910622,
+     "t95_over_12_blocks": [
+      0.014153024825408275,
+      0.034418557768412975
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.013537183585185367,
+      0.03491484298974565
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": 0.48727765209024454,
+     "t95_over_12_blocks": [
+      0.34423927593306947,
+      0.6303160282474195
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.35253734977210066,
+      0.6021484323313363
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.32812500000000006,
+     "t95_over_12_blocks": [
+      0.24013217624406324,
+      0.41611782375593676
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      0.2,
+      0.47291666666666665
+     ]
+    },
+    "people_located_per_target_present_episode": {
+     "point": 1.5750000000000002,
+     "t95_over_12_blocks": [
+      1.1586906814955427,
+      1.9913093185044572
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      1.1749479166666665,
+      1.8875000000000002
+     ]
+    }
+   },
+   "Uniform random": {
+    "weighted_J": {
+     "point": -0.00234446314327909,
+     "episode_bootstrap95_stratified_by_cell": [
+      -0.0126596499043326,
+      0.007186287783151168
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      -0.011821771148334157,
+      0.006657250435111722
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": 0.16737478963811026,
+     "episode_bootstrap95_stratified_by_cell": [
+      0.11500558149908072,
+      0.22480334715501393
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      0.11546337878157734,
+      0.22465208870631814
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.28750000000000003,
+     "episode_bootstrap95_stratified_by_cell": [
+      0.15000000000000002,
+      0.43749999999999994
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      0.1875,
+      0.4
+     ]
+    },
+    "people_located_per_target_present_episode": {
+     "point": 1.0250000000000001,
+     "episode_bootstrap95_stratified_by_cell": [
+      0.775,
+      1.275
+     ],
+     "episode_bootstrap95_independent_lists_per_cell": [
+      0.775,
+      1.275
+     ]
+    }
+   }
+  },
+  "learned_minus_rule": {
+   "C-strong": {
+    "weighted_J": {
+     "point": -0.15362835806786218,
+     "pair_preserving_bootstrap95": [
+      -0.1687644418513034,
+      -0.13975450282088636
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -0.16609429080582647,
+      -0.1411624253298979
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": -1.5949856949301162,
+     "pair_preserving_bootstrap95": [
+      -1.7968124110862769,
+      -1.3935269178589516
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -1.8179915364705654,
+      -1.371979853389667
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.17395833333333333,
+     "pair_preserving_bootstrap95": [
+      0.017708333333333298,
+      0.36981770833333305
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -0.006530098296169018,
+      0.3544467649628357
+     ]
+    },
+    "weighted_J_in_RE_per_episode": {
+     "point": -2.765310445221519,
+     "pair_preserving_bootstrap95": [
+      -3.0377599533234614,
+      -2.5155810507759546
+     ]
+    }
+   },
+   "Surrogate625": {
+    "weighted_J": {
+     "point": -0.16073286748529206,
+     "pair_preserving_bootstrap95": [
+      -0.17793521529511214,
+      -0.14405059761879938
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -0.17568873176719282,
+      -0.1457770032033914
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": -1.6592864258762021,
+     "pair_preserving_bootstrap95": [
+      -1.8494385086915464,
+      -1.4905581757778765
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -1.8636991538226688,
+      -1.4548736979297359
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.2145833333333333,
+     "pair_preserving_bootstrap95": [
+      0.075,
+      0.37604166666666666
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      0.0844843756325378,
+      0.3446822910341289
+     ]
+    },
+    "weighted_J_in_RE_per_episode": {
+     "point": -2.893191614735257,
+     "pair_preserving_bootstrap95": [
+      -3.2028338753120185,
+      -2.5929107571383887
+     ]
+    }
+   },
+   "C-matched": {
+    "weighted_J": {
+     "point": -0.1682089070006096,
+     "pair_preserving_bootstrap95": [
+      -0.18058011825582237,
+      -0.15575025121519054
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -0.17461509241817755,
+      -0.16180272158304168
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": -1.739746037090191,
+     "pair_preserving_bootstrap95": [
+      -1.8137432704469656,
+      -1.6658049201709846
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -1.8016944271044866,
+      -1.6777976470758953
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.25104166666666666,
+     "pair_preserving_bootstrap95": [
+      0.10937500000000001,
+      0.4072916666666666
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      0.18985327482795264,
+      0.3122300585053807
+     ]
+    },
+    "weighted_J_in_RE_per_episode": {
+     "point": -3.0277603260109727,
+     "pair_preserving_bootstrap95": [
+      -3.250442128604803,
+      -2.8035045218734296
+     ]
+    }
+   },
+   "HQ": {
+    "weighted_J": {
+     "point": -0.18135884061266683,
+     "pair_preserving_bootstrap95": [
+      -0.19539976450246183,
+      -0.16724782266761476
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -0.19149160708416915,
+      -0.17122607414116445
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": -1.9012244568925012,
+     "pair_preserving_bootstrap95": [
+      -2.0424481255653815,
+      -1.7766526923478245
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      -2.0442628330496766,
+      -1.7581860807353265
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.25312500000000004,
+     "pair_preserving_bootstrap95": [
+      0.10104166666666667,
+      0.41875
+     ],
+     "t95_over_12_blocks_rule_fixed": [
+      0.16513217624406323,
+      0.34111782375593674
+     ]
+    },
+    "weighted_J_in_RE_per_episode": {
+     "point": -3.264459131028003,
+     "pair_preserving_bootstrap95": [
+      -3.517195761044313,
+      -3.010460808017066
+     ]
+    }
+   },
+   "Uniform random": {
+    "weighted_J": {
+     "point": -0.20798909505285654,
+     "pair_preserving_bootstrap95": [
+      -0.2218333936220133,
+      -0.19374153335840033
+     ]
+    },
+    "timely_credited_per_pooled_episode": {
+     "point": -2.2211273193446357,
+     "pair_preserving_bootstrap95": [
+      -2.2862424661263896,
+      -2.1515908599256166
+     ]
+    },
+    "false_reports_per_pooled_episode": {
+     "point": 0.21250000000000002,
+     "pair_preserving_bootstrap95": [
+      0.05,
+      0.375
+     ]
+    },
+    "weighted_J_in_RE_per_episode": {
+     "point": -3.7438037109514175,
+     "pair_preserving_bootstrap95": [
+      -3.9930010851962394,
+      -3.487347600451206
+     ]
+    }
+   }
+  },
+  "ratios": {
+   "C-strong": {
+    "rule_over_learned_timely": {
+     "point": 3.0100223091596057,
+     "lo": 2.402202124623886,
+     "hi": 4.01244780478142,
+     "share_of_replicates_ge_3": 0.5134
+    },
+    "rule_over_learned_false_reports": {
+     "point": 0.3012552301255231,
+     "lo": 0.06315789473684211,
+     "hi": 0.8695652173913043
+    }
+   },
+   "Surrogate625": {
+    "rule_over_learned_timely": {
+     "point": 3.2754398517698484,
+     "lo": 2.675191061949125,
+     "hi": 4.39463561237912,
+     "share_of_replicates_ge_3": 0.7618
+    },
+    "rule_over_learned_false_reports": {
+     "point": 0.25899280575539574,
+     "lo": 0.055678024680773555,
+     "hi": 0.6207164552438803
+    }
+   },
+   "C-matched": {
+    "rule_over_learned_timely": {
+     "point": 3.681664361175062,
+     "lo": 3.3611669477422974,
+     "hi": 4.072954537764604,
+     "share_of_replicates_ge_3": 1.0
+    },
+    "rule_over_learned_false_reports": {
+     "point": 0.23003194888178916,
+     "lo": 0.049787387263811274,
+     "hi": 0.530132776001967
+    }
+   },
+   "HQ": {
+    "rule_over_learned_timely": {
+     "point": 4.901727174921603,
+     "lo": 3.9681575371476923,
+     "hi": 6.781808945417146,
+     "share_of_replicates_ge_3": 1.0
+    },
+    "rule_over_learned_false_reports": {
+     "point": 0.22857142857142856,
+     "lo": 0.04876579488686454,
+     "hi": 0.5475332502406008
+    }
+   },
+   "rule_over_best_learned_family_timely (the \"every learned family\" reading)": {
+    "point": 3.0100223091596057,
+    "lo": 2.402202124623886,
+    "hi": 3.500131979142648,
+    "share_of_replicates_ge_3": 0.3836
+   }
+  },
+  "inputs": {
+   "baselines.json_sha256": "00202039dda01d814146db77e85590996abda974b4e813bbb17c10d081572fd7",
+   "learned": "evaluation/<arm>__<cand>__b10..21/run/<arm>/metrics.jsonl, last evaluation event (30,000 decisions)"
+  }
+ },
+ "stress_freeze_A": {
+  "records": "Freeze A stress jobs: 48 E1 finals x 16 cells x 20 realisations, random and rule (same CRN)",
+  "report_of_record_sha256": "8294b92ef0e3221f928dcb0a1170906bb8c317d04deb8cbc7217aaeda66f7bb5",
+  "manifest_sha256": "03de52b03b118292ef1edcf653d22731a73babaaad6ee48a041d84c720b0d07d",
+  "d8_learned_minus_random": {
+   "C-strong | 2,700 s": {
+    "learned_mean_target_present": -0.03864654732761919,
+    "learned_t95_over_blocks": [
+     -0.06968968557132271,
+     -0.0076034090839156784
+    ],
+    "random_mean_target_present": -0.022225266688467894,
+    "learned_minus_random": {
+     "point": -0.016421280639151298,
+     "t95_over_12_blocks_random_fixed": [
+      -0.04746441888285481,
+      0.014621857604552216
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.0538949341713239,
+      0.018813210226292846
+     ],
+     "share_of_blocks_below_random": 0.6666666666666666
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": -0.011099987474284007,
+     "t95_over_12_blocks_random_fixed": [
+      -0.036650596886162165,
+      0.014450621937594152
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.041342584659083886,
+      0.017548019139980105
+     ]
+    }
+   },
+   "C-strong | 1,881 s": {
+    "learned_mean_target_present": -0.0193555440987438,
+    "learned_t95_over_blocks": [
+     -0.043994607882160766,
+     0.005283519684673169
+    ],
+    "random_mean_target_present": -0.02552101848083685,
+    "learned_minus_random": {
+     "point": 0.006165474382093049,
+     "t95_over_12_blocks_random_fixed": [
+      -0.01847358940132392,
+      0.030804538165510018
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.024598929725499725,
+      0.03485201162145297
+     ],
+     "share_of_blocks_below_random": 0.5
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": 0.007710157283452222,
+     "t95_over_12_blocks_random_fixed": [
+      -0.01259178997122817,
+      0.028012104538132614
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.01806402141453131,
+      0.03178293672777853
+     ]
+    }
+   },
+   "Surrogate625 | 2,700 s": {
+    "learned_mean_target_present": -0.04528534896343059,
+    "learned_t95_over_blocks": [
+     -0.06841812965375224,
+     -0.022152568273108932
+    ],
+    "random_mean_target_present": -0.022225266688467894,
+    "learned_minus_random": {
+     "point": -0.02306008227496269,
+     "t95_over_12_blocks_random_fixed": [
+      -0.04619286296528435,
+      7.269841535896548e-05
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.055395634030262236,
+      0.007879679435141214
+     ],
+     "share_of_blocks_below_random": 0.75
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": -0.017290658412562745,
+     "t95_over_12_blocks_random_fixed": [
+      -0.036792604780412505,
+      0.002211287955287012
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.04380697271297904,
+      0.008107449710986446
+     ]
+    }
+   },
+   "Surrogate625 | 1,881 s": {
+    "learned_mean_target_present": -0.016672044205804752,
+    "learned_t95_over_blocks": [
+     -0.03407809154123904,
+     0.0007340031296295332
+    ],
+    "random_mean_target_present": -0.02552101848083685,
+    "learned_minus_random": {
+     "point": 0.008848974275032097,
+     "t95_over_12_blocks_random_fixed": [
+      -0.008557073060402189,
+      0.026255021610466382
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.01671209019616412,
+      0.03311712233639135
+     ],
+     "share_of_blocks_below_random": 0.5
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": 0.009393994234840495,
+     "t95_over_12_blocks_random_fixed": [
+      -0.005335225149265141,
+      0.02412321361894613
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.011623153129325464,
+      0.029730959274067565
+     ]
+    }
+   },
+   "C-matched | 2,700 s": {
+    "learned_mean_target_present": -0.02796353523995983,
+    "learned_t95_over_blocks": [
+     -0.04339649270817313,
+     -0.012530577771746527
+    ],
+    "random_mean_target_present": -0.022225266688467894,
+    "learned_minus_random": {
+     "point": -0.005738268551491937,
+     "t95_over_12_blocks_random_fixed": [
+      -0.02117122601970524,
+      0.009694688916721367
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.03332076983408257,
+      0.022046594127605117
+     ],
+     "share_of_blocks_below_random": 0.5833333333333334
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": -0.005562837063415773,
+     "t95_over_12_blocks_random_fixed": [
+      -0.018632572369729625,
+      0.007506898242898081
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.028719490968068757,
+      0.01761295137912955
+     ]
+    }
+   },
+   "C-matched | 1,881 s": {
+    "learned_mean_target_present": -0.018135920502586618,
+    "learned_t95_over_blocks": [
+     -0.02805985198783051,
+     -0.008211989017342729
+    ],
+    "random_mean_target_present": -0.02552101848083685,
+    "learned_minus_random": {
+     "point": 0.007385097978250231,
+     "t95_over_12_blocks_random_fixed": [
+      -0.002538833506993658,
+      0.01730902946349412
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.008938984397269206,
+      0.024058198337676556
+     ],
+     "share_of_blocks_below_random": 0.3333333333333333
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": 0.007574745049266853,
+     "t95_over_12_blocks_random_fixed": [
+      -0.00052505841675909,
+      0.015674548515292794
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.005784469327988935,
+      0.021127648487314497
+     ]
+    }
+   },
+   "HQ | 2,700 s": {
+    "learned_mean_target_present": -0.03374427057928198,
+    "learned_t95_over_blocks": [
+     -0.05156330791733608,
+     -0.01592523324122789
+    ],
+    "random_mean_target_present": -0.022225266688467894,
+    "learned_minus_random": {
+     "point": -0.01151900389081409,
+     "t95_over_12_blocks_random_fixed": [
+      -0.029338041228868184,
+      0.006300033447240004
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.0409926738391235,
+      0.018139848759819138
+     ],
+     "share_of_blocks_below_random": 0.75
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": -0.010511499408947573,
+     "t95_over_12_blocks_random_fixed": [
+      -0.025481269573564447,
+      0.0044582707556693035
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.03494616315313429,
+      0.013871269524735313
+     ]
+    }
+   },
+   "HQ | 1,881 s": {
+    "learned_mean_target_present": -0.02877809459680231,
+    "learned_t95_over_blocks": [
+     -0.03749191834917248,
+     -0.020064270844432137
+    ],
+    "random_mean_target_present": -0.02552101848083685,
+    "learned_minus_random": {
+     "point": -0.0032570761159654653,
+     "t95_over_12_blocks_random_fixed": [
+      -0.011970899868335636,
+      0.005456747636404705
+     ],
+     "pair_preserving_bootstrap95_blocks_x_realisations": [
+      -0.017004059982266007,
+      0.009006802497075368
+     ],
+     "share_of_blocks_below_random": 0.5833333333333334
+    },
+    "secondary_budget_cells_weighted_0.8_0.2_learned_minus_random": {
+     "point": -0.0019575127446242236,
+     "t95_over_12_blocks_random_fixed": [
+      -0.009287354650455094,
+      0.005372329161206646
+     ],
+     "pair_preserving_bootstrap95": [
+      -0.013037652932400947,
+      0.008105638120958571
+     ]
+    }
+   }
+  },
+  "change_0_to_2m": {
+   "C-strong | 2,700 s": {
+    "target_present_2m_minus_0m": -0.006291374061306539,
+    "t95_over_blocks": [
+     -0.013668963712844193,
+     0.0010862155902311146
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.005079395545341525
+   },
+   "C-strong | 1,881 s": {
+    "target_present_2m_minus_0m": -0.0033650083192077094,
+    "t95_over_blocks": [
+     -0.0065924467580046565,
+     -0.00013756988041076224
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.002923488136847648
+   },
+   "Surrogate625 | 2,700 s": {
+    "target_present_2m_minus_0m": -0.004104883806238886,
+    "t95_over_blocks": [
+     -0.008557547719270971,
+     0.00034778010679319994
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.0034227959338800017
+   },
+   "Surrogate625 | 1,881 s": {
+    "target_present_2m_minus_0m": -0.006454760122523066,
+    "t95_over_blocks": [
+     -0.014296718210587485,
+     0.001387197965541354
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.00497862291283327
+   },
+   "C-matched | 2,700 s": {
+    "target_present_2m_minus_0m": -0.003850854343261996,
+    "t95_over_blocks": [
+     -0.008615709806232325,
+     0.0009140011197083329
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.0040529056968318196
+   },
+   "C-matched | 1,881 s": {
+    "target_present_2m_minus_0m": -0.0007165600127917645,
+    "t95_over_blocks": [
+     -0.004702847982263933,
+     0.003269727956680404
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.0012676924546778576
+   },
+   "HQ | 2,700 s": {
+    "target_present_2m_minus_0m": -0.005212996887530712,
+    "t95_over_blocks": [
+     -0.009177016771018329,
+     -0.0012489770040430958
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.004725953065580126
+   },
+   "HQ | 1,881 s": {
+    "target_present_2m_minus_0m": -0.0042314501965286825,
+    "t95_over_blocks": [
+     -0.008535604084785382,
+     7.270369172801723e-05
+    ],
+    "budget_cells_weighted_2m_minus_0m": -0.0034314564535192446
+   }
+  },
+  "paper_at_most_0.006_check": {
+   "max_abs_change_target_present": 0.006454760122523066,
+   "at": "Surrogate625 | 1,881 s",
+   "max_abs_change_budget_weighted_cells": 0.005079395545341525,
+   "within_0.006_unrounded": false,
+   "within_0.006_at_3_decimals": true
+  }
+ },
+ "E4_S7": {
+  "rule_weighted_J": 0.2113286225510504,
+  "heads": {
+   "C-strong": {
+    "mean_J": 0.1328513128343128,
+    "mean_J_t95": [
+     0.0974645583572668,
+     0.16823806731135882
+    ],
+    "share_of_rule": 0.6286479854484458,
+    "share_t95_rule_fixed": [
+     0.4611990424237134,
+     0.7960969284731781
+    ],
+    "share_pair_preserving_bootstrap95_blocks_x_realisations": [
+     0.5008285419139472,
+     0.7448150643406656
+    ],
+    "J_minus_rule_pair_preserving_bootstrap95": [
+     -0.10562982644516566,
+     -0.054029557448906695
+    ],
+    "share_bootstrap_replicates_at_or_above_half": 0.9756,
+    "n_blocks": 6
+   },
+   "C-matched": {
+    "mean_J": 0.06254004054986932,
+    "mean_J_t95": [
+     0.04899213430434776,
+     0.07608794679539088
+    ],
+    "share_of_rule": 0.29593738791706553,
+    "share_t95_rule_fixed": [
+     0.23182914700782092,
+     0.36004562882631014
+    ],
+    "share_pair_preserving_bootstrap95_blocks_x_realisations": [
+     0.24021338684135993,
+     0.34147301998597573
+    ],
+    "J_minus_rule_pair_preserving_bootstrap95": [
+     -0.16139248098599787,
+     -0.13818791147712758
+    ],
+    "share_bootstrap_replicates_at_or_above_half": 0.0,
+    "n_blocks": 6
+   }
+  },
+  "e4_results_sha256": "498b16ec9d13581f3aca0179960882a05f5d511700a3de09d7bf675191a1ff38"
+ },
+ "B1_B1R_ratios": {
+  "kappa": "0.01",
+  "stratum": "two-layer",
+  "unit_bootstrap": "units resampled with replacement (36), ratio of means",
+  "b1r_results_sha256_prefix": "1c84054e5143",
+  "sets": {
+   "B1's units": {
+    "n_units": 36,
+    "units_with_nan": {
+     "L_F pair": 0,
+     "R1": 0,
+     "R2": 0
+    },
+    "opt_circ_over_opt_tan_fit_objective": {
+     "point": 0.49013784772346114,
+     "lo": 0.4172427054723584,
+     "hi": 0.5623437147651289
+    },
+    "chart_shortfall_share_of_circuit": {
+     "point": 0.7572666257244003,
+     "lo": 0.5558642028202266,
+     "hi": 1.1132560085348908,
+     "share_of_replicates_below_1": 0.9333
+    }
+   },
+   "fresh units (B1R)": {
+    "n_units": 36,
+    "units_with_nan": {
+     "L_F pair": 0,
+     "R1": 0,
+     "R2": 0
+    },
+    "opt_circ_over_opt_tan_fit_objective": {
+     "point": 0.4955478994329846,
+     "lo": 0.43338611420446277,
+     "hi": 0.5560198085424692
+    },
+    "chart_shortfall_share_of_circuit": {
+     "point": 0.5603882096560943,
+     "lo": 0.38173333596092424,
+     "hi": 0.8002829859502599,
+     "share_of_replicates_below_1": 0.9983
+    }
+   }
+  }
+ },
+ "paper_text_vs_reanalysis": [
+  {
+   "text": "[p16], [p177], Cover letter: \"earned at least three times the mean timely-report credit of every learned family\"",
+   "reanalysis": "rule / C-strong 3.01 [2.40, 4.01]; rule / best family per replicate 3.01 [2.40, 3.50], >= 3 in 38% of replicates",
+   "consistent": false
+  },
+  {
+   "text": "[p177]: \"with less than a third of their false reports\"",
+   "reanalysis": "C-strong 0.30 [0.06, 0.87]; Surrogate625 0.26 [0.06, 0.62]; C-matched 0.23 [0.05, 0.53]; HQ 0.23 [0.05, 0.55]",
+   "consistent": false
+  },
+  {
+   "text": "[p158]: \"so at 8 m the learned families were close to or below random\"; Abstract: \"near or below random\"; Highlight 3: \"near or below random at 8 m\"",
+   "reanalysis": "learned - random intervals excluding zero: none; point estimates above random: ['C-strong | 1,881 s', 'Surrogate625 | 1,881 s', 'C-matched | 1,881 s']",
+   "consistent": "close to random: yes (no interval excludes zero); below random: not established"
+  },
+  {
+   "text": "[p158]: \"their scores changed by at most 0.006 between 0 and 2 m\"",
+   "reanalysis": "max |change| 0.0065 (Surrogate625 | 1,881 s, target-present)",
+   "consistent": "at 3 decimals only"
+  },
+  {
+   "text": "[p96]: \"63% of the rule's 0.211\"; [p203]: \"reached 63% of the rule's score ..., above the half-rule threshold\"; Cover letter: \"reached 63% of the rule's score after 300,000 decisions, above half of it\"",
+   "reanalysis": "share 62.9% t [46.1%, 79.6%] (rule fixed)",
+   "consistent": "point estimate only: the t interval includes half"
+  },
+  {
+   "text": "S9 [p52]: \"its mean reaching about half of the linear step's (49% on B1's units, 50% on the fresh units\"",
+   "reanalysis": "B1's units 49% [42%, 56%]; fresh units (B1R) 50% [43%, 56%]",
+   "consistent": true
+  },
+  {
+   "text": "[p124]: \"the charts' mean shortfall was about 56% as large as the circuit's on the fresh units (76% on B1's units; ratios of means, post hoc)\"",
+   "reanalysis": "B1's units 76% [56%, 111%]; fresh units (B1R) 56% [38%, 80%]",
+   "consistent": "yes; on B1's units the interval includes 100% (as \"not resolved on B1's units\" says)"
+  }
+ ],
+ "assertion_checks": {
+  "n": 68,
+  "all_passed": true,
+  "checks": [
+   {
+    "what": "Table 5 Tuned rule weighted J",
+    "value": 0.20564463190957744,
+    "printed": "0.206",
+    "formatted": "0.206",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Tuned rule timely-credited reports",
+    "value": 2.388502108982746,
+    "printed": "2.39",
+    "formatted": "2.39",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Tuned rule false reports",
+    "value": 0.07500000000000001,
+    "printed": "0.075",
+    "formatted": "0.075",
+    "pass": true
+   },
+   {
+    "what": "Table 5 note: Tuned rule people located per target-present episode (of 18)",
+    "value": 7.825,
+    "printed": "7.8",
+    "formatted": "7.8",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-strong weighted J",
+    "value": 0.05201627384171524,
+    "printed": "0.052",
+    "formatted": "0.052",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-strong timely-credited reports",
+    "value": 0.7935164140526296,
+    "printed": "0.79",
+    "formatted": "0.79",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-strong false reports",
+    "value": 0.24895833333333334,
+    "printed": "0.25",
+    "formatted": "0.25",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-strong gap to rule (RE)",
+    "value": 2.765310445221519,
+    "printed": "2.8",
+    "formatted": "2.8",
+    "pass": true
+   },
+   {
+    "what": "Table 5 note: C-strong people located per target-present episode (of 18)",
+    "value": 1.9958333333333333,
+    "printed": "2.0",
+    "formatted": "2.0",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Surrogate625 weighted J",
+    "value": 0.04491176442428537,
+    "printed": "0.045",
+    "formatted": "0.045",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Surrogate625 timely-credited reports",
+    "value": 0.7292156831065436,
+    "printed": "0.73",
+    "formatted": "0.73",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Surrogate625 false reports",
+    "value": 0.2895833333333333,
+    "printed": "0.29",
+    "formatted": "0.29",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Surrogate625 gap to rule (RE)",
+    "value": 2.893191614735257,
+    "printed": "2.9",
+    "formatted": "2.9",
+    "pass": true
+   },
+   {
+    "what": "Table 5 note: Surrogate625 people located per target-present episode (of 18)",
+    "value": 2.14375,
+    "printed": "2.1",
+    "formatted": "2.1",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-matched weighted J",
+    "value": 0.037435724908967835,
+    "printed": "0.037",
+    "formatted": "0.037",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-matched timely-credited reports",
+    "value": 0.6487560718925549,
+    "printed": "0.65",
+    "formatted": "0.65",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-matched false reports",
+    "value": 0.3260416666666667,
+    "printed": "0.33",
+    "formatted": "0.33",
+    "pass": true
+   },
+   {
+    "what": "Table 5 C-matched gap to rule (RE)",
+    "value": 3.0277603260109727,
+    "printed": "3.0",
+    "formatted": "3.0",
+    "pass": true
+   },
+   {
+    "what": "Table 5 note: C-matched people located per target-present episode (of 18)",
+    "value": 1.8833333333333333,
+    "printed": "1.9",
+    "formatted": "1.9",
+    "pass": true
+   },
+   {
+    "what": "Table 5 HQ weighted J",
+    "value": 0.024285791296910622,
+    "printed": "0.024",
+    "formatted": "0.024",
+    "pass": true
+   },
+   {
+    "what": "Table 5 HQ timely-credited reports",
+    "value": 0.48727765209024454,
+    "printed": "0.49",
+    "formatted": "0.49",
+    "pass": true
+   },
+   {
+    "what": "Table 5 HQ false reports",
+    "value": 0.32812500000000006,
+    "printed": "0.33",
+    "formatted": "0.33",
+    "pass": true
+   },
+   {
+    "what": "Table 5 HQ gap to rule (RE)",
+    "value": 3.264459131028003,
+    "printed": "3.3",
+    "formatted": "3.3",
+    "pass": true
+   },
+   {
+    "what": "Table 5 note: HQ people located per target-present episode (of 18)",
+    "value": 1.5750000000000002,
+    "printed": "1.6",
+    "formatted": "1.6",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Uniform random weighted J",
+    "value": -0.00234446314327909,
+    "printed": "−0.002",
+    "formatted": "-0.002",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Uniform random timely-credited reports",
+    "value": 0.16737478963811026,
+    "printed": "0.17",
+    "formatted": "0.17",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Uniform random false reports",
+    "value": 0.28750000000000003,
+    "printed": "0.29",
+    "formatted": "0.29",
+    "pass": true
+   },
+   {
+    "what": "Table 5 Uniform random gap to rule (RE)",
+    "value": 3.7438037109514175,
+    "printed": "3.7",
+    "formatted": "3.7",
+    "pass": true
+   },
+   {
+    "what": "Table 5 note: Uniform random people located per target-present episode (of 18)",
+    "value": 1.0250000000000001,
+    "printed": "1.0",
+    "formatted": "1.0",
+    "pass": true
+   },
+   {
+    "what": "Table 5 note: rule timely-credited per target-present episode",
+    "value": 4.777004217965492,
+    "printed": "4.8",
+    "formatted": "4.8",
+    "pass": true
+   },
+   {
+    "what": "[p158] learned at 0 m, target-present, lowest",
+    "value": 0.03657948365761003,
+    "printed": "0.037",
+    "formatted": "0.037",
+    "pass": true
+   },
+   {
+    "what": "[p158] learned at 0 m, target-present, highest",
+    "value": 0.08249831634628185,
+    "printed": "0.082",
+    "formatted": "0.082",
+    "pass": true
+   },
+   {
+    "what": "[p158] rule at 0 m, target-present, lowest",
+    "value": 0.26187973976088647,
+    "printed": "0.26",
+    "formatted": "0.26",
+    "pass": true
+   },
+   {
+    "what": "[p158] rule at 0 m, target-present, highest",
+    "value": 0.3212060881664601,
+    "printed": "0.32",
+    "formatted": "0.32",
+    "pass": true
+   },
+   {
+    "what": "[p158] random at 8 m, 2,700 s, target-present",
+    "value": -0.022225266688467894,
+    "printed": "−0.022",
+    "formatted": "-0.022",
+    "pass": true
+   },
+   {
+    "what": "[p158] random at 8 m, 1,881 s, target-present",
+    "value": -0.02552101848083685,
+    "printed": "−0.026",
+    "formatted": "-0.026",
+    "pass": true
+   },
+   {
+    "what": "[p158] 8 m family-budget cells whose block-level 95% interval lies below zero",
+    "value": 6.0,
+    "printed": "6",
+    "formatted": "6",
+    "pass": true
+   },
+   {
+    "what": "S7 rule weighted J on the 80 B2 episodes",
+    "value": 0.2113286225510504,
+    "printed": "0.211",
+    "formatted": "0.211",
+    "pass": true
+   },
+   {
+    "what": "S7 C-strong J at 300,000 decisions, block 4",
+    "value": 0.07481536513884826,
+    "printed": "0.075",
+    "formatted": "0.075",
+    "pass": true
+   },
+   {
+    "what": "S7 C-strong J at 300,000 decisions, block 5",
+    "value": 0.15612736658104703,
+    "printed": "0.156",
+    "formatted": "0.156",
+    "pass": true
+   },
+   {
+    "what": "S7 C-strong J at 300,000 decisions, block 6",
+    "value": 0.1443384880031089,
+    "printed": "0.144",
+    "formatted": "0.144",
+    "pass": true
+   },
+   {
+    "what": "S7 C-strong J at 300,000 decisions, block 7",
+    "value": 0.11668942824954026,
+    "printed": "0.117",
+    "formatted": "0.117",
+    "pass": true
+   },
+   {
+    "what": "S7 C-strong J at 300,000 decisions, block 8",
+    "value": 0.1699535395956487,
+    "printed": "0.170",
+    "formatted": "0.170",
+    "pass": true
+   },
+   {
+    "what": "S7 C-strong J at 300,000 decisions, block 9",
+    "value": 0.1351836894376836,
+    "printed": "0.135",
+    "formatted": "0.135",
+    "pass": true
+   },
+   {
+    "what": "[p96] C-strong share of the rule (%)",
+    "value": 62.86479854484458,
+    "printed": "63",
+    "formatted": "63",
+    "pass": true
+   },
+   {
+    "what": "S7 C-matched J at 300,000 decisions, block 4",
+    "value": 0.04956285535217569,
+    "printed": "0.050",
+    "formatted": "0.050",
+    "pass": true
+   },
+   {
+    "what": "S7 C-matched J at 300,000 decisions, block 5",
+    "value": 0.04344561184432492,
+    "printed": "0.043",
+    "formatted": "0.043",
+    "pass": true
+   },
+   {
+    "what": "S7 C-matched J at 300,000 decisions, block 6",
+    "value": 0.07211732344692712,
+    "printed": "0.072",
+    "formatted": "0.072",
+    "pass": true
+   },
+   {
+    "what": "S7 C-matched J at 300,000 decisions, block 7",
+    "value": 0.06596870409592966,
+    "printed": "0.066",
+    "formatted": "0.066",
+    "pass": true
+   },
+   {
+    "what": "S7 C-matched J at 300,000 decisions, block 8",
+    "value": 0.06932804598158723,
+    "printed": "0.069",
+    "formatted": "0.069",
+    "pass": true
+   },
+   {
+    "what": "S7 C-matched J at 300,000 decisions, block 9",
+    "value": 0.07481770257827124,
+    "printed": "0.075",
+    "formatted": "0.075",
+    "pass": true
+   },
+   {
+    "what": "[p96] C-matched share of the rule (%)",
+    "value": 29.593738791706553,
+    "printed": "30",
+    "formatted": "30",
+    "pass": true
+   },
+   {
+    "what": "B1's units L_F mean (x 1e-5)",
+    "value": -7.979968259062463,
+    "printed": "−7.98",
+    "formatted": "-7.98",
+    "pass": true
+   },
+   {
+    "what": "B1's units L_F lo (x 1e-5)",
+    "value": -9.343203008729612,
+    "printed": "−9.34",
+    "formatted": "-9.34",
+    "pass": true
+   },
+   {
+    "what": "B1's units L_F hi (x 1e-5)",
+    "value": -6.616733509395314,
+    "printed": "−6.62",
+    "formatted": "-6.62",
+    "pass": true
+   },
+   {
+    "what": "B1's units OPT-CIRC / OPT-TAN fit-set objective (%)",
+    "value": 49.01378477234611,
+    "printed": "49",
+    "formatted": "49",
+    "pass": true
+   },
+   {
+    "what": "B1's units chart shortfall as a share of the circuit's (%)",
+    "value": 75.72666257244003,
+    "printed": "76",
+    "formatted": "76",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) L_F mean (x 1e-5)",
+    "value": -7.52480305398933,
+    "printed": "−7.52",
+    "formatted": "-7.52",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) L_F lo (x 1e-5)",
+    "value": -8.533364963981002,
+    "printed": "−8.53",
+    "formatted": "-8.53",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) L_F hi (x 1e-5)",
+    "value": -6.516241143997656,
+    "printed": "−6.52",
+    "formatted": "-6.52",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) R1 mean (x 1e-5)",
+    "value": -6.352028226102532,
+    "printed": "−6.35",
+    "formatted": "-6.35",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) R1 lo (x 1e-5)",
+    "value": -8.906627176571245,
+    "printed": "−8.91",
+    "formatted": "-8.91",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) R1 hi (x 1e-5)",
+    "value": -3.7974292756338186,
+    "printed": "−3.80",
+    "formatted": "-3.80",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) R2 mean (x 1e-5)",
+    "value": -3.559601725310574,
+    "printed": "−3.56",
+    "formatted": "-3.56",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) R2 lo (x 1e-5)",
+    "value": -5.083745023740123,
+    "printed": "−5.08",
+    "formatted": "-5.08",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) R2 hi (x 1e-5)",
+    "value": -2.035458426881025,
+    "printed": "−2.04",
+    "formatted": "-2.04",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) OPT-CIRC / OPT-TAN fit-set objective (%)",
+    "value": 49.55478994329846,
+    "printed": "50",
+    "formatted": "50",
+    "pass": true
+   },
+   {
+    "what": "fresh units (B1R) chart shortfall as a share of the circuit's (%)",
+    "value": 56.038820965609425,
+    "printed": "56",
+    "formatted": "56",
+    "pass": true
+   }
+  ]
+ },
+ "script_sha256": "4d12880fe9317ec1c3e862d2bfdf3a9e8423de7dcc3b8c931bc8cc38240ad05a"
+}

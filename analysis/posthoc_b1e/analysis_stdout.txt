@@ -1,0 +1,27 @@
+{
+ "records": 72,
+ "failed": [],
+ "family_E": {
+  "holm_rejected": {
+   "E1": false,
+   "E2": true
+  },
+  "reading": "optimised circuit steps reach gains not distinguishable from the best linear tangent step found; the shortfall lies in the natural step's path"
+ }
+}
+shipped 0.001 E1_OPT-CIRC_minus_OPT-TAN: -0.09 [-0.56, +0.39] p=0.71 n=36
+shipped 0.001 E2_OPT-CIRC_minus_HQ-Fisher: +1.42 [+0.75, +2.09] p=0.00013 n=36
+shipped 0.001 OPT-TAN_minus_TAN: -0.09 [-0.16, -0.01] p=0.021 n=36
+shipped 0.001 TAN-c_minus_TAN: -0.05 [-0.12, +0.02] p=0.17 n=36
+shipped 0.01 E1_OPT-CIRC_minus_OPT-TAN: -0.60 [-2.21, +1.02] p=0.46 n=36
+shipped 0.01 E2_OPT-CIRC_minus_HQ-Fisher: +4.71 [+2.91, +6.50] p=6e-06 n=36
+shipped 0.01 OPT-TAN_minus_TAN: -0.39 [-0.86, +0.08] p=0.099 n=36
+shipped 0.01 TAN-c_minus_TAN: -0.23 [-0.42, -0.04] p=0.019 n=36
+heldout 0.001 E1_OPT-CIRC_minus_OPT-TAN: +0.36 [-0.01, +0.73] p=0.056 n=36
+heldout 0.001 E2_OPT-CIRC_minus_HQ-Fisher: +1.62 [+0.89, +2.36] p=8e-05 n=36
+heldout 0.001 OPT-TAN_minus_TAN: +0.02 [-0.06, +0.09] p=0.68 n=36
+heldout 0.001 TAN-c_minus_TAN: +0.05 [-0.03, +0.12] p=0.23 n=36
+heldout 0.01 E1_OPT-CIRC_minus_OPT-TAN: +0.00 [-1.43, +1.43] p=1 n=36
+heldout 0.01 E2_OPT-CIRC_minus_HQ-Fisher: +6.02 [+4.02, +8.02] p=5.7e-07 n=36
+heldout 0.01 OPT-TAN_minus_TAN: +0.01 [-0.50, +0.53] p=0.96 n=36
+heldout 0.01 TAN-c_minus_TAN: +0.17 [-0.10, +0.45] p=0.21 n=36

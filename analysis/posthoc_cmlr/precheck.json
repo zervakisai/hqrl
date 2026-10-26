@@ -1,0 +1,18 @@
+{
+ "plan_sha256": "9717ddf3bbb3a94e1421e650ee6358a3076318e324e7e86ffa2285477f4f0063",
+ "checks": {
+  "evaluation": {
+   "compared": 2,
+   "identical": true
+  },
+  "update": {
+   "compared": 6,
+   "identical": true
+  },
+  "episode": {
+   "compared": 67,
+   "identical": true
+  }
+ },
+ "passed": true
+}

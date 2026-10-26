@@ -1,0 +1,12 @@
+{
+ "provisional": false,
+ "largest_common_checkpoint": {
+  "classical": 300000,
+  "HQ_vs_C-matched": 300000
+ },
+ "completed_300k": true,
+ "LONG_reading": "systems conclusion holds at 300,000 decisions for these classical heads"
+}
+C-strong J30k 0.0575 J_T 0.0055 L1 -0.052 closed -0.358
+C-matched J30k 0.0355 J_T 0.0438 L1 0.0083 closed 0.035
+HQ - C-matched at T {'n': 6, 'mean': np.float64(0.0031377249294968386), 'lo': np.float64(-0.028576395503665353), 'hi': np.float64(0.034851845362659034), 'p': 0.8093707313087897, 'share_negative': 0.6666666666666666} not resolved at n = 6 (not evidence of equality)

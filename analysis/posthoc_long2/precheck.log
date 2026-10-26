@@ -1,0 +1,46 @@
+{
+ "mlp": {
+  "base_equals_stored_LONG_init_bitwise": true,
+  "stored_checkpoint": "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_long/runs/mlp__b4/run/mlp/checkpoints/update00000_decisions00000000.pt",
+  "wide_obs_dim": 270,
+  "wide_other_tensors_equal": true,
+  "wide_encoder_columns_ok": true,
+  "max_abs_dlogit": 1.249000902703301e-16,
+  "max_abs_dvalue": 4.163336342344337e-17,
+  "max_abs_dstate": 5.551115123125783e-17,
+  "global_rng_after_build_equal": true,
+  "passed": true
+ },
+ "bottleneck": {
+  "base_equals_stored_LONG_init_bitwise": true,
+  "stored_checkpoint": "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_long/runs/bottleneck__b4/run/bottleneck/checkpoints/update00000_decisions00000000.pt",
+  "wide_obs_dim": 270,
+  "wide_other_tensors_equal": true,
+  "wide_encoder_columns_ok": true,
+  "max_abs_dlogit": 2.220446049250313e-16,
+  "max_abs_dvalue": 4.163336342344337e-17,
+  "max_abs_dstate": 5.551115123125783e-17,
+  "global_rng_after_build_equal": true,
+  "passed": true
+ }
+}
+precheck_a a_mlp__b4 completed 126 
+precheck_c c_mlp__b4 completed 225 
+precheck_a a_bottleneck__b4 completed 152 
+precheck_c c_bottleneck__b4 completed 221 
+{
+ "passed": true,
+ "a": {
+  "mlp": true,
+  "bottleneck": true
+ },
+ "b": {
+  "mlp": true,
+  "bottleneck": true
+ },
+ "c": {
+  "mlp": true,
+  "bottleneck": true
+ }
+}
+exit 0

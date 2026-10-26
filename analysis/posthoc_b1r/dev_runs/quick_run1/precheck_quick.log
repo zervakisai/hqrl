@@ -1,0 +1,196 @@
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py:85: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  cache[key] = (float(L), gL.numpy().copy(), float(kl), gk.numpy().copy())
+{
+ "kind": "development check (not the precheck of record)",
+ "utc_start": "2026-10-25T07:35:54+00:00",
+ "plan_sha256": null,
+ "runner_sha256": "5b7fc101e21bd9c184710bd7bf9a09f815a13ecbe920d12e91bf3fb42924f796",
+ "reused_sha256": {
+  "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1c/runner.py": "a712ee54f5568ab9e9cb4c34e719f9865bce9d3feea8ddb109d4b26e0f0d7d14",
+  "/home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_b1e/runner.py": "909d6f54346d81f85ddf6c3cd1be1e6f0121347178557fdbed8bab1d6a12e446"
+ },
+ "b1_tree_live_copy": "a66f89793664b63bdf6e1ece843667972d30d142dc0fd5b8c2f684b7fbeecb56",
+ "unit": "shipped 0 (a B1 unit; never a fresh unit)",
+ "b1_tree_ok": true,
+ "seeds": {
+  "fresh_seed_counts": {
+   "dq_fit": 9216,
+   "dq_calibration": 9216,
+   "dq_heldout": 9216
+  },
+  "fresh_seed_ranges": {
+   "dq_fit": [
+    25600,
+    34815
+   ],
+   "dq_calibration": [
+    25600,
+    34815
+   ],
+   "dq_heldout": [
+    25600,
+    34815
+   ]
+  },
+  "overlap_with_b1_formula": {
+   "dq_fit": 0,
+   "dq_calibration": 0,
+   "dq_heldout": 0
+  },
+  "overlap_with_other_extensions": {
+   "dq_fit": 0,
+   "dq_calibration": 0,
+   "dq_heldout": 0
+  },
+  "b1_rule_identical": true,
+  "b1_stored_seed_counts": {
+   "dq_fit": 18432,
+   "dq_oracle": 18432,
+   "dq_calibration": 18432,
+   "dq_heldout": 18432
+  },
+  "overlap_with_b1_stored": {
+   "dq_fit": 0,
+   "dq_calibration": 0,
+   "dq_heldout": 0
+  },
+  "b1_stored_within_formula": true,
+  "fresh_stream_units": [
+   1100,
+   1135
+  ],
+  "stream_units_disjoint": true,
+  "init_seeds_distinct": true,
+  "fresh_weights_distinct": true,
+  "b1_unit0_weights_rebuilt": true,
+  "passed": true
+ },
+ "A": {
+  "part": "A: episodes, row prefix, certificate",
+  "status": "complete",
+  "error": null,
+  "traceback": null,
+  "timing": {
+   "episodes": 48,
+   "decisions": 2218,
+   "collect_s": 95.29674431399326,
+   "s_per_episode": 1.9853488398748596,
+   "s_per_1000_decisions": 42.96516876194466,
+   "rows_s": 0.10412496703793295,
+   "save_rows_s": 0.0571328460064251,
+   "arms_c_s": null,
+   "arms_e_s": null,
+   "certificate_s": 0.8000778459827416,
+   "wall_s": 99.45195823698305,
+   "loadavg_start": [
+    12.19580078125,
+    10.3759765625,
+    6.25048828125
+   ],
+   "loadavg_end": [
+    15.458984375,
+    11.87939453125,
+    7.2041015625
+   ]
+  },
+  "episodes_vs_b1": {
+   "fit": {
+    "episodes": 16,
+    "same_count": true,
+    "same_seed": true,
+    "same_J": true,
+    "same_decisions": true
+   },
+   "calibration": {
+    "episodes": 16,
+    "same_count": true,
+    "same_seed": true,
+    "same_J": true,
+    "same_decisions": true
+   },
+   "heldout": {
+    "episodes": 16,
+    "same_count": true,
+    "same_seed": true,
+    "same_J": true,
+    "same_decisions": true
+   },
+   "passed": true
+  },
+  "rows_prefix_vs_b1c": {
+   "readout_equal": true,
+   "fit": {
+    "angles": false,
+    "mask": true,
+    "action": true,
+    "episode": true,
+    "rows": 719
+   },
+   "calibration": {
+    "angles": true,
+    "mask": true,
+    "action": true,
+    "episode": true,
+    "rows": 732
+   },
+   "heldout": {
+    "angles": false,
+    "mask": true,
+    "action": true,
+    "episode": true,
+    "rows": 719
+   },
+   "passed": false
+  },
+  "certificate": {
+   "static_failures": [],
+   "P1_solve_residual": 1.1546319456101628e-14,
+   "P2_offgrid_max_abs": 1.099120794378905e-14,
+   "P3_max_abs_logprob": 1.3322676295501878e-15,
+   "P4": {
+    "decisions": 51,
+    "max_abs_dlogprob": 6.661338147750939e-16
+   }
+  },
+  "passed": false
+ },
+ "B": {
+  "part": "B: arms on B1C saved rows",
+  "loadavg_start": [
+   12.19580078125,
+   10.3759765625,
+   6.25048828125
+  ],
+  "arms_c_s": 122.47478148702066,
+  "arms_vs_b1c": {
+   "compared": 1084,
+   "max_rel": 0.0,
+   "mismatch": [],
+   "missing": [],
+   "ok": true
+  },
+  "arms_e_s": 749.0579893079994,
+  "opt_status": "complete",
+  "opt_error": null,
+  "arms_vs_b1e": {
+   "compared": 199,
+   "max_rel": 0.0,
+   "mismatch": [],
+   "missing": [],
+   "ok": true
+  },
+  "passed": true,
+  "wall_s": 875.17482530899,
+  "loadavg_end": [
+   16.798828125,
+   16.9375,
+   13.01708984375
+  ]
+ },
+ "passed": false,
+ "utc_end": "2026-10-25T07:50:32+00:00"
+}
+exit 0

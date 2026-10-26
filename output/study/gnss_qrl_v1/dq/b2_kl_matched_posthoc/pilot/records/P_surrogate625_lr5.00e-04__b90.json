@@ -1,0 +1,149 @@
+{
+ "kind": "pilot",
+ "set": "P1",
+ "arm": "surrogate625",
+ "block": 90,
+ "learning_rate": 0.0005,
+ "status": "completed",
+ "plan_sha256": null,
+ "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68",
+ "config": {
+  "hidden": 64,
+  "memory": "gru",
+  "critic_gradient": "stop",
+  "dtype": "float64",
+  "torch_threads": 1,
+  "note": "E3 calibration pilot (development): S625-twin lr 5.00e-04 block 90",
+  "max_updates": null,
+  "config_version": "gnss-p4-train-config/1",
+  "freeze": "output/study/gnss_qrl_v1/claude/p3_freeze_v1/p3_frozen_configuration.json",
+  "execution_manifest": "output/study/gnss_qrl_v1/claude/p3_execution_manifest_v1/p3_execution_manifest.json",
+  "time_model": "output/training/time_model_village_v1/20260917T074923Z/time_model.json",
+  "critic": "mlp",
+  "transitions_per_update": 512,
+  "gamma_ref": 1.0,
+  "reference_duration_s": 60.0,
+  "lambda_ref": 0.95,
+  "lambda_mode": "time",
+  "study": "dq_b2_smoke",
+  "role": "dq_b2_smoke",
+  "arms": [
+   "surrogate625"
+  ],
+  "candidate": "e3_lr5.00e-04_ent0",
+  "block": 90,
+  "total_policy_decisions": 30000,
+  "checkpoint_decisions": [
+   0
+  ],
+  "ppo": {
+   "clip_range": 0.2,
+   "value_coef": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "minibatch_transitions": 256,
+   "advantage_std_floor": 0.05,
+   "max_segment_length": 32,
+   "learning_rate": 0.0005,
+   "entropy_coef": 0.0
+  },
+  "evaluation": null,
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+ },
+ "code_tree_sha256": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "twin_parity": {
+  "P4": {
+   "cell_id": "d2__tight_derived__positive",
+   "seed": 20262011000,
+   "decisions": 36,
+   "max_abs_dlogprob": 8.881784197001252e-16
+  },
+  "static": {
+   "P1_solve_residual": 1.6209256159527285e-14,
+   "P2_offgrid_max_abs": 2.0733414984874798e-14,
+   "P5_shared_tensors": 16,
+   "P5_unequal": [],
+   "P6_max_off_support": 1.2163793381114922e-15,
+   "P7_max_abs_z": 0.9939311269125187,
+   "static_failures": []
+  }
+ },
+ "summary": {
+  "arm": "surrogate625",
+  "role": "Surrogate625",
+  "block": 90,
+  "run_role": "dq_b2_smoke",
+  "candidate": "e3_lr5.00e-04_ent0",
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "study": "dq_b2_smoke",
+  "updates": 57,
+  "policy_decisions": 30277,
+  "episodes": 723,
+  "empty_episodes": 0,
+  "infrastructure_episodes": 0,
+  "dropped_reward": 0.0,
+  "wall_s": 678.9478701949993,
+  "walls": {
+   "rollout_s": 664.3230262280849,
+   "update_s": 13.908427160960855,
+   "checkpoint_s": 0.020512846997007728
+  },
+  "cpu": {
+   "rollout_s": 611.1761441389998,
+   "update_s": 12.78462578399995,
+   "checkpoint_s": 0.009211784999964223,
+   "evaluation_s": 0.0
+  },
+  "load_average": {
+   "start": [
+    17.43115234375,
+    17.0224609375,
+    13.2890625
+   ],
+   "end": [
+    17.63623046875,
+    18.18017578125,
+    15.9892578125
+   ]
+  },
+  "process_rusage": {
+   "user_s": 635.663343,
+   "system_s": 2.852488,
+   "max_rss_kib": 603840
+  },
+  "rollout_per_decision_s": 0.021941507620572873,
+  "update_per_decision_s": 0.00045937269745882533,
+  "actor_head_parameters": 2899,
+  "model_parameters": 52564,
+  "checkpoints": [
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/update00000_decisions00000000.pt",
+    "sha256": "78ae0f333eba32d9a0b3f7adbe1a209f675bd224b40d2b6f97e9d30e5cf67987",
+    "points": [
+     0
+    ],
+    "final": false,
+    "policy_decisions": 0
+   },
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/final_update00057_decisions00030277.pt",
+    "sha256": "c43b7c381059e1648633a5333350ca1222b79953dbe12f5a5bc4e618b31a99c5",
+    "points": [],
+    "final": true,
+    "policy_decisions": 30277
+   }
+  ],
+  "status": "completed",
+  "failure": null,
+  "learning_curve": {},
+  "auc": {}
+ },
+ "kl": {
+  "mean": 0.00445755680584752,
+  "median": 0.00379010020368163,
+  "updates": 57
+ },
+ "wall_s": 693.3963181170111
+}

@@ -1,0 +1,149 @@
+{
+ "kind": "pilot",
+ "set": "P1",
+ "arm": "surrogate625",
+ "block": 94,
+ "learning_rate": 0.0007,
+ "status": "completed",
+ "plan_sha256": null,
+ "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68",
+ "config": {
+  "hidden": 64,
+  "memory": "gru",
+  "critic_gradient": "stop",
+  "dtype": "float64",
+  "torch_threads": 1,
+  "note": "E3 calibration pilot (development): S625-twin lr 7.00e-04 block 94",
+  "max_updates": null,
+  "config_version": "gnss-p4-train-config/1",
+  "freeze": "output/study/gnss_qrl_v1/claude/p3_freeze_v1/p3_frozen_configuration.json",
+  "execution_manifest": "output/study/gnss_qrl_v1/claude/p3_execution_manifest_v1/p3_execution_manifest.json",
+  "time_model": "output/training/time_model_village_v1/20260917T074923Z/time_model.json",
+  "critic": "mlp",
+  "transitions_per_update": 512,
+  "gamma_ref": 1.0,
+  "reference_duration_s": 60.0,
+  "lambda_ref": 0.95,
+  "lambda_mode": "time",
+  "study": "dq_b2_smoke",
+  "role": "dq_b2_smoke",
+  "arms": [
+   "surrogate625"
+  ],
+  "candidate": "e3_lr7.00e-04_ent0",
+  "block": 94,
+  "total_policy_decisions": 30000,
+  "checkpoint_decisions": [
+   0
+  ],
+  "ppo": {
+   "clip_range": 0.2,
+   "value_coef": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "minibatch_transitions": 256,
+   "advantage_std_floor": 0.05,
+   "max_segment_length": 32,
+   "learning_rate": 0.0007,
+   "entropy_coef": 0.0
+  },
+  "evaluation": null,
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+ },
+ "code_tree_sha256": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "twin_parity": {
+  "P4": {
+   "cell_id": "d4__tight_derived__positive",
+   "seed": 20262015000,
+   "decisions": 32,
+   "max_abs_dlogprob": 8.881784197001252e-16
+  },
+  "static": {
+   "P1_solve_residual": 9.992007221626409e-15,
+   "P2_offgrid_max_abs": 1.1435297153639112e-14,
+   "P5_shared_tensors": 16,
+   "P5_unequal": [],
+   "P6_max_off_support": 1.5171898692928317e-15,
+   "P7_max_abs_z": 0.9809166356580002,
+   "static_failures": []
+  }
+ },
+ "summary": {
+  "arm": "surrogate625",
+  "role": "Surrogate625",
+  "block": 94,
+  "run_role": "dq_b2_smoke",
+  "candidate": "e3_lr7.00e-04_ent0",
+  "protocol_freeze_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "study": "dq_b2_smoke",
+  "updates": 56,
+  "policy_decisions": 30222,
+  "episodes": 612,
+  "empty_episodes": 0,
+  "infrastructure_episodes": 0,
+  "dropped_reward": 0.0,
+  "wall_s": 1051.7468558959954,
+  "walls": {
+   "rollout_s": 1038.3196949190751,
+   "update_s": 12.805543244961882,
+   "checkpoint_s": 0.00932312398799695
+  },
+  "cpu": {
+   "rollout_s": 1004.1246800869997,
+   "update_s": 12.120820257000013,
+   "checkpoint_s": 0.008438256000035338,
+   "evaluation_s": 0.0
+  },
+  "load_average": {
+   "start": [
+    17.25,
+    17.974609375,
+    18.31591796875
+   ],
+   "end": [
+    17.884765625,
+    17.76123046875,
+    17.8583984375
+   ]
+  },
+  "process_rusage": {
+   "user_s": 1026.602088,
+   "system_s": 3.7428179999999998,
+   "max_rss_kib": 604168
+  },
+  "rollout_per_decision_s": 0.03435641899672673,
+  "update_per_decision_s": 0.00042371594351670576,
+  "actor_head_parameters": 2899,
+  "model_parameters": 52564,
+  "checkpoints": [
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/update00000_decisions00000000.pt",
+    "sha256": "4cfabad473850a607331cbaaafdb6fe11474903b0a696fc472749d8b22050325",
+    "points": [
+     0
+    ],
+    "final": false,
+    "policy_decisions": 0
+   },
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/final_update00056_decisions00030222.pt",
+    "sha256": "54c0b3ef8a5bd9fa3f7c75d5bd56712ce71fb680e421c832dec82afe488a944d",
+    "points": [],
+    "final": true,
+    "policy_decisions": 30222
+   }
+  ],
+  "status": "completed",
+  "failure": null,
+  "learning_curve": {},
+  "auc": {}
+ },
+ "kl": {
+  "mean": 0.009155136324281015,
+  "median": 0.007825533469769566,
+  "updates": 56
+ },
+ "wall_s": 1065.404534063011
+}

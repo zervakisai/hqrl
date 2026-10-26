@@ -1,0 +1,64 @@
+{
+ "records": 36,
+ "missing": [],
+ "failed": [],
+ "excluded_internal_consistency": [],
+ "units_analysed": 36,
+ "incomplete": false,
+ "family_R": {
+  "p": [
+   6.940946840492318e-06,
+   1.7482016532589472e-05
+  ],
+  "n": {
+   "R1": 36,
+   "R2": 36
+  },
+  "holm_rejected": {
+   "R1": true,
+   "R2": true
+  },
+  "opposite_direction": {
+   "R1": 0.0,
+   "R2": 0.0
+  }
+ },
+ "family_S": {
+  "p": [
+   0.007328638702546196,
+   1.05285255594388e-05,
+   0.007795234635553449
+  ],
+  "holm_rejected": {
+   "S1": true,
+   "S2": true,
+   "R3": true
+  },
+  "R3_two_sided_sign_at_0.05": 0
+ },
+ "readings": {
+  "R1": "replicated: on fresh units, in a prespecified test, the circuit-realised natural step (HQ-Fisher) gains less than the same initial direction applied linearly (TAN)",
+  "R2": "replicated: the matched classical trigonometric chart (CTRIG) also falls short of the linear tangent step on fresh units. This is an existence claim (a matched classical chart also shows the shortfall, so the path effect is not specific to the circuit for this matching); it does not say that the chart and the circuit fall short by the same amount: S1 not rejected is not equivalence",
+  "R3": "margin passed (secondary): on held-out gain, OPT-CIRC's mean is shown to be less than delta below OPT-TAN's, so the held-out gap between the best optimised circuit step and the best linear tangent step found (OPT-CIRC - OPT-TAN on G_H; local optimiser) is smaller than delta (delta = 2.85e-5, fixed at half of B1's natural-step shortfall on the original units (5.70e-5), not rescaled to the fresh units' own); the two-sided difference is not resolved; on the fit-set objective L_F, which reachability concerns, OPT-CIRC - OPT-TAN is -7.52 [-8.53, -6.52] x 1e-5 (descriptive, n = 36); this is a held-out reading: reachability concerns L_F and is not tested",
+  "R3_scale": "delta = 2.85e-5 is fixed at half of B1's natural-step shortfall on the original units (HQ-Fisher - TAN, 5.70e-5; not rescaled to the fresh units' own shortfall) and is about 71% of OPT-TAN's mean held-out gain on the original units (3.99e-5), so passing the margin means that OPT-CIRC keeps at least about 29% of OPT-TAN's held-out gain; the margin was chosen knowing that the original units pass (p = 0.0038). Secondary test on held-out gain G_H, which also mixes in overfitting; it is not a test of reachability, which concerns the fit-set objective L_F (on the original units OPT-CIRC - OPT-TAN on L_F was -7.98e-5 [-9.34, -6.62], n = 36, about 2.8 delta). The optimiser is local (SLSQP from five starts for OPT-CIRC, four for OPT-TAN); never worded as non-inferior or replicated in a headline.",
+  "joint_R1_R3": "the B1 shortfall replicates (R1); secondary: on held-out gain, the best optimised circuit step found comes within delta of the best linear tangent step found (local optimiser) (delta = 2.85e-5, fixed at half of B1's natural-step shortfall on the original units (5.70e-5), not rescaled to the fresh units' own; on the fit-set objective L_F, which reachability concerns, OPT-CIRC - OPT-TAN is -7.52 [-8.53, -6.52] x 1e-5 (descriptive, n = 36)); delta is at most half of the fresh shortfall's point estimate (R1 mean -6.35 x 1e-5, at or below -2 delta = -5.70 x 1e-5), so on held-out gain this gap accounts for less than half of the fresh shortfall, which lies mainly outside the gap between the best optimised steps found; this is a held-out reading: reachability concerns L_F and is not tested",
+  "generic_vs_specific": "shown for the circuit and for a matched classical chart (an existence claim; S1 not rejected is not equivalence)",
+  "S1": "CTRIG gains more than HQ-Fisher (secondary, two-sided)",
+  "S2": "OPT-CIRC gains more than HQ-Fisher (secondary; B1E's E2 direction)",
+  "rule": "B1R is reported beside B1, never merged with it; its p values are never combined with B1's; secondary results (family S, including R3) are never read as primary"
+ }
+}
+kappa 0.001 R1_HQ-Fisher_minus_TAN: -1.87 [-2.65, -1.08] p=1.3e-05 (less) dz=-0.81 n=36
+kappa 0.001 R2_CTRIG_minus_TAN: -1.43 [-1.90, -0.95] p=3.4e-07 (less) dz=-1.01 n=36
+kappa 0.001 S1_CTRIG_minus_HQ-Fisher: +0.44 [-0.15, +1.03] p=0.14 (two-sided) dz=+0.25 n=36
+kappa 0.001 S2_OPT-CIRC_minus_HQ-Fisher: +1.78 [+1.03, +2.53] p=1.3e-05 (greater) dz=+0.81 n=36
+kappa 0.001 R3_OPT-CIRC_minus_OPT-TAN_margin: -0.05 [-0.46, +0.36] p=3.3e-16 (greater) dz=-0.04 n=36
+kappa 0.001 R3_two_sided_difference: -0.05 [-0.46, +0.36] p=0.81 (two-sided) dz=-0.04 n=36
+kappa 0.001 OPT-CIRC_minus_OPT-TAN_L_F: -1.33 [-1.65, -1.02] p=3.9e-10 (two-sided) dz=-1.43 n=36
+kappa 0.01 R1_HQ-Fisher_minus_TAN: -6.35 [-8.91, -3.80] p=6.9e-06 (less) dz=-0.84 n=36
+kappa 0.01 R2_CTRIG_minus_TAN: -3.56 [-5.08, -2.04] p=1.7e-05 (less) dz=-0.79 n=36
+kappa 0.01 S1_CTRIG_minus_HQ-Fisher: +2.79 [+0.80, +4.78] p=0.0073 (two-sided) dz=+0.47 n=36
+kappa 0.01 S2_OPT-CIRC_minus_HQ-Fisher: +5.25 [+3.08, +7.42] p=1.1e-05 (greater) dz=+0.82 n=36
+kappa 0.01 R3_OPT-CIRC_minus_OPT-TAN_margin: -0.85 [-2.45, +0.75] p=0.0078 (greater) dz=-0.18 n=36
+kappa 0.01 R3_two_sided_difference: -0.85 [-2.45, +0.75] p=0.29 (two-sided) dz=-0.18 n=36
+kappa 0.01 OPT-CIRC_minus_OPT-TAN_L_F: -7.52 [-8.53, -6.52] p=6.1e-17 (two-sided) dz=-2.52 n=36

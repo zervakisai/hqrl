@@ -1,0 +1,6 @@
+{
+ "provisional": false,
+ "G1_reading": "below zero: the deficit persists from generic angles"
+}
+G1 {"n": 36, "mean": -0.011683924253623091, "lo": -0.0163522810488631, "hi": -0.007015567458383083, "p": 1.25611732558648e-05, "dz": -0.8468228508348634, "share_negative": 0.8055555555555556, "holm_rejected": true}
+G2 {"n": 36, "mean": -0.003022973718469251, "lo": -0.006140422775513431, "hi": 9.447533857492862e-05, "p": 0.05696058061261507, "dz": -0.32809747117277305, "share_negative": 0.6666666666666666, "holm_rejected": false}

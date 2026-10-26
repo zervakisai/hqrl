@@ -1,0 +1,287 @@
+{
+ "circuit": "heldout",
+ "index": 22,
+ "status": "complete",
+ "plan_sha256": "418c0947322a79b429f2e9b0f5155d72a61ab2625e26c428f2f4719af0a4d3de",
+ "arms": {
+  "k": 20,
+  "0.001": {
+   "HQ-Fisher": {
+    "status": "ok",
+    "alpha": 8.674831048763874,
+    "kl_K": 0.0009996938013384638,
+    "G_H": -3.88470688190214e-05,
+    "L_F": -1.690848879726105e-05,
+    "max_abs_angle_step": 29.830503651428554,
+    "mean_abs_angle_step": 7.8596906789837195
+   },
+   "HQ-plain": {
+    "status": "ok",
+    "alpha": 28117.611826883476,
+    "kl_K": 0.0010008291908700276,
+    "G_H": -3.289552956993409e-05,
+    "L_F": -1.8673741812125906e-05,
+    "max_abs_angle_step": 0.6013324194821726,
+    "mean_abs_angle_step": 0.1484806983619302
+   },
+   "TAN": {
+    "status": "ok",
+    "alpha": 38.64670127033266,
+    "kl_K": 0.0010004108263832738,
+    "G_H": 2.714085445968969e-05,
+    "L_F": 5.84785466096324e-05
+   },
+   "TAN-c": {
+    "status": "ok",
+    "alpha": 37.485274370604756,
+    "kl_K": 0.000999962478407679,
+    "G_H": 2.738385423544602e-05,
+    "L_F": 5.891403777716414e-05
+   },
+   "reproduction_max_rel_diff": 0.0,
+   "first_crossing_HQ-Fisher": {
+    "monotone_on_grid": false,
+    "earlier_crossing": true,
+    "alpha_first": 7.898704758369782,
+    "G_H_first": -3.5486802294718344e-05
+   },
+   "OPT-CIRC": {
+    "ends": [
+     {
+      "start": "HQ-Fisher",
+      "L_F": 1.25271165457262e-05,
+      "kl_K": 0.0002724967877039973,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "HQ-plain",
+      "L_F": 1.2193994510844175e-05,
+      "kl_K": 0.00028925191278820106,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random0",
+      "L_F": 1.24558818092807e-05,
+      "kl_K": 0.000265394780774351,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random1",
+      "L_F": 1.2130058548343629e-05,
+      "kl_K": 0.00031464547986138295,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random2",
+      "L_F": 1.1746184065915978e-05,
+      "kl_K": 0.00037641446405491086,
+      "feasible": true,
+      "iterations": 170,
+      "message": "Optimization terminated successfully"
+     }
+    ],
+    "start": "HQ-Fisher",
+    "L_F": 1.25271165457262e-05,
+    "kl_K": 0.0002724967877039973,
+    "feasible": true,
+    "iterations": 200,
+    "message": "Iteration limit reached",
+    "G_H": 7.929548410638295e-06,
+    "kl_H": 0.0002901889095620173,
+    "max_abs_angle_step": 30.291321108239604
+   },
+   "OPT-TAN": {
+    "ends": [
+     {
+      "start": "TAN",
+      "L_F": 5.910934238415277e-05,
+      "kl_K": 0.0010000001453344333,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random0",
+      "L_F": 4.6396497229637585e-05,
+      "kl_K": 0.0010000271674417292,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random1",
+      "L_F": 4.763437094410969e-05,
+      "kl_K": 0.001001543861465982,
+      "feasible": false,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random2",
+      "L_F": 4.639453362298506e-05,
+      "kl_K": 0.0010000023842672322,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     }
+    ],
+    "start": "TAN",
+    "L_F": 5.910934238415277e-05,
+    "kl_K": 0.0010000001453344333,
+    "feasible": true,
+    "iterations": 200,
+    "message": "Iteration limit reached",
+    "G_H": 2.7633578401915913e-05,
+    "kl_H": 0.0010174436833396063
+   }
+  },
+  "0.01": {
+   "HQ-Fisher": {
+    "status": "ok",
+    "alpha": 15.291774754474808,
+    "kl_K": 0.009997018541535776,
+    "G_H": -0.00010640467688299958,
+    "L_F": -5.8996884497599283e-05,
+    "max_abs_angle_step": 52.58446419140172,
+    "mean_abs_angle_step": 13.85486574058299
+   },
+   "HQ-plain": {
+    "status": "ok",
+    "alpha": 43311.15496386076,
+    "kl_K": 0.009997186711543147,
+    "G_H": -9.54863152657366e-05,
+    "L_F": -6.749896031540043e-05,
+    "max_abs_angle_step": 0.9262664896769234,
+    "mean_abs_angle_step": 0.22871325543185778
+   },
+   "TAN": {
+    "status": "ok",
+    "alpha": 123.40042886079388,
+    "kl_K": 0.009998167112988293,
+    "G_H": 7.936616798116806e-05,
+    "L_F": 0.00018833105046356315
+   },
+   "TAN-c": {
+    "status": "ok",
+    "alpha": 119.8072575007939,
+    "kl_K": 0.00999928312383291,
+    "G_H": 7.954129457199472e-05,
+    "L_F": 0.00018974868440604594
+   },
+   "reproduction_max_rel_diff": 0.0,
+   "first_crossing_HQ-Fisher": {
+    "monotone_on_grid": false,
+    "earlier_crossing": true,
+    "alpha_first": 13.496902692668328,
+    "G_H_first": -0.00011097208917402496
+   },
+   "OPT-CIRC": {
+    "ends": [
+     {
+      "start": "HQ-Fisher",
+      "L_F": 1.2329009381676739e-05,
+      "kl_K": 0.00027760888643031125,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "HQ-plain",
+      "L_F": 1.1747952223036887e-05,
+      "kl_K": 0.00037598997788183434,
+      "feasible": true,
+      "iterations": 176,
+      "message": "Optimization terminated successfully"
+     },
+     {
+      "start": "random0",
+      "L_F": 1.2427643491735859e-05,
+      "kl_K": 0.0002660088170221889,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random1",
+      "L_F": 1.2481366152480326e-05,
+      "kl_K": 0.00026626705909692445,
+      "feasible": true,
+      "iterations": 194,
+      "message": "Optimization terminated successfully"
+     },
+     {
+      "start": "random2",
+      "L_F": 1.2360821939416098e-05,
+      "kl_K": 0.00028866623853840087,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     }
+    ],
+    "start": "random1",
+    "L_F": 1.2481366152480326e-05,
+    "kl_K": 0.00026626705909692445,
+    "feasible": true,
+    "iterations": 194,
+    "message": "Optimization terminated successfully",
+    "G_H": 9.09528174637692e-06,
+    "kl_H": 0.0002785737124979962,
+    "max_abs_angle_step": 2.1014832588902297
+   },
+   "OPT-TAN": {
+    "ends": [
+     {
+      "start": "TAN",
+      "L_F": 0.00019269305053585547,
+      "kl_K": 0.010000467336739425,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random0",
+      "L_F": 0.00014507957606698003,
+      "kl_K": 0.010000223938844399,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random1",
+      "L_F": 0.00014690181298321247,
+      "kl_K": 0.010000810754715445,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     },
+     {
+      "start": "random2",
+      "L_F": 0.00014717973869056534,
+      "kl_K": 0.010000004733652151,
+      "feasible": true,
+      "iterations": 200,
+      "message": "Iteration limit reached"
+     }
+    ],
+    "start": "TAN",
+    "L_F": 0.00019269305053585547,
+    "kl_K": 0.010000467336739425,
+    "feasible": true,
+    "iterations": 200,
+    "message": "Iteration limit reached",
+    "G_H": 8.012782655042278e-05,
+    "kl_H": 0.01019129996055462
+   }
+  }
+ },
+ "rows_sha256": "20a0de2d9b3bc06aad3d4b8eb6b3d0a4a956926cdf5e8c5ffe3006de9524f2c3",
+ "wall_s": 3325.0370688920084
+}

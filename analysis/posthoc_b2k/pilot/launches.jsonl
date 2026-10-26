@@ -1,0 +1,1 @@
+{"utc": "2026-10-25T075118Z", "stage": "1", "workers": 2, "runner_sha256": "96bb8b088c1221605d7f9400e407a93a896adcc77d8d7400dfeb5c8434d31e68", "candidates": {"quantum": [0.001, 0.0014, 0.002], "surrogate625": [0.0005, 0.0007, 0.001]}, "to_run": 18, "of": 18, "b2_code_tree_live_copy": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952"}

@@ -1,0 +1,34 @@
+{
+ "provisional": false,
+ "records": 72,
+ "completed": {
+  "T1_HQ": 36,
+  "T2_twin": 36
+ },
+ "kl_match": {
+  "K-H2": {
+   "target": 0.007823255686871039,
+   "achieved": 0.00847439567422313,
+   "R": 1.083231331483238,
+   "matched": true
+  },
+  "K-H1": {
+   "target": 0.00419994415996206,
+   "achieved": 0.0035127993309088676,
+   "R": 0.8363919131107211,
+   "matched": true
+  }
+ },
+ "readings": {
+  "K-H2": {
+   "direction": "below zero",
+   "reading": "at matched mean per-update KL HQ still learned less than its exact twin, and the 95% interval does not lie above B-H2 of record; B-H2 is not explained by the twin's larger updates as measured by this statistic"
+  },
+  "K-H1": {
+   "direction": "below zero",
+   "reading": "at matched mean per-update KL HQ learned less than C-matched; B-H1 is not explained by update size as measured by this statistic"
+  }
+ }
+}
+K-H2_HQ_B2_minus_twin_new {"n": 36, "dropped_blocks": [], "estimable": true, "mean": -0.009941089343561284, "sd": 0.01241752174016986, "se": 0.0020695869566949767, "t": -4.8034170834922, "p": 2.9011061052308686e-05, "degenerate": false, "ci95": [-0.014142574232551254, -0.005739604454571313], "ci90": [-0.013437806464574396, -0.006444372222548172], "standardised_effect": -0.8005695139153667, "dz": -0.8005695139153667, "share_negative": 0.8888888888888888, "rejected": true, "holm_threshold": 0.05, "tost": {"equivalent_within_delta": false, "delta": 0.0056, "ci90": [-0.013437806464574396, -0.006444372222548172]}}
+K-H1_HQ_new_minus_Cmatched_CMLR {"n": 36, "dropped_blocks": [], "estimable": true, "mean": -0.015294449637433791, "sd": 0.015939340922331204, "se": 0.002656556820388534, "t": -5.757245438927561, "p": 1.61307293294487e-06, "degenerate": false, "ci95": [-0.020687546700352076, -0.009901352574515507], "ci90": [-0.019782894873690574, -0.01080600440117701], "standardised_effect": -0.9595409064879268, "dz": -0.9595409064879268, "share_negative": 0.8333333333333334, "rejected": true, "holm_threshold": 0.025, "tost": {"equivalent_within_delta": false, "delta": 0.0056, "ci90": [-0.019782894873690574, -0.01080600440117701]}}

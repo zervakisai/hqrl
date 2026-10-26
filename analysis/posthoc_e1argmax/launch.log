@@ -1,0 +1,59 @@
+{"utc": "2026-10-26T13:11:48+00:00", "plan_sha256": "51ba24e388f9aecd3924e047fe86e9d937a5ff168720c0ef60e7006e904bfda0", "workers": 8, "code_sha256": {"runner.py": "b64156af705b581eea00401a1292190baf6197802faa977302dd79bfa8171231", "analysis.py": "4faf8d85289e6caf4cc147fa6ac1fa45f8effe4071d5b25cc92d307827d138ee", "test_runner.py": "e1cf141f0c3d14477ccdeef93a9adc0ec4a227471a467f5bb6c99d9fc145d98d"}, "idea_e1_tree": "4a1f2e8e6a76cbc3ba286397139da9bb888c28f2e8a4bf84adb9f2494e46ddc5", "idea_dq_tree": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952", "pid": 303376, "nice": 10, "exhausted": [], "mem_available_gib": 11.04586410522461, "pending": 48}
+2026-10-26T13:14:03+00:00 surrogate625__lr1e-3_ent0__b19     attempt 1 completed              wall 134s  (1 completed this launch, 135s)
+2026-10-26T13:14:27+00:00 surrogate625__lr1e-3_ent0__b13     attempt 1 completed              wall 158s  (2 completed this launch, 159s)
+2026-10-26T13:15:25+00:00 mlp__lr3e-3_ent0__b20              attempt 1 completed              wall 216s  (3 completed this launch, 217s)
+2026-10-26T13:15:31+00:00 bottleneck__lr3e-3_ent0__b18       attempt 1 completed              wall 222s  (4 completed this launch, 223s)
+2026-10-26T13:17:20+00:00 surrogate625__lr1e-3_ent0__b14     attempt 1 completed              wall 172s  (5 completed this launch, 332s)
+2026-10-26T13:17:27+00:00 mlp__lr3e-3_ent0__b12              attempt 1 completed              wall 203s  (6 completed this launch, 339s)
+2026-10-26T13:17:53+00:00 mlp__lr3e-3_ent0__b10              attempt 1 completed              wall 147s  (7 completed this launch, 365s)
+2026-10-26T13:21:09+00:00 surrogate625__lr1e-3_ent0__b12     attempt 1 completed              wall 194s  (8 completed this launch, 561s)
+2026-10-26T13:22:12+00:00 bottleneck__lr3e-3_ent0__b21       attempt 1 completed              wall 283s  (9 completed this launch, 624s)
+2026-10-26T13:22:54+00:00 bottleneck__lr3e-3_ent0__b15       attempt 1 completed              wall 442s  (10 completed this launch, 666s)
+2026-10-26T13:24:33+00:00 mlp__lr3e-3_ent0__b17              attempt 1 completed              wall 764s  (11 completed this launch, 765s)
+2026-10-26T13:24:53+00:00 quantum__lr3e-3_ent0__b19          attempt 1 completed              wall 452s  (12 completed this launch, 785s)
+2026-10-26T13:25:39+00:00 mlp__lr3e-3_ent0__b19              attempt 1 completed              wall 830s  (13 completed this launch, 831s)
+2026-10-26T13:26:36+00:00 surrogate625__lr1e-3_ent0__b21     attempt 1 completed              wall 221s  (14 completed this launch, 888s)
+2026-10-26T13:26:40+00:00 mlp__lr3e-3_ent0__b11              attempt 1 completed              wall 891s  (15 completed this launch, 892s)
+2026-10-26T13:26:57+00:00 mlp__lr3e-3_ent0__b15              attempt 1 completed              wall 908s  (16 completed this launch, 909s)
+2026-10-26T13:28:18+00:00 mlp__lr3e-3_ent0__b14              attempt 1 completed              wall 365s  (17 completed this launch, 990s)
+2026-10-26T13:28:21+00:00 bottleneck__lr3e-3_ent0__b13       attempt 1 completed              wall 226s  (18 completed this launch, 993s)
+2026-10-26T13:28:46+00:00 mlp__lr3e-3_ent0__b21              attempt 1 completed              wall 231s  (19 completed this launch, 1018s)
+2026-10-26T13:29:00+00:00 surrogate625__lr1e-3_ent0__b10     attempt 1 completed              wall 41s  (20 completed this launch, 1032s)
+2026-10-26T13:29:42+00:00 mlp__lr3e-3_ent0__b13              attempt 1 completed              wall 242s  (21 completed this launch, 1074s)
+2026-10-26T13:30:21+00:00 bottleneck__lr3e-3_ent0__b20       attempt 1 completed              wall 224s  (22 completed this launch, 1113s)
+2026-10-26T13:30:36+00:00 bottleneck__lr3e-3_ent0__b11       attempt 1 completed              wall 235s  (23 completed this launch, 1128s)
+2026-10-26T13:31:48+00:00 quantum__lr3e-3_ent0__b20          attempt 1 completed              wall 638s  (24 completed this launch, 1200s)
+2026-10-26T13:31:58+00:00 quantum__lr3e-3_ent0__b10          attempt 1 completed              wall 216s  (25 completed this launch, 1210s)
+2026-10-26T13:32:40+00:00 bottleneck__lr3e-3_ent0__b19       attempt 1 completed              wall 218s  (26 completed this launch, 1252s)
+2026-10-26T13:32:55+00:00 surrogate625__lr1e-3_ent0__b15     attempt 1 completed              wall 138s  (27 completed this launch, 1267s)
+2026-10-26T13:34:30+00:00 quantum__lr3e-3_ent0__b18          attempt 1 completed              wall 452s  (28 completed this launch, 1362s)
+2026-10-26T13:34:50+00:00 quantum__lr3e-3_ent0__b11          attempt 1 completed              wall 268s  (29 completed this launch, 1382s)
+2026-10-26T13:35:05+00:00 surrogate625__lr1e-3_ent0__b16     attempt 1 completed              wall 145s  (30 completed this launch, 1397s)
+2026-10-26T13:35:27+00:00 quantum__lr3e-3_ent0__b14          attempt 1 completed              wall 151s  (31 completed this launch, 1419s)
+2026-10-26T13:35:31+00:00 bottleneck__lr3e-3_ent0__b14       attempt 1 completed              wall 211s  (32 completed this launch, 1423s)
+2026-10-26T13:37:15+00:00 quantum__lr3e-3_ent0__b15          attempt 1 completed              wall 508s  (33 completed this launch, 1527s)
+2026-10-26T13:37:21+00:00 bottleneck__lr3e-3_ent0__b10       attempt 1 completed              wall 150s  (34 completed this launch, 1533s)
+2026-10-26T13:37:35+00:00 mlp__lr3e-3_ent0__b18              attempt 1 completed              wall 183s  (35 completed this launch, 1547s)
+2026-10-26T13:37:47+00:00 quantum__lr3e-3_ent0__b16          attempt 1 completed              wall 138s  (36 completed this launch, 1559s)
+2026-10-26T13:38:03+00:00 quantum__lr3e-3_ent0__b17          attempt 1 completed              wall 373s  (37 completed this launch, 1575s)
+2026-10-26T13:38:45+00:00 surrogate625__lr1e-3_ent0__b20     attempt 1 completed              wall 69s  (38 completed this launch, 1617s)
+2026-10-26T13:39:16+00:00 quantum__lr3e-3_ent0__b13          attempt 1 completed              wall 72s  (39 completed this launch, 1648s)
+2026-10-26T13:39:28+00:00 surrogate625__lr1e-3_ent0__b17     attempt 1 completed              wall 42s  (40 completed this launch, 1660s)
+2026-10-26T13:39:41+00:00 surrogate625__lr1e-3_ent0__b11     attempt 1 completed              wall 113s  (41 completed this launch, 1673s)
+2026-10-26T13:40:10+00:00 mlp__lr3e-3_ent0__b16              attempt 1 completed              wall 40s  (42 completed this launch, 1702s)
+2026-10-26T13:40:30+00:00 quantum__lr3e-3_ent0__b21          attempt 1 completed              wall 72s  (43 completed this launch, 1722s)
+2026-10-26T13:41:08+00:00 bottleneck__lr3e-3_ent0__b16       attempt 1 completed              wall 336s  (44 completed this launch, 1760s)
+2026-10-26T13:41:37+00:00 surrogate625__lr1e-3_ent0__b18     attempt 1 completed              wall 390s  (45 completed this launch, 1789s)
+2026-10-26T13:42:21+00:00 quantum__lr3e-3_ent0__b12          attempt 1 completed              wall 758s  (46 completed this launch, 1833s)
+2026-10-26T13:43:48+00:00 bottleneck__lr3e-3_ent0__b12       attempt 1 completed              wall 385s  (47 completed this launch, 1920s)
+2026-10-26T13:50:32+00:00 bottleneck__lr3e-3_ent0__b17       attempt 1 completed              wall 795s  (48 completed this launch, 2324s)
+{
+ "utc": "2026-10-26T13:50:33+00:00",
+ "final_status": {
+  "completed": 48
+ },
+ "not_completed": [],
+ "wall_s": 2325.230086905998,
+ "idea_e1_tree_end": "4a1f2e8e6a76cbc3ba286397139da9bb888c28f2e8a4bf84adb9f2494e46ddc5",
+ "idea_dq_tree_end": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952"
+}

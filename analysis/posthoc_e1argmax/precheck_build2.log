@@ -1,0 +1,404 @@
+{
+ "a_static": {
+  "trees_ok_start": true,
+  "freeze_sha256": "c80eb591ed5952de638c2bef4553608b8f25aefe1170f200936f882275467965",
+  "campaign_sha256": "76bc358d824567c0f413e946bccb5c6ab0fb1d84ef26d79f09459dd557f4dd56",
+  "selection": {
+   "quantum": "lr3e-3_ent0",
+   "bottleneck": "lr3e-3_ent0",
+   "mlp": "lr3e-3_ent0",
+   "surrogate625": "lr1e-3_ent0"
+  },
+  "baselines_sha256": "00202039dda01d814146db77e85590996abda974b4e813bbb17c10d081572fd7",
+  "baselines_sha256_ok": true,
+  "rule_weighted_J_repr": "0.20564463190957744",
+  "rule_J_of_record_ok": true,
+  "rule_credited_timely_per_episode": 2.388502108982746,
+  "policies": 48,
+  "policy_table_digest": "edd1633ec79dc9a2fe3a5af89afcc7aa787375cf272b1baa94dcb03240502fcd"
+ }
+}
+{"passed": true, "results": {"test_runner.py": "passed", "analysis.py --selftest": "passed"}}
+[c]  1/48 surrogate625__lr1e-3_ent0__b13     completed              identical=True wall=110s
+[c]  2/48 bottleneck__lr3e-3_ent0__b18       completed              identical=True wall=156s
+[c]  3/48 surrogate625__lr1e-3_ent0__b19     completed              identical=True wall=181s
+[c]  4/48 mlp__lr3e-3_ent0__b20              completed              identical=True wall=192s
+[c]  5/48 mlp__lr3e-3_ent0__b17              completed              identical=True wall=203s
+[c]  6/48 mlp__lr3e-3_ent0__b19              completed              identical=True wall=240s
+[c]  7/48 mlp__lr3e-3_ent0__b11              completed              identical=True wall=247s
+[c]  8/48 mlp__lr3e-3_ent0__b15              completed              identical=True wall=277s
+[c]  9/48 mlp__lr3e-3_ent0__b12              completed              identical=True wall=181s
+[c] 10/48 mlp__lr3e-3_ent0__b10              completed              identical=True wall=138s
+[c] 11/48 surrogate625__lr1e-3_ent0__b14     completed              identical=True wall=184s
+[c] 12/48 bottleneck__lr3e-3_ent0__b15       completed              identical=True wall=163s
+[c] 13/48 quantum__lr3e-3_ent0__b19          completed              identical=True wall=182s
+[c] 14/48 bottleneck__lr3e-3_ent0__b21       completed              identical=True wall=155s
+[c] 15/48 mlp__lr3e-3_ent0__b14              completed              identical=True wall=124s
+[c] 16/48 surrogate625__lr1e-3_ent0__b12     completed              identical=True wall=178s
+[c] 17/48 quantum__lr3e-3_ent0__b20          completed              identical=True wall=152s
+[c] 18/48 bottleneck__lr3e-3_ent0__b13       completed              identical=True wall=141s
+[c] 19/48 surrogate625__lr1e-3_ent0__b21     completed              identical=True wall=165s
+[c] 20/48 surrogate625__lr1e-3_ent0__b10     completed              identical=True wall=86s
+[c] 21/48 mlp__lr3e-3_ent0__b21              completed              identical=True wall=174s
+[c] 22/48 bottleneck__lr3e-3_ent0__b11       completed              identical=True wall=114s
+[c] 23/48 bottleneck__lr3e-3_ent0__b20       completed              identical=True wall=139s
+[c] 24/48 mlp__lr3e-3_ent0__b13              completed              identical=True wall=155s
+[c] 25/48 quantum__lr3e-3_ent0__b18          completed              identical=True wall=155s
+[c] 26/48 bottleneck__lr3e-3_ent0__b19       completed              identical=True wall=104s
+[c] 27/48 quantum__lr3e-3_ent0__b10          completed              identical=True wall=151s
+[c] 28/48 quantum__lr3e-3_ent0__b15          completed              identical=True wall=156s
+[c] 29/48 surrogate625__lr1e-3_ent0__b15     completed              identical=True wall=137s
+[c] 30/48 quantum__lr3e-3_ent0__b11          completed              identical=True wall=149s
+[c] 31/48 quantum__lr3e-3_ent0__b12          completed              identical=True wall=157s
+[c] 32/48 quantum__lr3e-3_ent0__b17          completed              identical=True wall=150s
+[c] 33/48 bottleneck__lr3e-3_ent0__b14       completed              identical=True wall=148s
+[c] 34/48 mlp__lr3e-3_ent0__b18              completed              identical=True wall=101s
+[c] 35/48 surrogate625__lr1e-3_ent0__b16     completed              identical=True wall=139s
+[c] 36/48 quantum__lr3e-3_ent0__b14          completed              identical=True wall=129s
+[c] 37/48 bottleneck__lr3e-3_ent0__b10       completed              identical=True wall=117s
+[c] 38/48 bottleneck__lr3e-3_ent0__b16       completed              identical=True wall=102s
+[c] 39/48 quantum__lr3e-3_ent0__b16          completed              identical=True wall=108s
+[c] 40/48 surrogate625__lr1e-3_ent0__b18     completed              identical=True wall=130s
+[c] 41/48 surrogate625__lr1e-3_ent0__b20     completed              identical=True wall=73s
+[c] 42/48 mlp__lr3e-3_ent0__b16              completed              identical=True wall=29s
+[c] 43/48 quantum__lr3e-3_ent0__b21          completed              identical=True wall=47s
+[c] 44/48 surrogate625__lr1e-3_ent0__b17     completed              identical=True wall=51s
+[c] 45/48 bottleneck__lr3e-3_ent0__b17       completed              identical=True wall=120s
+[c] 46/48 bottleneck__lr3e-3_ent0__b12       completed              identical=True wall=105s
+[c] 47/48 surrogate625__lr1e-3_ent0__b11     completed              identical=True wall=86s
+[c] 48/48 quantum__lr3e-3_ent0__b13          completed              identical=True wall=64s
+{
+ "policies": 48,
+ "policies_identical": 48,
+ "episodes": 3840,
+ "episodes_identical": 3840,
+ "all_identical": true,
+ "per_family": {
+  "quantum": {
+   "policies_identical": 12,
+   "mean_wall_s": 133.2546572647358
+  },
+  "bottleneck": {
+   "policies_identical": 12,
+   "mean_wall_s": 130.450484893406
+  },
+  "mlp": {
+   "policies_identical": 12,
+   "mean_wall_s": 171.76149975608374
+  },
+  "surrogate625": {
+   "policies_identical": 12,
+   "mean_wall_s": 126.73116334233782
+  }
+ },
+ "makespan_s": 861.3534061620012
+}
+[d] surrogate625__lr1e-3_ent0__b10 B completed
+[d] surrogate625__lr1e-3_ent0__b10 A completed
+[d] bottleneck__lr3e-3_ent0__b10 A completed
+[d] bottleneck__lr3e-3_ent0__b10 B completed
+[d] mlp__lr3e-3_ent0__b10 B completed
+[d] mlp__lr3e-3_ent0__b10 A completed
+[d] quantum__lr3e-3_ent0__b10 B completed
+[d] quantum__lr3e-3_ent0__b10 A completed
+{
+ "block": 10,
+ "realization": 0,
+ "makespan_s": 33.652120932005346,
+ "families": {
+  "quantum": {
+   "job": "quantum__lr3e-3_ent0__b10",
+   "status": [
+    "completed",
+    "completed"
+   ],
+   "argmax_digest": "ce142d2863e885ac107ab5a957f29f3241fc6dd7c0a2da6f4148dd3f66a97824",
+   "argmax_digests_agree": true,
+   "argmax_keys": [
+    [
+     "d2__nominal_2700s__positive",
+     20261821000
+    ],
+    [
+     "d2__nominal_2700s__no_human",
+     20261821000
+    ],
+    [
+     "d2__tight_derived__positive",
+     20261823000
+    ],
+    [
+     "d2__tight_derived__no_human",
+     20261823000
+    ],
+    [
+     "d4__nominal_2700s__positive",
+     20261825000
+    ],
+    [
+     "d4__nominal_2700s__no_human",
+     20261825000
+    ],
+    [
+     "d4__tight_derived__positive",
+     20261827000
+    ],
+    [
+     "d4__tight_derived__no_human",
+     20261827000
+    ]
+   ],
+   "sample_subset_identical": true,
+   "sample_subset_differences": [],
+   "argmax_wall_s_mean": 1.5564305009320378,
+   "sample_wall_s_mean": 1.504931904750265,
+   "argmax_over_sample_wall": 1.0342198846467534,
+   "argmax_wall_s_A": [
+    1.5829610520158894,
+    1.3590674809529446,
+    1.5992547220084816,
+    1.5807326549547724,
+    2.617428844969254,
+    1.2779057010193355,
+    1.30051224300405,
+    1.1661426019854844
+   ],
+   "argmax_wall_s_B": [
+    1.61212520301342,
+    1.3557691540336236,
+    1.5870152480201796,
+    1.563720503996592,
+    2.58649429801153,
+    1.2706512119621038,
+    1.277269696991425,
+    1.1658373979735188
+   ],
+   "max_rss_kib": 553576
+  },
+  "bottleneck": {
+   "job": "bottleneck__lr3e-3_ent0__b10",
+   "status": [
+    "completed",
+    "completed"
+   ],
+   "argmax_digest": "d716763baca17e24bbd972176eaa312a6d5206d7f943184173d7c056ca6b71bf",
+   "argmax_digests_agree": true,
+   "argmax_keys": [
+    [
+     "d2__nominal_2700s__positive",
+     20261821000
+    ],
+    [
+     "d2__nominal_2700s__no_human",
+     20261821000
+    ],
+    [
+     "d2__tight_derived__positive",
+     20261823000
+    ],
+    [
+     "d2__tight_derived__no_human",
+     20261823000
+    ],
+    [
+     "d4__nominal_2700s__positive",
+     20261825000
+    ],
+    [
+     "d4__nominal_2700s__no_human",
+     20261825000
+    ],
+    [
+     "d4__tight_derived__positive",
+     20261827000
+    ],
+    [
+     "d4__tight_derived__no_human",
+     20261827000
+    ]
+   ],
+   "sample_subset_identical": true,
+   "sample_subset_differences": [],
+   "argmax_wall_s_mean": 1.4612166595688905,
+   "sample_wall_s_mean": 1.2259469315649767,
+   "argmax_over_sample_wall": 1.1919085744629918,
+   "argmax_wall_s_A": [
+    1.7700939999776892,
+    1.7630576910451055,
+    2.097856581036467,
+    2.1302758859819733,
+    0.8693637410178781,
+    0.7123098120209761,
+    1.2562927169492468,
+    1.1269245219882578
+   ],
+   "argmax_wall_s_B": [
+    1.769046310975682,
+    1.6271962870378047,
+    2.1566684399731457,
+    2.139497682044748,
+    0.8573374070110731,
+    0.7079398420173675,
+    1.2624484520056285,
+    1.133157182019204
+   ],
+   "max_rss_kib": 450304
+  },
+  "mlp": {
+   "job": "mlp__lr3e-3_ent0__b10",
+   "status": [
+    "completed",
+    "completed"
+   ],
+   "argmax_digest": "1eb1b2a4be7e60ae718472a848b936a186e165699b5d7c81f6280429674e38d4",
+   "argmax_digests_agree": true,
+   "argmax_keys": [
+    [
+     "d2__nominal_2700s__positive",
+     20261821000
+    ],
+    [
+     "d2__nominal_2700s__no_human",
+     20261821000
+    ],
+    [
+     "d2__tight_derived__positive",
+     20261823000
+    ],
+    [
+     "d2__tight_derived__no_human",
+     20261823000
+    ],
+    [
+     "d4__nominal_2700s__positive",
+     20261825000
+    ],
+    [
+     "d4__nominal_2700s__no_human",
+     20261825000
+    ],
+    [
+     "d4__tight_derived__positive",
+     20261827000
+    ],
+    [
+     "d4__tight_derived__no_human",
+     20261827000
+    ]
+   ],
+   "sample_subset_identical": true,
+   "sample_subset_differences": [],
+   "argmax_wall_s_mean": 1.4798790558161272,
+   "sample_wall_s_mean": 1.2664908846891194,
+   "argmax_over_sample_wall": 1.1684877275523284,
+   "argmax_wall_s_A": [
+    1.864472259010654,
+    1.6229867280344479,
+    2.210262377979234,
+    2.079362554999534,
+    0.8688146889908239,
+    0.7217245399951935,
+    1.3537127510062419,
+    1.139232826011721
+   ],
+   "argmax_wall_s_B": [
+    1.8904442729544826,
+    1.648476466012653,
+    2.179753601027187,
+    2.0556228650384583,
+    0.8654060459812172,
+    0.709595263004303,
+    1.3446364490082487,
+    1.1235612040036358
+   ],
+   "max_rss_kib": 450740
+  },
+  "surrogate625": {
+   "job": "surrogate625__lr1e-3_ent0__b10",
+   "status": [
+    "completed",
+    "completed"
+   ],
+   "argmax_digest": "9486fac3bc1d2eb12550c52cd4b61ee451c33c3136b7178db8b89c7b23717889",
+   "argmax_digests_agree": true,
+   "argmax_keys": [
+    [
+     "d2__nominal_2700s__positive",
+     20261821000
+    ],
+    [
+     "d2__nominal_2700s__no_human",
+     20261821000
+    ],
+    [
+     "d2__tight_derived__positive",
+     20261823000
+    ],
+    [
+     "d2__tight_derived__no_human",
+     20261823000
+    ],
+    [
+     "d4__nominal_2700s__positive",
+     20261825000
+    ],
+    [
+     "d4__nominal_2700s__no_human",
+     20261825000
+    ],
+    [
+     "d4__tight_derived__positive",
+     20261827000
+    ],
+    [
+     "d4__tight_derived__no_human",
+     20261827000
+    ]
+   ],
+   "sample_subset_identical": true,
+   "sample_subset_differences": [],
+   "argmax_wall_s_mean": 0.4626141813751019,
+   "sample_wall_s_mean": 0.9692930049968709,
+   "argmax_over_sample_wall": 0.47726969965763383,
+   "argmax_wall_s_A": [
+    0.5140949640190229,
+    0.5183127779746428,
+    0.3975401120260358,
+    0.4062178849708289,
+    0.5122463410370983,
+    0.6585148770245723,
+    0.37087108800187707,
+    0.3708590160240419
+   ],
+   "argmax_wall_s_B": [
+    0.5087856400059536,
+    0.5230068070231937,
+    0.3643145809764974,
+    0.3916387549834326,
+    0.49733662098878995,
+    0.6477326099993661,
+    0.3666887109866366,
+    0.3536661159596406
+   ],
+   "max_rss_kib": 450464
+  }
+ },
+ "passed": true
+}
+{
+ "passed": true,
+ "tag": "_build2",
+ "plan_sha256": null,
+ "reproduced_policies": "48/48",
+ "reproduced_episodes": "3840/3840",
+ "argmax_probe": true,
+ "unit_tests": true,
+ "trees_untouched": true,
+ "estimated_makespan_h": {
+  "6": 0.31029265525247385,
+  "7": 0.2660025287454728,
+  "8": 0.23310652942924023
+ },
+ "wall_s": 907.3205352390069
+}
+exit 0

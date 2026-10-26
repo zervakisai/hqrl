@@ -1,0 +1,63 @@
+{
+ "plan_sha256": "a5f99655ae89d5b448ae951efb3b11c555fd982828ef9dd515c35ff77fbeb960",
+ "provisional": false,
+ "G1_HQgeneric_minus_Cmatched": {
+  "n": 36,
+  "mean": -0.011683924253623091,
+  "lo": -0.0163522810488631,
+  "hi": -0.007015567458383083,
+  "p": 1.25611732558648e-05,
+  "dz": -0.8468228508348634,
+  "share_negative": 0.8055555555555556,
+  "holm_rejected": true
+ },
+ "G2_HQgeneric_minus_HQsmallangle": {
+  "n": 36,
+  "mean": -0.003022973718469251,
+  "lo": -0.006140422775513431,
+  "hi": 9.447533857492862e-05,
+  "p": 0.05696058061261507,
+  "dz": -0.32809747117277305,
+  "share_negative": 0.6666666666666666,
+  "holm_rejected": false
+ },
+ "G1_reading": "below zero: the deficit persists from generic angles",
+ "descriptive": {
+  "J0_mean": {
+   "HQ generic": -0.004011776857598392,
+   "HQ small-angle": -0.0034832658334863994,
+   "C-matched": -0.0020419464910166347
+  },
+  "Jfinal_mean": {
+   "HQ generic": 0.02640178587066058,
+   "HQ small-angle": 0.0229079446961799,
+   "C-matched": 0.038574221358357676
+  },
+  "AUC_mean": {
+   "HQ generic": 0.011784986416889732,
+   "HQ small-angle": 0.014807960135358983,
+   "C-matched": 0.02346891067051282
+  },
+  "B-H1_same_blocks": {
+   "n": 36,
+   "mean": -0.008660950535153837,
+   "lo": -0.013831896093376678,
+   "hi": -0.003490004976930996,
+   "p": 0.0016965462589083194,
+   "dz": -0.5667133844163792,
+   "share_negative": 0.75
+  },
+  "angles_median": {
+   "HQ generic": {
+    "init_mean_abs_rad": 1.522325230880754,
+    "final_mean_abs_rad": 1.5602429621765805,
+    "mean_abs_change_rad": 0.12516180062516025
+   },
+   "HQ small-angle": {
+    "init_mean_abs_rad": 0.07565426548353571,
+    "final_mean_abs_rad": 0.07099761415896652,
+    "mean_abs_change_rad": 0.05187039759974264
+   }
+  }
+ }
+}

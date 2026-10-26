@@ -1,0 +1,156 @@
+d2__nominal_2700s__positive 0 20262721000 0.1995 25.7
+d2__nominal_2700s__positive 1 20262721001 0.3042 21.2
+d2__nominal_2700s__positive 2 20262721002 0.2995 33.2
+d2__nominal_2700s__positive 3 20262721003 0.31 21.1
+d2__nominal_2700s__positive 4 20262721004 0.3045 28.3
+d2__nominal_2700s__positive 5 20262721005 0.3062 29.1
+d2__nominal_2700s__positive 6 20262721006 0.3064 26.1
+d2__nominal_2700s__positive 7 20262721007 0.3107 26.6
+d2__nominal_2700s__positive 8 20262721008 0.3072 25.5
+d2__nominal_2700s__positive 9 20262721009 0.3068 24.7
+d2__nominal_2700s__no_human 0 20262721000 0.0 1.9
+d2__nominal_2700s__no_human 1 20262721001 0.0 2.5
+d2__nominal_2700s__no_human 2 20262721002 0.0 10.3
+d2__nominal_2700s__no_human 3 20262721003 0.0 2.7
+d2__nominal_2700s__no_human 4 20262721004 0.0 1.6
+d2__nominal_2700s__no_human 5 20262721005 0.0 10.5
+d2__nominal_2700s__no_human 6 20262721006 0.0 2.0
+d2__nominal_2700s__no_human 7 20262721007 0.0 2.9
+d2__nominal_2700s__no_human 8 20262721008 0.0 2.1
+d2__nominal_2700s__no_human 9 20262721009 0.0 2.8
+d2__tight_derived__positive 0 20262723000 0.2463 17.4
+d2__tight_derived__positive 1 20262723001 0.2436 16.9
+d2__tight_derived__positive 2 20262723002 0.2362 21.2
+d2__tight_derived__positive 3 20262723003 0.2442 19.5
+d2__tight_derived__positive 4 20262723004 0.2373 21.9
+d2__tight_derived__positive 5 20262723005 0.256 14.3
+d2__tight_derived__positive 6 20262723006 0.2529 12.3
+d2__tight_derived__positive 7 20262723007 0.2393 24.5
+d2__tight_derived__positive 8 20262723008 0.2522 11.3
+d2__tight_derived__positive 9 20262723009 0.2445 18.6
+d2__tight_derived__no_human 0 20262723000 0.0 1.9
+d2__tight_derived__no_human 1 20262723001 0.0 1.5
+d2__tight_derived__no_human 2 20262723002 0.0 9.4
+d2__tight_derived__no_human 3 20262723003 0.0 1.8
+d2__tight_derived__no_human 4 20262723004 0.0 8.4
+d2__tight_derived__no_human 5 20262723005 0.0 1.7
+d2__tight_derived__no_human 6 20262723006 0.0 2.6
+d2__tight_derived__no_human 7 20262723007 0.0 9.0
+d2__tight_derived__no_human 8 20262723008 0.0 1.9
+d2__tight_derived__no_human 9 20262723009 0.0 1.7
+d4__nominal_2700s__positive 0 20262725000 0.288 23.9
+d4__nominal_2700s__positive 1 20262725001 0.2983 26.8
+d4__nominal_2700s__positive 2 20262725002 0.2953 24.2
+d4__nominal_2700s__positive 3 20262725003 0.2983 19.2
+d4__nominal_2700s__positive 4 20262725004 0.2937 28.0
+d4__nominal_2700s__positive 5 20262725005 0.2858 36.4
+d4__nominal_2700s__positive 6 20262725006 0.2953 23.8
+d4__nominal_2700s__positive 7 20262725007 0.294 25.2
+d4__nominal_2700s__positive 8 20262725008 0.2983 28.2
+d4__nominal_2700s__positive 9 20262725009 0.2882 29.5
+d4__nominal_2700s__no_human 0 20262725000 0.0 10.8
+d4__nominal_2700s__no_human 1 20262725001 0.0 2.0
+d4__nominal_2700s__no_human 2 20262725002 0.0 1.6
+d4__nominal_2700s__no_human 3 20262725003 0.0 1.4
+d4__nominal_2700s__no_human 4 20262725004 0.0 1.7
+d4__nominal_2700s__no_human 5 20262725005 0.0 10.0
+d4__nominal_2700s__no_human 6 20262725006 0.0 1.4
+d4__nominal_2700s__no_human 7 20262725007 0.0 2.4
+d4__nominal_2700s__no_human 8 20262725008 0.0 2.7
+d4__nominal_2700s__no_human 9 20262725009 0.0 1.5
+d4__tight_derived__positive 0 20262727000 0.2182 20.5
+d4__tight_derived__positive 1 20262727001 0.2077 19.5
+d4__tight_derived__positive 2 20262727002 0.2228 12.0
+d4__tight_derived__positive 3 20262727003 0.2326 12.4
+d4__tight_derived__positive 4 20262727004 0.2339 11.5
+d4__tight_derived__positive 5 20262727005 0.2346 13.9
+d4__tight_derived__positive 6 20262727006 0.2056 19.2
+d4__tight_derived__positive 7 20262727007 0.2255 20.5
+d4__tight_derived__positive 8 20262727008 0.2088 21.2
+d4__tight_derived__positive 9 20262727009 0.2341 15.8
+d4__tight_derived__no_human 0 20262727000 0.0 2.0
+d4__tight_derived__no_human 1 20262727001 0.0 10.3
+d4__tight_derived__no_human 2 20262727002 0.0 2.0
+d4__tight_derived__no_human 3 20262727003 0.0 1.6
+d4__tight_derived__no_human 4 20262727004 0.0 2.7
+d4__tight_derived__no_human 5 20262727005 0.0 1.9
+d4__tight_derived__no_human 6 20262727006 0.0 10.0
+d4__tight_derived__no_human 7 20262727007 0.0 2.0
+d4__tight_derived__no_human 8 20262727008 0.0 9.4
+d4__tight_derived__no_human 9 20262727009 0.0 2.0
+{
+ "weighted_J": 0.2113286225510504,
+ "per_cell_J": {
+  "d2__nominal_2700s__positive": 0.29549169459963465,
+  "d2__nominal_2700s__no_human": 0.0,
+  "d2__tight_derived__positive": 0.24524211595447815,
+  "d2__tight_derived__no_human": 0.0,
+  "d4__nominal_2700s__positive": 0.2935283594778168,
+  "d4__nominal_2700s__no_human": 0.0,
+  "d4__tight_derived__positive": 0.22238094272332226,
+  "d4__tight_derived__no_human": 0.0
+ },
+ "checks": {
+  "determinism_rerun": [
+   {
+    "index": 0,
+    "identical": true
+   },
+   {
+    "index": 10,
+    "identical": true
+   }
+  ],
+  "stored_e1_rule_rows_reproduced": [
+   {
+    "index": 0,
+    "cell_id": "d2__nominal_2700s__positive",
+    "keys": [
+     "cell_id",
+     "seed",
+     "crn_sha256",
+     "J",
+     "tp_timely",
+     "fp_spatial",
+     "fixes_attempted",
+     "decisions"
+    ],
+    "identical": true
+   },
+   {
+    "index": 10,
+    "cell_id": "d2__nominal_2700s__no_human",
+    "keys": [
+     "cell_id",
+     "seed",
+     "crn_sha256",
+     "J",
+     "tp_timely",
+     "fp_spatial",
+     "fixes_attempted",
+     "decisions"
+    ],
+    "identical": true
+   }
+  ],
+  "pairing_cell_id_seed_vs_stored_evaluations": {
+   "B2": {
+    "runs": 108,
+    "evaluation_events": 1188,
+    "mismatched_events": 0
+   },
+   "LONG": {
+    "runs": 12,
+    "evaluation_events": 132,
+    "mismatched_events": 0
+   },
+   "LONG-HQ": {
+    "runs": 6,
+    "evaluation_events": 66,
+    "mismatched_events": 0
+   }
+  },
+  "passed": true
+ },
+ "wall_s": 1104.7288005560113
+}

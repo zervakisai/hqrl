@@ -1,0 +1,106 @@
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/konstantinos/Documents/ChatGPT/idea/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+ "plan_sha256": "725050f05128944a1121e856d338f5e0051352b568ac7d19143580560bb21d53",
+ "tasks": [
+  {
+   "part": "T",
+   "block": 0,
+   "status": "complete",
+   "checkpoint": {
+    "checkpoint": "/home/konstantinos/Documents/ChatGPT/idea_dq/output/study/gnss_qrl_v1/dq/b2_campaign_v3/runs/quantum__b0/run/quantum/checkpoints/final_update00057_decisions00030125.pt",
+    "sha256": "9b9d294e4c79bdceb778509f7981ac1f66d5525e47288e31b9d33d4706f10672",
+    "policy_decisions": 30125
+   },
+   "rows": {
+    "fit": 9836,
+    "oracle": 9699,
+    "calibration": 9786,
+    "heldout": 9790
+   },
+   "row_info": null,
+   "self_check": null,
+   "instrument_wall_s": 136.16835140200055,
+   "wall_s": 1604.0321639070025,
+   "error": null,
+   "traceback": null,
+   "certificate_failures": [],
+   "arm_status": {
+    "SPAN": {
+     "0.001": "ok",
+     "0.01": "ok",
+     "0.05": "ok"
+    },
+    "TAN": {
+     "0.001": "ok",
+     "0.01": "ok",
+     "0.05": "ok"
+    },
+    "HQ-Fisher": {
+     "0.001": "ok",
+     "0.01": "ok",
+     "0.05": "ok"
+    }
+   }
+  },
+  {
+   "part": "TD",
+   "block": 0,
+   "status": "complete",
+   "checkpoint": {
+    "checkpoint": "/home/konstantinos/Documents/ChatGPT/idea_dq/output/study/gnss_qrl_v1/dq/b2_campaign_v3/runs/bottleneck__b0/run/bottleneck/checkpoints/final_update00056_decisions00030165.pt",
+    "sha256": "61f7f4d47d67357590587df7ee2fbaa979051957159622429c9c988b86356fe4",
+    "policy_decisions": 30165
+   },
+   "rows": {
+    "fit": 13416,
+    "calibration": 13255,
+    "heldout": 13399
+   },
+   "row_info": {
+    "fit": {
+     "replay_max_abs_logprob": 8.881784197001252e-16,
+     "baseline_fallback_rows": 0,
+     "logits_vs_model_max_abs_logprob": 1.7763568394002505e-15
+    },
+    "calibration": {
+     "replay_max_abs_logprob": 1.7763568394002505e-15,
+     "baseline_fallback_rows": 0,
+     "logits_vs_model_max_abs_logprob": 1.7763568394002505e-15
+    },
+    "heldout": {
+     "replay_max_abs_logprob": 8.881784197001252e-16,
+     "baseline_fallback_rows": 0,
+     "logits_vs_model_max_abs_logprob": 1.7763568394002505e-15
+    }
+   },
+   "self_check": {
+    "J_rel": 1.1107405908861241e-16,
+    "g_rel": 2.028586948979392e-15,
+    "F_rel": 1.4519834227714093e-15,
+    "passed": true
+   },
+   "instrument_wall_s": 1.9779137789992092,
+   "wall_s": 3749.2495659520027,
+   "error": null,
+   "traceback": null,
+   "certificate_failures": null,
+   "arm_status": {
+    "C-Fisher": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "C-TAN": {
+     "0.001": "ok",
+     "0.01": "ok"
+    },
+    "C-plain": {
+     "0.001": "ok",
+     "0.01": "ok"
+    }
+   }
+  }
+ ]
+}

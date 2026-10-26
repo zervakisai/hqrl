@@ -1,0 +1,19 @@
+{
+ "selftest": "passed",
+ "rule_weighted_J_e1_evaluation": 0.20564463190957744,
+ "rule_credited_timely_per_episode": 2.388502108982746,
+ "table5_sampled_J": {
+  "quantum": 0.024285791296910626,
+  "bottleneck": 0.03743572490896784,
+  "mlp": 0.052016273841715234,
+  "surrogate625": 0.044911764424285364
+ },
+ "holm_example": [
+  0.03,
+  0.06,
+  0.06,
+  0.02
+ ]
+}
+
+--- stderr ---

@@ -1,0 +1,65 @@
+{
+ "plan_sha256": "a5e573b365ae694375e9f04eb36ed8b7e102120110e60484811d972ede422cd6",
+ "provisional": false,
+ "F1_HQfrozen_minus_HQtrained": {
+  "n": 36,
+  "mean": 0.0005750820580129103,
+  "lo": -0.0010997116113821898,
+  "hi": 0.0022498757274080103,
+  "lo90": -0.000818777458960399,
+  "hi90": 0.0019689415749862198,
+  "p": 0.4903523198583941,
+  "dz": 0.11618134089199987,
+  "share_negative": 0.3055555555555556,
+  "holm_rejected": false,
+  "tost_equivalent": true
+ },
+ "F2_HQfrozen_minus_Cmatched": {
+  "n": 36,
+  "mean": -0.008085868477140927,
+  "lo": -0.013194300355960982,
+  "hi": -0.002977436598320872,
+  "lo90": -0.012337398991747498,
+  "hi90": -0.003834337962534356,
+  "p": 0.002816304490742044,
+  "dz": -0.5355585331476482,
+  "share_negative": 0.75,
+  "holm_rejected": true
+ },
+ "F1_reading": "equivalent within \u00b10.1 RE: angle training made no difference to early learning",
+ "F2_reading": "below zero: the deficit to C-matched remains without angle training",
+ "tost_delta": 0.0056,
+ "descriptive": {
+  "HQ frozen": {
+   "J0": -0.0034832658334863994,
+   "Jfinal": 0.025057320893397673,
+   "AUC": 0.015383042193371894
+  },
+  "HQ trained": {
+   "J0": -0.0034832658334863994,
+   "Jfinal": 0.0229079446961799,
+   "AUC": 0.014807960135358983
+  },
+  "C-matched": {
+   "J0": -0.0020419464910166347,
+   "Jfinal": 0.038574221358357676,
+   "AUC": 0.02346891067051282
+  },
+  "B-H1_same_blocks": {
+   "n": 36,
+   "mean": -0.008660950535153837,
+   "lo": -0.013831896093376678,
+   "hi": -0.003490004976930996,
+   "lo90": -0.012964508525484066,
+   "hi90": -0.004357392544823607,
+   "p": 0.0016965462589083194,
+   "dz": -0.5667133844163792,
+   "share_negative": 0.75
+  },
+  "angles": {
+   "runs_checked": 36,
+   "all_equal_initial": true,
+   "max_abs_change": 0.0
+  }
+ }
+}

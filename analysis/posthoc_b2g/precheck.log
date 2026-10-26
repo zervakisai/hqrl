@@ -1,0 +1,28 @@
+{
+ "plan_sha256": "a5f99655ae89d5b448ae951efb3b11c555fd982828ef9dd515c35ff77fbeb960",
+ "b_init": {
+  "parameters": 17,
+  "differ": [
+   "actor.weights"
+  ],
+  "angles_within_pi": true,
+  "angles_mean_abs": 1.463095099408669,
+  "stored_angles_mean_abs": 0.09391958359628916
+ },
+ "a_reproduction": {
+  "evaluation": {
+   "compared": 2,
+   "identical": true
+  },
+  "update": {
+   "compared": 6,
+   "identical": true
+  },
+  "episode": {
+   "compared": 77,
+   "identical": true
+  }
+ },
+ "passed": true
+}
+exit 0

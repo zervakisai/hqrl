@@ -1,0 +1,246 @@
+{
+ "utc": "2026-10-25T140901Z",
+ "plan_sha256": "03e93f1a267e6b5b52225c851020ffeb29e41c26ee473add32c73a9a0754060e",
+ "pilot_select_sha256": "c47cb2521fd6975472190ac847602f56d64c07354ad912539ff113a6e2b621ca",
+ "runner_sha256": "9601f88d8f88934ceb61445c1de9a134c385302f2a52872932c623628bd0046e",
+ "e4lib_sha256": "9d72adf6b5df54fa3c3f5d2074430ba037a097ee8bbda972d5b0923ef1b8d6c6",
+ "idea_dq_tree": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "rule": {
+  "score": "S(e) = mean weighted development J at [80000, 100000] over development blocks [6, 7]",
+  "eligible": "completed in both development blocks and development-suite timely-credited reports per episode > 0.012 at 80000 AND 100000 decisions in both blocks (the level at or below which LONG's PLAN_LOG 2026-10-24T16:37:30Z classed C-strong blocks as having ended without timely reports)",
+  "choice": "one eligible: it; two: the larger S, except |S(0.01) - S(0.003)| < 0.0056 chooses 0.01 (the larger entropy); none eligible: 0.01 (fallback)",
+  "descriptive_only": "mean policy entropy over the last 20 PPO updates of every run",
+  "amended": "2026-10-25, after review item B1, while the pilot was running and before any pilot result was read; it replaces the rule of PLAN_DRAFT.md quoted in original_rule",
+  "original_rule": "Eligible: completed in both blocks (no algorithmic failure) and last-update mean policy entropy >= 0.30 nats in both blocks (LONG's collapse level). If no value is eligible, the entropy guard is lifted (failures stay ineligible); if both values failed, e = 0.01. One eligible value: it is chosen. Two: the larger S, except that |S(0.01) - S(0.003)| < 0.0056 J (0.1 report-equivalent per episode, dq_b2.TOST_DELTA) chooses 0.003 (the smaller entropy)."
+ },
+ "heads": {
+  "mlp": {
+   "role": "C-strong",
+   "entropy_coef": 0.01,
+   "lr0": 0.003,
+   "values": {
+    "0.003": {
+     "completed_both_blocks": true,
+     "S": 0.038711090558887475,
+     "timely": {
+      "6": {
+       "80000": 0.8461504962821994,
+       "100000": 0.8442349000610513
+      },
+      "7": {
+       "80000": 0.005672916610988103,
+       "100000": 0.3553157621956974
+      }
+     },
+     "timely_above_cut_at_both_points_in_both_blocks": false,
+     "eligible": false
+    },
+    "0.01": {
+     "completed_both_blocks": true,
+     "S": 0.09446651443176114,
+     "timely": {
+      "6": {
+       "80000": 2.0534842968184663,
+       "100000": 2.5571494985290846
+      },
+      "7": {
+       "80000": 0.8803474827190506,
+       "100000": 0.5068868713626491
+      }
+     },
+     "timely_above_cut_at_both_points_in_both_blocks": true,
+     "eligible": true
+    }
+   },
+   "rule_applied": "one eligible value: 0.01",
+   "runs": {
+    "mlp__ent0.003__b6": {
+     "status": "completed",
+     "J": {
+      "0": -0.008625459247351717,
+      "50000": 0.05802242269308324,
+      "80000": 0.0729911552250844,
+      "100000": 0.07365421333876011
+     },
+     "timely": {
+      "0": 0.17796358346729318,
+      "50000": 0.7746272552971863,
+      "80000": 0.8461504962821994,
+      "100000": 0.8442349000610513
+     },
+     "entropy_last20_mean": 0.872226887619562,
+     "updates": 185,
+     "policy_decisions": 100039
+    },
+    "mlp__ent0.01__b6": {
+     "status": "completed",
+     "J": {
+      "0": -0.008625459247351717,
+      "50000": 0.0629058788422675,
+      "80000": 0.1225319374949748,
+      "100000": 0.18091328875814092
+     },
+     "timely": {
+      "0": 0.17796358346729318,
+      "50000": 0.7451911369755091,
+      "80000": 2.0534842968184663,
+      "100000": 2.5571494985290846
+     },
+     "entropy_last20_mean": 0.6523865117410844,
+     "updates": 185,
+     "policy_decisions": 100521
+    },
+    "mlp__ent0.003__b7": {
+     "status": "completed",
+     "J": {
+      "0": -0.009320571581355425,
+      "50000": 0.00040723211479119136,
+      "80000": -0.0006068518568010576,
+      "100000": 0.00880584552850643
+     },
+     "timely": {
+      "0": 0.14514356970975148,
+      "50000": 0.0452063612914009,
+      "80000": 0.005672916610988103,
+      "100000": 0.3553157621956974
+     },
+     "entropy_last20_mean": 1.3520429639435338,
+     "updates": 185,
+     "policy_decisions": 100470
+    },
+    "mlp__ent0.01__b7": {
+     "status": "completed",
+     "J": {
+      "0": -0.009320571581355425,
+      "50000": 0.06119766110779911,
+      "80000": 0.06491977624169339,
+      "100000": 0.009501055232235475
+     },
+     "timely": {
+      "0": 0.14514356970975148,
+      "50000": 0.82597368746274,
+      "80000": 0.8803474827190506,
+      "100000": 0.5068868713626491
+     },
+     "entropy_last20_mean": 0.9784482841918887,
+     "updates": 185,
+     "policy_decisions": 100114
+    }
+   }
+  },
+  "bottleneck": {
+   "role": "C-matched",
+   "entropy_coef": 0.01,
+   "lr0": 0.003,
+   "values": {
+    "0.003": {
+     "completed_both_blocks": true,
+     "S": 0.019911507018051354,
+     "timely": {
+      "6": {
+       "80000": 0.5963601244685761,
+       "100000": 0.6271416074819044
+      },
+      "7": {
+       "80000": 0.6227455550365442,
+       "100000": 0.674770528825286
+      }
+     },
+     "timely_above_cut_at_both_points_in_both_blocks": true,
+     "eligible": true
+    },
+    "0.01": {
+     "completed_both_blocks": true,
+     "S": 0.02401122550872785,
+     "timely": {
+      "6": {
+       "80000": 0.5805669338902243,
+       "100000": 0.5425221087692084
+      },
+      "7": {
+       "80000": 0.5917609260295295,
+       "100000": 0.6437801792037912
+      }
+     },
+     "timely_above_cut_at_both_points_in_both_blocks": true,
+     "eligible": true
+    }
+   },
+   "rule_applied": "both eligible; |S diff| 0.00410 < 0.0056: the larger entropy 0.01",
+   "runs": {
+    "bottleneck__ent0.003__b6": {
+     "status": "completed",
+     "J": {
+      "0": -0.013639452656300077,
+      "50000": 0.021073513853331803,
+      "80000": 0.0024542332860956534,
+      "100000": 0.019079253998391502
+     },
+     "timely": {
+      "0": 0.10905615761662416,
+      "50000": 0.6464520308499828,
+      "80000": 0.5963601244685761,
+      "100000": 0.6271416074819044
+     },
+     "entropy_last20_mean": 1.4687310500822763,
+     "updates": 185,
+     "policy_decisions": 100101
+    },
+    "bottleneck__ent0.01__b6": {
+     "status": "completed",
+     "J": {
+      "0": -0.013639452656300077,
+      "50000": 0.014375328567496338,
+      "80000": 0.028828171901353276,
+      "100000": 0.021001965223929633
+     },
+     "timely": {
+      "0": 0.10905615761662416,
+      "50000": 0.4929724463843338,
+      "80000": 0.5805669338902243,
+      "100000": 0.5425221087692084
+     },
+     "entropy_last20_mean": 1.6828836163148928,
+     "updates": 185,
+     "policy_decisions": 100013
+    },
+    "bottleneck__ent0.003__b7": {
+     "status": "completed",
+     "J": {
+      "0": -0.006398799598664597,
+      "50000": 0.015121955893446993,
+      "80000": 0.017577382669915043,
+      "100000": 0.040535158117803206
+     },
+     "timely": {
+      "0": 0.1780135045150233,
+      "50000": 0.4982470038012787,
+      "80000": 0.6227455550365442,
+      "100000": 0.674770528825286
+     },
+     "entropy_last20_mean": 1.2660519894685847,
+     "updates": 185,
+     "policy_decisions": 100064
+    },
+    "bottleneck__ent0.01__b7": {
+     "status": "completed",
+     "J": {
+      "0": -0.006398799598664597,
+      "50000": 0.020509376196447375,
+      "80000": 0.019823193424847067,
+      "100000": 0.026391571484781433
+     },
+     "timely": {
+      "0": 0.1780135045150233,
+      "50000": 0.624480482210033,
+      "80000": 0.5917609260295295,
+      "100000": 0.6437801792037912
+     },
+     "entropy_last20_mean": 1.7566949564731822,
+     "updates": 187,
+     "policy_decisions": 100471
+    }
+   }
+  }
+ }
+}

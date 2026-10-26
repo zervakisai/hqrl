@@ -1,0 +1,26 @@
+{
+ "mlp": {
+  "entropy_coef": 0.01,
+  "rule_applied": "one eligible value: 0.01",
+  "S": {
+   "0.003": 0.038711090558887475,
+   "0.01": 0.09446651443176114
+  },
+  "eligible": {
+   "0.003": false,
+   "0.01": true
+  }
+ },
+ "bottleneck": {
+  "entropy_coef": 0.01,
+  "rule_applied": "both eligible; |S diff| 0.00410 < 0.0056: the larger entropy 0.01",
+  "S": {
+   "0.003": 0.019911507018051354,
+   "0.01": 0.02401122550872785
+  },
+  "eligible": {
+   "0.003": true,
+   "0.01": true
+  }
+ }
+}

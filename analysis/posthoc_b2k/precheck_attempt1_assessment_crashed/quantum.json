@@ -1,0 +1,164 @@
+{
+ "kind": "precheck",
+ "set": "PC",
+ "arm": "quantum",
+ "block": 0,
+ "learning_rate": 0.003,
+ "status": "completed",
+ "plan_sha256": null,
+ "runner_sha256": "ab426a483157bf4269d122313f2b5b7a71b4d8d1ee50c34c9f252bfcd3d5969a",
+ "config": {
+  "hidden": 64,
+  "memory": "gru",
+  "critic_gradient": "stop",
+  "dtype": "float64",
+  "torch_threads": 1,
+  "note": "post-hoc E3 matched-KL check (plan draft): HQ lr 3.00e-03 block 0",
+  "max_updates": null,
+  "config_version": "gnss-p4-train-config/1",
+  "freeze": "output/study/gnss_qrl_v1/claude/p3_freeze_v1/p3_frozen_configuration.json",
+  "execution_manifest": "output/study/gnss_qrl_v1/claude/p3_execution_manifest_v1/p3_execution_manifest.json",
+  "time_model": "output/training/time_model_village_v1/20260917T074923Z/time_model.json",
+  "critic": "mlp",
+  "transitions_per_update": 512,
+  "gamma_ref": 1.0,
+  "reference_duration_s": 60.0,
+  "lambda_ref": 0.95,
+  "lambda_mode": "time",
+  "study": "dq_b2",
+  "role": "dq_b2",
+  "arms": [
+   "quantum"
+  ],
+  "candidate": "e3_lr3.00e-03_ent0",
+  "block": 0,
+  "total_policy_decisions": 3000,
+  "checkpoint_decisions": [
+   0,
+   3000
+  ],
+  "ppo": {
+   "clip_range": 0.2,
+   "value_coef": 0.5,
+   "max_grad_norm": 0.5,
+   "epochs": 4,
+   "minibatch_transitions": 256,
+   "advantage_std_floor": 0.05,
+   "max_segment_length": 32,
+   "learning_rate": 0.003,
+   "entropy_coef": 0.0
+  },
+  "evaluation": {
+   "suite": "dq_b2_evaluation",
+   "modes": [
+    "sample"
+   ]
+  },
+  "protocol_freeze_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+ },
+ "code_tree_sha256": "ffe9dfef2b24ba48a48772e696656e3b0d2aa1abb6de8fa73cf1d51c7f745952",
+ "summary": {
+  "arm": "quantum",
+  "role": "HQ",
+  "block": 0,
+  "run_role": "dq_b2",
+  "candidate": "e3_lr3.00e-03_ent0",
+  "protocol_freeze_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "study": "dq_b2",
+  "updates": 6,
+  "policy_decisions": 3203,
+  "episodes": 77,
+  "empty_episodes": 0,
+  "infrastructure_episodes": 0,
+  "dropped_reward": 0.0,
+  "wall_s": 248.46213251998415,
+  "walls": {
+   "rollout_s": 89.14347526602796,
+   "update_s": 2.4393128090305254,
+   "checkpoint_s": 0.013178541994420812,
+   "evaluation_s": 156.81292035797378
+  },
+  "cpu": {
+   "rollout_s": 87.53728683100002,
+   "update_s": 2.4255101820000107,
+   "checkpoint_s": 0.01295252000000513,
+   "evaluation_s": 152.58475118500002
+  },
+  "load_average": {
+   "start": [
+    13.91259765625,
+    11.29443359375,
+    6.89208984375
+   ],
+   "end": [
+    18.04150390625,
+    14.9130859375,
+    9.43505859375
+   ]
+  },
+  "process_rusage": {
+   "user_s": 245.622602,
+   "system_s": 1.608777,
+   "max_rss_kib": 587808
+  },
+  "rollout_per_decision_s": 0.027831244229168894,
+  "update_per_decision_s": 0.0007615712797472761,
+  "actor_head_parameters": 411,
+  "model_parameters": 50076,
+  "checkpoints": [
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/update00000_decisions00000000.pt",
+    "sha256": "3af088992a4d8869559845ae53f5d85a039082529c09cbbedbdd3498cea9c40c",
+    "points": [
+     0
+    ],
+    "final": false,
+    "policy_decisions": 0
+   },
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/update00006_decisions00003203.pt",
+    "sha256": "ae69e162983bdf41be499659b2acd1812072c97542f663ea999ee03138df8d32",
+    "points": [
+     3000
+    ],
+    "final": false,
+    "policy_decisions": 3203
+   },
+   {
+    "kind": "checkpoint",
+    "path": "checkpoints/final_update00006_decisions00003203.pt",
+    "sha256": "ac89b8fa983d19775b969776aeec17ad2ae93a03c691ca173291197b87ff8845",
+    "points": [],
+    "final": true,
+    "policy_decisions": 3203
+   }
+  ],
+  "status": "completed",
+  "failure": null,
+  "learning_curve": {
+   "sample": [
+    [
+     0,
+     0,
+     -0.008802385033949712
+    ],
+    [
+     3000,
+     3203,
+     -0.004679853560661413
+    ]
+   ]
+  },
+  "auc": {
+   "sample": -0.006741119297305562
+  }
+ },
+ "kl": {
+  "mean": 0.006308234177769789,
+  "median": 0.0072530827391652074,
+  "updates": 6
+ },
+ "wall_s": 252.98215967099532
+}

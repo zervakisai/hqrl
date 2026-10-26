@@ -1,0 +1,17 @@
+{
+ "arms": {
+  "quantum": {
+   "lr": 0.00116,
+   "lr_str": "1.16e-03",
+   "stage": "1",
+   "stage_1b_needed": false
+  },
+  "surrogate625": {
+   "lr": 0.000779,
+   "lr_str": "7.79e-04",
+   "stage": "1",
+   "stage_1b_needed": false
+  }
+ },
+ "ready": true
+}

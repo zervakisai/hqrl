@@ -1,0 +1,31 @@
+{
+ "records": 72,
+ "failed": [],
+ "excluded_reproduction": [],
+ "max_reproduction_rel_diff": 2.5260871029470446e-09,
+ "family_A": {
+  "holm_rejected": {
+   "Y1": false,
+   "Y2": true
+  },
+  "reading": "generic: the matched classical chart shows a path shortfall not distinguishable from the circuit's"
+ },
+ "family_C": {
+  "holm_rejected": {
+   "W1": true,
+   "W2": true
+  },
+  "W1_reading": "resolved positive",
+  "W2_reading": "resolved positive"
+ }
+}
+shipped n 36
+  Y1_CTRIG_minus_HQ-Fisher: +1.38 [-0.54, +3.31] e-5  p=0.15
+  Y2_CTRIG_minus_TAN: -4.31 [-5.75, -2.88] e-5  p=5.5e-07
+  W1_J_TAN_minus_HQ-Fisher_RE: +0.062 [+0.035, +0.089] RE  p=4.4e-05  mde80=0.038
+  W2_J_TAN_minus_BASE_RE: +0.071 [+0.056, +0.087] RE  p=3.7e-11  mde80=0.022
+heldout n 36
+  Y1_CTRIG_minus_HQ-Fisher: +0.95 [-1.07, +2.97] e-5  p=0.35
+  Y2_CTRIG_minus_TAN: -5.06 [-6.94, -3.17] e-5  p=4.1e-06
+  W1_J_TAN_minus_HQ-Fisher_RE: +0.072 [+0.046, +0.098] RE  p=1.9e-06  mde80=0.036
+  W2_J_TAN_minus_BASE_RE: +0.071 [+0.052, +0.090] RE  p=4.5e-09  mde80=0.027

@@ -1,0 +1,67 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- /home/konstantinos/Documents/ChatGPT/idea/.venv/bin/python
+rootdir: /home/konstantinos/Documents/ChatGPT/idea_dq_posthoc_long2
+collecting ... collected 47 items
+
+tests/test_e4.py::test_wide_layout_matches_base_except_dim PASSED        [  2%]
+tests/test_e4.py::test_extra_feature_names_are_public PASSED             [  4%]
+tests/test_e4.py::test_configure_switches_and_restores PASSED            [  6%]
+tests/test_e4.py::test_base_build_is_stored_long_initial_checkpoint_bitwise[mlp] PASSED [  8%]
+tests/test_e4.py::test_base_build_is_stored_long_initial_checkpoint_bitwise[bottleneck] PASSED [ 10%]
+tests/test_e4.py::test_widened_model_equals_base_at_init_random_inputs[mlp] PASSED [ 12%]
+tests/test_e4.py::test_widened_model_equals_base_at_init_random_inputs[bottleneck] PASSED [ 14%]
+tests/test_e4.py::test_encode_on_rule_episode_reads_the_rules_own_evidence PASSED [ 17%]
+tests/test_e4.py::test_learned_policy_bookkeeping_and_logits_on_real_episodes[mlp] PASSED [ 19%]
+tests/test_e4.py::test_learned_policy_bookkeeping_and_logits_on_real_episodes[bottleneck] PASSED [ 21%]
+tests/test_e4.py::test_ppo_wrapper_pass_through_is_bitwise_the_frozen_update PASSED [ 23%]
+tests/test_e4.py::test_ppo_wrapper_linear_schedule_reaches_zero PASSED   [ 25%]
+tests/test_fixes.py::test_classify PASSED                                [ 27%]
+tests/test_fixes.py::test_single_instance_lock PASSED                    [ 29%]
+tests/test_fixes.py::test_other_launchers_finds_a_launcher_of_the_folder PASSED [ 31%]
+tests/test_fixes.py::test_restart_once_then_the_second_failure_stands PASSED [ 34%]
+tests/test_fixes.py::test_relaunch_restarts_a_first_failure_and_a_crashed_run PASSED [ 36%]
+tests/test_fixes.py::test_plan_names_frozen_hashes PASSED                [ 38%]
+tests/test_fixes.py::test_status_progress_reads_counts_only PASSED       [ 40%]
+tests/test_fixes.py::test_selection_rule_amended PASSED                  [ 42%]
+tests/test_fixes.py::test_pilot_select_end_to_end PASSED                 [ 44%]
+tests/test_fixes.py::test_pilot_select_restart_rule_and_integrity PASSED [ 46%]
+tests/test_fixes.py::test_event_integrity_on_stored_long_and_mutations PASSED [ 48%]
+tests/test_fixes.py::test_schedule_check_on_the_precheck_e4_path PASSED  [ 51%]
+tests/test_fixes.py::test_partial_last_line_only_while_running PASSED    [ 53%]
+tests/test_fixes.py::test_b2_reading_threshold_is_min_of_0103_and_half_rule PASSED [ 55%]
+tests/test_fixes.py::test_readings_name_T_not_300000 PASSED              [ 57%]
+tests/test_fixes.py::test_holm_keeps_family_size_2_with_one_head PASSED  [ 59%]
+tests/test_fixes.py::test_peak_reported_descriptively_final_of_record PASSED [ 61%]
+tests/test_fixes.py::test_p3_failures_never_give_holds PASSED            [ 63%]
+tests/test_fixes.py::test_three_way_core PASSED                          [ 65%]
+tests/test_fixes.py::test_failed_run_with_a_value_at_T_counts PASSED     [ 68%]
+tests/test_fixes.py::test_slope_last3_for_E4_LONG_and_difference PASSED  [ 70%]
+tests/test_fixes.py::test_deadline_constant_matches_the_plan PASSED      [ 72%]
+tests/test_fixes.py::test_full_readout_and_no_overwrite PASSED           [ 74%]
+tests/test_fixes.py::test_checks_refuse[entropy-entropy_coef] PASSED     [ 76%]
+tests/test_fixes.py::test_checks_refuse[duplicate-duplicated lines] PASSED [ 78%]
+tests/test_fixes.py::test_checks_refuse[code-code hashes] PASSED         [ 80%]
+tests/test_fixes.py::test_checks_refuse[plan-PLAN.sha256] PASSED         [ 82%]
+tests/test_fixes.py::test_checks_refuse[pending_restart-awaits its one restart] PASSED [ 85%]
+tests/test_fixes.py::test_checks_refuse[point0-point-0] PASSED           [ 87%]
+tests/test_fixes.py::test_checks_refuse[freeze-protocol_freeze] PASSED   [ 89%]
+tests/test_fixes.py::test_deadline_readout PASSED                        [ 91%]
+tests/test_fixes.py::test_deadline_readout_failed_run_keeps_its_value_at_T PASSED [ 93%]
+tests/test_fixes.py::test_namespace_end_and_kept_copy_prefix PASSED      [ 95%]
+tests/test_fixes.py::test_restart_comparison_on_two_precheck_generations PASSED [ 97%]
+tests/test_fixes.py::test_supplementary_after_deadline_and_provisional_on_a_copy PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/test_fixes.py::test_restart_once_then_the_second_failure_stands
+tests/test_fixes.py::test_restart_once_then_the_second_failure_stands
+tests/test_fixes.py::test_restart_once_then_the_second_failure_stands
+tests/test_fixes.py::test_restart_once_then_the_second_failure_stands
+tests/test_fixes.py::test_restart_once_then_the_second_failure_stands
+tests/test_fixes.py::test_restart_once_then_the_second_failure_stands
+tests/test_fixes.py::test_relaunch_restarts_a_first_failure_and_a_crashed_run
+tests/test_fixes.py::test_relaunch_restarts_a_first_failure_and_a_crashed_run
+  /home/konstantinos/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=3076158) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================== 47 passed, 8 warnings in 67.66s (0:01:07) ===================
